@@ -1,0 +1,37 @@
+$ const _get = require('just-safe-get');
+
+$ const alerts = _get(input, 'model', []);
+$ const isOpenModal = _get(input, 'openModal');
+
+<for(alert in alerts)>
+        $ const description = _get(alert, 'description.textSpans');
+        $ const status = _get(alert, 'priorityLabel', 'information').toLocaleLowerCase();
+        $ const header = _get(alert, 'header.text');
+        $ const a11yHeadingText = _get(alert, 'noticeLabel', header);
+        $ const button = _get(alert, 'button');
+        <if(description)>
+            <section class=input.class qa-id=input.qaId>
+                <ebay-notice
+                    status=status
+                    type="page"
+                    a11y-heading-text=a11yHeadingText
+                >
+                <ebay-notice-content>
+                    <if(header)>
+                        <p><strong>${header}</strong></p>
+                    </if>
+                <p><me-textual-display model=description /></p>
+                </ebay-notice-content>
+                    <if (button)>
+                        $ button.transparent = true;
+                        <if(!isOpenModal)>
+                            <me-fake-button model=button />
+                        </if>
+                        <else>
+                            <me-fake-button  model=button on-button-click("openDialog")/>
+                        </else>
+                    </if>
+                </ebay-notice>
+            </section>
+        </if>
+</for>

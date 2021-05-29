@@ -1,0 +1,43 @@
+import safeGet from 'just-safe-get'
+
+$ {
+    const controlClass = safeGet(input, "controlClass"),
+        controlText = safeGet(input, "controlText"),
+        controlLabel = safeGet(input, "controlLabel"),
+        pointerPosition = safeGet(input, "pointerPosition"),
+        isIcon = controlClass.indexOf("icon") >= 0,
+        errPageContent = safeGet(out, "global.i18nModule"),
+        informationLabel = safeGet(errPageContent, "informationLabel");
+}
+<span class="me-tooltip" key="meui-tooltip">
+    <button
+        type="button"
+        class=(
+            `me-tooltip__host ${input.controlClass} ` +
+            (isIcon ? "icon icon-btn" : "")
+        )
+        key="dialogOpenIcon"
+        aria-label=`${input.controlLabel || informationLabel}`
+        aria-controls:scoped="me-tooltip-0"
+        on-mouseover("handleOpen")
+        on-mouseout("handleClose")
+        on-keyup("handleClick")>
+        ${input.controlText}<ebay-icon type="inline" name="info" class="info"/>
+    </button>
+    <div
+        id:scoped="me-tooltip-0"
+        key="me-tooltip-0"
+        class="me-tooltip__overlay"
+        role="me-tooltip"
+        aria-hidden="true">
+        <div class="me-flyout-notice me-flyout-notice--information">
+            <span class="me-flyout-notice__cell" on-focusout("handleClose")>
+                <if(typeof input.renderBody === "string")>${input.renderBody}</if>
+                <else>
+                    <${input.renderBody}/>
+                </else>
+            </span>
+            <span class=`me-flyout-notice__pointer-${input.pointerPosition}`/>
+        </div>
+    </div>
+</span>

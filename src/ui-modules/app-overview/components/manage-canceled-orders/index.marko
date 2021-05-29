@@ -1,0 +1,143 @@
+import safeGet from 'just-safe-get'
+import helper from '../../../../utils/helpers/template-helper'
+
+class {
+    onCreate(input) {
+        this.state = {
+            model: input.model
+        };
+    }
+}
+
+$ {
+    const orders = safeGet(state, "model.lineItems"),
+        title = safeGet(state, "model.title"),
+        seeAll = safeGet(state, "model.seeAll");
+}
+<if(title)>
+    <section
+        key="manageCanceledOrders"
+        class="post-transaction manage-canceled-orders"
+        qa-id="canceled-orders-module">
+        <if(title && helper.notEmpty(orders))>
+            <meui-moduleTitle model=title/>
+        </if>
+        <meui-item-list(order in orders)>
+            $ const items = safeGet(order, "orderLineItems");
+            <if(items && items.length > 1)>
+                <div class="multi-order-header">
+                    $ {
+                        const lineItemCountLabel = safeGet(order, "__me.lineItemCountLabel");
+                        const orderTotalLabel = safeGet(order, "__me.displayTotalPriceLabel");
+                    }
+                    <div class="columns">
+                        <div class="col-1">
+                            <if(lineItemCountLabel)>
+                                <static-text model=lineItemCountLabel class="header-label"/>
+                            </if>
+                            <if(order.lineItemCount)>
+                                <static-text model=order.lineItemCount class="header-content"/>
+                            </if>
+                        </div>
+                        <div class="col-2">
+                            <if(orderTotalLabel)>
+                                <static-text model=orderTotalLabel class="header-label"/>
+                            </if>
+                            <if(order.displayTotalPrice)>
+                                <static-text model=order.displayTotalPrice class="header-content"/>
+                            </if>
+                        </div>
+                        <div class="col-3">
+                            <if(order.__me)>
+                                $ {
+                                    const lineAction = safeGet(order, "__me.lineActions.options.0.selections.0.label");
+                                    const buyerName = safeGet(order, "__me.buyerName");
+                                    const statusTxt = safeGet(order, "__me.status.textSpans.0.text");
+                                    const statusPaidText = safeGet(order, "__me.status.textSpans.1.text");
+                                }
+                                <if(statusTxt)>
+                                    <div class="status-text">${statusTxt}</div>
+                                </if>
+                                <if(statusPaidText)>
+                                    <div class="status-paid-text">${statusPaidText}</div>
+                                </if>
+                                <if(buyerName)>
+                                    <static-text model=buyerName class="buyer-name"/>
+                                </if>
+                                <div class="multi-item-actions">
+                                    <me-fake-button size="small" model=lineAction/>
+                                </div>
+                            </if>
+                        </div>
+                    </div>
+                </div>
+            </if>
+            <for|item| of=items>
+                <meui-item-tile
+                    class=(items.length > 1 ? "multi-items" : "")
+                    qaId=`ManageCanceled-item-${item.listingSummary.listingId}`>
+                    <@column class="col-1">
+                        <meui-thumbnail
+                            image=item.listingSummary.image
+                            altText=item.listingSummary.title
+                            size="large"/>
+                    </@column>
+                    <@column class="col-2">
+                        $ {
+                            const quantity = safeGet(
+                                                            item,
+                                                            "listingSummary.quantity"
+                                                        ),
+                                                        buyerName = safeGet(item, "__me.buyerName"),
+                                                        displayPrice = safeGet(
+                                                            item,
+                                                            "listingSummary.displayPrice"
+                                                        ),
+                                                        summaryTitle = safeGet(
+                                                            item,
+                                                            "listingSummary.title"
+                                                        );
+                        }
+                        <me-item-title model=summaryTitle/>
+                        <static-text model=quantity class="quantity"/>
+                        <if(buyerName)>
+                            <static-text model=buyerName class="buyer-name"/>
+                        </if>
+                        <static-text model=displayPrice class="item-price"/>
+                    </@column>
+                    <@column class="col-3">
+                        $ {
+                            const lineAction = safeGet(
+                                                        item,
+                                                        "__me.lineActions.options.0.selections.0.label"
+                                                    );
+                                                    const statusTxt = safeGet(
+                                                            item,
+                                                            "listingSummary.status.textSpans.0.text"
+                                                        ),
+                                                        statusPaidText = safeGet(
+                                                            item,
+                                                            "listingSummary.status.textSpans.1.text"
+                                                        );
+                        }
+                        <if(statusTxt)>
+                            <div class="status-text">${statusTxt}</div>
+                        </if>
+                        <if(statusPaidText)>
+                            <div class="status-paid-text">${statusPaidText}</div>
+                        </if>
+                        <if(lineAction)>
+                            <div class="single-item-actions">
+                                <me-fake-button size="small" model=lineAction/>
+                            </div>
+                        </if>
+                    </@column>
+                </meui-item-tile>
+            </for>
+            <if(items && items.length > 1)>
+                <div class="multi-order-footer"/>
+            </if>
+            <see-all model=seeAll />
+        </meui-item-list>
+    </section>
+</if>

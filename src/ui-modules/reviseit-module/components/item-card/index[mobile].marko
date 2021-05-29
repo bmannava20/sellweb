@@ -1,0 +1,36 @@
+import safeGet from 'just-safe-get'
+import helper from './helper'
+$ const model = helper.getModelData(input);
+
+<div class="insights-item" qa-id=`${input.sectionId}-item-${model.listingId}`>
+    <layout-item-card
+        class="insights-item__body">
+        <@col-1>
+            <meui-thumbnail image=model.image altText=model.title size="mobile"/>
+        </@col-1>
+        <@col-2>
+            <me-item-title model=model.title/>
+            <static-text model=model.displayPrice class="item__price"/>
+            <static-text model=model.displayTime class="item__time"/>
+        </@col-2>
+    </layout-item-card>
+    <layout-item-card class="insights-item__footer">
+        <@col-1>
+            <me-item-activity model=model.itemActivityModel/>
+        </@col-1>
+    </layout-item-card>
+    <layout-item-card class="insights-item__footer">
+        <@col-1>
+            <div class="item__actions">
+                $ {
+                    const primaryButton = safeGet(model, "selections.0.label");
+                    const secondaryButton = safeGet(model, "selections.1.label");
+                }
+                <me-fake-button model=primaryButton/>
+                <me-fake-button
+                    class="item__secondary-btn"
+                    model=secondaryButton/>
+            </div>
+        </@col-1>
+    </layout-item-card>
+</div>

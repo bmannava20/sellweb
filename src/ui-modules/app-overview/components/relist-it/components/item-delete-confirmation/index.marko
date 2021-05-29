@@ -1,0 +1,21 @@
+import helper from './helper'
+
+$ const model = helper.getData(input);
+<div id=`${model.listingId}` tabindex="-1" class="relist-delete-confirmation">
+    <label class="content" id:scoped=`${model.listingId}-ddc` role="document">
+        ${model.content}
+    </label>
+    <div class="btn-cnt">
+        <button class="me-btn cancel" on-click("cancelDeleteitem") type="button">
+            ${model.deleteCancel}
+        </button>
+        <div class="bar"/>
+        <button
+            class=`me-btn delete ${model.blueText}`
+            on-click("deleteitem")
+            aria-describedby:scoped=`${model.listingId}-ddc`
+            type="button">
+            ${model.btn}
+        </button>
+    </div>
+</div>

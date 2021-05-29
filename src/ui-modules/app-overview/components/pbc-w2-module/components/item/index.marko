@@ -1,0 +1,95 @@
+import safeGet from 'just-safe-get'
+
+$ const busyLabel = safeGet(out, "global.i18nModule.busyLabel");
+$ const pbcItem = safeGet(state, "pbcItem");
+import helper from './helper'
+
+<div.pb-w2__item>
+    <if(state.showSpinner)>
+        <div class="loading">
+            <div class="spinner-cnt">
+                <span class="spinner valign" aria-label=`${busyLabel}` role="img">&nbsp;</span>
+            </div>
+        </div>
+    </if>
+    <else-if(state.showSuccess)>
+        $ const updateListingProductModuleText = safeGet(state, "updateListingProductModule.updateListingProductMessage.title.textSpans.0.text");
+        <div class="success">
+            <ebay-notice type="inline" status="confirmation">
+                <p>${updateListingProductModuleText}</p>
+            </ebay-notice>
+        </div>
+    </else-if>
+    <else>
+        <div class="meui-item-tile pbc-item-tile" qa-Id=`pbcw2-item-${state.listingId}`>
+            <if(state.showError)>
+                $ const updateListingProductModuleText = safeGet(state, "updateListingProductModule.updateListingProductMessage.title.textSpans.0.text");
+                <div class="error">
+                    <ebay-notice type="inline" status="priority">
+                        <p>${updateListingProductModuleText}</p>
+                    </ebay-notice>
+                </div>
+            </if>
+            <div class="columns">
+                <div class="col-1">
+                    <meui-thumbnail image=pbcItem.image altText=pbcItem.title size="small"/>
+                </div>
+                <div class="col-2">
+                    $ {
+                        const productErrorMsges = safeGet(pbcItem, "__me.productErrorMessages");
+                        const showMoreContent = safeGet(pbcItem, "__me.productErrorMessageShowMoreContent.textSpans");
+                        const messages = productErrorMsges ? helper.productMessageHelper(productErrorMsges) : {};
+                    }
+                    <me-item-title model=pbcItem.title/>
+                    <if(productErrorMsges)>
+                        <div class="me-notice-text">
+                            <if(messages.firstProductMessage)>
+                                <ebay-notice status="priority" type="inline">
+                                    <p key="content">
+                                        <me-textual-display model=messages.firstProductMessage/>
+                                    </p>
+                                </ebay-notice>
+                            </if>
+                            <if(messages.productMessages)>
+                                <div class="hide" key="other-pbc-messages">
+                                    <for|productMessage| of=messages.productMessages>
+                                        <if(productMessage.textSpans)>
+                                            <ebay-notice status="priority" type="inline">
+                                                <p key="content">
+                                                    <me-textual-display model=productMessage.textSpans/>
+                                                </p>
+                                            </ebay-notice>
+                                        </if>
+                                    </for>
+                                </div>
+                            </if>
+                            <!-- TODO remove this when eBayUI is ready with the expander-->
+                            <span key="show-more">
+                                <if(showMoreContent)>
+                                    <button class="btn-link" on-click("showMoreHandler")>
+                                        <me-textual-display model=showMoreContent/>
+                                    </button>
+                                </if>
+                            </span>
+                        </div>
+                    </if>
+                </div>
+                <div class="col-3">
+                    $ const action = helper.actionHelper(state);
+                    <if(action.actionType == "OPERATION")>
+                        <ebay-button
+                            class="me-fake-button"
+                            size="small"
+                            priority=action.btnStyle
+                            on-button-click("confirmPBC")>
+                            ${action.btnText}
+                        </ebay-button>
+                    </if>
+                    <else>
+                        <me-fake-button size="small" model=action.btn action=action.action/>
+                    </else>
+                </div>
+            </div>
+        </div>
+    </else>
+</div>

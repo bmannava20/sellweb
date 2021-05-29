@@ -1,0 +1,24 @@
+{
+    "dependencies": [
+        {
+            "type": "js",
+            "url": "https://ir.ebaystatic.com/cr/v/c1/jquery-3.3.1.min.js"
+        },
+        "site-speed-ebay/optimizer.json",
+        {
+            "type": "require",
+            "path": "cookies-browser",
+            "run": true
+        },
+        {
+            "if-flag": "mobile",
+            "dependencies": [
+                "./style[mobile].less"
+            ]
+        },
+        "./common.less",
+        "ebay-font/browser.json",
+        "@ebay/skin/less",
+        "@ebay/skin/icon"
+    ]
+}

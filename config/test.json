@@ -1,0 +1,8 @@
+{
+    "services": {
+        "mockServicesEnabled": true,
+        "routingDashboard": {
+            "hostname": "www.mesellexp.qa.ebay.com"
+        }
+    }
+}

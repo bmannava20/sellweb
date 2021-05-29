@@ -1,0 +1,400 @@
+[
+    {
+        "path": "GET /mys/home/",
+        "handler": "require:./src/pages/context#home",
+        "pagename": "mys_home_get",
+        "security": "L1SESSION",
+        "expSvcOperation": "mesellexp:experience_myebay_selling_v1_common_route_GET",
+        "i18n": {
+            "preload": [
+                "myebay/globalerrorpage"
+            ]
+        },
+        "muaa": {
+            "action_type": "ALLOW"
+        }
+    },
+    {
+        "path": "GET /mys/overview/:action/:actiontype",
+        "handler": "require:./src/pages/myebay/overview",
+        "pagename": "mys_overview_get",
+        "security": "L1SESSION",
+        "expSvcOperation": "mesellexp:experience_myebay_selling_v1_overview_screen_GET",
+        "i18n": {
+            "preload": [
+                "myebay/globalerrorpage"
+            ]
+        },
+        "muaa": {
+            "action_type": "BLOCK"
+        }
+    },
+    {
+        "path": "GET /mys/overview",
+        "handler": "require:./src/pages/myebay/overview",
+        "pagename": "mys_overview_get",
+        "security": "L1SESSION",
+        "expSvcOperation": "mesellexp:experience_myebay_selling_v1_overview_screen_GET",
+        "i18n": {
+            "preload": [
+                "myebay/globalerrorpage"
+            ]
+        },
+        "muaa": {
+            "action_type": "BLOCK"
+        }
+    },
+    {
+        "path": "GET /mys/active",
+        "handler": "require:./src/pages/myebay/active",
+        "pagename": "mys_active_get",
+        "security": "L1SESSION",
+        "expSvcOperation": "activesvc:experience_myebay_selling_v1_active_module_provider_GET",
+        "i18n": {
+            "preload": [
+                "myebay/globalerrorpage"
+            ]
+        },
+        "muaa": {
+            "action_type": "BLOCK"
+        }
+    },
+    {
+        "path": "GET /mys/scheduled",
+        "handler": "require:./src/pages/myebay/scheduled",
+        "pagename": "mys_scheduled_get",
+        "security": "L1SESSION",
+        "expSvcOperation": "scheduledsvc:getScheduledItems",
+        "i18n": {
+            "preload": [
+                "myebay/globalerrorpage"
+            ]
+        },
+        "muaa": {
+            "action_type": "BLOCK"
+        }
+    },
+    {
+        "path": "GET /mys/scheduled/:action/:actiontype",
+        "handler": "require:./src/pages/myebay/scheduled",
+        "pagename": "mys_scheduled_get",
+        "security": "L1SESSION",
+        "expSvcOperation": "scheduledsvc:getScheduledItems",
+        "i18n": {
+            "preload": [
+                "myebay/globalerrorpage"
+            ]
+        },
+        "muaa": {
+            "action_type": "BLOCK"
+        }
+    },
+    {
+        "path": "GET /mys/insights/offers-to-buyers",
+        "handler": "require:./src/pages/myebay/insights",
+        "pagename": "mys_insights_sio_get",
+        "security": "L1SESSION",
+        "expSvcOperation": "mesellexp:experience_myebay_selling_v1_insights_GET",
+        "i18n": {
+            "preload": [
+                "myebay/globalerrorpage"
+            ]
+        },
+        "muaa": {
+            "action_type": "BLOCK"
+        }
+    },
+    {
+        "path": "GET /mys/drafts",
+        "handler": "require:./src/pages/myebay/drafts",
+        "pagename": "mys_drafts_get",
+        "security": "L1SESSION",
+        "expSvcOperation": "draftsvc:experience_myebay_selling_v1_draft_module_provider_GET",
+        "i18n": {
+            "preload": [
+                "myebay/globalerrorpage"
+            ]
+        },
+        "muaa": {
+            "action_type": "BLOCK"
+        }
+    },
+    {
+        "path": "GET /mys/drafts/:action/:actiontype",
+        "handler": "require:./src/pages/myebay/drafts",
+        "pagename": "mys_drafts_get",
+        "security": "L1SESSION",
+        "expSvcOperation": "draftsvc:experience_myebay_selling_v1_draft_module_provider_GET",
+        "i18n": {
+            "preload": [
+                "myebay/globalerrorpage"
+            ]
+        },
+        "muaa": {
+            "action_type": "BLOCK"
+        }
+    },
+    {
+        "path": "GET /mys/sold",
+        "handler": "require:./src/pages/myebay/sold",
+        "pagename": "mys_sold_get",
+        "security": "L1SESSION",
+        "expSvcOperation": "soldsvc:experience_myebay_selling_v1_sold_module_provider_GET",
+        "i18n": {
+            "preload": [
+                "myebay/globalerrorpage"
+            ]
+        },
+        "muaa": {
+            "action_type": "BLOCK"
+        }
+    },
+    {
+        "path": "GET /mys/insights/revise",
+        "handler": "require:./src/pages/myebay/insights",
+        "pagename": "mys_insights_revise_get",
+        "security": "L1SESSION",
+        "expSvcOperation": "mesellexp:experience_myebay_selling_v1_insights_GET",
+        "i18n": {
+            "preload": [
+                "myebay/globalerrorpage"
+            ]
+        },
+        "muaa": {
+            "action_type": "BLOCK"
+        }
+    },
+    {
+        "path": "GET /mys/insights/manage-returns",
+        "handler": "require:./src/pages/myebay/insights",
+        "pagename": "mys_insights_manage_returns_get",
+        "security": "L1SESSION",
+        "expSvcOperation": "mesellexp:experience_myebay_selling_v1_insights_GET",
+        "i18n": {
+            "preload": [
+                "myebay/globalerrorpage"
+            ]
+        },
+        "muaa": {
+            "action_type": "BLOCK"
+        }
+    },
+    {
+        "path": "GET /mys/insights/manage-outback-lots",
+        "handler": "require:./src/pages/myebay/insights",
+        "pagename": "mys_insights_manage_outback_lots_get",
+        "security": "L1SESSION",
+        "expSvcOperation": "mesellexp:experience_myebay_selling_v1_insights_GET",
+        "i18n": {
+            "preload": [
+                "myebay/globalerrorpage"
+            ]
+        },
+        "muaa": {
+            "action_type": "BLOCK"
+        }
+    },
+    {
+        "path": "GET /mys/sold/:action/:actiontype",
+        "handler": "require:./src/pages/myebay/sold",
+        "pagename": "mys_sold_get",
+        "security": "L1SESSION",
+        "expSvcOperation": "soldsvc:experience_myebay_selling_v1_sold_module_provider_GET",
+        "i18n": {
+            "preload": [
+                "myebay/globalerrorpage"
+            ]
+        },
+        "muaa": {
+            "action_type": "BLOCK"
+        }
+    },
+    {
+        "path": "GET /mys/active/:action/:actiontype",
+        "handler": "require:./src/pages/myebay/active",
+        "pagename": "mys_active_get",
+        "security": "L1SESSION",
+        "expSvcOperation": "activesvc:experience_myebay_selling_v1_active_module_provider_GET",
+        "i18n": {
+            "preload": [
+                "myebay/globalerrorpage"
+            ]
+        },
+        "muaa": {
+            "action_type": "BLOCK"
+        }
+    },
+    {
+        "path": "GET /mys/unsold/:action/:actiontype",
+        "handler": "require:./src/pages/myebay/unsold",
+        "pagename": "mys_unsold_get",
+        "security": "L1SESSION",
+        "expSvcOperation": "mesellexp:experience_myebay_selling_v1_unsold_screen_GET",
+        "i18n": {
+            "preload": [
+                "myebay/globalerrorpage"
+            ]
+        },
+        "muaa": {
+            "action_type": "BLOCK"
+        }
+    },
+    {
+        "path": "GET /mys/unsold",
+        "handler": "require:./src/pages/myebay/unsold",
+        "pagename": "mys_unsold_get",
+        "security": "L1SESSION",
+        "expSvcOperation": "mesellexp:experience_myebay_selling_v1_unsold_screen_GET",
+        "i18n": {
+            "preload": [
+                "myebay/globalerrorpage"
+            ]
+        },
+        "muaa": {
+            "action_type": "BLOCK"
+        }
+    },
+    {
+        "path": "GET /mys/ajx/:pageName/:action/:actiontype",
+        "handler": "require:./src/pages/browser-expsvc",
+        "pagename": "mys_ajax_get",
+        "security": "L1SESSION",
+        "expSvcOperation": "activesvc:experience_myebay_selling_v1_active_module_provider_GET",
+        "i18n": {
+            "preload": [
+                "myebay/globalerrorpage"
+            ]
+        },
+        "muaa": {
+            "action_type": "BLOCK"
+        }
+    },
+    {
+        "path": "GET /mys/ajx/:action/:actiontype",
+        "handler": "require:./src/pages/fe-ajax",
+        "pagename": "mys_ajax_get",
+        "security": "L1SESSION",
+        "expSvcOperation": "mesellexp:experience_myebay_selling_v1_unsold_screen_GET",
+        "i18n": {
+            "preload": [
+                "myebay/globalerrorpage"
+            ]
+        },
+        "muaa": {
+            "action_type": "BLOCK"
+        }
+    },
+    {
+        "path": "GET /mys/ajx/:action/:querystr",
+        "handler": "require:./src/pages/fe-ajax",
+        "pagename": "mys_ajax_get",
+        "security": "L1SESSION",
+        "expSvcOperation": "mesellexp:experience_myebay_selling_v1_unsold_screen_GET",
+        "i18n": {
+            "preload": [
+                "myebay/globalerrorpage"
+            ]
+        },
+        "muaa": {
+            "action_type": "BLOCK"
+        }
+    },
+    {
+        "path": "POST /mys/ajx/:pageName/:action/:actiontype",
+        "handler": "require:./src/pages/browser-expsvc",
+        "pagename": "mys_ajax_post",
+        "security": "L1SESSION",
+        "expSvcOperation": "mesellexp:experience_myebay_selling_v1_unsold_screen_GET",
+        "i18n": {
+            "preload": [
+                "myebay/globalerrorpage"
+            ]
+        },
+        "muaa": {
+            "action_type": "BLOCK"
+        }
+    },
+    {
+        "path": "POST /mys/ajx/:action/:actionValue",
+        "handler": "require:./src/pages/fe-ajax",
+        "pagename": "mys_ajax_post",
+        "security": "L1SESSION",
+        "expSvcOperation": "mesellexp:experience_myebay_selling_v1_unsold_screen_GET",
+        "i18n": {
+            "preload": [
+                "myebay/globalerrorpage"
+            ]
+        },
+        "muaa": {
+            "action_type": "BLOCK"
+        }
+    },
+    {
+        "path": "POST /mys/ajx/:action/",
+        "handler": "require:./src/pages/fe-ajax",
+        "pagename": "mys_ajax_post",
+        "security": "L1SESSION",
+        "expSvcOperation": "mesellexp:experience_myebay_selling_v1_unsold_screen_GET",
+        "i18n": {
+            "preload": [
+                "myebay/globalerrorpage"
+            ]
+        },
+        "muaa": {
+            "action_type": "BLOCK"
+        }
+    },
+    {
+        "path": "PUT /mys/ajx/:action/:actionValue",
+        "handler": "require:./src/pages/fe-ajax",
+        "pagename": "mys_ajax_post",
+        "security": "L1SESSION",
+        "expSvcOperation": "mesellexp:experience_myebay_selling_v1_unsold_screen_GET",
+        "i18n": {
+            "preload": [
+                "myebay/globalerrorpage"
+            ]
+        },
+        "muaa": {
+            "action_type": "BLOCK"
+        }
+    },
+    {
+        "path": "GET /mys/api/:serviceName",
+        "handler": "require:promotelistings/lib/server/routes",
+        "pagename": "mys_ajax_post",
+        "security": "L1SESSION",
+        "muaa": {
+            "action_type": "BLOCK"
+        }
+    },
+    {
+        "path": "POST /mys/api/:serviceName",
+        "handler": "require:promotelistings/lib/server/routes",
+        "pagename": "mys_ajax_post",
+        "security": "L1SESSION",
+        "muaa": {
+            "action_type": "BLOCK"
+        }
+    },
+    {
+        "path": "GET /mys/browser_upgrade",
+        "handler": "require:./src/pages/myebay/browser-upgrade",
+        "pagename": "mys_browser_upgrade",
+        "i18n": {
+            "preload": [
+                "myebay/upgradebrowsercontent"
+            ]
+        }
+    },
+    {
+        "path": "GET /mys/server-error",
+        "handler": "require:./src/pages/myebay/error/index#serverErrorView",
+        "pagename": "myebay_error_500",
+        "i18n": {
+            "preload": [
+                "myebay/globalerrorpage"
+            ]
+        }
+    }
+]

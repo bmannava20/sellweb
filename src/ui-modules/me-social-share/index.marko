@@ -1,0 +1,30 @@
+<me-modal
+    key="socialModal"
+    class="me-social-modal-wrapper"
+    aria-labelledby=(component.getElId("socialshare-label"))
+    closeAccText=(state.model && state.model.closeButtonText || '')
+    open=state.showModal>
+    <@main>
+        <if(state.model)>
+            <if(state.model.promotionMessage)>
+                <div id=(component.getElId("socialshare-label")) class="me-social-modal--topmsg">
+                    <me-textual-display model=state.model.promotionMessage.textSpans/>
+                </div>
+            </if>
+            <newsocialmedia
+                itemId=state.itemId
+                model=state.model
+                token=state.token
+                options={
+                    lassoFlag: "skin-ds6",
+                    ajaxRoute: false
+                }
+                on-emitChannels("onEmitChannels")/>
+            <if(state.model.termsAndCondition)>
+                <div class="me-social-modal--legalmsg">
+                    <me-textual-display model=state.model.termsAndCondition.textSpans/>
+                </div>
+            </if>
+        </if>
+    </@main>
+</me-modal>

@@ -1,0 +1,47 @@
+import helper from './helper'
+import safeGet from 'just-safe-get'
+
+$ const upiContentMap = helper.createUpiContentMap(input);
+$ const title = safeGet(state, 'title');
+
+<div.await-payment-wrapper>
+    <me-spinner
+        label=safeGet(upiContentMap, "singleItem.spinnerBusyLabel")
+        key="spinner"/>
+    <if(state.items && state.items.length > 0)>
+
+        <layout-item-listing
+            class="post-transaction"
+            qaId="AwaitingPayment-module"
+            id="awaitPayment"
+            title=title>
+            <@items>
+                $ let i = 0;
+                <meui-item-list(order in state.items)>
+                    $ i += 1;
+                    <div class="overview-await-payment-ordercard">
+                        <if(order.header)>
+                            <row
+                                key=`orderCard-${i}`
+                                on-updateAwaitingPaymentModule("updateAwaitingPaymentModule")
+                                on-openShippingTips("onOpenShippingTipsModal")
+                                item=order.header
+                                upiContentMap=upiContentMap/>
+                        </if>
+                        <for|j| from=0 to=(order.items.length - 1)>
+                            <row
+                                key=`itemRow-${j}`
+                                on-updateAwaitingPaymentModule("updateAwaitingPaymentModule")
+                                on-openShippingTips("onOpenShippingTipsModal")
+                                item=order.items[j]
+                                upiContentMap=upiContentMap/>
+                        </for>
+                    </div>
+                </meui-item-list>
+                <see-all key="see-all" model=state.seeAll on-appUpdate("emit", "appUpdate")/>
+            </@items>
+        </layout-item-listing>
+    </if>
+    $ const tipsForShippingMap = safeGet(input, "model.tipsForShipping");
+    <meui-shipping-tips key="shippingTipsModal" model=tipsForShippingMap on-dialog-close("onCloseShippingTipsModal")/>
+</div>

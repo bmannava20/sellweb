@@ -1,0 +1,51 @@
+import safeGet from 'just-safe-get'
+import helper from './helper'
+
+$ const model = helper.getModelData(input);
+<if(model.sortOptions && model.sortOptions.length > 0)>
+    <span.me-sort__label>
+        <me-textual-display model=model.sortTitle/>
+    </span>
+    <span.me-sort__select>
+        <ebay-menu-button
+            type=model.menuType
+            size=model.size
+            reverse=model.isMenuReverse
+            collapseOnSelect
+            text=model.selectedSortLabel
+            borderless=model.isMenuBorderless
+            on-menu-button-change("onHandleSortClick", model.sortOptions)
+            checked=model.selectedSortIndex>
+            <for|option| of=model.sortOptions>
+                $ const selected = Boolean(safeGet(option, "selected"));
+                $ const label = safeGet(option, "label.textSpans");
+                <!-- // work around for Unsold page to read action from label. -->
+                $ {
+                    const optionAction =
+                                        safeGet(option, "action") ||
+                                        safeGet(option, "label.action");
+                }
+                $ const actionParams = safeGet(optionAction, "URL");
+                $ const sid = safeGet(
+                    optionAction,
+                    "trackingList.0.eventProperty.sid"
+                );
+                <!-- // work around for Unsold page to read action "container_filter". -->
+                $ {
+                    const action =
+                                        safeGet(option, "paramKey") || safeGet(model, "paramName");
+                }
+                $ const paramValue = safeGet(option, "paramValue");
+                <ebay-menu-button-item
+                    checked=selected
+                    href=actionParams
+                    data-action=action
+                    data-value=paramValue
+                    _sp=sid
+                    data-action-params=actionParams>
+                    <me-textual-display model=label/>
+                </ebay-menu-button-item>
+            </for>
+        </ebay-menu-button>
+    </span>
+</if>

@@ -1,0 +1,58 @@
+import safeGet from 'just-safe-get'
+
+$ {
+    const items = safeGet(state, "items");
+    const deleteConfirm = safeGet(state, "deleteConfirm");
+    const itemPanelStates = safeGet(state, "itemPanelStates");
+    const disclaimerMsg = safeGet(state, "model.disclaimerText");
+    const seeAll = safeGet(state, "seeAll");
+    const title = safeGet(state, 'title');
+}
+<if(items && items.length > 0)>
+    <layout-item-listing
+        class="relistit-module"
+        qaId="relistit-module"
+        id="relistir"
+        title=title>
+        <@items>
+            <meui-item-list(item in items)>
+                $ const listingId = safeGet(item, "listingId");
+                <layout-item-card qaId=`relistit-item-${listingId}`>
+                    <@col-1>
+                        <meui-thumbnail image=item.image altText=item.title size="large"/>
+                    </@col-1>
+                    <@col-2>
+                        $ const itemStats = safeGet(item, "__me.itemStats");
+                        <if(item.title)>
+                            <me-item-title model=item.title/>
+                        </if>
+                        <static-text model=itemStats class="stats"/>
+                        <static-text model=item.displayTime class="stats"/>
+                        <static-text model=item.displayPrice class="item-price"/>
+                    </@col-2>
+                    <@col-3>
+                        $ {
+                            const iflistingIdExists = itemPanelStates.length > 0 && itemPanelStates[listingId];
+                            const isShowDeletePanel = (iflistingIdExists && itemPanelStates[listingId].isShowDeletePanel) || state.isShowDeletePanel;
+                            const isShowRetryPanel = (iflistingIdExists && itemPanelStates[listingId].isShowRetryPanel) || state.isShowRetryPanel;
+                            const isDeleting = (iflistingIdExists && itemPanelStates[listingId].isDeleting) || state.isDeleting;
+                        }
+                        <item
+                            key=listingId
+                            on-updateItemStates("updateItemStates")
+                            on-appUpdate("emit", "appUpdate")
+                            model=item
+                            deleteConfirm=deleteConfirm
+                            isShowDeletePanel=isShowDeletePanel
+                            isShowRetryPanel=isShowRetryPanel
+                            isDeleting=isDeleting/>
+                    </@col-3>
+                </layout-item-card>
+            </meui-item-list>
+            <see-all model=seeAll on-appUpdate("emit", "appUpdate")/>
+            <if(disclaimerMsg)>
+                <static-text model=disclaimerMsg class="disclaimer-msg"/>
+            </if>
+        </@items>
+    </layout-item-listing>
+</if>

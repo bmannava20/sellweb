@@ -1,0 +1,15 @@
+import safeGet from 'just-safe-get'
+
+$ {
+    const showInflowHelp = safeGet(input, "model.inflowHelp.showInflowHelp"),
+        pageId = safeGet(input, "model.inflowHelp.pageId"),
+        surveryTitle = safeGet(input, "model.inflowHelp.surveyTitle.text");
+}
+<if(showInflowHelp)>
+    <div>
+        <div id="infoHelp"/>
+        <input
+            type="hidden"
+            value=`{"pageId":"${pageId}","surveyTitle" : "${surveryTitle}" id="inflowparameters"`/>
+    </div>
+</if>

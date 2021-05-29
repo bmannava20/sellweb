@@ -1,0 +1,58 @@
+.shipping-tip-modal-wrapper {
+    .me-dialog__content {
+        margin-bottom: 0;
+    }
+
+    .foot-links {
+        font-weight: normal;
+    }
+
+    .tip-details {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        &__item {
+            height: auto;
+            line-height: 1.33;
+            margin-bottom: 32px;
+            font-size: @font-size-14;
+            min-height: 80px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &__link {
+            display: block;
+            padding-top: 7px;
+        }
+
+        span.icon {
+            margin-right: 30px;
+            float: left;
+        }
+
+        .icon--wrap, .icon--printer, .icon--package {
+            height: 85px;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .icon--wrap {
+            width: 72px;
+            background-image: url("svgIcons/wrapIcon.svg");
+        }
+
+        .icon--printer {
+            width: 76px;
+            background-image: url("svgIcons/printerIcon.svg");
+        }
+
+        .icon--package {
+            width: 77px;
+            background-image: url("svgIcons/packageIcon.svg");
+        }
+    }
+}

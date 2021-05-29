@@ -1,0 +1,37 @@
+{
+    "model": {
+        "label": {
+            "textSpans": [
+                {
+                    "_type": "TextSpan",
+                    "text": "View tracking"
+                }
+            ]
+        },
+        "action": {
+            "_type": "Action",
+            "type": "OPERATION",
+            "trackingList": [
+                {
+                    "actionKind": "NAV",
+                    "operationId": "2544535",
+                    "flushImmediately": false,
+                    "eventProperty": {
+                        "sid": "p2544535.m43837.l9093"
+                    }
+                },
+                {
+                    "eventFamily": "MYEBAY",
+                    "eventAction": "ACTN",
+                    "actionKind": "NAVSRC",
+                    "operationId": "2544535",
+                    "flushImmediately": false,
+                    "eventProperty": {
+                        "moduledtl": "mi:43837|li:9093"
+                    }
+                }
+            ],
+            "URL": "https://www.qa.ebay.com/ship/tr/Events?itemid=280016761774&transid=15827065018"
+        }
+    }
+}

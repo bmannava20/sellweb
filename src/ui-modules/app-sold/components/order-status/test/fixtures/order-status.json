@@ -1,0 +1,11 @@
+{
+    "content": [
+        {
+            "_type": "TextSpan",
+            "text": "Paid",
+            "styles": [
+                "BOLD"
+            ]
+        }
+    ]
+}

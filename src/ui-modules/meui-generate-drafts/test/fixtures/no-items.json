@@ -1,0 +1,14 @@
+{
+    "model": {
+        "_type": "LotItemsInlineModule",
+        "title": {
+            "_type": "TextualDisplay",
+            "textSpans": [
+                {
+                    "_type": "TextSpan",
+                    "text": "Generate drafts"
+                }
+            ]
+        }
+    }
+}

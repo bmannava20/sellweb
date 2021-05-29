@@ -1,0 +1,32 @@
+import safeGet from 'just-safe-get'
+import helper from './helper'
+
+$ const model = helper.getModelData(state);
+<if(!model.showEmptyScreen && model.items && model.items.length > 0)>
+    <layout-item-listing
+        class="scheduled-page__list"
+        key="scheduled-page-list"
+        title=model.title>
+        <@items>
+            <meui-item-list(item in model.items)>
+                <item-card
+                    key=`itemRow-${item.listingId}`
+                    item=item
+                    on-add-note('onAddNote')/>
+            </meui-item-list>
+        </@items>
+    </layout-item-listing>
+    <me-user-add-note
+        key="addNoteModal"
+        content-map=model.addNoteContentMap
+        spa-command=model.spaCommand
+        on-addNote("emit", "scheduledPageUpdate")/>
+    <if(model.pagination)>
+        <me-pagination
+            model=model.pagination
+            class="scheduled-page__pagination"
+            eventDelegate="scheduledPageUpdate"
+            on-scheduledPageUpdate("emit", "scheduledPageUpdate")
+            key="scheduled-pagination"/>
+    </if>
+</if>

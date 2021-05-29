@@ -1,0 +1,46 @@
+import safeGet from 'just-safe-get'
+
+$ {
+    const titleTxt = safeGet(input, "contentMap.title.textSpans.0.text");
+    const placeholderTxt = safeGet(
+        input,
+        "contentMap.placeholderText.textSpans.0.text"
+    );
+    const saveBtnTxt = safeGet(input, "contentMap.saveButton.textSpans.0.text");
+    const deleteBtnTxt = safeGet(input, "contentMap.deleteButton.textSpans.0.text");
+}
+<me-modal
+    key="addNoteOverlay"
+    class="add-note-modal-wrapper"
+    open=state.showModal
+    focus="addNoteControl"
+    on-dialog-close("closeModal")>
+    <@title>${titleTxt}</@title>
+    <@main>
+        <me-textarea
+            class="add-note-control"
+            maxlength=state.characterLimit
+            placeholder=placeholderTxt
+            value=state.note
+            rows="10"
+            id="addNoteControl"
+            key="addNoteControl"
+            on-text-change("onUserNoteChange")/>
+        <div key="charCounter" class="char-counter">
+            ${state.note.length}/${state.characterLimit}
+        </div>
+    </@main>
+    <@footer>
+        <ebay-button class="btn-ie-margin"
+            disabled=state.btnDisabled
+            priority="primary"
+            on-button-click("processNote", "UPSERT")>
+            ${saveBtnTxt}
+        </ebay-button>
+        <ebay-button
+            class=["redbutton", state.isEditMode && "show"]
+            on-button-click("processNote", "DELETE")>
+            ${deleteBtnTxt}
+        </ebay-button>
+    </@footer>
+</me-modal>

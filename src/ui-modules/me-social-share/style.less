@@ -1,0 +1,46 @@
+.me-social-modal-wrapper {
+
+    .me-social-modal--topmsg {
+        font-size: 1.75rem;
+        font-weight: 300;
+        padding-bottom: 10px;
+        line-height: 1.14;
+        color: #212121;
+        text-align: center;
+        > span {
+            color: #447d14;
+            display: block;
+        }
+    }
+
+    .socialLinkCopy {
+        line-height: 14px;
+    }
+
+    .me-dialog__content {
+        min-height: 500px;
+    }
+
+    .spinner.spinner--large[role="img"][aria-label] {
+        display: block;
+        margin: auto;
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    .me-social-modal--legalmsg {
+        color: #767676;
+        font-size: 11px;
+        line-height: 1.09;
+        padding-top: 20px;
+    }
+}
+
+@media (min-width: 960px) {
+    .me-social-modal-wrapper.me-dialog .dialog__window:not(.dialog__window--full) {
+        min-width: 392px;
+        width: 392px
+    }
+}

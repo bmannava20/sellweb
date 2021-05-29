@@ -1,0 +1,10 @@
+<!-- @interface: me-item-list -->
+<if(input.items)>
+    <div class="item-list">
+        <for|i| from=0 to=(input.items.length - 1)>
+            <if(input.renderBody)>
+                <${input.renderBody(out, input.items[i])}/>
+            </if>
+        </for>
+    </div>
+</if>

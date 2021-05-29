@@ -1,0 +1,41 @@
+import helper from './helper'
+
+$ const model = helper.getModelData(state);
+<if(model.moduleTitle)>
+    <me-summary class="unsold-page__header">
+        <@pageTitle>
+            <me-textual-display model=model.moduleTitle/>
+        </@pageTitle>
+        <@sorts>
+            <me-sort-menu
+                key="unsold-sort"
+                model=model.sortOptions
+                content=model.content
+                is-edit-mode=input.isEditMode
+                on-handleSortRequest("handleSortFilterRequest")/>
+        </@sorts>
+        <@edit>
+            <me-toggle-edit-mode
+                model=model.bulkDeleteEditModel
+                is-edit-mode=input.isEditMode
+                on-toggleEditMode("emit", "toggleEditMode")/>
+        </@edit>
+        <@filters>
+            <me-carousel
+                key="unsold-carousel"
+                model=model.filters
+                on-handleFilterRequest("handleSortFilterRequest")/>
+        </@filters>
+        <@bulk-delete>
+            <me-bulk-delete
+                model=model.bulkDelete
+                key="bulk-delete-unsold"
+                enableMultiSelect=input.enableMultiSelect
+                enableDeleteButton=input.enableDeleteButton
+                on-checkbox-select("emit", "handleMultiSelectClick")
+                on-delete-items("emit", "delete-items")
+                is-edit-mode=input.isEditMode
+                multi-item-selected=input.multiItemSelected/>
+        </@bulk-delete>
+    </me-summary>
+</if>

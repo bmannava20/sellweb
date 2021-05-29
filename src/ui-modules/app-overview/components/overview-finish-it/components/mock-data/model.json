@@ -1,0 +1,584 @@
+{
+    "modules": {
+        "finishItModule": {
+            "_type": "DraftsViewModel",
+            "title": {
+                "textSpans": [
+                    {
+                        "text": "Finish it"
+                    }
+                ]
+            },
+            "seeAll": {
+                "textSpans": [
+                    {
+                        "text": "See more"
+                    }
+                ],
+                "action": {
+                    "type": "OPERATION",
+                    "name": "MYEBAY_DRAFTS",
+                    "trackingList": [
+                        {
+                            "actionKind": "NAV",
+                            "operationId": "2486981",
+                            "flushImmediately": false,
+                            "eventProperty": {
+                                "sid": "p2486981.m4942.l9191"
+                            }
+                        },
+                        {
+                            "eventFamily": "MYEBAY",
+                            "eventAction": "ACTN",
+                            "actionKind": "NAVSRC",
+                            "operationId": "2486981",
+                            "flushImmediately": false,
+                            "eventProperty": {
+                                "moduledtl": "mi:4942|li:9191"
+                            }
+                        }
+                    ],
+                    "URL": "https://www.qa.ebay.com/mys/drafts"
+                }
+            },
+            "lineItems": [
+                {
+                    "_type": "MyeBaySellingListingSummary",
+                    "title": {
+                        "textSpans": [
+                            {
+                                "text": "Apple iPhone 5 - 64GB - White "
+                            }
+                        ],
+                        "action": {
+                            "type": "NAV",
+                            "trackingList": [
+                                {
+                                    "actionKind": "NAV",
+                                    "operationId": "2486981",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                        "sid": "p2486981.m4942.l9205"
+                                    }
+                                },
+                                {
+                                    "eventFamily": "MYEBAY",
+                                    "eventAction": "ACTN",
+                                    "actionKind": "NAVSRC",
+                                    "operationId": "2486981",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                        "moduledtl": "mi:4942|li:9205"
+                                    }
+                                }
+                            ],
+                            "URL": "http://www.qa.ebay.com/sell/list.jsf?mode=AddItem&draftId=794716620&usecase=resume"
+                        }
+                    },
+                    "image": {
+                        "title": "Apple iPhone 5 - 64GB - White ",
+                        "action": {
+                            "type": "NAV",
+                            "trackingList": [
+                                {
+                                    "actionKind": "NAV",
+                                    "operationId": "2486981",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                        "sid": "p2486981.m4942.l9205"
+                                    }
+                                },
+                                {
+                                    "eventFamily": "MYEBAY",
+                                    "eventAction": "ACTN",
+                                    "actionKind": "NAVSRC",
+                                    "operationId": "2486981",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                        "moduledtl": "mi:4942|li:9205"
+                                    }
+                                }
+                            ],
+                            "URL": "http://www.qa.ebay.com/sell/list.jsf?mode=AddItem&draftId=794716620&usecase=resume"
+                        },
+                        "URL": "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/eA0AAOSwPe1UBxHx/$_57.JPG?set_id=89040003C1"
+                    },
+                    "status": {
+                        "textSpans": [
+                            {
+                                "text": "Last updated on Nov 9"
+                            }
+                        ]
+                    },
+                    "__me": {
+                        "lineActions": {
+                            "options": [
+                                {
+                                    "label": {
+                                        "textSpans": [
+                                            {
+                                                "text": "Finish it line actions"
+                                            }
+                                        ]
+                                    },
+                                    "selections": [
+                                        {
+                                            "disabled": false,
+                                            "selected": true,
+                                            "label": {
+                                                "textSpans": [
+                                                    {
+                                                        "text": "Complete draft"
+                                                    }
+                                                ],
+                                                "action": {
+                                                    "type": "NAV",
+                                                    "trackingList": [
+                                                        {
+                                                            "actionKind": "NAV",
+                                                            "operationId": "2486981",
+                                                            "flushImmediately": false,
+                                                            "eventProperty": {
+                                                                "sid": "p2486981.m4942.l9205"
+                                                            }
+                                                        },
+                                                        {
+                                                            "eventFamily": "MYEBAY",
+                                                            "eventAction": "ACTN",
+                                                            "actionKind": "NAVSRC",
+                                                            "operationId": "2486981",
+                                                            "flushImmediately": false,
+                                                            "eventProperty": {
+                                                                "moduledtl": "mi:4942|li:9205"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "URL": "http://www.qa.ebay.com/sell/list.jsf?mode=AddItem&draftId=794716620&usecase=resume"
+                                                },
+                                                "value": "COMPLETE_DRAFT"
+                                            },
+                                            "default": false
+                                        },
+                                        {
+                                            "disabled": false,
+                                            "selected": false,
+                                            "label": {
+                                                "textSpans": [
+                                                    {
+                                                        "text": "Delete draft"
+                                                    }
+                                                ],
+                                                "action": {
+                                                    "type": "OPERATION",
+                                                    "trackingList": [
+                                                        {
+                                                            "actionKind": "NAV",
+                                                            "operationId": "2486981",
+                                                            "flushImmediately": false,
+                                                            "eventProperty": {
+                                                                "sid": "p2486981.m4942.l9386"
+                                                            }
+                                                        },
+                                                        {
+                                                            "eventFamily": "MYEBAY",
+                                                            "eventAction": "ACTN",
+                                                            "actionKind": "NAVSRC",
+                                                            "operationId": "2486981",
+                                                            "flushImmediately": false,
+                                                            "eventProperty": {
+                                                                "moduledtl": "mi:4942|li:9386"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "URL": "delete_draft"
+                                                },
+                                                "value": "DELETE_DRAFT"
+                                            },
+                                            "default": false
+                                        }
+                                    ],
+                                    "multiSelect": false
+                                }
+                            ],
+                            "accessibilityText": "Other actions"
+                        },
+                        "draftId": "794716620"
+                    }
+                },
+                {
+                    "_type": "MyeBaySellingListingSummary",
+                    "title": {
+                        "textSpans": [
+                            {
+                                "text": "nest thermostat"
+                            }
+                        ],
+                        "action": {
+                            "type": "NAV",
+                            "trackingList": [
+                                {
+                                    "actionKind": "NAV",
+                                    "operationId": "2486981",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                        "sid": "p2486981.m4942.l9205"
+                                    }
+                                },
+                                {
+                                    "eventFamily": "MYEBAY",
+                                    "eventAction": "ACTN",
+                                    "actionKind": "NAVSRC",
+                                    "operationId": "2486981",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                        "moduledtl": "mi:4942|li:9205"
+                                    }
+                                }
+                            ],
+                            "URL": "http://www.qa.ebay.com/sell/list.jsf?mode=RelistItem&draftId=800403922&usecase=resume"
+                        }
+                    },
+                    "image": {
+                        "title": "nest thermostat",
+                        "action": {
+                            "type": "NAV",
+                            "trackingList": [
+                                {
+                                    "actionKind": "NAV",
+                                    "operationId": "2486981",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                        "sid": "p2486981.m4942.l9205"
+                                    }
+                                },
+                                {
+                                    "eventFamily": "MYEBAY",
+                                    "eventAction": "ACTN",
+                                    "actionKind": "NAVSRC",
+                                    "operationId": "2486981",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                        "moduledtl": "mi:4942|li:9205"
+                                    }
+                                }
+                            ],
+                            "URL": "http://www.qa.ebay.com/sell/list.jsf?mode=RelistItem&draftId=800403922&usecase=resume"
+                        },
+                        "URL": "https://i.qa.ebayimg.com/00/s/MTYwMFg5MDA=/z/lE0AAOSwYENbsnkq/$_12.JPG?set_id=880000500F"
+                    },
+                    "status": {
+                        "textSpans": [
+                            {
+                                "text": "Last updated on Nov 6"
+                            }
+                        ]
+                    },
+                    "__me": {
+                        "lineActions": {
+                            "options": [
+                                {
+                                    "label": {
+                                        "textSpans": [
+                                            {
+                                                "text": "Finish it line actions"
+                                            }
+                                        ]
+                                    },
+                                    "selections": [
+                                        {
+                                            "disabled": false,
+                                            "selected": true,
+                                            "label": {
+                                                "textSpans": [
+                                                    {
+                                                        "text": "Complete draft"
+                                                    }
+                                                ],
+                                                "action": {
+                                                    "type": "NAV",
+                                                    "trackingList": [
+                                                        {
+                                                            "actionKind": "NAV",
+                                                            "operationId": "2486981",
+                                                            "flushImmediately": false,
+                                                            "eventProperty": {
+                                                                "sid": "p2486981.m4942.l9205"
+                                                            }
+                                                        },
+                                                        {
+                                                            "eventFamily": "MYEBAY",
+                                                            "eventAction": "ACTN",
+                                                            "actionKind": "NAVSRC",
+                                                            "operationId": "2486981",
+                                                            "flushImmediately": false,
+                                                            "eventProperty": {
+                                                                "moduledtl": "mi:4942|li:9205"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "URL": "http://www.qa.ebay.com/sell/list.jsf?mode=RelistItem&draftId=800403922&usecase=resume"
+                                                },
+                                                "value": "COMPLETE_DRAFT"
+                                            },
+                                            "default": false
+                                        },
+                                        {
+                                            "disabled": false,
+                                            "selected": false,
+                                            "label": {
+                                                "textSpans": [
+                                                    {
+                                                        "text": "Delete draft"
+                                                    }
+                                                ],
+                                                "action": {
+                                                    "type": "OPERATION",
+                                                    "trackingList": [
+                                                        {
+                                                            "actionKind": "NAV",
+                                                            "operationId": "2486981",
+                                                            "flushImmediately": false,
+                                                            "eventProperty": {
+                                                                "sid": "p2486981.m4942.l9386"
+                                                            }
+                                                        },
+                                                        {
+                                                            "eventFamily": "MYEBAY",
+                                                            "eventAction": "ACTN",
+                                                            "actionKind": "NAVSRC",
+                                                            "operationId": "2486981",
+                                                            "flushImmediately": false,
+                                                            "eventProperty": {
+                                                                "moduledtl": "mi:4942|li:9386"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "URL": "delete_draft"
+                                                },
+                                                "value": "DELETE_DRAFT"
+                                            },
+                                            "default": false
+                                        }
+                                    ],
+                                    "multiSelect": false
+                                }
+                            ],
+                            "accessibilityText": "Other actions"
+                        },
+                        "draftId": "800403922"
+                    }
+                },
+                {
+                    "_type": "MyeBaySellingListingSummary",
+                    "title": {
+                        "textSpans": [
+                            {
+                                "text": "Apple iPhone 6 - 64GB - Space Gray (Unlocked) A1586 (CDMA + GSM)"
+                            }
+                        ],
+                        "action": {
+                            "type": "NAV",
+                            "trackingList": [
+                                {
+                                    "actionKind": "NAV",
+                                    "operationId": "2486981",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                        "sid": "p2486981.m4942.l9205"
+                                    }
+                                },
+                                {
+                                    "eventFamily": "MYEBAY",
+                                    "eventAction": "ACTN",
+                                    "actionKind": "NAVSRC",
+                                    "operationId": "2486981",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                        "moduledtl": "mi:4942|li:9205"
+                                    }
+                                }
+                            ],
+                            "URL": "http://www.qa.ebay.com/sell/list.jsf?mode=AddItem&draftId=1080338412&usecase=resume"
+                        }
+                    },
+                    "image": {
+                        "title": "Apple iPhone 6 - 64GB - Space Gray (Unlocked) A1586 (CDMA + GSM)",
+                        "action": {
+                            "type": "NAV",
+                            "trackingList": [
+                                {
+                                    "actionKind": "NAV",
+                                    "operationId": "2486981",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                        "sid": "p2486981.m4942.l9205"
+                                    }
+                                },
+                                {
+                                    "eventFamily": "MYEBAY",
+                                    "eventAction": "ACTN",
+                                    "actionKind": "NAVSRC",
+                                    "operationId": "2486981",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                        "moduledtl": "mi:4942|li:9205"
+                                    }
+                                }
+                            ],
+                            "URL": "http://www.qa.ebay.com/sell/list.jsf?mode=AddItem&draftId=1080338412&usecase=resume"
+                        },
+                        "URL": "https://i.ebayimg.com/00/s/MTA5NFg5MDI=/z/7YcAAOSwhvFZJt2u/$_57.JPG?set_id=89040003C1"
+                    },
+                    "status": {
+                        "textSpans": [
+                            {
+                                "text": "Last updated on Oct 30"
+                            }
+                        ]
+                    },
+                    "__me": {
+                        "lineActions": {
+                            "options": [
+                                {
+                                    "label": {
+                                        "textSpans": [
+                                            {
+                                                "text": "Finish it line actions"
+                                            }
+                                        ]
+                                    },
+                                    "selections": [
+                                        {
+                                            "disabled": false,
+                                            "selected": true,
+                                            "label": {
+                                                "textSpans": [
+                                                    {
+                                                        "text": "Complete draft"
+                                                    }
+                                                ],
+                                                "action": {
+                                                    "type": "NAV",
+                                                    "trackingList": [
+                                                        {
+                                                            "actionKind": "NAV",
+                                                            "operationId": "2486981",
+                                                            "flushImmediately": false,
+                                                            "eventProperty": {
+                                                                "sid": "p2486981.m4942.l9205"
+                                                            }
+                                                        },
+                                                        {
+                                                            "eventFamily": "MYEBAY",
+                                                            "eventAction": "ACTN",
+                                                            "actionKind": "NAVSRC",
+                                                            "operationId": "2486981",
+                                                            "flushImmediately": false,
+                                                            "eventProperty": {
+                                                                "moduledtl": "mi:4942|li:9205"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "URL": "http://www.qa.ebay.com/sell/list.jsf?mode=AddItem&draftId=1080338412&usecase=resume"
+                                                },
+                                                "value": "COMPLETE_DRAFT"
+                                            },
+                                            "default": false
+                                        },
+                                        {
+                                            "disabled": false,
+                                            "selected": false,
+                                            "label": {
+                                                "textSpans": [
+                                                    {
+                                                        "text": "Delete draft"
+                                                    }
+                                                ],
+                                                "action": {
+                                                    "type": "OPERATION",
+                                                    "trackingList": [
+                                                        {
+                                                            "actionKind": "NAV",
+                                                            "operationId": "2486981",
+                                                            "flushImmediately": false,
+                                                            "eventProperty": {
+                                                                "sid": "p2486981.m4942.l9386"
+                                                            }
+                                                        },
+                                                        {
+                                                            "eventFamily": "MYEBAY",
+                                                            "eventAction": "ACTN",
+                                                            "actionKind": "NAVSRC",
+                                                            "operationId": "2486981",
+                                                            "flushImmediately": false,
+                                                            "eventProperty": {
+                                                                "moduledtl": "mi:4942|li:9386"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "URL": "delete_draft"
+                                                },
+                                                "value": "DELETE_DRAFT"
+                                            },
+                                            "default": false
+                                        }
+                                    ],
+                                    "multiSelect": false
+                                }
+                            ],
+                            "accessibilityText": "Other actions"
+                        },
+                        "draftId": "1080338412"
+                    }
+                }
+            ],
+            "deleteConfirmationMap": {
+                "label": "deleteConfirmation",
+                "content": {
+                    "deleteMessage": {
+                        "textSpans": [
+                            {
+                                "text": "Are you sure you want to delete this draft?"
+                            }
+                        ]
+                    },
+                    "deleteTitle": {
+                        "textSpans": [
+                            {
+                                "text": "Delete draft"
+                            }
+                        ]
+                    },
+                    "deleteButton": {
+                        "textSpans": [
+                            {
+                                "text": "Delete"
+                            }
+                        ]
+                    },
+                    "cancel": {
+                        "textSpans": [
+                            {
+                                "text": "Cancel"
+                            }
+                        ]
+                    },
+                    "deleteFailed": {
+                        "textSpans": [
+                            {
+                                "text": "Unable to delete draft."
+                            }
+                        ]
+                    },
+                    "tryAgain": {
+                        "textSpans": [
+                            {
+                                "text": "Try again"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

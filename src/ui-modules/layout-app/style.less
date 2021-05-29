@@ -1,0 +1,51 @@
+body {
+    position: relative;
+    background-color: @color-background-default;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    min-width: 960px;
+}
+
+#mainContent {
+    outline: none;
+    padding: 0 24px;
+}
+.global-header {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.global-footer {
+    padding: 0 16px;
+    clear: both;
+    background: @color-background-default;
+    border-top: 1px solid @color-grey3;
+    min-width: 960px;
+
+    #glbfooter {
+        margin-left: auto;
+        margin-right: auto;
+        border-top: none;
+    }
+
+    @media only screen and (min-width: 1280px) {
+        #glbfooter {
+            max-width: 1280px;
+        }
+    }
+}
+.dot-adder() {
+    content: '\2022';
+    padding: 0 4px;
+}
+@media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px) {
+    .container {
+        padding: 0 10px;
+    }
+}

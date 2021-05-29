@@ -1,0 +1,80 @@
+.sold-order-details {
+
+    &.meui-item-tile {
+        padding: 0;
+        border-bottom: none;
+
+        .columns {
+            .col-1 {
+                width: 15.5%;
+                min-width: 160px;
+            }
+            .col-2 {
+                height: 100%;
+                width: 53%;
+            }
+            .col-3 {
+                min-width: 282px;
+            }
+        }
+    }
+    &.is-multi-order-main-header {
+        padding: 0 16px 32px 0;
+    }
+
+    &.is-multi-order-item-header {
+        margin-bottom: 0;
+    }
+
+    .item {
+        &__checkbox-wrapper {
+            display: inline-block;
+        }
+
+        &__byline {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 16px 0 0;
+        }
+
+        &__item-count {
+            .typography-medium-secondary;
+            display: inline-block;
+            width: 110px;
+            margin-left: 16px;
+            vertical-align: middle;
+        }
+
+        &__order-total {
+            display: block;
+            .typography-large-1;
+            margin-right: 4px;
+        }
+
+        &__order-total-refund {
+            position: relative;
+        }
+
+        &__refund-status {
+            display: block;
+        }
+
+        &__order-number {
+            display: block;
+        }
+
+        &__paid-Date {
+            display: block;
+        }
+
+        &__order-details {
+            margin-top: 16px;
+        }
+
+        &__order-shipping, &__paypal-payment, &__refund-status, &__sellermarkaspaid, &__order-number, &__paid-Date {
+            .typography-small();
+            color: @color-text-secondary;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+import constants from '../../utils/helpers/constants'
+import safeGet from 'just-safe-get'
+
+$ {
+    const BulkToolProcessingMessageModule = input.model;
+    const myebayPageContent = input.myebayPageContent;
+    const dialogClose = safeGet(myebayPageContent, "dialogClose");
+    const loadingDialog = safeGet(myebayPageContent, "loadingDialog");
+    const systemErrorMessage = safeGet(myebayPageContent, "systemErrorMessage");
+    const csrfToken = safeGet(input, 'csrfToken');
+    const generateDraftsApi = constants.SPA_COMMAND.OVERVIEW.OVERVIEW_AJAX_URL.BULK_DRAFT_API;
+}
+
+<resell-bulk-drafts
+    key="progressPopup"
+    csrfToken=csrfToken
+    a11yCloseText=dialogClose
+    a11yLoadingText=loadingDialog
+    systemErrorMessage=systemErrorMessage
+    generateDraftsApi=generateDraftsApi
+    BulkToolProcessingMessageModule=BulkToolProcessingMessageModule
+    on-done("refreshOutbackModule")
+    on-navigate-to-drafts('navigateToDraftsPage')/>

@@ -1,0 +1,135 @@
+{
+    "promoListings": {
+      "totalValue": 50,
+      "availableValue": 0,
+      "infoText": {
+        "count": {
+          "textSpans": [
+            {
+              "text": "0"
+            }
+          ],
+          "accessibilityText": "You have 0 remaining out of total 50 listings.",
+          "value": 0
+        },
+        "label": {
+          "textSpans": [
+            {
+              "text": "Remaining"
+            }
+          ]
+        }
+      }
+    },
+    "promoTitle": "List 50 of your items for FREE – make money today!",
+    "promoDescription": "Pay no insertion fees for auction-style or fixed price listings. Buy It Now is free too. <a href=\"http://pages.ebay.com/help/sell/insertion-fee.html#free\" target=\"_blank\">Learn More<b class=\"g-hdn\"> - opens in a new window or tab</b></a>",
+    "startTimeLabel": {
+      "textSpans": [
+        {
+          "text": "Starts",
+          "styles": [
+            "BOLD"
+          ]
+        },
+        {
+          "text": " Aug 1"
+        }
+      ]
+    },
+    "endTimeLabel": {
+      "textSpans": [
+        {
+          "text": "Ends",
+          "styles": [
+            "BOLD"
+          ]
+        },
+        {
+          "text": " Sep 1"
+        }
+      ]
+    },
+    "startTimeLongLabel": {
+      "textSpans": [
+        {
+          "text": "Starts",
+          "styles": [
+            "BOLD"
+          ]
+        },
+        {
+          "text": " 1 Aug 2017 at 12:00:00AM PDT"
+        }
+      ]
+    },
+    "endTimeLongLabel": {
+      "textSpans": [
+        {
+          "text": "Ends",
+          "styles": [
+            "BOLD"
+          ]
+        },
+        {
+          "text": " 1 Sep 2017 at 12:00:00AM PDT"
+        }
+      ]
+    },
+    "availableSiteLabel": {
+      "textSpans": [
+        {
+          "text": "Available at ebay.com"
+        }
+      ]
+    },
+    "usedCountLabel": {
+      "textSpans": [
+        {
+          "text": "Used",
+          "styles": [
+            "BOLD"
+          ]
+        },
+        {
+          "text": " 50",
+          "action": {
+            "type": "NAV",
+            "trackingList": [
+                {
+                    "actionKind": "NAV",
+                    "operationId": "2486981",
+                    "flushImmediately": false,
+                    "eventProperty": {
+                        "sid": "p2486981.m4937.l9181"
+                    }
+                },
+                {
+                    "eventFamily": "MYEBAY",
+                    "eventAction": "ACTN",
+                    "actionKind": "NAVSRC",
+                    "operationId": "2486981",
+                    "flushImmediately": false,
+                    "eventProperty": {
+                        "moduledtl": "mi:4937|li:9181"
+                    }
+                }
+            ],
+            "URL": "https://www.rsvpweb.stg.stratus.qa.ebay.com/rsvp/viewitemids/51743100013"
+          }
+        }
+      ]
+    },
+    "remainingCountLabel": {
+      "textSpans": [
+        {
+          "text": "Left",
+          "styles": [
+            "BOLD"
+          ]
+        },
+        {
+          "text": " 0"
+        }
+      ]
+    }
+  }

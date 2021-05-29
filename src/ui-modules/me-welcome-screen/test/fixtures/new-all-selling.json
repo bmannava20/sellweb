@@ -1,0 +1,15 @@
+{
+    "model": {
+        "_type": "WelcomeScreenModule",
+        "contentMap": {
+            "subTopText": "All Selling has moved, you can still have access to all of the features the new My eBay Overview has to offer!",
+            "footerText": "You can access the new All Selling page by switching to Seller Hub, our premiere selling tool.",
+            "buttonText": "Ok, got it!",
+            "headerText": "The All Selling Page has Moved"
+        },
+        "showWelcomeScreen": true,
+        "preferenceId": "MeSellOverviewVisitedPreference",
+        "preferencekey": "overviewPageVisited",
+        "preferenceURL": "update_preferences"
+    }
+}

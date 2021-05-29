@@ -1,0 +1,152 @@
+import canvasUtil from '../../../../utils/helpers/create-high-dpi-canvas'
+import domUtils from '../../../../utils/helpers/elementVisibleInViewport'
+import { debounce } from '../../../../utils/helpers/debounce'
+
+class Circle {
+    onMount() {
+        this._init();
+        this._initGraphCircle();
+        const endValue = Number(this.input.endValue);
+        const startValue = Number(this.input.startValue);
+        this.curPerc = 0;
+        this.endPercent = 100 - ((endValue - startValue) / endValue) * 100;
+        this.beginTime = 0.0;
+
+        this.debounceOnScroll = debounce(() => this._doDebounce(), 200, false);
+        document.addEventListener("scroll", this.debounceOnScroll, true);
+
+        if (this.animationDone) {
+            return;
+        }
+        if (domUtils.isElementVisible(this.circleCanvas)) {
+            this._animateCircle(0);
+        }
+    }
+
+    onDestroy() {
+        document.removeEventListener("scroll", this.debounceOnScroll, true);
+    }
+
+    _init() {
+        this.canvasProps = {
+            counterClockwise: false,
+            completeCircle: Math.PI * 2,
+            quarterCircle: Math.PI / 2
+        };
+        this.devicePixelRatio = window.devicePixelRatio || 1;
+        this.animationDone = false;
+    }
+
+    _initGraphCircle() {
+        const el = this.getEl("canvas");
+        this.circleCanvas = canvasUtil.createHiDPICanvas(
+            el,
+            this.devicePixelRatio
+        );
+        this.context = this.circleCanvas.getContext("2d");
+        this.xCoord = this.circleCanvas.width / (2 * this.devicePixelRatio);
+        this.yCoord = this.circleCanvas.height / (2 * this.devicePixelRatio);
+    }
+
+    _doDebounce() {
+        if (this.animationDone) {
+            return;
+        }
+        if (domUtils.isElementVisible(this.circleCanvas)) {
+            this._animateCircle(0);
+        }
+    }
+
+    _animateCircle(current) {
+        this.context.clearRect(
+            0,
+            0,
+            this.circleCanvas.width,
+            this.circleCanvas.height
+        );
+
+        // draw the green circle.
+        this.context.strokeStyle = this.input.color;
+        this.context.lineWidth = this.input.borderWidth;
+        this.context.beginPath();
+        this.context.arc(
+            this.xCoord,
+            this.yCoord,
+            this.circleCanvas.dataset.radius,
+            -this.canvasProps.quarterCircle,
+            this.canvasProps.completeCircle * current -
+                this.canvasProps.quarterCircle,
+            this.canvasProps.counterClockwise
+        );
+        this.context.stroke();
+        this.curPerc++;
+        if (this.curPerc <= this.endPercent) {
+            requestAnimationFrame(() => {
+                this._animateCircle(this.curPerc / 100);
+            });
+        } else {
+            this.animationDone = true;
+            document.removeEventListener("scroll", this.debounceOnScroll);
+        }
+    }
+}
+
+style.less {
+    .free-listings-wrapper {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+
+    .faux-circle {
+        position: absolute;
+        border: solid @color-grey2;
+        border-radius: 50%;
+        top: 44%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .free-listings {
+        position: absolute;
+        pointer-events: none;
+        top: 44%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .circle-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+<article class="free-listings-wrapper">
+    $ {
+        /// * 2 is to make canvas bigger than the circle
+            const radius = (Number(input.width) + Number(input.borderWidth)) / 2;
+            const canvasHeight = Number(input.height) + Number(input.borderWidth) * 2;
+            const canvasWidth = Number(input.width) + Number(input.borderWidth) * 2;
+    }
+    <div
+        class="faux-circle"
+        style=`border-width: ${input.borderWidth}px; width: ${
+            input.width
+        }px; height: ${input.height}px`>
+        <div class="circle-content">
+            <if(typeof input.renderBody === "string")>${input.renderBody}</if>
+            <else>
+                <${input.renderBody}/>
+            </else>
+        </div>
+    </div>
+    <canvas
+        key="canvas"
+        class="free-listings"
+        width=`${canvasWidth}`
+        height=`${canvasHeight}`
+        data-radius=`${radius}`/>
+</article>

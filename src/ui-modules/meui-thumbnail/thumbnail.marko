@@ -1,0 +1,17 @@
+import safeGet from "just-safe-get"
+import helper from './helper';
+
+$ const model = helper.getModelData(input);
+
+<if(model.imageUrl)>
+    <div class=`meui-img-wrapper ${model.sizeOption}` >
+        <if(model.action)>
+            <meui-navlink class="img-cell" tabindex="-1" aria-hidden="true" action=model.action>
+                <img src=model.imageUrl alt=model.altText/>
+            </meui-navlink>
+        </if>
+        <else>
+            <img class="img-cell" src=model.imageUrl alt=model.altText/>
+        </else>
+    </div>
+</if>

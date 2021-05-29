@@ -1,0 +1,18 @@
+import safeGet from 'just-safe-get'
+
+$ const btn = safeGet(input, 'options.0');
+$ const btnLabel = safeGet(btn, 'label');
+$ const btnAction = safeGet(btn, 'action');
+$ const inlineActions = input.options? input.options.slice(1) : [];
+
+<div class="item__cta-wrapper">
+    <me-fake-button
+        size="small"
+        model=btnLabel
+        action=btnAction
+        clippedText=safeGet(input, 'model.inlineActionsAccessibilityText')/>
+    <me-line-actions
+        options=inlineActions
+        accessibilityText=safeGet(input, 'model.inlineActionsAccessibilityText')
+        on-lineActionSelect("emit", "lineActionSelect")/>
+</div>

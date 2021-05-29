@@ -1,0 +1,12 @@
+{
+    "model": {
+        "label": {
+            "_type": "TextualDisplay",
+            "textSpans": [{
+                "_type": "TextSpan",
+                "text": "Sort:"
+            }]
+        },
+        "options": []
+    }
+}

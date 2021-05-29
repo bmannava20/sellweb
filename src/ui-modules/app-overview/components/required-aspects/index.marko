@@ -1,0 +1,30 @@
+import get from 'just-safe-get'
+import helper from './helper'
+$ const model = helper.getModel(state);
+<if(get(model, 'lineItems') && get(model, 'lineItems').length > 0)>
+    <me-spinner label=get(input, "myebayPageContent.busyLabel") key="req-aspect-spinner"/>
+    <layout-item-listing
+        class="required-aspects"
+        qaId=state.qaId
+        title=model.title
+        subTitle=model.subTitle>
+        <@items>
+            <meui-item-list(item in model.lineItems)>
+                <item-card
+                    key=`itemRow-${item.listingId}`
+                    on-req-aspects('initiateReqAspectsIframe')
+                    on-module-update("updateContainer")
+                    item=item/>
+            </meui-item-list>
+            <see-all model=model.seeAll on-appUpdate("emit", "appUpdate")/>
+        </@items>
+    </layout-item-listing>
+    <if(model.contentMap)>
+        <req-aspect-iframe
+            model=model.contentMap
+            on-req-aspects-save('processSuccess')
+            key="req-aspects-iframe"/>
+    </if>
+</if>
+
+

@@ -1,0 +1,220 @@
+{
+    "model": {
+        "sellerMessages": [
+            {
+                "messageType": "SELLER_HUB_MESSAGE",
+                "title": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                        {
+                            "_type": "TextSpan",
+                            "text": "Are you a professional seller?",
+                            "styles": [
+                                "BOLD"
+                            ]
+                        }
+                    ]
+                },
+                "content": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                        {
+                            "_type": "TextSpan",
+                            "text": "Check out Seller Hub for advanced tools."
+                        }
+                    ]
+                },
+                "footer": [
+                    {
+                        "_type": "TextualDisplay",
+                        "textSpans": [
+                            {
+                                "_type": "TextSpan",
+                                "text": "Go there now",
+                                "action": {
+                                    "type": "NAV",
+                                    "name": "SELLER_HUB",
+                                    "trackingList": [
+                                        {
+                                            "actionKind": "NAV",
+                                            "operationId": "2524149",
+                                            "flushImmediately": false,
+                                            "eventProperty": {
+                                                "sid": "p2524149.m5431.l1111"
+                                            }
+                                        },
+                                        {
+                                            "eventFamily": "MYEBAY",
+                                            "eventAction": "ACTN",
+                                            "actionKind": "NAVSRC",
+                                            "operationId": "2524149",
+                                            "flushImmediately": false,
+                                            "eventProperty": {
+                                                "moduledtl": "mi:5431|li:1111"
+                                            }
+                                        }
+                                    ],
+                                    "URL": "https://www.qa.ebay.com/sh/ovw"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "messageType": "SELLER_HUB_MESSAGE",
+                "title": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                        {
+                            "_type": "TextSpan",
+                            "text": "Ready to ship?",
+                            "styles": [
+                                "BOLD"
+                            ]
+                        }
+                    ]
+                },
+                "content": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                        {
+                            "_type": "TextSpan",
+                            "text": "We have tips for shipping, including how to save money on labels."
+                        }
+                    ]
+                },
+                "footer": [
+                    {
+                        "_type": "TextualDisplay",
+                        "textSpans": [
+                            {
+                                "_type": "TextSpan",
+                                "text": "Tips on shipping",
+                                "action": {
+                                    "type": "NAV",
+                                    "name": "SELLER_HUB",
+                                    "trackingList": [
+                                        {
+                                            "actionKind": "NAV",
+                                            "operationId": "2524149",
+                                            "flushImmediately": false,
+                                            "eventProperty": {
+                                                "sid": "p2524149.m5431.l1111"
+                                            }
+                                        },
+                                        {
+                                            "eventFamily": "MYEBAY",
+                                            "eventAction": "ACTN",
+                                            "actionKind": "NAVSRC",
+                                            "operationId": "2524149",
+                                            "flushImmediately": false,
+                                            "eventProperty": {
+                                                "moduledtl": "mi:5431|li:1111"
+                                            }
+                                        }
+                                    ],
+                                    "URL": "https://www.qa.ebay.com/sh/ovw"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "messageType": "SELLER_HUB_MESSAGE",
+                "title": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                        {
+                            "_type": "TextSpan",
+                            "text": "Have a problem to resolve?",
+                            "styles": [
+                                "BOLD"
+                            ]
+                        }
+                    ]
+                },
+                "content": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                        {
+                            "_type": "TextSpan",
+                            "text": "Whether it’s a return or an unpaid item, we’re here to help."
+                        }
+                    ]
+                },
+                "footer": [
+                    {
+                        "_type": "TextualDisplay",
+                        "textSpans": [
+                            {
+                                "_type": "TextSpan",
+                                "text": "Resolution center",
+                                "action": {
+                                    "type": "NAV",
+                                    "name": "SELLER_HUB",
+                                    "trackingList": [
+                                        {
+                                            "actionKind": "NAV",
+                                            "operationId": "2524149",
+                                            "flushImmediately": false,
+                                            "eventProperty": {
+                                                "sid": "p2524149.m5431.l1111"
+                                            }
+                                        },
+                                        {
+                                            "eventFamily": "MYEBAY",
+                                            "eventAction": "ACTN",
+                                            "actionKind": "NAVSRC",
+                                            "operationId": "2524149",
+                                            "flushImmediately": false,
+                                            "eventProperty": {
+                                                "moduledtl": "mi:5431|li:1111"
+                                            }
+                                        }
+                                    ],
+                                    "URL": "https://www.qa.ebay.com/sh/ovw"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "_type": "TextualDisplay",
+                        "textSpans": [
+                            {
+                                "_type": "TextSpan",
+                                "text": "Returns",
+                                "action": {
+                                    "type": "NAV",
+                                    "name": "SELLER_HUB",
+                                    "trackingList": [
+                                        {
+                                            "actionKind": "NAV",
+                                            "operationId": "2524149",
+                                            "flushImmediately": false,
+                                            "eventProperty": {
+                                                "sid": "p2524149.m5431.l1111"
+                                            }
+                                        },
+                                        {
+                                            "eventFamily": "MYEBAY",
+                                            "eventAction": "ACTN",
+                                            "actionKind": "NAVSRC",
+                                            "operationId": "2524149",
+                                            "flushImmediately": false,
+                                            "eventProperty": {
+                                                "moduledtl": "mi:5431|li:1111"
+                                            }
+                                        }
+                                    ],
+                                    "URL": "https://www.qa.ebay.com/sh/ovw"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

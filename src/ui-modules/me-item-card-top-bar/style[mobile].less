@@ -1,0 +1,36 @@
+@import "./common.less";
+
+.me-item-card-top-bar {
+    .base-top-bar();
+
+    &-text {
+        width: 95%;
+
+        &.pseudolink {
+            color: @color-link-default;
+            margin-top: 4px;
+        }
+    }
+    &__primary-label {
+        color: @color-link-default;
+        line-height: 2;
+    }
+    &__primary-action {
+        color: @color-text-default;
+        width: 100%;
+        padding: 12px 16px;
+        span {
+            display: block;
+        }
+
+        .icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 20px;
+            width: 8px;
+            height: 14px;
+            color: @color-text-secondary;
+        }
+    }
+}

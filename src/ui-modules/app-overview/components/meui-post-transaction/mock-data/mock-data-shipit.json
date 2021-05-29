@@ -1,0 +1,1057 @@
+{
+    "emptyData": {
+        "_type": "ShipItViewModel",
+        "title": {
+            "textSpans": [
+                {
+                    "text": "Ship it"
+                }
+            ]
+        }
+    },
+    "fullData": {
+        "_type": "ShipItViewModel",
+        "title": {
+            "textSpans": [
+                {
+                    "text": "Ship it"
+                }
+            ]
+        },
+        "lineItems": [
+            {
+                "_type": "MyeBaySellingOrderSummary",
+                "orderId": "6460487010",
+                "lineItemCount": {
+                    "textSpans": [
+                        {
+                            "text": "2 items in this order",
+                            "styles": [
+                                "BOLD"
+                            ]
+                        }
+                    ]
+                },
+                "displayTotalPrice": {
+                    "textSpans": [
+                        {
+                            "text": "$49.88",
+                            "styles": [
+                                "BOLD"
+                            ]
+                        },
+                        {
+                            "text": "Free shipping"
+                        }
+                    ],
+                    "accessibilityText": "$49.88 Free shipping"
+                },
+                "orderLineItems": [
+                    {
+                        "listingSummary": {
+                            "_type": "ListingSummary",
+                            "listingId": "170010445435",
+                            "title": {
+                                "textSpans": [
+                                    {
+                                        "text": "Kids Toy Walking Dinosaur T-Rex Toy Figure With Lights & Sounds, Real Movement"
+                                    }
+                                ],
+                                "action": {
+                                    "trackingList": [
+                                        {
+                                            "actionKind": "NAV",
+                                            "operationId": "2486981",
+                                            "flushImmediately": false,
+                                            "eventProperty": {
+                                                "sid": "p2486981.m4936.l9182"
+                                            }
+                                        },
+                                        {
+                                            "eventFamily": "MYEBAY",
+                                            "eventAction": "ACTN",
+                                            "actionKind": "NAVSRC",
+                                            "operationId": "2486981",
+                                            "flushImmediately": false,
+                                            "eventProperty": {
+                                                "moduledtl": "mi:4936|li:9182"
+                                            }
+                                        }
+                                    ],
+                                    "URL": "http://www.qa.ebay.com/itm/170010445435"
+                                }
+                            },
+                            "image": {
+                                "imageId": "jfIAAOSw5J9YYuD~",
+                                "originalSize": {
+                                    "height": 500,
+                                    "width": 500
+                                },
+                                "action": {
+                                    "trackingList": [
+                                        {
+                                            "actionKind": "NAV",
+                                            "operationId": "2486981",
+                                            "flushImmediately": false,
+                                            "eventProperty": {
+                                                "sid": "p2486981.m4936.l9181"
+                                            }
+                                        },
+                                        {
+                                            "eventFamily": "MYEBAY",
+                                            "eventAction": "ACTN",
+                                            "actionKind": "NAVSRC",
+                                            "operationId": "2486981",
+                                            "flushImmediately": false,
+                                            "eventProperty": {
+                                                "moduledtl": "mi:4936|li:9181"
+                                            }
+                                        }
+                                    ],
+                                    "URL": "http://www.qa.ebay.com/itm/170010445435"
+                                },
+                                "URL": "http://i1.qa.ebayimg.com/images/g/jfIAAOSw5J9YYuD~/s-l140.jpg"
+                            },
+                            "displayPrice": {
+                                "textSpans": [
+                                    {
+                                        "text": "$24.94",
+                                        "styles": [
+                                            "BOLD"
+                                        ]
+                                    }
+                                ],
+                                "accessibilityText": "$24.94"
+                            },
+                            "id": "170010445435-NIL-NIL",
+                            "presentityId": "170010445435-NIL-NIL"
+                        },
+                        "__me": {
+                            "orderProgressStatus": [
+                                {
+                                    "statusText": {
+                                        "textSpans": [
+                                            {
+                                                "text": "Paid"
+                                            }
+                                        ],
+                                        "accessibilityText": "selected"
+                                    },
+                                    "selected": true
+                                },
+                                {
+                                    "statusText": {
+                                        "textSpans": [
+                                            {
+                                                "text": "Shipped"
+                                            }
+                                        ],
+                                        "accessibilityText": "unselected"
+                                    },
+                                    "selected": false
+                                },
+                                {
+                                    "statusText": {
+                                        "textSpans": [
+                                            {
+                                                "text": "Delivered"
+                                            }
+                                        ],
+                                        "accessibilityText": "unselected"
+                                    },
+                                    "selected": false
+                                },
+                                {
+                                    "statusText": {
+                                        "textSpans": [
+                                            {
+                                                "text": "Feedback left"
+                                            }
+                                        ],
+                                        "accessibilityText": "unselected"
+                                    },
+                                    "selected": false
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "listingSummary": {
+                            "_type": "ListingSummary",
+                            "listingId": "170010668698",
+                            "title": {
+                                "textSpans": [
+                                    {
+                                        "text": "Kids Toy Walking Dinosaur T-Rex Toy Figure With Lights & Sounds, Real Movement"
+                                    }
+                                ],
+                                "action": {
+                                    "trackingList": [
+                                        {
+                                            "actionKind": "NAV",
+                                            "operationId": "2486981",
+                                            "flushImmediately": false,
+                                            "eventProperty": {
+                                                "sid": "p2486981.m4936.l9182"
+                                            }
+                                        },
+                                        {
+                                            "eventFamily": "MYEBAY",
+                                            "eventAction": "ACTN",
+                                            "actionKind": "NAVSRC",
+                                            "operationId": "2486981",
+                                            "flushImmediately": false,
+                                            "eventProperty": {
+                                                "moduledtl": "mi:4936|li:9182"
+                                            }
+                                        }
+                                    ],
+                                    "URL": "http://www.qa.ebay.com/itm/170010668698"
+                                }
+                            },
+                            "image": {
+                                "imageId": "jfIAAOSw5J9YYuD~",
+                                "originalSize": {
+                                    "height": 0,
+                                    "width": 0
+                                },
+                                "action": {
+                                    "trackingList": [
+                                        {
+                                            "actionKind": "NAV",
+                                            "operationId": "2486981",
+                                            "flushImmediately": false,
+                                            "eventProperty": {
+                                                "sid": "p2486981.m4936.l9181"
+                                            }
+                                        },
+                                        {
+                                            "eventFamily": "MYEBAY",
+                                            "eventAction": "ACTN",
+                                            "actionKind": "NAVSRC",
+                                            "operationId": "2486981",
+                                            "flushImmediately": false,
+                                            "eventProperty": {
+                                                "moduledtl": "mi:4936|li:9181"
+                                            }
+                                        }
+                                    ],
+                                    "URL": "http://www.qa.ebay.com/itm/170010668698"
+                                },
+                                "URL": "http://i1.qa.ebayimg.com/images/g/jfIAAOSw5J9YYuD~/s-l140.jpg"
+                            },
+                            "displayPrice": {
+                                "textSpans": [
+                                    {
+                                        "text": "$24.94",
+                                        "styles": [
+                                            "BOLD"
+                                        ]
+                                    }
+                                ],
+                                "accessibilityText": "$24.94"
+                            },
+                            "id": "170010668698-NIL-NIL",
+                            "presentityId": "170010668698-NIL-NIL"
+                        },
+                        "__me": {
+                            "orderProgressStatus": [
+                                {
+                                    "statusText": {
+                                        "textSpans": [
+                                            {
+                                                "text": "Paid"
+                                            }
+                                        ],
+                                        "accessibilityText": "selected"
+                                    },
+                                    "selected": true
+                                },
+                                {
+                                    "statusText": {
+                                        "textSpans": [
+                                            {
+                                                "text": "Shipped"
+                                            }
+                                        ],
+                                        "accessibilityText": "unselected"
+                                    },
+                                    "selected": false
+                                },
+                                {
+                                    "statusText": {
+                                        "textSpans": [
+                                            {
+                                                "text": "Delivered"
+                                            }
+                                        ],
+                                        "accessibilityText": "unselected"
+                                    },
+                                    "selected": false
+                                },
+                                {
+                                    "statusText": {
+                                        "textSpans": [
+                                            {
+                                                "text": "Feedback left"
+                                            }
+                                        ],
+                                        "accessibilityText": "unselected"
+                                    },
+                                    "selected": false
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "id": "6460487010",
+                "presentityId": "6460487010",
+                "__me": {
+                    "lineItemCountLabel": {
+                        "textSpans": [
+                            {
+                                "text": "ITEM COUNT"
+                            }
+                        ]
+                    },
+                    "displayTotalPriceLabel": {
+                        "textSpans": [
+                            {
+                                "text": "ORDER TOTAL"
+                            }
+                        ]
+                    },
+                    "shippingDetails": {
+                        "shippingNote": {
+                            "textSpans": [
+                                {
+                                    "text": "Ship it out to "
+                                },
+                                {
+                                    "text": "QIBUS Seller",
+                                    "styles": [
+                                        "BOLD"
+                                    ]
+                                },
+                                {
+                                    "text": " now (shipping overdue)",
+                                    "styles": [
+                                        "NEGATIVE"
+                                    ]
+                                }
+                            ]
+                        },
+                        "shipToLocation": {
+                            "textSpans": [
+                                {
+                                    "text": "CITY1, STATE1"
+                                }
+                            ]
+                        }
+                    },
+                    "lineActions": {
+                        "options": [
+                            {
+                                "label": {
+                                    "textSpans": [
+                                        {
+                                            "text": "Line Actions"
+                                        }
+                                    ]
+                                },
+                                "selections": [
+                                    {
+                                        "disabled": false,
+                                        "selected": true,
+                                        "label": {
+                                            "textSpans": [
+                                                {
+                                                    "text": "Print shipping label",
+                                                    "styles": [
+                                                        "PROMOTED"
+                                                    ]
+                                                }
+                                            ],
+                                            "action": {
+                                                "type": "NAV",
+                                                "trackingList": [
+                                                    {
+                                                        "actionKind": "NAV",
+                                                        "operationId": "2486981",
+                                                        "flushImmediately": false,
+                                                        "eventProperty": {
+                                                            "sid": "p2486981.m4936.l9183"
+                                                        }
+                                                    },
+                                                    {
+                                                        "eventFamily": "MYEBAY",
+                                                        "eventAction": "ACTN",
+                                                        "actionKind": "NAVSRC",
+                                                        "operationId": "2486981",
+                                                        "flushImmediately": false,
+                                                        "eventProperty": {
+                                                            "moduledtl": "mi:4936|li:9183"
+                                                        }
+                                                    }
+                                                ],
+                                                "URL": "https://payments.qa.ebay.com/ws/eBayISAPI.dll?PrintPostage&orderid=6460487010"
+                                            }
+                                        },
+                                        "default": false
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "selected": false,
+                                        "label": {
+                                            "textSpans": [
+                                                {
+                                                    "text": "Add tracking number"
+                                                }
+                                            ],
+                                            "action": {
+                                                "type": "NAV",
+                                                "trackingList": [
+                                                    {
+                                                        "actionKind": "NAV",
+                                                        "operationId": "2486981",
+                                                        "flushImmediately": false,
+                                                        "eventProperty": {
+                                                            "sid": "p2486981.m4936.l9184"
+                                                        }
+                                                    },
+                                                    {
+                                                        "eventFamily": "MYEBAY",
+                                                        "eventAction": "ACTN",
+                                                        "actionKind": "NAVSRC",
+                                                        "operationId": "2486981",
+                                                        "flushImmediately": false,
+                                                        "eventProperty": {
+                                                            "moduledtl": "mi:4936|li:9184"
+                                                        }
+                                                    }
+                                                ],
+                                                "URL": "http://payments.qa.ebay.com/ws/eBayISAPI.dll?AddTrackingNumber&LineID=6460487010&from=1"
+                                            }
+                                        },
+                                        "default": false
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "selected": false,
+                                        "label": {
+                                            "textSpans": [
+                                                {
+                                                    "text": "Mark as shipped"
+                                                }
+                                            ],
+                                            "action": {
+                                                "type": "NAV",
+                                                "trackingList": [
+                                                    {
+                                                        "actionKind": "NAV",
+                                                        "operationId": "2486981",
+                                                        "flushImmediately": false,
+                                                        "eventProperty": {
+                                                            "sid": "p2486981.m4936.l9185"
+                                                        }
+                                                    },
+                                                    {
+                                                        "eventFamily": "MYEBAY",
+                                                        "eventAction": "ACTN",
+                                                        "actionKind": "NAVSRC",
+                                                        "operationId": "2486981",
+                                                        "flushImmediately": false,
+                                                        "eventProperty": {
+                                                            "moduledtl": "mi:4936|li:9185"
+                                                        }
+                                                    }
+                                                ],
+                                                "URL": "http://payments.qa.ebay.com/ws/eBayISAPI.dll?OrderAction&action=4&pagetype=1883&orderid=6460487010&ru=null"
+                                            }
+                                        },
+                                        "default": false
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "selected": false,
+                                        "label": {
+                                            "textSpans": [
+                                                {
+                                                    "text": "View PayPal transaction"
+                                                }
+                                            ],
+                                            "action": {
+                                                "type": "NAV",
+                                                "trackingList": [
+                                                    {
+                                                        "actionKind": "NAV",
+                                                        "operationId": "2486981",
+                                                        "flushImmediately": false,
+                                                        "eventProperty": {
+                                                            "sid": "p2486981.m4936"
+                                                        }
+                                                    },
+                                                    {
+                                                        "eventFamily": "MYEBAY",
+                                                        "eventAction": "ACTN",
+                                                        "actionKind": "NAVSRC",
+                                                        "operationId": "2486981",
+                                                        "flushImmediately": false,
+                                                        "eventProperty": {
+                                                            "moduledtl": "mi:4936"
+                                                        }
+                                                    }
+                                                ],
+                                                "URL": "http://payments.qa.ebay.com/ws/eBayISAPI.dll?IntermediateResolutionInfo&transId=10253235007&pn=UnifiedCheckoutSummaryRedirect2PP&itemid=170010445435&qs=itemid%3D170010445435%26transId%3D10253235007%26buyerorseller%3D1%26"
+                                            }
+                                        },
+                                        "default": false
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "selected": false,
+                                        "label": {
+                                            "textSpans": [
+                                                {
+                                                    "text": "Contact buyer"
+                                                }
+                                            ],
+                                            "action": {
+                                                "type": "NAV",
+                                                "trackingList": [
+                                                    {
+                                                        "actionKind": "NAV",
+                                                        "operationId": "2486981",
+                                                        "flushImmediately": false,
+                                                        "eventProperty": {
+                                                            "sid": "p2486981.m4936.l9187"
+                                                        }
+                                                    },
+                                                    {
+                                                        "eventFamily": "MYEBAY",
+                                                        "eventAction": "ACTN",
+                                                        "actionKind": "NAVSRC",
+                                                        "operationId": "2486981",
+                                                        "flushImmediately": false,
+                                                        "eventProperty": {
+                                                            "moduledtl": "mi:4936|li:9187"
+                                                        }
+                                                    }
+                                                ],
+                                                "URL": "http://contact.qa.ebay.com/ws/eBayISAPI.dll?ReturnUserEmail&frm=3984&requested=dinesh_seller23&iid=170010445435&redirect=0"
+                                            }
+                                        },
+                                        "default": false
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "selected": false,
+                                        "label": {
+                                            "textSpans": [
+                                                {
+                                                    "text": "View order details"
+                                                }
+                                            ],
+                                            "action": {
+                                                "type": "NAV",
+                                                "trackingList": [
+                                                    {
+                                                        "actionKind": "NAV",
+                                                        "operationId": "2486981",
+                                                        "flushImmediately": false,
+                                                        "eventProperty": {
+                                                            "sid": "p2486981.m4936"
+                                                        }
+                                                    },
+                                                    {
+                                                        "eventFamily": "MYEBAY",
+                                                        "eventAction": "ACTN",
+                                                        "actionKind": "NAVSRC",
+                                                        "operationId": "2486981",
+                                                        "flushImmediately": false,
+                                                        "eventProperty": {
+                                                            "moduledtl": "mi:4936"
+                                                        }
+                                                    }
+                                                ],
+                                                "URL": "http://payments.qa.ebay.com/ws/eBayISAPI.dll?ViewPaymentStatus&transId=10253235007&itemid=170010445435"
+                                            }
+                                        },
+                                        "default": false
+                                    }
+                                ],
+                                "multiSelect": false,
+                                "delimiter": null,
+                                "paramName": null,
+                                "baseUrl": null
+                            }
+                        ]
+                    },
+                    "buyerToSellerNote": {
+                        "textSpans": [
+                            {
+                                "text": "test buyer note during check out. test buyer note during check out. test buyer note during check out. test buyer note during check out. test buyer note during check out. test buyer note during check out. test buyer note during check out. test buyer note during check out. test buyer note during check out. test buyer note during check out. test buyer note during check out. test buyer note during check out. test buyer note during check out. test buyer note during check out. test buyer note during c"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "_type": "MyeBaySellingOrderSummary",
+                "orderId": "170010631479-10238881007",
+                "orderLineItems": [
+                    {
+                        "listingSummary": {
+                            "_type": "ListingSummary",
+                            "listingId": "170010631479",
+                            "title": {
+                                "textSpans": [
+                                    {
+                                        "text": "US-BestOffer Item1492468683171-1492468683171"
+                                    }
+                                ],
+                                "action": {
+                                    "trackingList": [
+                                        {
+                                            "actionKind": "NAV",
+                                            "operationId": "2486981",
+                                            "flushImmediately": false,
+                                            "eventProperty": {
+                                                "sid": "p2486981.m4936.l9182"
+                                            }
+                                        },
+                                        {
+                                            "eventFamily": "MYEBAY",
+                                            "eventAction": "ACTN",
+                                            "actionKind": "NAVSRC",
+                                            "operationId": "2486981",
+                                            "flushImmediately": false,
+                                            "eventProperty": {
+                                                "moduledtl": "mi:4936|li:9182"
+                                            }
+                                        }
+                                    ],
+                                    "URL": "http://www.qa.ebay.com/itm/170010631479"
+                                }
+                            },
+                            "image": {
+                                "imageId": "zjMAAOSwOrlY9UPo",
+                                "originalSize": {
+                                    "height": 45,
+                                    "width": 110
+                                },
+                                "action": {
+                                    "trackingList": [
+                                        {
+                                            "actionKind": "NAV",
+                                            "operationId": "2486981",
+                                            "flushImmediately": false,
+                                            "eventProperty": {
+                                                "sid": "p2486981.m4936.l9181"
+                                            }
+                                        },
+                                        {
+                                            "eventFamily": "MYEBAY",
+                                            "eventAction": "ACTN",
+                                            "actionKind": "NAVSRC",
+                                            "operationId": "2486981",
+                                            "flushImmediately": false,
+                                            "eventProperty": {
+                                                "moduledtl": "mi:4936|li:9181"
+                                            }
+                                        }
+                                    ],
+                                    "URL": "http://www.qa.ebay.com/itm/170010631479"
+                                },
+                                "URL": "http://i1.qa.ebayimg.com/images/g/zjMAAOSwOrlY9UPo/s-l140.jpg"
+                            },
+                            "displayPrice": {
+                                "textSpans": [
+                                    {
+                                        "text": "$10.00",
+                                        "styles": [
+                                            "BOLD"
+                                        ]
+                                    },
+                                    {
+                                        "text": "+ $1.00 shipping",
+                                        "styles": [
+                                            "DEFAULT"
+                                        ]
+                                    }
+                                ],
+                                "accessibilityText": "$10.00 + $1.00 shipping"
+                            },
+                            "id": "170010631479-NIL-NIL",
+                            "presentityId": "170010631479-NIL-NIL",
+                            "quantity": {
+                                "textSpans": [
+                                    {
+                                        "text": "Qty: 3"
+                                    }
+                                ]
+                            }
+                        },
+                        "__me": {
+                            "orderProgressStatus": [
+                                {
+                                    "statusText": {
+                                        "textSpans": [
+                                            {
+                                                "text": "Paid"
+                                            }
+                                        ],
+                                        "accessibilityText": "selected"
+                                    },
+                                    "selected": true
+                                },
+                                {
+                                    "statusText": {
+                                        "textSpans": [
+                                            {
+                                                "text": "Shipped"
+                                            }
+                                        ],
+                                        "accessibilityText": "unselected"
+                                    },
+                                    "selected": false
+                                },
+                                {
+                                    "statusText": {
+                                        "textSpans": [
+                                            {
+                                                "text": "Delivered"
+                                            }
+                                        ],
+                                        "accessibilityText": "unselected"
+                                    },
+                                    "selected": false
+                                },
+                                {
+                                    "statusText": {
+                                        "textSpans": [
+                                            {
+                                                "text": "Feedback left"
+                                            }
+                                        ],
+                                        "accessibilityText": "unselected"
+                                    },
+                                    "selected": false
+                                }
+                            ],
+                            "lineActions": {
+                                "options": [
+                                    {
+                                        "label": {
+                                            "textSpans": [
+                                                {
+                                                    "text": "Line Actions"
+                                                }
+                                            ]
+                                        },
+                                        "selections": [
+                                            {
+                                                "disabled": false,
+                                                "selected": true,
+                                                "label": {
+                                                    "textSpans": [
+                                                        {
+                                                            "text": "Print shipping label",
+                                                            "styles": [
+                                                                "PROMOTED"
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "action": {
+                                                        "type": "NAV",
+                                                        "trackingList": [
+                                                            {
+                                                                "actionKind": "NAV",
+                                                                "operationId": "2486981",
+                                                                "flushImmediately": false,
+                                                                "eventProperty": {
+                                                                    "sid": "p2486981.m4936.l9183"
+                                                                }
+                                                            },
+                                                            {
+                                                                "eventFamily": "MYEBAY",
+                                                                "eventAction": "ACTN",
+                                                                "actionKind": "NAVSRC",
+                                                                "operationId": "2486981",
+                                                                "flushImmediately": false,
+                                                                "eventProperty": {
+                                                                    "moduledtl": "mi:4936|li:9183"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "URL": "https://payments.qa.ebay.com/ws/eBayISAPI.dll?PrintPostage&transactionid=10238881007&itemid=170010631479"
+                                                    },
+                                                    "value": "PRINT_POSTAGE"
+                                                },
+                                                "default": false
+                                            },
+                                            {
+                                                "disabled": false,
+                                                "selected": false,
+                                                "label": {
+                                                    "textSpans": [
+                                                        {
+                                                            "text": "Leave feedback"
+                                                        }
+                                                    ],
+                                                    "action": {
+                                                        "type": "NAV",
+                                                        "trackingList": [
+                                                            {
+                                                                "actionKind": "NAV",
+                                                                "operationId": "2486981",
+                                                                "flushImmediately": false,
+                                                                "eventProperty": {
+                                                                    "sid": "p2486981.m4936"
+                                                                }
+                                                            },
+                                                            {
+                                                                "eventFamily": "MYEBAY",
+                                                                "eventAction": "ACTN",
+                                                                "actionKind": "NAVSRC",
+                                                                "operationId": "2486981",
+                                                                "flushImmediately": false,
+                                                                "eventProperty": {
+                                                                    "moduledtl": "mi:4936"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "URL": "http://feedback.qa.ebay.com/ws/eBayISAPI.dll?LeaveFeedbackShow&useridto=mahendhar_usa&transactID=10238881007&item=170010631479"
+                                                    },
+                                                    "value": "LEAVE_FEEDBACK_FOR_BUYER"
+                                                },
+                                                "default": false
+                                            },
+                                            {
+                                                "disabled": false,
+                                                "selected": false,
+                                                "label": {
+                                                    "textSpans": [
+                                                        {
+                                                            "text": "Add tracking number"
+                                                        }
+                                                    ],
+                                                    "action": {
+                                                        "type": "NAV",
+                                                        "trackingList": [
+                                                            {
+                                                                "actionKind": "NAV",
+                                                                "operationId": "2486981",
+                                                                "flushImmediately": false,
+                                                                "eventProperty": {
+                                                                    "sid": "p2486981.m4936.l9184"
+                                                                }
+                                                            },
+                                                            {
+                                                                "eventFamily": "MYEBAY",
+                                                                "eventAction": "ACTN",
+                                                                "actionKind": "NAVSRC",
+                                                                "operationId": "2486981",
+                                                                "flushImmediately": false,
+                                                                "eventProperty": {
+                                                                    "moduledtl": "mi:4936|li:9184"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "URL": "http://payments.qa.ebay.com/ws/eBayISAPI.dll?AddTrackingNumber&LineID=Transactions.170010631479_10238881007&from=1"
+                                                    },
+                                                    "value": "ADD_TRACKING_NUMBER"
+                                                },
+                                                "default": false
+                                            },
+                                            {
+                                                "disabled": false,
+                                                "selected": false,
+                                                "label": {
+                                                    "textSpans": [
+                                                        {
+                                                            "text": "Mark as shipped"
+                                                        }
+                                                    ],
+                                                    "action": {
+                                                        "type": "NAV",
+                                                        "trackingList": [
+                                                            {
+                                                                "actionKind": "NAV",
+                                                                "operationId": "2486981",
+                                                                "flushImmediately": false,
+                                                                "eventProperty": {
+                                                                    "sid": "p2486981.m4936.l9185"
+                                                                }
+                                                            },
+                                                            {
+                                                                "eventFamily": "MYEBAY",
+                                                                "eventAction": "ACTN",
+                                                                "actionKind": "NAVSRC",
+                                                                "operationId": "2486981",
+                                                                "flushImmediately": false,
+                                                                "eventProperty": {
+                                                                    "moduledtl": "mi:4936|li:9185"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "URL": "http://payments.qa.ebay.com/ws/eBayISAPI.dll?OrderAction&transId=10238881007&action=4&pagetype=1883&itemid=170010631479&ru=null"
+                                                    },
+                                                    "value": "MARK_SHIPPED"
+                                                },
+                                                "default": false
+                                            },
+                                            {
+                                                "disabled": false,
+                                                "selected": false,
+                                                "label": {
+                                                    "textSpans": [
+                                                        {
+                                                            "text": "Sell similar"
+                                                        }
+                                                    ],
+                                                    "action": {
+                                                        "type": "NAV",
+                                                        "trackingList": [
+                                                            {
+                                                                "actionKind": "NAV",
+                                                                "operationId": "2486981",
+                                                                "flushImmediately": false,
+                                                                "eventProperty": {
+                                                                    "sid": "p2486981.m4936"
+                                                                }
+                                                            },
+                                                            {
+                                                                "eventFamily": "MYEBAY",
+                                                                "eventAction": "ACTN",
+                                                                "actionKind": "NAVSRC",
+                                                                "operationId": "2486981",
+                                                                "flushImmediately": false,
+                                                                "eventProperty": {
+                                                                    "moduledtl": "mi:4936"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "URL": "http://cgi5.qa.ebay.com/ws2/eBayISAPI.dll?SellSimilarItem&itemid=170010631479"
+                                                    },
+                                                    "value": "SELL_SIMILAR"
+                                                },
+                                                "default": false
+                                            },
+                                            {
+                                                "disabled": false,
+                                                "selected": false,
+                                                "label": {
+                                                    "textSpans": [
+                                                        {
+                                                            "text": "Contact buyer"
+                                                        }
+                                                    ],
+                                                    "action": {
+                                                        "type": "NAV",
+                                                        "trackingList": [
+                                                            {
+                                                                "actionKind": "NAV",
+                                                                "operationId": "2486981",
+                                                                "flushImmediately": false,
+                                                                "eventProperty": {
+                                                                    "sid": "p2486981.m4936.l9187"
+                                                                }
+                                                            },
+                                                            {
+                                                                "eventFamily": "MYEBAY",
+                                                                "eventAction": "ACTN",
+                                                                "actionKind": "NAVSRC",
+                                                                "operationId": "2486981",
+                                                                "flushImmediately": false,
+                                                                "eventProperty": {
+                                                                    "moduledtl": "mi:4936|li:9187"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "URL": "http://contact.qa.ebay.com/ws/eBayISAPI.dll?ReturnUserEmail&frm=3984&requested=mahendhar_usa&iid=170010631479&redirect=0"
+                                                    },
+                                                    "value": "CONTACT_BUYER"
+                                                },
+                                                "default": false
+                                            },
+                                            {
+                                                "disabled": false,
+                                                "selected": false,
+                                                "label": {
+                                                    "textSpans": [
+                                                        {
+                                                            "text": "View order details"
+                                                        }
+                                                    ],
+                                                    "action": {
+                                                        "type": "NAV",
+                                                        "trackingList": [
+                                                            {
+                                                                "actionKind": "NAV",
+                                                                "operationId": "2486981",
+                                                                "flushImmediately": false,
+                                                                "eventProperty": {
+                                                                    "sid": "p2486981.m4936"
+                                                                }
+                                                            },
+                                                            {
+                                                                "eventFamily": "MYEBAY",
+                                                                "eventAction": "ACTN",
+                                                                "actionKind": "NAVSRC",
+                                                                "operationId": "2486981",
+                                                                "flushImmediately": false,
+                                                                "eventProperty": {
+                                                                    "moduledtl": "mi:4936"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "URL": "http://payments.qa.ebay.com/ws/eBayISAPI.dll?ViewPaymentStatus&transId=10238881007&itemid=170010631479"
+                                                    },
+                                                    "value": "VIEW_ORDER_DETAILS"
+                                                },
+                                                "default": false
+                                            }
+                                        ],
+                                        "multiSelect": false,
+                                        "delimiter": null,
+                                        "paramName": null,
+                                        "baseUrl": null
+                                    }
+                                ]
+                            },
+                            "shippingDetails": {},
+                            "buyerToSellerNote": {
+                                "textSpans": [
+                                    {
+                                        "text": "buyer notes when check out !@#@#!$$^%%^^&)({}<>?:\""
+                                    }
+                                ]
+                            },
+                            "skuVariations": [
+                                {
+                                    "textSpans": [
+                                        {
+                                            "text": "Size (Women's): M"
+                                        }
+                                    ],
+                                    "value": "M"
+                                },
+                                {
+                                    "textSpans": [
+                                        {
+                                            "text": "Color: Red"
+                                        }
+                                    ],
+                                    "value": "Red"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "id": "170010631479-10238881007",
+                "presentityId": "170010631479-10238881007"
+            }
+        ]
+    }
+}

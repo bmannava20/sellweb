@@ -1,0 +1,20 @@
+{
+    "model": [
+        {
+            "text": "Waiting for payment",
+            "styles": [
+                "BOLD"
+            ]
+        }
+    ],
+    "options": {
+        "prefixClass": "prefix",
+        "styleMap": {
+            "BOLD": "bold",
+            "NEGATIVE": "negative",
+            "DEFAULT": "default",
+            "EMPHASIS": "emphasis",
+            "POSITIVE": "positive"
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.spinner-wrapper {
+    background-color: rgba(255, 252, 252, 0);
+    height: 100%;
+    width: 100%;
+    display: none;
+    z-index: 1000;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.08s ease-in-out;
+
+    &.show {
+        background-color: rgba(255, 252, 252, 0.75);
+        transition: background-color 0.16s ease-in-out;
+        display: flex;
+        .spinner {
+            opacity: 1;
+            transition: opacity 0.20s ease-in;
+        }
+    }
+
+    .spinner {
+        opacity: 0;
+        transition: opacity 0.08s ease-out;
+    }
+}

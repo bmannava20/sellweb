@@ -1,0 +1,33 @@
+.todo-list {
+    border-top: 1px solid #ddd;
+    padding-top: 24px;
+
+    .todo-list-item {
+        .typography-regular();
+        padding-bottom: 24px;
+        display: flex;
+
+        a, a:visited {
+            color: @color-text-default;
+            display: block;
+        }
+
+        &-count {
+            width: 32px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .emphasis {
+            background-color: #ffd1dd;
+        }
+
+        .information {
+            background-color: #c5e5fb;
+        }
+
+        &-label {
+            margin-left: 8px;
+        }
+    }
+}

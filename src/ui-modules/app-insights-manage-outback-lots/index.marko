@@ -1,0 +1,36 @@
+import safeGet from 'just-safe-get'
+
+$ const insightsModule = input.model.data;
+$ const myebayPageContent = safeGet(input, "model.data.modules.i18nModule");
+$ const csrfTokenModule = safeGet(input.model.data, 'modules.csrfTokenModule');
+$ {
+    const timeout =
+        (safeGet(input, "model.data.modules.warmup") && 60000) ||
+        safeGet(input, "modules.configModule.awaitTimeout");
+}
+<app-shell model=insightsModule>
+    <div class="insights-page__wrapper" id="meb-items-cnt" key="insightsContainer">
+        <await-ebay(model from insightsModule.modules.outbackLotsModule) timeout=timeout>
+            <await-timeout-ebay/>
+            <await-error-ebay/>
+            <meui-generate-drafts
+                myebayPageContent=myebayPageContent
+                key="generateDrafts"
+                on-openProgressIndicator("openProgressIndicator")
+                model=model
+                on-appUpdate("onAppUpdate")/>
+            $ insightsModule.modules.outbackLotsModule = model;
+        </await-ebay>
+        <await-ebay(model from insightsModule.modules.outbackProcessingMessageModule) timeout=timeout>
+            <await-timeout-ebay/>
+            <await-error-ebay/>
+            <meui-progress-indicator
+                myebayPageContent=myebayPageContent
+                key="progressPopup"
+                csrfToken=csrfTokenModule
+                on-refreshOutbackModule("refreshOutbackModule")
+                model=model/>
+            $ insightsModule.modules.outbackProcessingMessageModule = model;
+        </await-ebay>
+    </div>
+</app-shell>

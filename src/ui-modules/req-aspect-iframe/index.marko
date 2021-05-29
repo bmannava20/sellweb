@@ -1,0 +1,33 @@
+import safeGet from 'just-safe-get'
+<me-modal
+    key="modal-iframe"
+    class="modal-iframe-wrapper"
+    closeAccText=safeGet(input, 'model.closeLabel')
+    open=state.open
+    on-dialog-close('modalClose')>
+    <@title>
+        ${safeGet(input, 'model.title')}
+    </@title>
+    <@main>
+        <me-spinner label=safeGet(input,'model.busyLabel') key="req-aspects-spinner"/>
+        <if(state.showError)>
+                <me-notice
+                    class="error-notice"
+                    type='page'
+                    heading-level="3">
+                    <@message>
+                        <p>
+                            ${safeGet(input, 'model.errorMessage')}
+                        </p>
+                    </@message>
+                </me-notice>
+        </if>
+        <else>
+            <iframe
+                key="req-aspects-iframe"
+                scrolling="no"
+                class="modal-iframe__body"
+                src=state.url/>
+        </else>
+    </@main>
+</me-modal>

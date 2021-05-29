@@ -1,0 +1,60 @@
+{
+    "basicAction": {
+        "action": {
+            "URL": "http://www.ebay.com/",
+            "type": "NAV",
+            "name": "see all",
+            "trackingList": [
+                {
+                    "actionKinds": [
+                        "NAV"
+                    ],
+                    "operationId": "2351460",
+                    "flushImmediately": true,
+                    "eventProperty": {
+                        "sid": "p2370942.m4117.l3"
+                    }
+                },
+                {
+                    "eventFamily": "LST",
+                    "eventAction": "ACTN",
+                    "actionKinds": [
+                        "NAVSRC"
+                    ],
+                    "operationId": "2351460",
+                    "flushImmediately": true,
+                    "eventProperty": {
+                        "moduledtl": "mi%3A4117%7Ciid%3A1%7Clinkid%3A3",
+                        "parentrq": "55c2a2d81550afeb83d6165ffffffffb",
+                        "pageci": "1693d178-3338-11e6-a5f3-74dbd1e0eb62"
+                    }
+                }
+            ]
+        },
+        "class": "meui-link",
+        "style": "border:0px;",
+        "title": "item-card",
+        "tabindex": "-1",
+        "target": "_blank",
+        "ariaLabel": "test"
+    },
+    "oldAction": {
+        "action": {
+            "URL": "http://www.ebay.com/",
+            "type": "NAV",
+            "name": "see all",
+            "trackingList": [
+                {
+                    "actionKinds": [
+                        "NAV"
+                    ],
+                    "operationId": "2351460",
+                    "flushImmediately": true,
+                    "eventProperty": {
+                        "sid": "p2370942.m4117.l3"
+                    }
+                }
+            ]
+        }
+    }
+}

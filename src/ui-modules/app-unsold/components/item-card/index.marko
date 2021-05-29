@@ -1,0 +1,59 @@
+import safeGet from 'just-safe-get'
+import helper from './helper'
+
+$ const item = helper.getModel(input);
+<div class="unsold-item" qa-id=`unsold-item-${item.listingId}`>
+    <ebay-notes model=input.model.__me/>
+    <layout-item-card>
+        <@col-1>
+            <div.item__checkbox-wrapper>
+                <ebay-checkbox
+                    class="item__checkbox"
+                    on-checkbox-change("checkboxHandler")
+                    key=`unsold-item-checkbox-${item.listingId}`
+                    checked=item.isChecked
+                    value=item.listingId
+                    id=`checkbox-${item.listingId}`/>
+                <label for=`checkbox-${item.listingId}` class="clipped">
+                    <me-textual-display model=item.title/>
+                </label>
+            </div>
+            <meui-thumbnail image=item.image altText=item.title size="large"/>
+        </@col-1>
+        <@col-2>
+            <static-text class="item__status" model=item.bannerStatus/>
+            <me-item-title model=item.title/>
+            <static-text model=item.displayItemId setDefault=true class="item__itemid"/>
+            <static-text model=item.displayPrice setDefault=true class="item__price"/>
+            <static-text
+                model=item.additionalPrice
+                setDefault=true
+                class="item__price-additional"/>
+            <static-text model=item.displayPriceMessage class="item__price-attrs"/>
+            <static-text model=item.logisticsCost class="item__logistics-cost"/>
+            <div class="item__end-date">
+                <span class="item__end-date__label">${item.endLabel}</span>
+                <span class="item__end-date__value">${item.endDate}</span>
+            </div>
+            <me-user-note
+                key="userNote"
+                model=item.userNote
+                listingId=item.listingId
+                content-map=item.addNoteContentMap
+                on-edit-note("onEditAddNote")/>
+        </@col-2>
+        <@col-3>
+            <!-- begin CTA -->
+            <div class="item__cta-wrapper">
+                <me-fake-button size="small" model=item.primaryButtonLabel action=item.primaryButtonAction/>
+                $ const menuType = safeGet(item.inlineActions, "0.label.textSpans.0.styles.0");
+                <me-line-actions
+                    options=item.slicedInlineActions
+                    on-lineActionSelect("onLineActionSelect")
+                    priority=menuType/>
+            </div>
+            <!-- end CTA -->
+            <me-item-activity model=item.itemActivityModel/>
+        </@col-3>
+    </layout-item-card>
+</div>

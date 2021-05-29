@@ -1,0 +1,158 @@
+{
+    "lineActions": {
+        "options": [
+            {
+                "_type": "TextualSelection",
+                "paramValue": "MARK_NOT_SHIPPED",
+                "label": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                        {
+                            "_type": "TextSpan",
+                            "text": "Mark not shipped"
+                        }
+                    ]
+                },
+                "action": {
+                    "_type": "Action",
+                    "type": "NAV",
+                    "trackingList": [
+                        {
+                            "actionKind": "NAV",
+                            "operationId": "2544535",
+                            "flushImmediately": false,
+                            "eventProperty": {
+                                "sid": "p2544535.m43837.l9029"
+                            }
+                        },
+                        {
+                            "eventFamily": "MYEBAY",
+                            "eventAction": "ACTN",
+                            "actionKind": "NAVSRC",
+                            "operationId": "2544535",
+                            "flushImmediately": false,
+                            "eventProperty": {
+                                "moduledtl": "mi:43837|li:9029"
+                            }
+                        }
+                    ],
+                    "URL": "https://payments.qa.ebay.com/ws/eBayISAPI.dll?OrderAction&transId=10590664007&action=5&pagetype=1883&itemid=170013634559&ru=https%3A%2F%2Fwww.qa.ebay.com%2Fmys%2Fsold%2Frf%2Fsort%3DMOST_RECENTLY_SOLD%26filter%3DALL%26limit%3D100%26period%3DLAST_60_DAYS"
+                }
+            },
+            {
+                "_type": "TextualSelection",
+                "paramValue": "UNMARK_PAYMENT_RECEIVED",
+                "label": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                        {
+                            "_type": "TextSpan",
+                            "text": "Unmark as payment received"
+                        }
+                    ]
+                },
+                "action": {
+                    "_type": "Action",
+                    "type": "NAV",
+                    "trackingList": [
+                        {
+                            "actionKind": "NAV",
+                            "operationId": "2544535",
+                            "flushImmediately": false,
+                            "eventProperty": {
+                                "sid": "p2544535.m43837.l9034"
+                            }
+                        },
+                        {
+                            "eventFamily": "MYEBAY",
+                            "eventAction": "ACTN",
+                            "actionKind": "NAVSRC",
+                            "operationId": "2544535",
+                            "flushImmediately": false,
+                            "eventProperty": {
+                                "moduledtl": "mi:43837|li:9034"
+                            }
+                        }
+                    ],
+                    "URL": "https://payments.qa.ebay.com/ws/eBayISAPI.dll?OrderAction&transId=10590664007&action=3&pagetype=1883&itemid=170013634559&ru=https%3A%2F%2Fwww.qa.ebay.com%2Fmys%2Fsold%2Frf%2Fsort%3DMOST_RECENTLY_SOLD%26filter%3DALL%26limit%3D100%26period%3DLAST_60_DAYS"
+                }
+            },
+            {
+                "_type": "TextualSelection",
+                "paramValue": "CONTACT_BUYER",
+                "label": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                        {
+                            "_type": "TextSpan",
+                            "text": "Contact buyer"
+                        }
+                    ]
+                },
+                "action": {
+                    "_type": "Action",
+                    "type": "NAV",
+                    "trackingList": [
+                        {
+                            "actionKind": "NAV",
+                            "operationId": "2544535",
+                            "flushImmediately": false,
+                            "eventProperty": {
+                                "sid": "p2544535.m43837.l9187"
+                            }
+                        },
+                        {
+                            "eventFamily": "MYEBAY",
+                            "eventAction": "ACTN",
+                            "actionKind": "NAVSRC",
+                            "operationId": "2544535",
+                            "flushImmediately": false,
+                            "eventProperty": {
+                                "moduledtl": "mi:43837|li:9187"
+                            }
+                        }
+                    ],
+                    "URL": "https://contact.qa.ebay.com/ws/eBayISAPI.dll?ReturnUserEmail&frm=3984&requested=myebay_so_buyer_us_1538675631319&iid=170013634559&redirect=0"
+                }
+            },
+            {
+                "_type": "TextualSelection",
+                "paramValue": "SELL_SIMILAR",
+                "label": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                        {
+                            "_type": "TextSpan",
+                            "text": "Sell similar"
+                        }
+                    ]
+                },
+                "action": {
+                    "_type": "Action",
+                    "type": "NAV",
+                    "trackingList": [
+                        {
+                            "actionKind": "NAV",
+                            "operationId": "2544535",
+                            "flushImmediately": false,
+                            "eventProperty": {
+                                "sid": "p2544535.m43837.l9190"
+                            }
+                        },
+                        {
+                            "eventFamily": "MYEBAY",
+                            "eventAction": "ACTN",
+                            "actionKind": "NAVSRC",
+                            "operationId": "2544535",
+                            "flushImmediately": false,
+                            "eventProperty": {
+                                "moduledtl": "mi:43837|li:9190"
+                            }
+                        }
+                    ],
+                    "URL": "https://cgi5.qa.ebay.com/ws2/eBayISAPI.dll?SellSimilarItem&itemid=170013634559"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "title": {
+        "textSpans": [
+            {
+                "text": "ASICS Kid's GEL- Craze TR 3 GS Training Shoes C611Y"
+            }
+        ],
+        "action": {
+            "trackingList": [
+                {
+                    "actionKind": "NAV",
+                    "operationId": "2486981",
+                    "flushImmediately": false,
+                    "eventProperty": {
+                        "sid": "p2486981.m4938.l9182"
+                    }
+                },
+                {
+                    "eventFamily": "MYEBAY",
+                    "eventAction": "ACTN",
+                    "actionKind": "NAVSRC",
+                    "operationId": "2486981",
+                    "flushImmediately": false,
+                    "eventProperty": {
+                        "moduledtl": "mi:4938|li:9182"
+                    }
+                }
+            ],
+            "URL": "http://www.qa.ebay.com/itm/170010451376"
+        }
+    }
+}

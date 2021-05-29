@@ -1,0 +1,124 @@
+
+.meb-top-nav {
+    color: @color-text-secondary;
+    font-size: @font-size-16;
+    box-shadow: none;
+    width: 50%;
+    display: inline-block;
+
+    &:after {
+        clear: both;
+        content: '';
+        height: 0;
+        overflow: hidden;
+    }
+
+    .primary-navigation {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        a {
+            &,
+            &:visited,
+            &:hover {
+                color: @color-text-default;
+            }
+        }
+
+        .primary-nav-item {
+            display: inline-block;
+
+            &:hover .secondary-navigation {
+                transition-delay: 250ms;
+                visibility: visible;
+            }
+        }
+
+        > li {
+            border-bottom: 2px solid transparent;
+            display: inline-block;
+            margin: 0 25px 0 0;
+            position: relative;
+            vertical-align: top;
+            z-index: 2;
+
+            &.active {
+                border-bottom: 3px solid @color-link-default;
+                > a {
+                    &,
+                    &:visited,
+                    &:hover {
+                        color: @color-link-default;
+                        font-weight: @font-weight-regular;
+                    }
+                }
+            }
+
+            > a {
+                display: block;
+                line-height: 1.5;
+                padding: 7px 14px 8px;
+                text-decoration: none;
+            }
+
+            button:not(.clipped) {
+                border: none;
+                clip: auto;
+                font-size: 0.6875rem;
+                padding: 4px;
+                position: absolute;
+                text-decoration: underline;
+                width: 100px;
+                z-index: 1;
+            }
+        }
+    }
+
+    .secondary-navigation {
+        background: @color-background-default;
+        border: 1px solid @color-grey3;
+        border-radius: 0 0 3px 3px;
+        box-shadow: 1px 3px 4px 0 fade(@color-text-default, 15%);
+        left: -1px;
+        list-style: none;
+        padding: 0 15px 3px;
+        overflow: hidden;
+        position: absolute;
+        top: 100%;
+        width: 175px;
+        visibility: hidden;
+        transition: visibility 250ms ease;
+
+        &[aria-hidden=false] {
+            visibility: visible;
+        }
+
+        > li {
+            margin: 13px 0 15px;
+
+            a {
+                color: @color-text-default;
+                font-size: @font-size-14;
+
+                &,
+                &:visited {
+                    color: @color-text-secondary;
+                }
+                &:hover {
+                    color: @color-text-default;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+// override for Skin, ds4 has fake-link class but ds6 doesn't have any
+button.btn--secondary.switch-classic-link {
+    padding: 0 0 5px;
+    border: 0;
+    font-size: @font-size-12;
+    text-decoration: none;
+    background-color: transparent;
+}

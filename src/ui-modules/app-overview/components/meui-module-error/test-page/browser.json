@@ -1,0 +1,7 @@
+{
+    "dependencies" :[
+    	"src/layouts/default",
+        "../",
+        "./style.less"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "model": {
+        "_type": "UpdateAPMViewModel",
+        "title": {
+            "textSpans": [{
+                "text": "Update automatic payment method"
+            }]
+        }
+    }
+}

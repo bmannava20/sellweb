@@ -1,0 +1,33 @@
+<me-modal
+    key="classicPrefModal"
+    class="classic-pref-modal-wrapper"
+    closeAccText=state.content.closeButtonText
+    open=state.showModal
+    on-dialog-close("close")>
+    <@title>${state.content.headerText}</@title>
+    <@main>
+        <p class="content middleText1">
+            <span>${state.content.middleText1}</span>
+            <meui-navlink action=state.content.action target="_blank"  >
+                ${state.content.linkText}<span class="clipped">${state.content.urlAccessibilityText}</span>
+            </meui-navlink>
+            <span>${state.content.middleText1End}</span>
+        </p>
+        <if (state.content.middleText2Header)>
+            <p class="content bulletHeader">${state.content.middleText2Header}</p>
+        </if>
+        <ul if(state.content.middleText2bullet1 || state.content.middleText2bullet2)>
+            <li if(state.content.middleText2bullet1)>${state.content.middleText2bullet1}</li>
+            <li if(state.content.middleText2bullet2)>${state.content.middleText2bullet2}</li>
+        </ul>
+        <p class="content middleText2">${state.content.middleText2}</p>
+    </@main>
+    <@footer>
+        <ebay-button class ="btn-ie-margin" priority="primary" on-button-click("updatePrefs")>
+            ${state.content.continueButtonText}
+        </ebay-button>
+        <ebay-button on-button-click("close")>
+            ${state.content.cancelButtonText}
+        </ebay-button>
+    </@footer>
+</me-modal>

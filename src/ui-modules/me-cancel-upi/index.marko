@@ -1,0 +1,58 @@
+import constants from '../../utils/helpers/constants'
+import safeGet from 'just-safe-get'
+
+<me-modal
+    key="cancelUPI"
+    class="cancel-upi-wrapper"
+    open=state.showModal
+    closeAccText=state.closeButton
+    on-dialog-close("closeModal")>
+    <@title>${state.title}</@title>
+    <@main>
+        <div class="confirmation-content">${state.content}</div>
+    </@main>
+    <@footer>
+        <me-fake-button
+            size="small"
+            class="upi-conti-btn"
+            model=state.continueButton
+            action=state.continueButtonAction
+            on-button-click("processCancel")/>
+        <me-fake-button
+            size="small"
+            class="upi-cancel-btn"
+            model=state.cancelButton
+            on-button-click("closeModal")/>
+    </@footer>
+</me-modal>
+
+<me-spinner class="upi-spinner" label=state.spinnerBusyLabel key="spinner"/>
+<if(state.loadNotice)>
+    <me-notice
+        model=state.message
+        type="inline"
+        class=state.class
+        status=state.status
+        key="order-notice">
+        <@message>
+            $ const styleMap = constants.STYLE_MAPS.NO_DEFAULT;
+            $ const message = [safeGet(state, "message.textSpans.0")];
+            $ const retryLink = safeGet(state, "message.textSpans.1");
+            <p>
+                <span>
+                    <me-textual-display model=message options=styleMap/>
+                </span>
+                <if(retryLink)>
+                    <span>
+                        <meui-navlink
+                            class="me-cancel-upi--link"
+                            action=retryLink.action
+                            on-navLinkClickAPI("onNavLinkClickAPI")>
+                            ${retryLink.text}
+                        </meui-navlink>
+                    </span>
+                </if>
+            </p>
+        </@message>
+    </me-notice>
+</if>

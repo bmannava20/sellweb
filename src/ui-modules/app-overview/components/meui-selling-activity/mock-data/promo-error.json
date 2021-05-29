@@ -1,0 +1,110 @@
+{
+  "_type": "SellingActivityModule",
+  "activeListings": {
+    "label": {
+      "textSpans": [
+        {
+          "text": "Active"
+        }
+      ],
+      "action": {
+        "type": "NAV",
+        "URL": "http://LM-SJC-11004599/ws/eBayISAPI.dll?MyEbayBeta&CurrentPage=MyeBayNextSelling"
+      }
+    }
+  },
+  "soldListings": {
+    "count": {
+      "textSpans": [
+        {
+          "text": "28"
+        }
+      ],
+      "value": 28
+    },
+    "label": {
+      "textSpans": [
+        {
+          "text": "Sold"
+        }
+      ],
+      "action": {
+        "type": "NAV",
+        "URL": "http://LM-SJC-11004599/ws/eBayISAPI.dll?MyEbayBeta&CurrentPage=MyeBayNextSold"
+      }
+    }
+  },
+  "unsoldListings": {
+    "count": {
+      "textSpans": [
+        {
+          "text": "104"
+        }
+      ],
+      "value": 104
+    },
+    "label": {
+      "textSpans": [
+        {
+          "text": "Unsold"
+        }
+      ],
+      "action": {
+        "type": "NAV",
+        "URL": "http://LM-SJC-11004599/ws/eBayISAPI.dll?MyEbayBeta&CurrentPage=MyeBayNextUnsold"
+      }
+    }
+  },
+  "totals": {
+    "count": {
+      "textSpans": [
+        {
+          "text": "$694.14",
+          "styles": [
+            "POSITIVE"
+          ]
+        }
+      ],
+      "accessibilityText": "Your 60-day total is $694.14",
+      "value": {
+        "value": 694.14,
+        "currency": "USD"
+      }
+    },
+    "label": {
+      "textSpans": [
+        {
+          "text": "60-day total",
+          "styles": [
+            "POSITIVE"
+          ]
+        }
+      ]
+    }
+  },
+  "activityError": {
+    "textSpans": [
+      {
+        "text": "Unable to load. Please try again later."
+      }
+    ],
+    "accessibilityText": "Help"
+  },
+  "promoError": {
+    "textSpans": [
+      {
+        "text": "Content unable to load."
+      },
+      {
+        "text": "Please try again later."
+      }
+    ]
+  },
+  "title": {
+    "textSpans": [
+      {
+        "text": "Selling activity"
+      }
+    ]
+  }
+}

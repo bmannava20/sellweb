@@ -1,0 +1,31 @@
+import get from 'just-safe-get'
+import helper from './helper'
+
+<if(state.model && state.model.lineItems && state.model.lineItems.length > 0)>
+    $ const model = helper.getModel(state);
+    <layout-item-listing
+        class="pre-order"
+        qaId=`${model.moduleType}-module`
+        title=model.title key="pre-order">
+        <me-spinner label=get(state, "myebayPageContent.busyLabel") key="spinner"/>
+        <@items>
+            <me-spinner label=get(state, "myebayPageContent.busyLabel") key="spinner"/>
+            <meui-item-list(item in model.lineItems)>
+                <item-card
+                    key=`itemRow-${item.listingId}`
+                    item=item
+                    moduleType=model.moduleType
+                    shippingTips=model.shippingTips
+                    on-sio-txn-wrapper("processSIOtxnWrapper")/>
+            </meui-item-list>
+            <see-all model=model.seeAll on-appUpdate("emit", "appUpdate")/>
+            <if(model.sioModalContentMap)>
+                <me-sio-txn-modal
+                    key="txn-wrapper"
+                    model=model.sioModalContentMap
+                    on-update-module("updatePreOrderPaymentModule")/>
+            </if>
+        </@items>
+    </layout-item-listing>
+</if>
+

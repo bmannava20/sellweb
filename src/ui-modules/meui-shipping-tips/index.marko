@@ -1,0 +1,54 @@
+import helper from './helper'
+import safeGet from 'just-safe-get'
+
+$ const model = helper.getModalData(state.model);
+$ const footerLinks = safeGet(model.footerLinks, "textSpans");
+
+<me-modal
+    key="shippingTip"
+    class="shipping-tip-modal-wrapper"
+    closeAccText=model.closeButtonText
+    open=state.showModal
+    on-dialog-close("close")>
+    <@title>${model.shipTipTitle}</@title>
+    <@main>
+        <ul class="tip-details">
+            <li class="tip-details__item">
+                <span class="icon icon--package"/>
+                <span>${model.packageText1}</span>
+                <if(model.getHelpAction)>
+                    <meui-navlink
+                        target="_blank"
+                        class="tip-details__link"
+                        action=model.getHelpAction>
+                        ${model.packageText2}
+                    </meui-navlink>
+                </if>
+            </li>
+            <li class="tip-details__item">
+                <span class="icon icon--wrap"/>
+                <span>${model.handlingText1}</span>
+                <if(model.handlingAction)>
+                    <meui-navlink
+                        target="_blank"
+                        class="tip-details__link"
+                        action=model.handlingAction>
+                        ${model.handlingText2}
+                    </meui-navlink>
+                </if>
+            </li>
+            <li class="tip-details__item">
+                <span class="icon icon--printer"/>
+                <span>${model.labelingText1}</span>
+                <if(model.labelAction)>
+                    <meui-navlink target="_blank" class="tip-details__link" action=model.labelAction>
+                        ${model.labelingText2}
+                    </meui-navlink>
+                </if>
+            </li>
+        </ul>
+    </@main>
+    <@footer>
+        <me-textual-display class="foot-links" model=footerLinks/>
+    </@footer>
+</me-modal>

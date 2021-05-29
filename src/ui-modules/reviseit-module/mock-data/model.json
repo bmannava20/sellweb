@@ -1,0 +1,824 @@
+{
+    "emptyData": {
+        "_type": "RelistItViewModel",
+        "title": {
+            "textSpans": [{
+                "text": "Ship it"
+            }]
+        }
+    },
+    "modules": {
+        "reviseItModule": {
+            "_type": "ReviseItViewModel",
+            "title": {
+                "_type": "TextualDisplay",
+                "textSpans": [
+                    {
+                        "_type": "TextSpan",
+                        "text": "Revise it"
+                    }
+                ]
+            },
+            "lineItems": [
+                {
+                    "_type": "MyeBaySellingListingSummary",
+                    "listingId": "250013420080",
+                    "title": {
+                        "_type": "TextualDisplay",
+                        "textSpans": [
+                            {
+                                "_type": "TextSpan",
+                                "text": "US-BIN-Fixed Shipping Item01 US-1557456090762"
+                            }
+                        ],
+                        "action": {
+                            "_type": "Action",
+                            "type": "NAV",
+                            "trackingList": [
+                                {
+                                    "actionKind": "NAV",
+                                    "operationId": "2512347",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                        "sid": "p2512347.m4943.l9182"
+                                    }
+                                },
+                                {
+                                    "eventFamily": "MYEBAY",
+                                    "eventAction": "ACTN",
+                                    "actionKind": "NAVSRC",
+                                    "operationId": "2512347",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                        "moduledtl": "mi:4943|li:9182"
+                                    }
+                                }
+                            ],
+                            "URL": "https://www.qa.ebay.com/itm/US-BIN-Fixed-Shipping-Item01-US-1557456090762/250013420080?src=urllib"
+                        }
+                    },
+                    "image": {
+                        "_type": "Image",
+                        "originalSize": {
+                            "height": 0,
+                            "width": 0
+                        },
+                        "action": {
+                            "_type": "Action",
+                            "type": "NAV",
+                            "trackingList": [
+                                {
+                                    "actionKind": "NAV",
+                                    "operationId": "2512347",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                        "sid": "p2512347.m4943.l9181"
+                                    }
+                                },
+                                {
+                                    "eventFamily": "MYEBAY",
+                                    "eventAction": "ACTN",
+                                    "actionKind": "NAVSRC",
+                                    "operationId": "2512347",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                        "moduledtl": "mi:4943|li:9181"
+                                    }
+                                }
+                            ],
+                            "URL": "https://www.qa.ebay.com/itm/US-BIN-Fixed-Shipping-Item01-US-1557456090762/250013420080?src=urllib"
+                        },
+                        "URL": "https://pics.ebaystatic.com/aw/pics/stockimage1.jpg"
+                    },
+                    "displayPrice": {
+                        "_type": "TextualDisplayValue",
+                        "textSpans": [
+                            {
+                                "_type": "TextSpan",
+                                "text": "$105.00",
+                                "styles": [
+                                    "BOLD"
+                                ]
+                            },
+                            {
+                                "_type": "TextSpan",
+                                "text": "+ Shipping (you pay)"
+                            }
+                        ],
+                        "accessibilityText": "$105.00 + Shipping (you pay)",
+                        "value": {
+                            "value": 105,
+                            "currency": "USD"
+                        }
+                    },
+                    "displayTime": {
+                        "_type": "TextualDisplayValue",
+                        "textSpans": [
+                            {
+                                "_type": "TextSpan",
+                                "text": "Live until sold or canceled"
+                            }
+                        ]
+                    },
+                    "__me": {
+                        "watchCount": {
+                            "_type": "TextualDisplayValue",
+                            "textSpans": [
+                                {
+                                    "_type": "TextSpan",
+                                    "text": "0"
+                                },
+                                {
+                                    "_type": "TextSpan",
+                                    "text": "watchers"
+                                }
+                            ],
+                            "value": 0
+                        },
+                        "viewCount": {
+                            "_type": "TextualDisplayValue",
+                            "textSpans": [
+                                {
+                                    "_type": "TextSpan",
+                                    "text": "0"
+                                },
+                                {
+                                    "_type": "TextSpan",
+                                    "text": "views"
+                                }
+                            ],
+                            "value": 0
+                        },
+                        "lineActions": {
+                            "options": [
+                                {
+                                    "label": {
+                                        "_type": "TextualDisplay",
+                                        "textSpans": [
+                                            {
+                                                "_type": "TextSpan",
+                                                "text": "Line Actions"
+                                            }
+                                        ]
+                                    },
+                                    "selections": [
+                                        {
+                                            "disabled": false,
+                                            "selected": false,
+                                            "label": {
+                                                "_type": "TextualDisplayValue",
+                                                "textSpans": [
+                                                    {
+                                                        "_type": "TextSpan",
+                                                        "text": "Drop price by $10",
+                                                        "styles": [
+                                                            "PROMOTED"
+                                                        ]
+                                                    }
+                                                ],
+                                                "action": {
+                                                    "_type": "Action",
+                                                    "type": "NAV",
+                                                    "trackingList": [
+                                                        {
+                                                            "actionKind": "NAV",
+                                                            "operationId": "2512347",
+                                                            "flushImmediately": false,
+                                                            "eventProperty": {
+                                                                "sid": "p2512347.m4943.l9423"
+                                                            }
+                                                        },
+                                                        {
+                                                            "eventFamily": "MYEBAY",
+                                                            "eventAction": "ACTN",
+                                                            "actionKind": "NAVSRC",
+                                                            "operationId": "2512347",
+                                                            "flushImmediately": false,
+                                                            "eventProperty": {
+                                                                "moduledtl": "mi:4943|li:9423"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "URL": "http://www.qa.ebay.com/sl/list?bin_price=95.00&format=FIXED_PRICE&instant=true&itemId=250013420080&sgn=AQAEAAAAYI5qKuBGfQSbO2pUNtCAzSxhoxAlNTWgcDaPkVu74uTVbCuuwQalEb86Q6d6abvND4ZBvbOK4SsmSvlprZbDs%2FeMur44pqwFko1WksHUBTxly5ezW7e4Qjwaoam%2FZqFCtQ%3D%3D&src=MyeBay&mode=ReviseItem"
+                                                },
+                                                "value": "applyRecommendation"
+                                            },
+                                            "default": false
+                                        },
+                                        {
+                                            "disabled": false,
+                                            "selected": false,
+                                            "label": {
+                                                "_type": "TextualDisplayValue",
+                                                "textSpans": [
+                                                    {
+                                                        "_type": "TextSpan",
+                                                        "text": "Make changes myself"
+                                                    }
+                                                ],
+                                                "action": {
+                                                    "_type": "Action",
+                                                    "type": "NAV",
+                                                    "trackingList": [
+                                                        {
+                                                            "actionKind": "NAV",
+                                                            "operationId": "2512347",
+                                                            "flushImmediately": false,
+                                                            "eventProperty": {
+                                                                "sid": "p2512347.m4943.l9424"
+                                                            }
+                                                        },
+                                                        {
+                                                            "eventFamily": "MYEBAY",
+                                                            "eventAction": "ACTN",
+                                                            "actionKind": "NAVSRC",
+                                                            "operationId": "2512347",
+                                                            "flushImmediately": false,
+                                                            "eventProperty": {
+                                                                "moduledtl": "mi:4943|li:9424"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "URL": "http://www.qa.ebay.com/sl/list?bin_price=95.00&format=FIXED_PRICE&instant=false&itemId=250013420080&sgn=AQAEAAAAYI5qKuBGfQSbO2pUNtCAzSxhoxAlNTWgcDaPkVu74uTVbCuuwQalEb86Q6d6abvND4ZBvbOK4SsmSvlprZbDs%2FeMur44pqwFko1WksHUBTxly5ezW7e4Qjwaoam%2FZqFCtQ%3D%3D&src=MyeBay&mode=ReviseItem"
+                                                },
+                                                "value": "revise"
+                                            },
+                                            "default": false
+                                        }
+                                    ],
+                                    "multiSelect": false
+                                }
+                            ],
+                            "accessibilityText": "Other actions"
+                        },
+                        "listingFormat": {
+                            "_type": "TextualDisplay",
+                            "textSpans": [
+                                {
+                                    "_type": "TextSpan",
+                                    "text": "FIXED_PRICE"
+                                }
+                            ]
+                        },
+                        "applicationId": 182,
+                        "itemStats": {
+                            "_type": "TextualDisplay",
+                            "textSpans": [
+                                {
+                                    "_type": "TextSpan",
+                                    "text": "0 views, 0 watchers"
+                                }
+                            ]
+                        },
+                        "sellingSuggestion": {
+                            "tipMessage": {
+                                "_type": "TextualDisplay",
+                                "textSpans": [
+                                    {
+                                        "_type": "TextSpan",
+                                        "text": "Attract more buyers by lowering the price",
+                                        "styles": [
+                                            "BOLD"
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "_type": "MyeBaySellingListingSummary",
+                    "listingId": "250013420081",
+                    "title": {
+                        "_type": "TextualDisplay",
+                        "textSpans": [
+                            {
+                                "_type": "TextSpan",
+                                "text": "US-BIN-Fixed Shipping Item01 US-1557456107531"
+                            }
+                        ],
+                        "action": {
+                            "_type": "Action",
+                            "type": "NAV",
+                            "trackingList": [
+                                {
+                                    "actionKind": "NAV",
+                                    "operationId": "2512347",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                        "sid": "p2512347.m4943.l9182"
+                                    }
+                                },
+                                {
+                                    "eventFamily": "MYEBAY",
+                                    "eventAction": "ACTN",
+                                    "actionKind": "NAVSRC",
+                                    "operationId": "2512347",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                        "moduledtl": "mi:4943|li:9182"
+                                    }
+                                }
+                            ],
+                            "URL": "https://www.qa.ebay.com/itm/US-BIN-Fixed-Shipping-Item01-US-1557456107531/250013420081?src=urllib"
+                        }
+                    },
+                    "image": {
+                        "_type": "Image",
+                        "originalSize": {
+                            "height": 0,
+                            "width": 0
+                        },
+                        "action": {
+                            "_type": "Action",
+                            "type": "NAV",
+                            "trackingList": [
+                                {
+                                    "actionKind": "NAV",
+                                    "operationId": "2512347",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                        "sid": "p2512347.m4943.l9181"
+                                    }
+                                },
+                                {
+                                    "eventFamily": "MYEBAY",
+                                    "eventAction": "ACTN",
+                                    "actionKind": "NAVSRC",
+                                    "operationId": "2512347",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                        "moduledtl": "mi:4943|li:9181"
+                                    }
+                                }
+                            ],
+                            "URL": "https://www.qa.ebay.com/itm/US-BIN-Fixed-Shipping-Item01-US-1557456107531/250013420081?src=urllib"
+                        },
+                        "URL": "https://pics.ebaystatic.com/aw/pics/stockimage1.jpg"
+                    },
+                    "displayPrice": {
+                        "_type": "TextualDisplayValue",
+                        "textSpans": [
+                            {
+                                "_type": "TextSpan",
+                                "text": "$105.00",
+                                "styles": [
+                                    "BOLD"
+                                ]
+                            },
+                            {
+                                "_type": "TextSpan",
+                                "text": "+ Shipping (you pay)"
+                            }
+                        ],
+                        "accessibilityText": "$105.00 + Shipping (you pay)",
+                        "value": {
+                            "value": 105,
+                            "currency": "USD"
+                        }
+                    },
+                    "displayTime": {
+                        "_type": "TextualDisplayValue",
+                        "textSpans": [
+                            {
+                                "_type": "TextSpan",
+                                "text": "Live until sold or canceled"
+                            }
+                        ]
+                    },
+                    "__me": {
+                        "watchCount": {
+                            "_type": "TextualDisplayValue",
+                            "textSpans": [
+                                {
+                                    "_type": "TextSpan",
+                                    "text": "0"
+                                },
+                                {
+                                    "_type": "TextSpan",
+                                    "text": "watchers"
+                                }
+                            ],
+                            "value": 0
+                        },
+                        "viewCount": {
+                            "_type": "TextualDisplayValue",
+                            "textSpans": [
+                                {
+                                    "_type": "TextSpan",
+                                    "text": "0"
+                                },
+                                {
+                                    "_type": "TextSpan",
+                                    "text": "views"
+                                }
+                            ],
+                            "value": 0
+                        },
+                        "lineActions": {
+                            "options": [
+                                {
+                                    "label": {
+                                        "_type": "TextualDisplay",
+                                        "textSpans": [
+                                            {
+                                                "_type": "TextSpan",
+                                                "text": "Line Actions"
+                                            }
+                                        ]
+                                    },
+                                    "selections": [
+                                        {
+                                            "disabled": false,
+                                            "selected": false,
+                                            "label": {
+                                                "_type": "TextualDisplayValue",
+                                                "textSpans": [
+                                                    {
+                                                        "_type": "TextSpan",
+                                                        "text": "Drop price by $10",
+                                                        "styles": [
+                                                            "PROMOTED"
+                                                        ]
+                                                    }
+                                                ],
+                                                "action": {
+                                                    "_type": "Action",
+                                                    "type": "NAV",
+                                                    "trackingList": [
+                                                        {
+                                                            "actionKind": "NAV",
+                                                            "operationId": "2512347",
+                                                            "flushImmediately": false,
+                                                            "eventProperty": {
+                                                                "sid": "p2512347.m4943.l9423"
+                                                            }
+                                                        },
+                                                        {
+                                                            "eventFamily": "MYEBAY",
+                                                            "eventAction": "ACTN",
+                                                            "actionKind": "NAVSRC",
+                                                            "operationId": "2512347",
+                                                            "flushImmediately": false,
+                                                            "eventProperty": {
+                                                                "moduledtl": "mi:4943|li:9423"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "URL": "http://www.qa.ebay.com/sl/list?bin_price=95.00&format=FIXED_PRICE&instant=true&itemId=250013420081&sgn=AQAEAAAAYI5qKuBGfQSbO2pUNtCAzSxhoxAlNTWgcDaPkVu74uTVbCuuwQalEb86Q6d6abvND4ZBvbOK4SsmSvlprZbDs%2FdEtbhrB3GaGpWQYANrCKUB962YvkZBBLrQyi%2FF3su%2Buw%3D%3D&src=MyeBay&mode=ReviseItem"
+                                                },
+                                                "value": "applyRecommendation"
+                                            },
+                                            "default": false
+                                        },
+                                        {
+                                            "disabled": false,
+                                            "selected": false,
+                                            "label": {
+                                                "_type": "TextualDisplayValue",
+                                                "textSpans": [
+                                                    {
+                                                        "_type": "TextSpan",
+                                                        "text": "Make changes myself"
+                                                    }
+                                                ],
+                                                "action": {
+                                                    "_type": "Action",
+                                                    "type": "NAV",
+                                                    "trackingList": [
+                                                        {
+                                                            "actionKind": "NAV",
+                                                            "operationId": "2512347",
+                                                            "flushImmediately": false,
+                                                            "eventProperty": {
+                                                                "sid": "p2512347.m4943.l9424"
+                                                            }
+                                                        },
+                                                        {
+                                                            "eventFamily": "MYEBAY",
+                                                            "eventAction": "ACTN",
+                                                            "actionKind": "NAVSRC",
+                                                            "operationId": "2512347",
+                                                            "flushImmediately": false,
+                                                            "eventProperty": {
+                                                                "moduledtl": "mi:4943|li:9424"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "URL": "http://www.qa.ebay.com/sl/list?bin_price=95.00&format=FIXED_PRICE&instant=false&itemId=250013420081&sgn=AQAEAAAAYI5qKuBGfQSbO2pUNtCAzSxhoxAlNTWgcDaPkVu74uTVbCuuwQalEb86Q6d6abvND4ZBvbOK4SsmSvlprZbDs%2FdEtbhrB3GaGpWQYANrCKUB962YvkZBBLrQyi%2FF3su%2Buw%3D%3D&src=MyeBay&mode=ReviseItem"
+                                                },
+                                                "value": "revise"
+                                            },
+                                            "default": false
+                                        }
+                                    ],
+                                    "multiSelect": false
+                                }
+                            ],
+                            "accessibilityText": "Other actions"
+                        },
+                        "listingFormat": {
+                            "_type": "TextualDisplay",
+                            "textSpans": [
+                                {
+                                    "_type": "TextSpan",
+                                    "text": "FIXED_PRICE"
+                                }
+                            ]
+                        },
+                        "applicationId": 182,
+                        "itemStats": {
+                            "_type": "TextualDisplay",
+                            "textSpans": [
+                                {
+                                    "_type": "TextSpan",
+                                    "text": "0 views, 0 watchers"
+                                }
+                            ]
+                        },
+                        "sellingSuggestion": {
+                            "tipMessage": {
+                                "_type": "TextualDisplay",
+                                "textSpans": [
+                                    {
+                                        "_type": "TextSpan",
+                                        "text": "Attract more buyers by lowering the price",
+                                        "styles": [
+                                            "BOLD"
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "_type": "MyeBaySellingListingSummary",
+                    "listingId": "250013420082",
+                    "title": {
+                        "_type": "TextualDisplay",
+                        "textSpans": [
+                            {
+                                "_type": "TextSpan",
+                                "text": "US-BIN-Fixed Shipping Item01 US-1557456116606"
+                            }
+                        ],
+                        "action": {
+                            "_type": "Action",
+                            "type": "NAV",
+                            "trackingList": [
+                                {
+                                    "actionKind": "NAV",
+                                    "operationId": "2512347",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                        "sid": "p2512347.m4943.l9182"
+                                    }
+                                },
+                                {
+                                    "eventFamily": "MYEBAY",
+                                    "eventAction": "ACTN",
+                                    "actionKind": "NAVSRC",
+                                    "operationId": "2512347",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                        "moduledtl": "mi:4943|li:9182"
+                                    }
+                                }
+                            ],
+                            "URL": "https://www.qa.ebay.com/itm/US-BIN-Fixed-Shipping-Item01-US-1557456116606/250013420082?src=urllib"
+                        }
+                    },
+                    "image": {
+                        "_type": "Image",
+                        "originalSize": {
+                            "height": 0,
+                            "width": 0
+                        },
+                        "action": {
+                            "_type": "Action",
+                            "type": "NAV",
+                            "trackingList": [
+                                {
+                                    "actionKind": "NAV",
+                                    "operationId": "2512347",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                        "sid": "p2512347.m4943.l9181"
+                                    }
+                                },
+                                {
+                                    "eventFamily": "MYEBAY",
+                                    "eventAction": "ACTN",
+                                    "actionKind": "NAVSRC",
+                                    "operationId": "2512347",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                        "moduledtl": "mi:4943|li:9181"
+                                    }
+                                }
+                            ],
+                            "URL": "https://www.qa.ebay.com/itm/US-BIN-Fixed-Shipping-Item01-US-1557456116606/250013420082?src=urllib"
+                        },
+                        "URL": "https://pics.ebaystatic.com/aw/pics/stockimage1.jpg"
+                    },
+                    "displayPrice": {
+                        "_type": "TextualDisplayValue",
+                        "textSpans": [
+                            {
+                                "_type": "TextSpan",
+                                "text": "$105.00",
+                                "styles": [
+                                    "BOLD"
+                                ]
+                            },
+                            {
+                                "_type": "TextSpan",
+                                "text": "+ Shipping (you pay)"
+                            }
+                        ],
+                        "accessibilityText": "$105.00 + Shipping (you pay)",
+                        "value": {
+                            "value": 105,
+                            "currency": "USD"
+                        }
+                    },
+                    "displayTime": {
+                        "_type": "TextualDisplayValue",
+                        "textSpans": [
+                            {
+                                "_type": "TextSpan",
+                                "text": "Live until sold or canceled"
+                            }
+                        ]
+                    },
+                    "__me": {
+                        "watchCount": {
+                            "_type": "TextualDisplayValue",
+                            "textSpans": [
+                                {
+                                    "_type": "TextSpan",
+                                    "text": "0"
+                                },
+                                {
+                                    "_type": "TextSpan",
+                                    "text": "watchers"
+                                }
+                            ],
+                            "value": 0
+                        },
+                        "viewCount": {
+                            "_type": "TextualDisplayValue",
+                            "textSpans": [
+                                {
+                                    "_type": "TextSpan",
+                                    "text": "0"
+                                },
+                                {
+                                    "_type": "TextSpan",
+                                    "text": "views"
+                                }
+                            ],
+                            "value": 0
+                        },
+                        "lineActions": {
+                            "options": [
+                                {
+                                    "label": {
+                                        "_type": "TextualDisplay",
+                                        "textSpans": [
+                                            {
+                                                "_type": "TextSpan",
+                                                "text": "Line Actions"
+                                            }
+                                        ]
+                                    },
+                                    "selections": [
+                                        {
+                                            "disabled": false,
+                                            "selected": false,
+                                            "label": {
+                                                "_type": "TextualDisplayValue",
+                                                "textSpans": [
+                                                    {
+                                                        "_type": "TextSpan",
+                                                        "text": "Drop price by $10",
+                                                        "styles": [
+                                                            "PROMOTED"
+                                                        ]
+                                                    }
+                                                ],
+                                                "action": {
+                                                    "_type": "Action",
+                                                    "type": "NAV",
+                                                    "trackingList": [
+                                                        {
+                                                            "actionKind": "NAV",
+                                                            "operationId": "2512347",
+                                                            "flushImmediately": false,
+                                                            "eventProperty": {
+                                                                "sid": "p2512347.m4943.l9423"
+                                                            }
+                                                        },
+                                                        {
+                                                            "eventFamily": "MYEBAY",
+                                                            "eventAction": "ACTN",
+                                                            "actionKind": "NAVSRC",
+                                                            "operationId": "2512347",
+                                                            "flushImmediately": false,
+                                                            "eventProperty": {
+                                                                "moduledtl": "mi:4943|li:9423"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "URL": "http://www.qa.ebay.com/sl/list?bin_price=95.00&format=FIXED_PRICE&instant=true&itemId=250013420082&sgn=AQAEAAAAYI5qKuBGfQSbO2pUNtCAzSxhoxAlNTWgcDaPkVu74uTVbCuuwQalEb86Q6d6abvND4ZBvbOK4SsmSvlprZbDs%2Fd6mOm9j2eIBeB9FUbKJ2W10mXLLykQn1qhxMopVXRvcA%3D%3D&src=MyeBay&mode=ReviseItem"
+                                                },
+                                                "value": "applyRecommendation"
+                                            },
+                                            "default": false
+                                        },
+                                        {
+                                            "disabled": false,
+                                            "selected": false,
+                                            "label": {
+                                                "_type": "TextualDisplayValue",
+                                                "textSpans": [
+                                                    {
+                                                        "_type": "TextSpan",
+                                                        "text": "Make changes myself"
+                                                    }
+                                                ],
+                                                "action": {
+                                                    "_type": "Action",
+                                                    "type": "NAV",
+                                                    "trackingList": [
+                                                        {
+                                                            "actionKind": "NAV",
+                                                            "operationId": "2512347",
+                                                            "flushImmediately": false,
+                                                            "eventProperty": {
+                                                                "sid": "p2512347.m4943.l9424"
+                                                            }
+                                                        },
+                                                        {
+                                                            "eventFamily": "MYEBAY",
+                                                            "eventAction": "ACTN",
+                                                            "actionKind": "NAVSRC",
+                                                            "operationId": "2512347",
+                                                            "flushImmediately": false,
+                                                            "eventProperty": {
+                                                                "moduledtl": "mi:4943|li:9424"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "URL": "http://www.qa.ebay.com/sl/list?bin_price=95.00&format=FIXED_PRICE&instant=false&itemId=250013420082&sgn=AQAEAAAAYI5qKuBGfQSbO2pUNtCAzSxhoxAlNTWgcDaPkVu74uTVbCuuwQalEb86Q6d6abvND4ZBvbOK4SsmSvlprZbDs%2Fd6mOm9j2eIBeB9FUbKJ2W10mXLLykQn1qhxMopVXRvcA%3D%3D&src=MyeBay&mode=ReviseItem"
+                                                },
+                                                "value": "revise"
+                                            },
+                                            "default": false
+                                        }
+                                    ],
+                                    "multiSelect": false
+                                }
+                            ],
+                            "accessibilityText": "Other actions"
+                        },
+                        "listingFormat": {
+                            "_type": "TextualDisplay",
+                            "textSpans": [
+                                {
+                                    "_type": "TextSpan",
+                                    "text": "FIXED_PRICE"
+                                }
+                            ]
+                        },
+                        "applicationId": 182,
+                        "itemStats": {
+                            "_type": "TextualDisplay",
+                            "textSpans": [
+                                {
+                                    "_type": "TextSpan",
+                                    "text": "0 views, 0 watchers"
+                                }
+                            ]
+                        },
+                        "sellingSuggestion": {
+                            "tipMessage": {
+                                "_type": "TextualDisplay",
+                                "textSpans": [
+                                    {
+                                        "_type": "TextSpan",
+                                        "text": "Attract more buyers by lowering the price",
+                                        "styles": [
+                                            "BOLD"
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

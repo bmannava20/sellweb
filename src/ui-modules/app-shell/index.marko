@@ -1,0 +1,171 @@
+import safeGet from "just-safe-get"
+import { appShellSpinnerId } from '../../utils/helpers/spinner';
+
+$ {
+    const timeout =
+        (safeGet(input, "model.data.modules.warmup") && 60000) ||
+        safeGet(input, "model.modules.configModule.awaitTimeout");
+}
+$ const myebayPageContent = safeGet(input, "model.modules.i18nModule");
+$ const busyLabel = safeGet(myebayPageContent, "busyLabel");
+<div key="app-shell">
+    <me-spinner label=busyLabel channel-name=appShellSpinnerId key="spinner"/>
+    <!-- begin my ebay header -->
+    <await-ebay(csrfTokenModule from state.model.modules.csrfTokenModule) timeout=timeout>
+        <await-error-ebay/>
+        <await-ebay(module from state.model.modules.switchToClassicModule) timeout=timeout>
+            <await-timeout-ebay/>
+            <await-error-ebay/>
+            $ state.model.modules.switchToClassicModule = module;
+            <switch-to-preference-modal
+                model=module
+                key="switch-classic-modal"
+                configModule=state.model.modules.configModule
+                myebayPageContent=myebayPageContent
+                csrfTokenModule=csrfTokenModule
+                isModalVisible=false/>
+        </await-ebay>
+    </await-ebay>
+    <await-ebay(csrfTokenModule from state.model.modules.csrfTokenModule) timeout=timeout>
+        <await-error-ebay/>
+        <await-ebay(module from state.model.modules.switchToAllSellingModule) timeout=timeout>
+            <await-timeout-ebay/>
+            <await-error-ebay/>
+            $ state.model.modules.switchToAllSellingModule = module;
+            <switch-to-preference-modal
+                model=module
+                key="switch-all-selling-modal"
+                configModule=state.model.modules.configModule
+                myebayPageContent=myebayPageContent
+                csrfTokenModule=csrfTokenModule
+                isModalVisible=false/>
+        </await-ebay>
+    </await-ebay>
+    <div id="meh">
+        <!-- being Ad -->
+        <await-ebay(mfeAdsModule from state.model.modules.mfeAdsModule) timeout=timeout>
+            <await-error-ebay/>
+            <await-timeout-ebay/>
+            $ state.model.modules.mfeAdsModule = mfeAdsModule;
+            <meui-scandal-ad model=mfeAdsModule placement="leaderBoard"/>
+        </await-ebay>
+        <!-- end Ad -->
+        <!-- begin top nav -->
+        <div class="top-nav-cnt">
+            <!-- begin top nav Top Nav Menu, switch to classic link and userprofile with book mark -->
+            <await-ebay(topNavModule from state.model.modules.topNavModule) timeout=timeout>
+                <await-timeout-ebay>
+                    <script type="text/javascript">
+                        window.location.href = "/mys/server-error";
+                    </script>
+                </await-timeout-ebay>
+                <await-error-ebay>
+                    <script type="text/javascript">
+                        window.location.href = "/mys/server-error";
+                    </script>
+                </await-error-ebay>
+                <await-ebay(browserTitleModule from state.model.modules.browserTitleModule) timeout=timeout>
+                    <await-timeout-ebay/>
+                    <await-error-ebay/>
+                    <page-header
+                        browserTitleModule=browserTitleModule
+                        topNavModule=topNavModule
+                        on-openClassicPrefDialog("openClassicPrefDialog")
+                        on-openSwitchToAllSellingDialog("openSwitchToAllSellingDialog")/>
+                    $ state.model.modules.browserTitleModule = browserTitleModule;
+                </await-ebay>
+                $ state.model.modules.topNavModule = topNavModule;
+            </await-ebay>
+        </div>
+        <!-- end top nav -->
+    </div>
+    <!-- end my ebay header -->
+    <!-- begin my ebay body -->
+    <div id="meb">
+        <!-- begin my ebay left-nav -->
+        <div id="meb-left-nav">
+            <await-ebay(leftNavModule from state.model.modules.leftNavModule) timeout=timeout>
+                <await-timeout-ebay>
+                    <script type="text/javascript">
+                        window.location.href = "/mys/server-error";
+                    </script>
+                </await-timeout-ebay>
+                <await-error-ebay>
+                    <script type="text/javascript">
+                        window.location.href = "/mys/server-error";
+                    </script>
+                </await-error-ebay>
+                <await-ebay(preferenceModule from state.model.modules.preferenceModule) timeout=timeout>
+                    <left-navigation
+                        model={
+                            modules: {
+                                leftNavModule: leftNavModule,
+                                preferenceModule: preferenceModule
+                            }
+                        }
+                        on-appUpdate("onAppUpdate")/>
+                    <await-timeout-ebay/>
+                    <await-error-ebay/>
+                    $ state.model.modules.preferenceModule = preferenceModule;
+                    $ state.model.modules.leftNavModule = leftNavModule;
+                </await-ebay>
+            </await-ebay>
+            <await-ebay(mfeAdsModule from state.model.modules.mfeAdsModule) timeout=timeout>
+                <await-error-ebay/>
+                <await-timeout-ebay/>
+                $ state.model.modules.mfeAdsModule = mfeAdsModule;
+                <meui-scandal-ad model=mfeAdsModule placement="skyScraper"/>
+            </await-ebay>
+        </div>
+        <!-- end my ebay left-nav -->
+        <!-- begin items -->
+        <if(input.renderBody)>
+            <if(typeof input.renderBody === "string")>${input.renderBody}</if>
+            <else>
+                <${input.renderBody}/>
+            </else>
+        </if>
+        <!-- end items -->
+    </div>
+    <!-- end my ebay body -->
+    <await-ebay(topNavModule from state.model.modules.topNavModule) timeout=timeout>
+        <await-timeout-ebay>
+            <script type="text/javascript">
+                window.location.href = "/mys/server-error";
+            </script>
+        </await-timeout-ebay>
+        <await-error-ebay>
+            <script type="text/javascript">
+                window.location.href = "/mys/server-error";
+            </script>
+        </await-error-ebay>
+        <meui-inflow-help model=topNavModule/>
+    </await-ebay>
+    <await-ebay(csrfTokenModule from state.model.modules.csrfTokenModule) timeout=timeout>
+        $ state.model.modules.csrfTokenModule = csrfTokenModule;
+        <await-error-ebay/>
+        <await-timeout-ebay/>
+    </await-ebay>
+    <!-- Footer ads -->
+    <await-ebay(mfeAdsModule from state.model.modules.mfeAdsModule) timeout=timeout>
+        <await-error-ebay/>
+        <await-timeout-ebay/>
+        $ state.model.modules.mfeAdsModule = mfeAdsModule;
+        <meui-scandal-ad
+            model=mfeAdsModule
+            placement="globalfooterleaderboard"
+            isFooterAd="true"/>
+        <meui-scandal-ad
+            model=mfeAdsModule
+            placement="globalfootermrec1"
+            isFooterAd="true"/>
+        <meui-scandal-ad
+            model=mfeAdsModule
+            placement="globalfootermrec2"
+            isFooterAd="true"/>
+        <meui-scandal-ad
+            model=mfeAdsModule
+            placement="globalfootermrec3"
+            isFooterAd="true"/>
+    </await-ebay>
+</div>

@@ -1,0 +1,41 @@
+{
+    "default": {
+        "imageId": "fz8AAOSwepZXRbgw",
+        "imageIdType": "ZOOM_GUID",
+        "originalSize": {
+            "height": 0,
+            "width": 0
+        },
+        "action": {
+            "type": "NAV",
+            "trackingList": [
+                {
+                    "actionKind": "NAV",
+                    "operationId": "2386164",
+                    "flushImmediately": false,
+                    "eventProperty": {
+                        "sid": "p2386164.m3898.l6907",
+                        "trkp": "itm%3A110009564958"
+                    }
+                },
+                {
+                    "eventFamily": "MYEBAY",
+                    "eventAction": "ACTN",
+                    "actionKind": "NAVSRC",
+                    "operationId": "2386164",
+                    "flushImmediately": false,
+                    "eventProperty": {
+                        "moduledtl": "mi:3898|li:6907"
+                    }
+                }
+            ],
+            "URL": "http://www.de.paradise.qa.ebay.com/itm/110009564958"
+        },
+        "URL": "http://i1.qa.ebayimg.com/images/g/jfIAAOSw5J9YYuD~/s-l140.jpg"
+    },
+    "empty": {
+    },
+    "imageWithNoAction": {
+        "URL": "http://i1.qa.ebayimg.com/images/g/jfIAAOSw5J9YYuD~/s-l140.jpg"
+    }
+}

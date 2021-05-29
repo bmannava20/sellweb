@@ -1,0 +1,45 @@
+.me-item-activity {
+    width: 100%;
+    display: flex;
+    position: inherit;
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        width: 32.6%;
+        text-align: center;
+
+        &:nth-child(2) {
+            width: 40%;
+        }
+
+        .bid-link {
+            color: @color-text-default;
+            text-decoration: none;
+
+            &:visited {
+                color: @color-text-default;
+            }
+
+            &:hover span {
+                color: @color-link-default;
+            }
+        }
+
+        &-label {
+            .typography-small();
+            color: @color-text-secondary;
+            padding-bottom: 5px;
+        }
+
+        &-count {
+            .typography-regular;
+            display: block;
+        }
+
+        &:not(:last-child) {
+            border-right: solid 1px @color-grey2;
+            padding-right: 2px;
+        }
+    }
+}

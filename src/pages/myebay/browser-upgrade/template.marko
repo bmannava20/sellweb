@@ -1,0 +1,12 @@
+<lasso-page flags=input.lassoFlags timeout=(data.warmup && 60000)/>
+import safeGet from 'just-safe-get'
+$ const header = safeGet(input, "contentMap.header");
+$ const byline = safeGet(input, "contentMap.byline");
+<layout-minimal>
+    <@body>
+        <section class="ie-upgrade-page">
+            <div class="main-text">${header}</div>
+            <div class="sub-text">$!{byline}</div>
+        </section>
+    </@body>
+</layout-minimal>

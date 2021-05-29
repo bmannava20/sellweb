@@ -1,0 +1,18 @@
+@import "./common.less";
+
+.active-item {
+    .base-active-item();
+    padding: 32px 16px 32px 0;
+    .item {
+        &-title {
+            position: relative;
+            .typography-medium();
+            font-weight: normal;
+            display: inline-block;
+        }
+
+        &__price .bold {
+            font-size: @font-size-20;
+        }
+    }
+}

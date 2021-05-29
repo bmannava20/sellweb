@@ -1,0 +1,7 @@
+import get as safeGet from 'just-safe-get';
+$ const creatives = safeGet(input, 'model.cards.0.creatives.0');
+<if(creatives)>
+    <div class=input.class>
+        <madrona-generic ...creatives mweb=input.mweb/>
+    </div>
+</if>

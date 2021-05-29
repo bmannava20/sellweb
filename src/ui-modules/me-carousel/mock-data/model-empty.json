@@ -1,0 +1,27 @@
+{
+    "model": {
+        "label": {
+            "_type": "TextualDisplay",
+            "textSpans": [
+                {
+                    "_type": "TextSpan",
+                    "text": "Filter"
+                }
+            ]
+        },
+        "controls": {
+            "_type": "CarouselControls",
+            "previous": {
+                "type": "OPERATION",
+                "accessibilityText": "Previous",
+                "URL": "javascript"
+            },
+            "next": {
+                "type": "OPERATION",
+                "accessibilityText": "Next",
+                "URL": "javascript"
+            }
+        },
+        "options": []
+    }
+}

@@ -1,0 +1,28 @@
+import safeGet from 'just-safe-get'
+import helper from './helper'
+$ const item = helper.getModelData(input);
+
+
+<!-- Configured for fields used in insights SIO-->
+<div class="insights-item pre-order-insights" qa-id=`${state.moduleType}-item-${item.listingId}`>
+    <me-textual-display class="item__interested-buyer" model=item.interestedBuyer/>
+    <layout-item-card
+        class="insights-item__body">
+        <@col-1>
+            <meui-thumbnail image=item.image altText=item.title size="mobile"/>
+        </@col-1>
+        <@col-2>
+            <me-item-title model=item.title/>
+            <static-text model=item.displayPrice class="item__price"/>
+            <static-text model=item.offerExpiryTime class="item__time"/>
+            <static-text model=item.displayTime class="item__time"/>
+        </@col-2>
+    </layout-item-card>
+    <layout-item-card class="insights-item__footer">
+        <@col-1>
+            <div class="item__actions">
+                <transactions-line-actions model=item.data on-button-click("onButtonClick")/>
+            </div>
+        </@col-1>
+    </layout-item-card>
+</div>

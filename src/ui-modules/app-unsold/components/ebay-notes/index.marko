@@ -1,0 +1,24 @@
+import safeGet from 'just-safe-get'
+import helper from './helper'
+
+$ const model = helper.getModel(input);
+<if(model.ebayNotes || model.sellTipText)>
+    <div class="notes-cnt">
+        <!-- begin: ebay notes -->
+        <for|ebayNote| of=model.ebayNotes>
+            $ {
+                const ebayNotesText = safeGet(ebayNote, "note.textSpans.0.text"),
+                        ebayNotesUrl = safeGet(ebayNote, "note.action.URL"),
+                        ebayNoteAccessibilityText = safeGet(ebayNote, "note.accessibilityText"),
+                        ebayNotesUrlText = safeGet(ebayNote, "note.action.name");
+            }
+            <ebay-notice class="ebay-notes" status="information" type="inline">
+                <p class="me-notice-text" key="content">
+                    ${ebayNotesText}
+                    <a href=`${ebayNotesUrl}`>${ebayNotesUrlText}</a>
+                </p>
+            </ebay-notice>
+        </for>
+        <!-- end: ebay notes -->
+    </div>
+</if>

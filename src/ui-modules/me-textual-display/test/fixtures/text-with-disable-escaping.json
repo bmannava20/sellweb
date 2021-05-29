@@ -1,0 +1,10 @@
+{
+    "model": [
+        {
+            "text": "Reduce the price by &euro;1"
+        }
+    ],
+    "options": {
+        "disableEscaping": true
+    }
+}

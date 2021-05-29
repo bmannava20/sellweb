@@ -1,0 +1,171 @@
+{
+    "model": {
+        "description": {
+            "textSpans": [
+                {
+                    "_type": "TextSpan",
+                    "text": "Your listing currently has at least 1 bid. Would you like to sell it to the highest bidder when you end it?"
+                }
+            ]
+        },
+        "options": {
+            "entries": [
+                {
+                    "paramKey": "sellToHighestBidder",
+                    "label": {
+                        "_type": "TextualDisplay",
+                        "textSpans": [
+                            {
+                                "_type": "TextSpan",
+                                "text": "Sell to the highest bidder for $54"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "paramKey": "endListing",
+                    "label": {
+                        "_type": "TextualDisplay",
+                        "textSpans": [
+                            {
+                                "_type": "TextSpan",
+                                "text": "End listing and cancel all bids"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "legal": {
+            "_type": "TextualDisplay",
+            "textSpans": [
+                {
+                    "_type": "TextSpan",
+                    "text": "A final value fee based on the highest bid will be charged whether you accept the bid or not."
+                }
+            ]
+        },
+        "reasons": {
+            "heading": {
+                "textSpans": [
+                    {
+                        "text": "Please select a reason",
+                        "styles": [
+                            "BOLD"
+                        ]
+                    }
+                ]
+            },
+            "selectionType": "SINGLE",
+            "entries": [
+                {
+                    "disabled": false,
+                    "lockable": false,
+                    "selected": false,
+                    "paramKey": "Incorrect",
+                    "label": {
+                        "_type": "TextualDisplay",
+                        "textSpans": [
+                            {
+                                "_type": "TextSpan",
+                                "text": "The start price or the reserve price is incorrect"
+                            }
+                        ]
+                    },
+                    "uxComponentHint": "TOGGLE",
+                    "defaultChoice": false
+                },
+                {
+                    "disabled": false,
+                    "lockable": false,
+                    "selected": false,
+                    "paramKey": "LostOrBroken",
+                    "paramValue": null,
+                    "paramValueType": null,
+                    "additionalParamKeyValues": null,
+                    "label": {
+                        "_type": "TextualDisplay",
+                        "textSpans": [
+                            {
+                                "_type": "TextSpan",
+                                "text": "The item was lost or broken"
+                            }
+                        ]
+                    },
+                    "uxComponentHint": "TOGGLE",
+                    "defaultChoice": false
+                },
+                {
+                    "disabled": false,
+                    "lockable": false,
+                    "selected": false,
+                    "paramKey": "NotAvailable",
+                    "label": {
+                        "_type": "TextualDisplay",
+                        "textSpans": [
+                            {
+                                "_type": "TextSpan",
+                                "text": "The item is no longer available for sale"
+                            }
+                        ]
+                    },
+                    "uxComponentHint": "TOGGLE",
+                    "defaultChoice": false
+                },
+                {
+                    "disabled": false,
+                    "lockable": false,
+                    "selected": false,
+                    "paramKey": "OtherListingError",
+                    "label": {
+                        "_type": "TextualDisplay",
+                        "textSpans": [
+                            {
+                                "_type": "TextSpan",
+                                "text": "The listing contains an error"
+                            }
+                        ]
+                    },
+                    "uxComponentHint": "TOGGLE",
+                    "defaultChoice": false
+                }
+            ]
+        },
+        "tellUsWhatYouThink": {
+            "textSpans": [
+                {
+                    "_type": "TextSpan",
+                    "text": "Tell us what you think"
+                }
+            ],
+            "action": {
+                "URL": "https://survey.qa.ebay.com/srv/admin/survey/usage/a/selling.endlisting.single",
+                "type": "NAV",
+                "name": "newWindow",
+                "signInRequired": false
+            }
+        },
+        "actions": [
+            {
+                "text": "Cancel",
+                "type": "SECONDARY",
+                "action": {
+                    "type": "OPERATION",
+                    "name": "CANCEL"
+                },
+                "disabled": false
+            },
+            {
+                "text": "End listing",
+                "type": "PRIMARY",
+                "action": {
+                    "type": "OPERATION",
+                    "name": "END_LISTINGS"
+                },
+                "disabled": false
+            }
+        ]
+    },
+    "showModal": true,
+    "errorLabel": "There was a problem loading your items. Please try again later."
+}

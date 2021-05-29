@@ -1,0 +1,14 @@
+<me-modal
+    key="tracking-details"
+    class="tracking-details-wrapper"
+    closeAccText=state.closeBtnTxt
+    open=state.open
+    on-dialog-close("closeModal")>
+    <@main>
+        <iframe
+            class="tracking-details__iframe"
+            scrolling="no"
+            frameborder="0"
+            src=state.url/>
+    </@main>
+</me-modal>

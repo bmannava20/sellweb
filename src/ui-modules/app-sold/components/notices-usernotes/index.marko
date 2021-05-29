@@ -1,0 +1,8 @@
+<item-notices model=input.model.allNotices class="item__item-notices"/>
+<me-user-note
+    key=`userNotes-${input.model.listingId}`
+    model=input.model.userNote
+    listingId=input.model.listingId
+    transactionId=input.model.transactionId
+    content-map=input.model.addNoteContentMap
+    on-edit-note("emit", "edit-note")/>

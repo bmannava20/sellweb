@@ -1,0 +1,27 @@
+<me-modal
+    key="endListingModal"
+    class="me-end-listing-modal-wrapper"
+    aria-labelledby=(component.getElId("endlisting-label"))
+    open=state.showModal
+    on-dialog-close("close")>
+    <@title>${state.title}</@title>
+    <@main>
+        <if(state.responseError)>
+            <span class="emphasis">
+                ${state.responseError.longMessage || state.responseError.message}
+            </span>
+        </if>
+        <else>
+            <if(state.fetchError)>
+                <div class="emphasis">${input.errorLabel}</div>
+            </if>
+
+            <if(!state.loading && state.showModal && state.model)>
+                <se-end-listing
+                    ...state.model
+                    on-cancel-end-listing('close')
+                    on-submit-end-listing('submit')/>
+            </if>
+        </else>
+    </@main>
+</me-modal>

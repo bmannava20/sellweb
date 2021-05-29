@@ -1,0 +1,28 @@
+@import './common.less';
+
+.drafts-item {
+    .columns {
+        .col-2 {
+            padding-left: 16px;
+            width: 80%;
+            height: 100%;
+        }
+        .col-3 {
+            width: 0px;
+        }
+    }
+    .item {
+        &__checkbox-wrapper {
+            padding-right: 0;
+            transform: translate(-50px, -16px);
+            transition: all 0.1s cubic-bezier(.38, .52, .37, 1.27);
+            max-width: 0;
+
+            &.slide-right {
+                padding-right: 16px;
+                transform: translate(0, -16px);
+                max-width: none;
+            }
+        }
+    }
+}

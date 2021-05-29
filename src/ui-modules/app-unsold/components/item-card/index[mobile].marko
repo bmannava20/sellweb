@@ -1,0 +1,59 @@
+import safeGet from 'just-safe-get'
+import tplHelper from '../../../../utils/helpers/template-helper'
+import helper from './helper'
+
+$ const item = helper.getModel(input);
+<div class="unsold-item" qa-id=`unsold-item-${item.listingId}`>
+    <layout-item-card class="unsold-item__header">
+        <@col-1>
+            <ebay-notes model=input.model.__me/>
+        </@col-1>
+    </layout-item-card>
+    <layout-item-card class="unsold-item__body">
+        <@col-1>
+            <div class=["item__checkbox-wrapper", input.isEditMode && "slide-right"]>
+                <ebay-checkbox
+                    class="item__checkbox"
+                    on-checkbox-change("checkboxHandler")
+                    key=`unsold-item-checkbox-${item.listingId}`
+                    checked=item.isChecked
+                    value=item.listingId
+                    id=`checkbox-${item.listingId}`/>
+                <label for=`checkbox-${item.listingId}` class="clipped">
+                    <me-textual-display model=item.title/>
+                </label>
+            </div>
+            <meui-thumbnail image=item.image altText=item.title size="mobile"/>
+        </@col-1>
+        <@col-2>
+            <me-item-title model=item.title/>
+            <static-text model=item.displayPrice setDefault=true class="item__price"/>
+            <static-text
+                model=item.additionalPrice
+                setDefault=true
+                class="item__price-additional"/>
+            <static-text model=item.displayPriceMessage class="item__price-attrs"/>
+            <static-text model=item.logisticsCost class="item__logistics-cost"/>
+            <div class="item__end-date">
+                <span class="item__end-date__label">${item.endLabel}</span>
+                <span class="item__end-date__value">${item.endDate}</span>
+            </div>
+            <div class="item__cta-wrapper">
+                <me-line-actions
+                    options=item.inlineActions
+                    on-lineActionSelect("onLineActionSelect")/>
+            </div>
+        </@col-2>
+    </layout-item-card>
+    <layout-item-card class="unsold-item__footer">
+        <@col-1>
+            <me-user-note
+                key="userNote"
+                model=item.userNote
+                listingId=item.listingId
+                content-map=item.addNoteContentMap
+                on-edit-note("onEditAddNote")/>
+            <me-item-activity model=item.itemActivityModel/>
+        </@col-1>
+    </layout-item-card>
+</div>

@@ -1,0 +1,18 @@
+import helper from './helper'
+
+$ const model = helper.getModel(input);
+<if(model.userNote)>
+    <div class="user-note" key="userNote" on-click("editNote")>
+        <div class="user-note__content">
+            <if(model.userNoteLabel)>
+                <span class="user-note-label">${model.userNoteLabel}</span>
+            </if>
+            <span>${model.userNote}</span>
+        </div>
+        <button
+            class="user-note__control fake-link"
+            aria-label=`${model.editButtonAccTxt}`>
+            ${model.editButtonTxt}
+        </button>
+    </div>
+</if>

@@ -1,0 +1,20 @@
+.me-sort {
+    &__select {
+        // In active page the filter arrow is showing up on the sort dropdown
+        z-index: 2;
+        // Override for the ebay-menu padding adjustment
+        button.expand-btn.expand-btn--secondary.expand-btn--borderless {
+            padding-left: 5px;
+            padding-right: 0px;
+        }
+
+        &:not(:last-child) {
+            margin-right: 50px;
+        }
+        // Override for the tick mark getting cut off in IE
+        span.menu__status {
+            height: 6px;
+            background-size: contain;
+        }
+    }
+}

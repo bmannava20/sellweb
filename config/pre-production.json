@@ -1,0 +1,158 @@
+{
+    "services": {
+        "bulktool": {
+            "hostname": "bulktoolexpsvc102.pp.vip.ebay.com"
+        },
+        "getOrderDetailsSvc": {
+            "hostname": "bulktoolexpsvc102.pp.vip.ebay.com"
+        },
+        "MesellwebExpSvcRelist": {
+            "hostname": "www.mesellexp.pp.stratus.ebay.com"
+        },
+        "LASServiceUserNote": {
+            "hostname": "www.lasnext.pp.stratus.ebay.com",
+            "retry": 1,
+            "socketTimeout": 5000,
+            "markup-timeout": 1000
+        },
+        "MesellwebExpSvcSortFilter": {
+            "hostname": "www.mesellexp.pp.stratus.ebay.com",
+            "retry": 1,
+            "socketTimeout": 5000,
+            "markup-timeout": 1000
+        },
+        "MesellwebExpSvcPagination": {
+            "hostname": "www.mesellexp.pp.stratus.ebay.com",
+            "retry": 1,
+            "socketTimeout": 5000,
+            "markup-timeout": 1000
+        },
+        "MesellwebExpSvcDelete": {
+            "hostname": "www.mesellexp.pp.stratus.ebay.com",
+            "retry": 1,
+            "socketTimeout": 5000,
+            "markup-timeout": 1000
+        },
+        "DraftExpSvcDelete": {
+            "hostname": "draftsvc.pp.vip.ebay.com",
+            "socketTimeout": 5000,
+            "retry": 3,
+            "markup-timeout": 1000
+        },
+        "MesellwebExpSvc": {
+            "hostname": "www.mesellexp.pp.stratus.ebay.com",
+            "retry": 1,
+            "socketTimeout": 5000,
+            "markup-timeout": 1000
+        },
+        "MesellwebExpSvcUpdateFinisIt": {
+            "hostname": "www.mesellexp.pp.stratus.ebay.com",
+            "retry": 1,
+            "socketTimeout": 5000,
+            "markup-timeout": 1000
+        },
+        "MesellwebExpSvcMarkAsPaid": {
+            "hostname": "www.mesellexp.pp.stratus.ebay.com",
+            "retry": 1,
+            "socketTimeout": 5000,
+            "markup-timeout": 1000
+        },
+        "MesellwebExpSvcDeleteDraft": {
+            "hostname": "www.mesellexp.pp.stratus.ebay.com",
+            "retry": 1,
+            "socketTimeout": 5000,
+            "markup-timeout": 1000
+        },
+        "MesellwebExpSvcSSE": {
+            "hostname": "www.mesellexp.pp.stratus.ebay.com",
+            "retry": 1,
+            "socketTimeout": 5000,
+            "markup-timeout": 1000
+        },
+        "MesellwebExpSvcSSENoTracking": {
+            "hostname": "www.mesellexp.pp.stratus.ebay.com",
+            "retry": 3,
+            "socketTimeout": 5000,
+            "markup-timeout": 1000
+        },
+        "MesellwebExpSvcUpdatePreferences": {
+            "hostname": "www.mesellexp.pp.stratus.ebay.com",
+            "retry": 1,
+            "socketTimeout": 5000,
+            "markup-timeout": 1000
+        },
+        "MesellwebSPA": {
+            "hostname": "www.mesellexp.pp.stratus.ebay.com",
+            "retry": 1,
+            "socketTimeout": 5000,
+            "markup-timeout": 1000
+        },
+        "MesellActiveExpSvcSSE": {
+            "hostname": "activesvc.pp.vip.ebay.com"
+        },
+        "MesellScheduledExpSvcSSE": {
+            "hostname": "scheduledsvc.pp.vip.ebay.com"
+        },
+        "MesellScheduledExpSvc": {
+            "hostname": "scheduledsvc.pp.vip.ebay.com"
+        },
+        "MesellActiveExpSvc": {
+            "hostname": "activesvc.pp.vip.ebay.com"
+        },
+        "MesellDraftExpSvcSSE": {
+            "hostname": "draftsvc.pp.vip.ebay.com"
+        },
+        "MesellDraftExpSvc": {
+            "hostname": "draftsvc.pp.vip.ebay.com"
+        },
+        "MesellUnSoldExpSvcSSE": {
+            "hostname": "unsoldsvc.pp.vip.ebay.com"
+        },
+        "MesellUnSoldExpSvc": {
+            "hostname": "unsoldsvc.pp.vip.ebay.com"
+        },
+        "MesellUnSoldDeleteExpSvc": {
+            "hostname": "unsoldsvc.pp.vip.ebay.com"
+        },
+        "MesellSoldExpSvcSSE": {
+            "hostname": "soldsvc.pp.vip.ebay.com"
+        },
+        "MesellSoldExpSvc": {
+            "hostname": "soldsvc.pp.vip.ebay.com"
+        },
+        "MesellSoldDeleteExpSvc": {
+            "hostname": "soldsvc.pp.vip.ebay.com"
+        },
+        "MesellModuleProviderSSE": {
+            "hostname": "www.mesellexp.pp.stratus.ebay.com"
+        },
+        "MesellModuleProvider": {
+            "hostname": "www.mesellexp.pp.stratus.ebay.com"
+        },
+        "SocialShareModuleProvider": {
+            "hostname": "embedxsvc.pp.vip.ebay.com"
+        },
+        "SocialShareClickProvider": {
+            "hostname": "embedxsvc.pp.vip.ebay.com"
+        },
+        "EndListingGetSvc": {
+            "hostname": "shlistingupdate475.pp.vip.ebay.com"
+        },
+        "EndListingSubmitSvc": {
+            "hostname": "shlistingupdate475.pp.vip.ebay.com"
+        },
+        "MesellwebExpSvcRevisePBC": {
+           "hostname": "www.mesellexp.pp.stratus.ebay.com"
+        },
+        "routingDashboard": {
+           "hostname": "www.mesellexp.pp.stratus.ebay.com"
+        }
+    },
+    "front-end-urls": {
+        "inflowHelpUrl" : "https://www.ocsrest.pp.stratus.ebay.com",
+        "baseUrl": "/mys/ajx"
+    },
+    "error-page": {
+        "pnrUrl": "http://www.latest.ebay.com/sl/error?src=myebay"
+    }
+}

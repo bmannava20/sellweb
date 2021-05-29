@@ -1,0 +1,197 @@
+{
+    "unansweredModel": {
+        "message": {
+            "_type": "TextualDisplay",
+            "textSpans": [{
+                "_type": "TextSpan",
+                "text": "Unanswered message",
+                "styles": [
+                    "NEGATIVE"
+                ]
+            }]
+        },
+        "callToAction": {
+            "text": "Respond to message",
+            "type": "DEFAULT",
+            "action": {
+                "type": "NAV",
+                "URL": "www.ebay.com"
+            }
+        },
+        "status": null
+    },
+    "socialShareListingModel": {
+        "message": {
+            "_type": "TextualDisplay",
+            "textSpans": [{
+                "_type": "TextSpan",
+                "text": "Pay no final value fee when your item sells through your shared link"
+            }]
+        },
+        "callToAction": {
+            "paramValue": "ShareListing",
+            "text": "Share listing",
+            "type": "PRIMARY",
+            "action": {
+                "type": "OPERATION",
+                "trackingList": [{
+                    "actionKind": "NAV",
+                    "operationId": "2524149",
+                    "flushImmediately": false,
+                    "eventProperty": {
+                        "trkp": "itm%3A170013067323",
+                        "sid": "p2524149.m5429.l6907"
+                    }
+                },
+                {
+                    "eventFamily": "MYEBAY",
+                    "eventAction": "ACTN",
+                    "actionKind": "NAVSRC",
+                    "operationId": "2524149",
+                    "flushImmediately": false,
+                    "eventProperty": {
+                        "moduledtl": "mi:5429|li:6907"
+                    }
+                }
+            ]
+            }
+        },
+        "status": null
+    },
+    "requiredAspectsModel": {
+                "message": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                        {
+                            "_type": "TextSpan",
+                            "text": "Add item details"
+                        }
+                    ]
+                },
+                "callToAction": {
+                    "actionId": "ADD_RECOMMENDED_DETAILS",
+                    "text": "Add details",
+                    "type": "PRIMARY",
+                    "action": {
+                        "URL": "https://www.qa.ebay.com/sl/list/grasshopper?mode=ReviseItem&itemId=140013018184",
+                        "type": "OPERATION",
+                        "trackingList": [
+                            {
+                                "actionKind": "NAV",
+                                "operationId": "2524149",
+                                "flushImmediately": false,
+                                "eventProperty": {
+                                    "trkp": "itm%3A170013067323",
+                                    "sid": "p2524149.m5429.l6907"
+                                }
+                            },
+                            {
+                                "eventFamily": "MYEBAY",
+                                "eventAction": "ACTN",
+                                "actionKind": "NAVSRC",
+                                "operationId": "2524149",
+                                "flushImmediately": false,
+                                "eventProperty": {
+                                    "moduledtl": "mi:5429|li:6907"
+                                }
+                            }
+                        ],
+                        "name": "ADD_RECOMMENDED_DETAILS"
+                    }
+                },
+                "status": null
+    },
+    "requiredAspectsModelWithNav": {
+        "message": {
+            "_type": "TextualDisplay",
+            "textSpans": [
+                {
+                    "_type": "TextSpan",
+                    "text": "Add item details"
+                }
+            ]
+        },
+        "callToAction": {
+            "actionId": "ADD_RECOMMENDED_DETAILS",
+            "text": "Add details",
+            "type": "PRIMARY",
+            "action": {
+                "URL": "https://www.qa.ebay.com/sl/list/grasshopper?mode=ReviseItem&itemId=140013018184",
+                "type": "NAV",
+                "trackingList": [
+                    {
+                        "actionKind": "NAV",
+                        "operationId": "2524149",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                            "trkp": "itm%3A170013067323",
+                            "sid": "p2524149.m5429.l6907"
+                        }
+                    },
+                    {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2524149",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                            "moduledtl": "mi:5429|li:6907"
+                        }
+                    }
+                ],
+                "name": "ADD_RECOMMENDED_DETAILS"
+            }
+        },
+        "status": null
+    },
+    "dropPriceModel": {
+        "message": {
+            "_type": "TextualDisplay",
+            "textSpans": [{
+                "_type": "TextSpan",
+                "text": "Attract more buyers by lowering the price"
+            }]
+        },
+        "callToAction": {
+            "text": "Drop price by $5",
+            "type": "PRIMARY",
+            "action": {
+                "type": "OPERATION"
+            }
+        },
+        "status": null
+    },
+    "noticeSuccessModel": {
+        "status": {
+            "title": {
+                "_type": "TextualDisplay",
+                "textSpans": [{
+                    "_type": "TextSpan",
+                    "text": "This item has been revised"
+                }]
+            },
+            "messageType": "SUCCESS"
+        }
+    },
+    "noticeErrorModel": {
+        "status": {
+            "title": {
+                "_type": "TextualDisplay",
+                "textSpans": [{
+                        "_type": "TextSpan",
+                        "text": "There was a problem revising your item"
+                    },
+                    {
+                        "_type": "TextSpan",
+                        "text": "Try again",
+                        "action": {
+                            "type": "NAV",
+                            "URL": "http://active.drop.price"
+                        }
+                    }
+                ]
+            },
+            "messageType": "ERROR"
+        }
+    }
+}

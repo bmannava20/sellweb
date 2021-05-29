@@ -1,0 +1,1084 @@
+{
+    "_type": "PromoOffersModule",
+    "title": {
+      "textSpans": [
+        {
+          "text": "Selling promotions"
+        }
+      ]
+    },
+    "promoOffers": [
+      {
+        "promoListings": {
+          "totalValue": 10,
+          "availableValue": 0,
+          "infoText": {
+            "count": {
+              "textSpans": [
+                {
+                  "text": "0"
+                }
+              ],
+              "accessibilityText": "You have 0 remaining out of total 10 listings.",
+              "value": 0
+            },
+            "label": {
+              "textSpans": [
+                {
+                  "text": "Remaining"
+                }
+              ]
+            }
+          }
+        },
+        "promoTitle": "Test Promotion",
+        "promoDescription": "Test Promo Desc <a href=\"http://www.ebay.com\" target=\"_blank\">Learn More<b class=\"g-hdn\"> - opens in a new window or tab</b></a>",
+        "startTimeLabel": {
+          "textSpans": [
+            {
+              "text": "Starts",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " Sep 25"
+            }
+          ]
+        },
+        "endTimeLabel": {
+          "textSpans": [
+            {
+              "text": "Ends",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " Aug 13"
+            }
+          ]
+        },
+        "startTimeLongLabel": {
+          "textSpans": [
+            {
+              "text": "Starts",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 25 Sep 2017 at 10:38:57PM PDT"
+            }
+          ]
+        },
+        "endTimeLongLabel": {
+          "textSpans": [
+            {
+              "text": "Ends",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 13 Aug 2018 at 11:59:59PM PDT"
+            }
+          ]
+        },
+        "availableSiteLabel": {
+          "textSpans": [
+            {
+              "text": "Available at ebay.com"
+            }
+          ]
+        },
+        "usedCountLabel": {
+          "textSpans": [
+            {
+              "text": "Used",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 10",
+              "action": {
+                "type": "NAV",
+                "URL": "https://www.rsvpweb.stg.stratus.qa.ebay.com/rsvp/viewitemids/51786068013"
+              }
+            }
+          ]
+        },
+        "remainingCountLabel": {
+          "textSpans": [
+            {
+              "text": "Left",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 0"
+            }
+          ]
+        }
+      },
+      {
+        "promoListings": {
+          "totalValue": 10,
+          "availableValue": 0,
+          "infoText": {
+            "count": {
+              "textSpans": [
+                {
+                  "text": "0"
+                }
+              ],
+              "accessibilityText": "You have 0 remaining out of total 10 listings.",
+              "value": 0
+            },
+            "label": {
+              "textSpans": [
+                {
+                  "text": "Remaining"
+                }
+              ]
+            }
+          }
+        },
+        "promoTitle": "Test Promotion ReIterate",
+        "promoDescription": "Test Promo Desc ReIterate <a href=\"http://www.ebay.com\" target=\"_blank\">Learn More<b class=\"g-hdn\"> - opens in a new window or tab</b></a>",
+        "startTimeLabel": {
+          "textSpans": [
+            {
+              "text": "Starts",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " Sep 26"
+            }
+          ]
+        },
+        "endTimeLabel": {
+          "textSpans": [
+            {
+              "text": "Ends",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " Aug 16"
+            }
+          ]
+        },
+        "startTimeLongLabel": {
+          "textSpans": [
+            {
+              "text": "Starts",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 26 Sep 2017 at 11:08:10AM PDT"
+            }
+          ]
+        },
+        "endTimeLongLabel": {
+          "textSpans": [
+            {
+              "text": "Ends",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 16 Aug 2018 at 11:59:59PM PDT"
+            }
+          ]
+        },
+        "availableSiteLabel": {
+          "textSpans": [
+            {
+              "text": "Available at ebay.com"
+            }
+          ]
+        },
+        "usedCountLabel": {
+          "textSpans": [
+            {
+              "text": "Used",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 10",
+              "action": {
+                "type": "NAV",
+                "URL": "https://www.rsvpweb.stg.stratus.qa.ebay.com/rsvp/viewitemids/51786105013"
+              }
+            }
+          ]
+        },
+        "remainingCountLabel": {
+          "textSpans": [
+            {
+              "text": "Left",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 0"
+            }
+          ]
+        }
+      },
+      {
+        "promoListings": {
+          "totalValue": 10000,
+          "availableValue": 10000,
+          "infoText": {
+            "count": {
+              "textSpans": [
+                {
+                  "text": "999+"
+                }
+              ],
+              "accessibilityText": "You have 10 remaining out of total 10 listings.",
+              "value": 10
+            },
+            "label": {
+              "textSpans": [
+                {
+                  "text": "Remaining"
+                }
+              ]
+            }
+          }
+        },
+        "promoTitle": "Test promotion for SLA check New",
+        "promoDescription": "Test promotion for SLA checkTest promotion for SLA check new",
+        "startTimeLabel": {
+          "textSpans": [
+            {
+              "text": "Starts",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " Sep 26"
+            }
+          ]
+        },
+        "endTimeLabel": {
+          "textSpans": [
+            {
+              "text": "Ends",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " Aug 17"
+            }
+          ]
+        },
+        "startTimeLongLabel": {
+          "textSpans": [
+            {
+              "text": "Starts",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 26 Sep 2017 at 10:53:35AM PDT"
+            }
+          ]
+        },
+        "endTimeLongLabel": {
+          "textSpans": [
+            {
+              "text": "Ends",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 17 Aug 2018 at 11:59:59PM PDT"
+            }
+          ]
+        },
+        "availableSiteLabel": {
+          "textSpans": [
+            {
+              "text": "Available at ebay.com"
+            }
+          ]
+        },
+        "usedCountLabel": {
+          "textSpans": [
+            {
+              "text": "Used",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 0"
+            }
+          ]
+        },
+        "remainingCountLabel": {
+          "textSpans": [
+            {
+              "text": "Left",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 10"
+            }
+          ]
+        }
+      },
+      {
+        "promoListings": {
+          "totalValue": 10,
+          "availableValue": 10,
+          "infoText": {
+            "count": {
+              "textSpans": [
+                {
+                  "text": "10"
+                }
+              ],
+              "accessibilityText": "You have 10 remaining out of total 10 listings.",
+              "value": 10
+            },
+            "label": {
+              "textSpans": [
+                {
+                  "text": "Remaining"
+                }
+              ]
+            }
+          }
+        },
+        "promoTitle": "Test Promotion",
+        "promoDescription": "Test Promo Desc <a href=\"http://ebay.com\" target=\"_blank\">Learn More<b class=\"g-hdn\"> - opens in a new window or tab</b></a>",
+        "ctaLabel": {
+          "textSpans": [
+            {
+              "text": "Get offer"
+            }
+          ],
+          "action": {
+            "type": "NAV",
+            "URL": "https://www.rsvpweb.stg.stratus.qa.ebay.com/rsvp/signup/16786/4R_aLbq5YVw"
+          }
+        },
+        "startTimeLabel": {
+          "textSpans": [
+            {
+              "text": "Starts",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " Aug 25"
+            }
+          ]
+        },
+        "endTimeLabel": {
+          "textSpans": [
+            {
+              "text": "Ends",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " Aug 20"
+            }
+          ]
+        },
+        "startTimeLongLabel": {
+          "textSpans": [
+            {
+              "text": "Starts",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 25 Aug 2017 at 12:00:00AM PDT"
+            }
+          ]
+        },
+        "endTimeLongLabel": {
+          "textSpans": [
+            {
+              "text": "Ends",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 20 Aug 2018 at 11:59:59PM PDT"
+            }
+          ]
+        },
+        "availableSiteLabel": {
+          "textSpans": [
+            {
+              "text": "Available at ebay.com"
+            }
+          ]
+        },
+        "usedCountLabel": {
+          "textSpans": [
+            {
+              "text": "Used",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 0"
+            }
+          ]
+        },
+        "remainingCountLabel": {
+          "textSpans": [
+            {
+              "text": "Left",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 10"
+            }
+          ]
+        }
+      },
+      {
+        "promoListings": {
+          "totalValue": 10,
+          "availableValue": 10,
+          "infoText": {
+            "count": {
+              "textSpans": [
+                {
+                  "text": "10"
+                }
+              ],
+              "accessibilityText": "You have 10 remaining out of total 10 listings.",
+              "value": 10
+            },
+            "label": {
+              "textSpans": [
+                {
+                  "text": "Remaining"
+                }
+              ]
+            }
+          }
+        },
+        "promoTitle": "Test Promotion",
+        "promoDescription": "Test Promo Desc <a href=\"http://ebay.com\" target=\"_blank\">Learn More<b class=\"g-hdn\"> - opens in a new window or tab</b></a>",
+        "ctaLabel": {
+          "textSpans": [
+            {
+              "text": "Get offer"
+            }
+          ],
+          "action": {
+            "type": "NAV",
+            "URL": "https://www.rsvpweb.stg.stratus.qa.ebay.com/rsvp/signup/17061/mFL411opc9o"
+          }
+        },
+        "startTimeLabel": {
+          "textSpans": [
+            {
+              "text": "Starts",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " Sep 25"
+            }
+          ]
+        },
+        "endTimeLabel": {
+          "textSpans": [
+            {
+              "text": "Ends",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " Sep 20"
+            }
+          ]
+        },
+        "startTimeLongLabel": {
+          "textSpans": [
+            {
+              "text": "Starts",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 25 Sep 2017 at 12:00:00AM PDT"
+            }
+          ]
+        },
+        "endTimeLongLabel": {
+          "textSpans": [
+            {
+              "text": "Ends",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 20 Sep 2018 at 11:59:59PM PDT"
+            }
+          ]
+        },
+        "availableSiteLabel": {
+          "textSpans": [
+            {
+              "text": "Available at ebay.com"
+            }
+          ]
+        },
+        "usedCountLabel": {
+          "textSpans": [
+            {
+              "text": "Used",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 0"
+            }
+          ]
+        },
+        "remainingCountLabel": {
+          "textSpans": [
+            {
+              "text": "Left",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 10"
+            }
+          ]
+        }
+      },
+      {
+        "promoListings": {
+          "totalValue": 10,
+          "availableValue": 10,
+          "infoText": {
+            "count": {
+              "textSpans": [
+                {
+                  "text": "10"
+                }
+              ],
+              "accessibilityText": "You have 10 remaining out of total 10 listings.",
+              "value": 10
+            },
+            "label": {
+              "textSpans": [
+                {
+                  "text": "Remaining"
+                }
+              ]
+            }
+          }
+        },
+        "promoTitle": "Test Promotion",
+        "promoDescription": "Test Promo Desc <a href=\"http://ebay.com\" target=\"_blank\">Learn More<b class=\"g-hdn\"> - opens in a new window or tab</b></a>",
+        "ctaLabel": {
+          "textSpans": [
+            {
+              "text": "Get offer"
+            }
+          ],
+          "action": {
+            "type": "NAV",
+            "URL": "https://www.rsvpweb.stg.stratus.qa.ebay.com/rsvp/signup/16832/4mRmW6Pi_n4"
+          }
+        },
+        "startTimeLabel": {
+          "textSpans": [
+            {
+              "text": "Starts",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " Sep 19"
+            }
+          ]
+        },
+        "endTimeLabel": {
+          "textSpans": [
+            {
+              "text": "Ends",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " Sep 25"
+            }
+          ]
+        },
+        "startTimeLongLabel": {
+          "textSpans": [
+            {
+              "text": "Starts",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 19 Sep 2017 at 12:00:00AM PDT"
+            }
+          ]
+        },
+        "endTimeLongLabel": {
+          "textSpans": [
+            {
+              "text": "Ends",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 25 Sep 2018 at 11:59:59PM PDT"
+            }
+          ]
+        },
+        "availableSiteLabel": {
+          "textSpans": [
+            {
+              "text": "Available at ebay.com"
+            }
+          ]
+        },
+        "usedCountLabel": {
+          "textSpans": [
+            {
+              "text": "Used",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 0"
+            }
+          ]
+        },
+        "remainingCountLabel": {
+          "textSpans": [
+            {
+              "text": "Left",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 10"
+            }
+          ]
+        }
+      }
+    ],
+    "expiredPromoOffers": [
+      {
+        "promoListings": {
+          "totalValue": 50,
+          "availableValue": 0,
+          "infoText": {
+            "count": {
+              "textSpans": [
+                {
+                  "text": "0"
+                }
+              ],
+              "accessibilityText": "You have 0 remaining out of total 50 listings.",
+              "value": 0
+            },
+            "label": {
+              "textSpans": [
+                {
+                  "text": "Remaining"
+                }
+              ]
+            }
+          }
+        },
+        "promoTitle": "List 50 of your items for FREE – make money today!",
+        "promoDescription": "Pay no insertion fees for auction-style or fixed price listings. Buy It Now is free too. <a href=\"http://pages.ebay.com/help/sell/insertion-fee.html#free\" target=\"_blank\">Learn More<b class=\"g-hdn\"> - opens in a new window or tab</b></a>",
+        "startTimeLabel": {
+          "textSpans": [
+            {
+              "text": "Starts",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " Aug 1"
+            }
+          ]
+        },
+        "endTimeLabel": {
+          "textSpans": [
+            {
+              "text": "Ends",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " Sep 1"
+            }
+          ]
+        },
+        "startTimeLongLabel": {
+          "textSpans": [
+            {
+              "text": "Starts",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 1 Aug 2017 at 12:00:00AM PDT"
+            }
+          ]
+        },
+        "endTimeLongLabel": {
+          "textSpans": [
+            {
+              "text": "Ends",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 1 Sep 2017 at 12:00:00AM PDT"
+            }
+          ]
+        },
+        "availableSiteLabel": {
+          "textSpans": [
+            {
+              "text": "Available at ebay.com"
+            }
+          ]
+        },
+        "usedCountLabel": {
+          "textSpans": [
+            {
+              "text": "Used",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 50",
+              "action": {
+                "type": "NAV",
+                "URL": "https://www.rsvpweb.stg.stratus.qa.ebay.com/rsvp/viewitemids/51743100013"
+              }
+            }
+          ]
+        },
+        "remainingCountLabel": {
+          "textSpans": [
+            {
+              "text": "Left",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 0"
+            }
+          ]
+        }
+      },
+      {
+        "promoListings": {
+          "totalValue": 50,
+          "availableValue": 0,
+          "infoText": {
+            "count": {
+              "textSpans": [
+                {
+                  "text": "0"
+                }
+              ],
+              "accessibilityText": "You have 0 remaining out of total 50 listings.",
+              "value": 0
+            },
+            "label": {
+              "textSpans": [
+                {
+                  "text": "Remaining"
+                }
+              ]
+            }
+          }
+        },
+        "promoTitle": "List 50 of your items for FREE – make money today!",
+        "promoDescription": "Pay no insertion fees for auction-style or fixed price listings. Buy It Now is free too. <a href=\"http://pages.ebay.com/help/sell/insertion-fee.html#free\" target=\"_blank\">Learn More<b class=\"g-hdn\"> - opens in a new window or tab</b></a>",
+        "startTimeLabel": {
+          "textSpans": [
+            {
+              "text": "Starts",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " Sep 1"
+            }
+          ]
+        },
+        "endTimeLabel": {
+          "textSpans": [
+            {
+              "text": "Ends",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " Oct 1"
+            }
+          ]
+        },
+        "startTimeLongLabel": {
+          "textSpans": [
+            {
+              "text": "Starts",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 1 Sep 2017 at 12:00:00AM PDT"
+            }
+          ]
+        },
+        "endTimeLongLabel": {
+          "textSpans": [
+            {
+              "text": "Ends",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 1 Oct 2017 at 12:00:00AM PDT"
+            }
+          ]
+        },
+        "availableSiteLabel": {
+          "textSpans": [
+            {
+              "text": "Available at ebay.com"
+            }
+          ]
+        },
+        "usedCountLabel": {
+          "textSpans": [
+            {
+              "text": "Used",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 50",
+              "action": {
+                "type": "NAV",
+                "URL": "https://www.rsvpweb.stg.stratus.qa.ebay.com/rsvp/viewitemids/51764416013"
+              }
+            }
+          ]
+        },
+        "remainingCountLabel": {
+          "textSpans": [
+            {
+              "text": "Left",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 0"
+            }
+          ]
+        }
+      },
+      {
+        "promoListings": {
+          "totalValue": 50,
+          "availableValue": 0,
+          "infoText": {
+            "count": {
+              "textSpans": [
+                {
+                  "text": "0"
+                }
+              ],
+              "accessibilityText": "You have 0 remaining out of total 50 listings.",
+              "value": 0
+            },
+            "label": {
+              "textSpans": [
+                {
+                  "text": "Remaining"
+                }
+              ]
+            }
+          }
+        },
+        "promoTitle": "List 50 of your items for FREE – make money today!",
+        "promoDescription": "Pay no insertion fees for auction-style or fixed price listings. Buy It Now is free too. <a href=\"http://pages.ebay.com/help/sell/insertion-fee.html#free\" target=\"_blank\">Learn More<b class=\"g-hdn\"> - opens in a new window or tab</b></a>",
+        "startTimeLabel": {
+          "textSpans": [
+            {
+              "text": "Starts",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " Oct 1"
+            }
+          ]
+        },
+        "endTimeLabel": {
+          "textSpans": [
+            {
+              "text": "Ends",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " Nov 1"
+            }
+          ]
+        },
+        "startTimeLongLabel": {
+          "textSpans": [
+            {
+              "text": "Starts",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 1 Oct 2017 at 12:00:00AM PDT"
+            }
+          ]
+        },
+        "endTimeLongLabel": {
+          "textSpans": [
+            {
+              "text": "Ends",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 1 Nov 2017 at 12:00:00AM PDT"
+            }
+          ]
+        },
+        "availableSiteLabel": {
+          "textSpans": [
+            {
+              "text": "Available at ebay.com"
+            }
+          ]
+        },
+        "usedCountLabel": {
+          "textSpans": [
+            {
+              "text": "Used",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 50",
+              "action": {
+                "type": "NAV",
+                "URL": "https://www.rsvpweb.stg.stratus.qa.ebay.com/rsvp/viewitemids/51789690013"
+              }
+            }
+          ]
+        },
+        "remainingCountLabel": {
+          "textSpans": [
+            {
+              "text": "Left",
+              "styles": [
+                "BOLD"
+              ]
+            },
+            {
+              "text": " 0"
+            }
+          ]
+        }
+      }
+    ],
+    "expiredPromosLink": {
+      "textSpans": [
+        {
+          "text": "View expired promotions (3)"
+        }
+      ],
+      "action": {
+        "type": "OPERATION",
+        "name": "viewExpiredPromos"
+      }
+    },
+    "expiredPromosHeading": {
+      "textSpans": [
+        {
+          "text": "Expired selling promotions"
+        }
+      ]
+    }
+  }

@@ -1,0 +1,25 @@
+import safeGet from 'just-safe-get'
+
+$ const drafts = safeGet(state, "drafts");
+<if(drafts && drafts.length > 0)>
+    <div class="drafts-carousel">
+        <meui-navlink class="drafts-carousel__title" action=safeGet(state, 'seeAll.action') on-navLinkClickAPI("processDraftsCarouselSeeAll")>
+            <h2>${safeGet(state, 'title.textSpans.0.text')} <ebay-icon type="inline" name="arrow-right"/></h2>
+        </meui-navlink>
+        <layout-item-listing qaId="drafts-carousel" >
+            <@items>
+                <ebay-carousel key="drafts-carousel" gap="8">
+                    <for|draft| of=drafts>
+                        <ebay-carousel-item>
+                            <meui-thumbnail image=draft.image altText=draft.title size="large-152"/>
+                            <me-item-title model=draft.title/>
+                            <me-textual-display
+                                model=safeGet(draft, "status.textSpans")
+                                class="drafts-carousel__status"/>
+                        </ebay-carousel-item>
+                    </for>
+                </ebay-carousel>
+            </@items>
+        </layout-item-listing>
+    </div>
+</if>

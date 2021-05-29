@@ -1,0 +1,39 @@
+import safeGet from 'just-safe-get'
+
+$ {
+    const a11yIndicator = safeGet(state, "item.model.title.textSpans.0.text"),
+        busyLabel = safeGet(out, "global.i18nModule.busyLabel");
+}
+<div.relist-it-item-delete>
+    <if(state.isShowDeletePanel || state.isShowRetryPanel)>
+        <item-delete-confirmation
+            model=state.deleteConfirm
+            isShowRetryPanel=state.isShowRetryPanel
+            isShowDeletePanel=state.isShowDeletePanel
+            listingId=state.listingId
+            on-deleteitem("deleteitem")
+            on-cancelDeleteitem("cancelDeleteitem")/>
+    </if>
+    <else-if(state.isDeleting)>
+        <div id="loading-delete">
+            <div class="spinner-cnt">
+                <span class="spinner spinner--large" aria-label=`${busyLabel}` role="img">
+                    &nbsp;
+                </span>
+            </div>
+        </div>
+    </else-if>
+    <else>
+        $ const priceReductionText = safeGet(
+            state,
+            "item.model.__me.sellingSuggestion.tipMessage"
+        );
+        <if(priceReductionText)>
+            <static-text model=priceReductionText class="price-reduction"/>
+        </if>
+        <transactions-line-actions
+            a11yIndicator=a11yIndicator
+            on-lineActionSelect("onLineActionSelect")
+            model=state.item.model/>
+    </else>
+</div>

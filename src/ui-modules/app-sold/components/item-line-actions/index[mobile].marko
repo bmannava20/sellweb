@@ -1,0 +1,12 @@
+import safeGet from 'just-safe-get'
+import helper from './helper'
+
+$ const model = helper.getModelData(input);
+<if(model)>
+    <div class="item__cta-wrapper">
+        <me-line-actions
+            options=model.inlineActions
+            accessibilityText=model.accessibilityText
+            on-lineActionSelect("onMenuSelection")/>
+    </div>
+</if>

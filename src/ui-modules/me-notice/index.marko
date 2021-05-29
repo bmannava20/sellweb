@@ -1,0 +1,13 @@
+import constants from '../../utils/helpers/constants'
+import safeGet from 'just-safe-get'
+
+$ const priorityLabel = safeGet(input, "model.priorityLabel");
+<if(input.message)>
+    <div class=["me-notice", input.class]>
+        <ebay-notice type=input.type status=input.status aria-text=priorityLabel>
+            <if(input.message)>
+                <${input.message}/>
+            </if>
+        </ebay-notice>
+    </div>
+</if>

@@ -1,0 +1,21 @@
+<!-- No script alert message, toggeled by styles at bottom. For performance reasons -->
+import safeGet from 'just-safe-get'
+
+$ const errPageContent = safeGet(data, "data.model.data.modules.i18nModule");
+<div class="skin-large no-script-display">
+    <div
+        class="page-alert page-alert--high"
+        role="region|alert"
+        aria-label=`${errPageContent.error.jsDisabled}`>
+        <p>
+            ${errPageContent.error.jsDisabled} 
+            <a
+                href="http://www.enable-javascript.com/"
+                target="_blank"
+                aria-label=`${errPageContent.newTab}`
+                rel="noopener noreferer">
+                ${errPageContent.jsEnable.findouthow}
+            </a>
+        </p>
+    </div>
+</div>

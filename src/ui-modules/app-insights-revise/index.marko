@@ -1,0 +1,22 @@
+import safeGet from 'just-safe-get'
+
+$ const insightsModule = input.model.data;
+$ {
+    const timeout =
+        (safeGet(input, "model.data.modules.warmup") && 60000) ||
+        safeGet(input, "modules.configModule.awaitTimeout");
+}
+<app-shell model=insightsModule>
+    <div class="insights-page__wrapper" id="meb-items-cnt" key="insightsContainer">
+        <await-ebay(model from insightsModule.modules.reviseItModule) timeout=timeout>
+            <await-timeout-ebay/>
+            <await-error-ebay/>
+            <reviseit-module model=model/>
+            $ insightsModule.modules.reviseItModule = model;
+            $ const lineItems = safeGet(model, "lineItems");
+            <if(!Array.isArray(lineItems) || lineItems.length === 0)>
+                <me-page-reload url="/mys/overview"/>
+            </if>
+        </await-ebay>
+    </div>
+</app-shell>

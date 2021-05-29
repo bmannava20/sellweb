@@ -1,0 +1,54 @@
+.diagnostic-info {
+    background-color: @color-background-default;
+    width: 100%;
+    bottom: 0;
+
+    &-heading {
+        background: @color-background-default;
+
+        h2 {
+            text-align: center
+        }
+    }
+
+    &-detail {
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+    }
+
+    &__table {
+        @margin: 8px;
+        margin: @margin;
+        width: calc(~"100% - @{margin} * 2");
+
+        &-header {
+            align-items: center;
+            background: @color-background-default;
+            border: 1px solid @color-grey3;
+            display: flex;
+            font-weight: bold;
+            height: 40px;
+            justify-content: center;
+            text-align: left;
+            width: 100%;
+        }
+
+        &-row {
+            border-bottom: 1px solid @color-grey3;
+        }
+
+        &-key {
+            padding: 10px;
+            background: @color-background-default;
+            justify-content: center;
+            vertical-align: top;
+        }
+
+        &-value {
+            padding: 10px;
+            overflow-x: scroll;
+            word-wrap: break-word;
+        }
+    }
+}

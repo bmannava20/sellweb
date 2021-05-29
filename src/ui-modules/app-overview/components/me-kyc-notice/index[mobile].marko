@@ -1,0 +1,28 @@
+$ const _get = require('just-safe-get');
+
+$ const alerts = _get(input, 'model.alerts', []);
+$ const genericAlert = _get(input, 'model.genericAlert', []);
+$ const genericAlertHeader = _get(genericAlert, '0.header.text');
+
+<if (!genericAlert.length)>
+     <me-alerts model=alerts class="kyc-notice" qaId="kyc-notice-module"/>
+</if>
+<else>
+    <me-alerts
+        model=genericAlert
+        class="kyc-page-notice"
+        qaId="kyc-page-notice-module"
+        openModal=true
+        on-openDialog("openKycAltersDialog")/>
+
+    <me-modal
+        key="kycAlertsModule"
+        class="kyc-alerts-modal-wrapper"
+        open=state.showModal
+        on-dialog-close("close")>
+        <@title>${genericAlertHeader}</@title>
+        <@main>
+            <me-alerts model=alerts class="kyc-notice" qaId="kyc-notice-module"/>
+        </@main>
+    </me-modal>
+</else>

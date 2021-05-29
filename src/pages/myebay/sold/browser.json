@@ -1,0 +1,9 @@
+{
+    "requireRemap": [
+        {
+            "from": "@ebay/ebayui-core/dist/components/ebay-carousel/style-no-touch.less",
+            "to": "@ebay/ebayui-core/dist/components/ebay-carousel/style-touch.less",
+            "if-flag": "mobile"
+        }
+    ]
+}

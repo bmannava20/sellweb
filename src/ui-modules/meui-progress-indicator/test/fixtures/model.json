@@ -1,0 +1,27 @@
+{
+    "model": {
+        "_type": "BulkToolProcessingMessageModule",
+        "ProgressingMessage": {
+            "title": {
+                "_type": "TextualDisplay",
+                "textSpans": [
+                    {
+                        "_type": "TextSpan",
+                        "text": "Processing drafts"
+                    }
+                ]
+            },
+            "additionalText": [
+                {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                        {
+                            "_type": "TextSpan",
+                            "text": "This usually takes less than 1 min."
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

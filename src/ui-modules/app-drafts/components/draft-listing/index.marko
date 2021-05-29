@@ -1,0 +1,80 @@
+import safeGet from 'just-safe-get'
+
+<if(
+    state.model &&
+    state.model.draftListings &&
+    state.model.draftListings.length > 0
+)>
+    <me-bulk-delete
+        model=state.model.bulkOperation
+        key="bulk-delete"
+        enableMultiSelect=state.enableMultiSelect
+        enableDeleteButton=state.enableDeleteButton
+        on-checkbox-select("handleMultiSelectClick")
+        on-delete-items("deleteItems")
+        is-edit-mode=input.isEditMode/>
+    <layout-item-listing class="drafts-page__list" title=state.model.title>
+        <@items>
+            <meui-item-list(item in state.model.draftListings)>
+                $ {
+                    const isChecked =
+                                        state.selectedIdList.indexOf(item.draftId) >= 0;
+                }
+                <div.drafts-item qa-id=`draft-item-${item.draftId}` key=`drafts-item-${item.draftId}`>
+                    <layout-item-card>
+                        <@col-1>
+                            <div class=[
+                                "item__checkbox-wrapper",
+                                input.isEditMode && "slide-right"
+                            ]>
+                                <ebay-checkbox
+                                    class="item__checkbox"
+                                    on-checkbox-change("handleSingleCheckboxClick")
+                                    key=`drafts-item-checkbox-${item.draftId}`
+                                    checked=isChecked
+                                    value=item.draftId
+                                    id=`checkbox-${item.draftId}`
+                                    is-edit-mode=input.isEditMode/>
+                                <label for=`checkbox-${item.draftId}` class="clipped">
+                                    <if(item.title && item.title.textSpans)>
+                                        <me-textual-display model=item.title.textSpans/>
+                                    </if>
+                                </label>
+                            </div>
+                            <meui-thumbnail image=item.image altText=item.title/>
+                        </@col-1>
+                        <@col-2>
+                            $ const draftStatusAccText = safeGet(
+                                item,
+                                "draftStatus.textSpans.0.accessibilityText"
+                            );
+                            <if(item.draftStatus)>
+                                <ebay-notice
+                                    status="confirmation"
+                                    type="inline"
+                                    a11y-heading-text=draftStatusAccText>
+                                    <p class="item__label">
+                                        <me-textual-display model=item.draftStatus.textSpans/>
+                                    </p>
+                                </ebay-notice>
+                            </if>
+                            <span class="item__title">
+                                <me-item-title model=item.title/>
+                            </span>
+                            <static-text model=item.lastModified class="item__time-left"/>
+                        </@col-2>
+                        <@col-3>
+                            <line-action-btn item=item/>
+                        </@col-3>
+                    </layout-item-card>
+                </div>
+            </meui-item-list>
+        </@items>
+    </layout-item-listing>
+    <me-pagination
+        model=state.model.pagination
+        class="active-page__pagination"
+        eventDelegate="draftPageUpdate"
+        on-draftPageUpdate("draftPageUpdate")
+        key="active-pagination"/>
+</if>

@@ -1,0 +1,302 @@
+{
+    "emptyData": {
+        "_type": "PromoteListingViewModel",
+        "title": {
+            "textSpans": [
+                {
+                    "text": "Promote your listing"
+                }
+            ]
+        }
+    },
+    "fullData":{
+        "_type": "PromoteListingViewModel",
+        "title": {
+            "_type": "TextualDisplay",
+            "textSpans": [
+                {
+                    "_type": "TextSpan",
+                    "text": "Promote your listing"
+                }
+            ]
+        },
+        "seeAll": {
+            "_type": "TextualDisplay",
+            "textSpans": [
+                {
+                    "_type": "TextSpan",
+                    "text": "See all (11)"
+                }
+            ],
+            "action": {
+                "_type": "Action",
+                "type": "OPERATION",
+                "name": "MYEBAY_ACTIVE_GET",
+                "params": {
+                    "container_filter": "ACTIVE_PL_RECOMMENDED"
+                },
+                "trackingList": [
+                    {
+                        "actionKind": "NAV",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                            "sid": "p2486981.m45355.l9191"
+                        }
+                    },
+                    {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                            "moduledtl": "mi:45355|li:9191"
+                        }
+                    }
+                ],
+                "URL": "https://www.LM-SJC-11013671/mys/active/rf/filter=ACTIVE_PL_RECOMMENDED"
+            }
+        },
+        "disclaimerText": {
+            "_type": "TextualDisplay",
+            "textSpans": [
+                {
+                    "_type": "TextSpan",
+                    "text": "Boost your item's visibility to help it sell faster and pay only when it sells through promoted listing."
+                }
+
+            ]
+        },
+        "promotedListingModalContentMap": {
+            "content":{
+                "priorityLabel": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                        {
+                            "_type": "TextSpan",
+                            "text": "Priority"
+                        }
+                    ]
+                },
+                "modalTitle": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                        {
+                            "_type": "TextSpan",
+                            "text": "Promote your listing"
+                        }
+                    ]
+                },
+                "spinnerLabel": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                        {
+                            "_type": "TextSpan",
+                            "text": "Loading, please wait."
+                        }
+                    ]
+                },
+                "closeLabel": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                        {
+                            "_type": "TextSpan",
+                            "text": "Close dialog"
+                        }
+                    ]
+                },
+                "modalError": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                        {
+                            "_type": "TextSpan",
+                            "text": "We ran into a problem and cannot complete your action right now. Please try again later."
+                        }
+                    ]
+                }
+            }
+        },
+        "lineItems": [
+            {
+                "_type": "MyeBaySellingListingSummary",
+                "listingId": "280017846341",
+                "title": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                        {
+                            "_type": "TextSpan",
+                            "text": "US-BestOffer Item1552072241164-1552072241164"
+                        }
+                    ],
+                    "action": {
+                        "_type": "Action",
+                        "type": "NAV",
+                        "trackingList": [
+                            {
+                                "actionKind": "NAV",
+                                "operationId": "2486981",
+                                "flushImmediately": false,
+                                "eventProperty": {
+                                    "sid": "p2486981.m45355.l9182"
+                                }
+                            },
+                            {
+                                "eventFamily": "MYEBAY",
+                                "eventAction": "ACTN",
+                                "actionKind": "NAVSRC",
+                                "operationId": "2486981",
+                                "flushImmediately": false,
+                                "eventProperty": {
+                                    "moduledtl": "mi:45355|li:9182"
+                                }
+                            }
+                        ],
+                        "URL": "https://www.qa.ebay.com/itm/US-BestOffer-Item1552072241164-1552072241164/120012663331?src=urllib"
+                    }
+                },
+                "image": {
+                    "_type": "Image",
+                    "imageId": "eCkAAOSwaI5cgr4-",
+                    "originalSize": {
+                        "height": 45,
+                        "width": 110
+                    },
+                    "action": {
+                        "_type": "Action",
+                        "type": "NAV",
+                        "trackingList": [
+                            {
+                                "actionKind": "NAV",
+                                "operationId": "2486981",
+                                "flushImmediately": false,
+                                "eventProperty": {
+                                    "sid": "p2486981.m45355.l9181"
+                                }
+                            },
+                            {
+                                "eventFamily": "MYEBAY",
+                                "eventAction": "ACTN",
+                                "actionKind": "NAVSRC",
+                                "operationId": "2486981",
+                                "flushImmediately": false,
+                                "eventProperty": {
+                                    "moduledtl": "mi:45355|li:9181"
+                                }
+                            }
+                        ],
+                        "URL": "https://www.qa.ebay.com/itm/US-BestOffer-Item1552072241164-1552072241164/120012663331?src=urllib"
+                    },
+                    "URL": "http://i1.qa.ebayimg.com/images/g/eCkAAOSwaI5cgr4-/s-l140.jpg"
+                },
+                "displayPrice": {
+                    "_type": "TextualDisplayValue",
+                    "textSpans": [
+                        {
+                            "_type": "TextSpan",
+                            "text": "$10.00",
+                            "styles": [
+                                "BOLD"
+                            ]
+                        },
+                        {
+                            "_type": "TextSpan",
+                            "text": "+ Shipping (buyer pays $1.00)",
+                            "styles": [
+                                "DEFAULT"
+                            ]
+                        }
+                    ],
+                    "accessibilityText": "$10.00 + Shipping (buyer pays $1.00)",
+                    "value": {
+                        "value": 10,
+                        "currency": "USD"
+                    }
+                },
+                "displayTime": {
+                    "_type": "TextualDisplayValue",
+                    "textSpans": [
+                        {
+                            "_type": "TextSpan",
+                            "text": "Live until sold or canceled"
+                        }
+                    ]
+                },
+                "__me": {
+                    "lineActions": {
+                        "options": [
+                            {
+                                "label": {
+                                    "_type": "TextualDisplay",
+                                    "textSpans": [
+                                        {
+                                            "_type": "TextSpan",
+                                            "text": "Line Actions"
+                                        }
+                                    ]
+                                },
+                                "selections": [
+                                    {
+                                        "disabled": false,
+                                        "selected": true,
+                                        "label": {
+                                            "_type": "TextualDisplayValue",
+                                            "textSpans": [
+                                                {
+                                                    "_type": "TextSpan",
+                                                    "text": "Promote listing",
+                                                    "styles": [
+                                                        "PROMOTED"
+                                                    ]
+                                                }
+                                            ],
+                                            "action": {
+                                                "_type": "Action",
+                                                "type": "OPERATION",
+                                                "trackingList": [
+                                                    {
+                                                        "actionKind": "NAV",
+                                                        "operationId": "2486981",
+                                                        "flushImmediately": false,
+                                                        "eventProperty": {
+                                                            "sid": "p2486981.m45355.l46850"
+                                                        }
+                                                    },
+                                                    {
+                                                        "eventFamily": "MYEBAY",
+                                                        "eventAction": "ACTN",
+                                                        "actionKind": "NAVSRC",
+                                                        "operationId": "2486981",
+                                                        "flushImmediately": false,
+                                                        "eventProperty": {
+                                                            "moduledtl": "mi:45355|li:46850"
+                                                        }
+                                                    }
+                                                ],
+                                                "URL": "javascript"
+                                            },
+                                            "value": "PromoteListing"
+                                        },
+                                        "default": false
+                                    }
+                                ],
+                                "multiSelect": false
+                            }
+                        ],
+                        "accessibilityText": "Other actions"
+                    },
+                    "applicationId": 108715,
+                    "itemStats": {
+                        "_type": "TextualDisplay",
+                        "textSpans": [
+                            {
+                                "_type": "TextSpan",
+                                "text": "0 views, 1 watcher"
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}

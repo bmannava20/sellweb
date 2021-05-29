@@ -1,0 +1,33 @@
+// DS6 Overrides
+
+.dialog-placeholder {
+    display: inline-block;
+}
+
+// Making the icon showup in "small" ebay-menu
+.item__inline-cta {
+    // Workaround as first item if it's a link is showing up with underline (no other overrides on our end)
+    a.fake-menu-button__item, a.fake-menu-button__item:focus {
+        text-decoration: none;
+    }
+}
+
+// TODO Remove this override when ebayUI has a red button version
+
+.redbutton {
+    border-color: @color-r5 !important;
+    color: @color-r5 !important;
+
+    &:focus,
+    &:hover {
+        border-color: @color-r5 !important;
+        color: @color-r5 !important;
+    }
+}
+// Remove these link colors overrides after we start using DS6 global header
+.used-offers-link a,
+.description-small a,
+.buyer-name a,
+.see-all a {
+    color: @color-link-default;
+}

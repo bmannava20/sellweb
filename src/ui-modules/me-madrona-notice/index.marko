@@ -1,0 +1,31 @@
+$ const _get = require('just-safe-get');
+$ const model = _get(data.model, ['cards', [0], 'creatives', [0]], {});
+$ const { headline, subHeadline, callToAction} = model;
+
+<if(headline || subHeadline || callToAction)>
+    <div class=["madrona-banner", input.class]>
+        <me-notice
+          status="information"
+          type="section"
+          a11y-heading-text=_get(headline, 'accessibilityText', '')
+          a11y-heading-tag="h3">
+            <@message>
+                <if(headline)>
+                    <p class="banner-item__title"><strong><fe-textual-display model=headline/></strong></p>
+                </if>
+                <if(subHeadline)>
+                    <p class="text-wrap">
+                        <fe-textual-display model=subHeadline/>
+                        <if(callToAction)>
+                            <span class="space-span">
+                                <fe-textual-display
+                                  model=callToAction
+                                  on-click("clickHandler", callToAction.action) />
+                            </span>
+                        </if>
+                    </p>
+                </if>
+            </@message>
+        </me-notice>
+    </div>
+</if>

@@ -1,0 +1,43 @@
+import helper from './helper'
+
+$ const model = helper.getModelData(state);
+<me-summary class="sold-page__header">
+    <@pageTitle>
+        <me-textual-display model=model.moduleTitle/>
+    </@pageTitle>
+    <@sorts>
+        <me-sort-menu
+            key="sold-time-period"
+            content=model.content
+            model=model.periodFilters
+            on-handleSortRequest("handleSortFilterRequest")/>
+        <me-sort-menu
+            key="sold-sort"
+            content=model.content
+            model=model.sortOptions
+            on-handleSortRequest("handleSortFilterRequest")/>
+    </@sorts>
+    <@filters>
+        <me-carousel
+            key="sold-carousel"
+            model=model.filters
+            on-handleFilterRequest("handleSortFilterRequest")/>
+    </@filters>
+    <@edit>
+        <me-toggle-edit-mode
+            model=model.bulkDeleteEditModel
+            is-edit-mode=input.isEditMode
+            on-toggleEditMode("emit", "toggleEditMode")/>
+    </@edit>
+    <@bulk-delete>
+        <me-bulk-delete
+            model=model.bulkDelete
+            key="bulk-delete"
+            enableMultiSelect=input.enableMultiSelect
+            enableDeleteButton=input.enableDeleteButton
+            on-checkbox-select("emit", "handleMultiSelectClick")
+            on-delete-items("emit", "delete-items")
+            is-edit-mode=input.isEditMode
+            multi-item-selected=input.multiItemSelected/>
+    </@bulk-delete>
+</me-summary>

@@ -1,0 +1,35 @@
+import safeGet from 'just-safe-get'
+import helper from './helper'
+import constants from '../../../../utils/helpers/constants'
+$ const item = helper.getModelData(state);
+
+<div class="pre-order-item">
+    <layout-item-card qa-id=`${state.moduleType}-item-${item.listingId}`>
+        <@col-1>
+            <meui-thumbnail image=item.image altText=item.title size="large"/>
+        </@col-1>
+        <@col-2>
+                <me-item-title model=item.title/>
+                <static-text model=item.itemStats class="stats"/>
+                <static-text model=item.displayTime class="stats"/>
+                <static-text model=item.displayPrice class="item-price"/>
+        </@col-2>
+        <@col-3>
+            <div class=`offer-status ${input.moduleType}`>
+                <me-textual-display
+                    model=item.status
+                    options=constants.STYLE_MAPS.NO_DEFAULT/>
+                <static-text model=item.offerExpiryTime/>
+            </div>
+            <if(item.lineActions)>
+                <div class="primary-actions">
+                    <transactions-line-actions
+                        model=item.data
+                        a11yIndicator=item.a11yIndicator
+                        shippingTips=input.shippingTips
+                        on-button-click("onButtonClick")/>
+                </div>
+            </if>
+        </@col-3>
+    </layout-item-card>
+</div>

@@ -1,0 +1,44 @@
+{
+    "__me": {
+        "shippingDetails": {
+            "shippingNote": {
+                "textSpans": [
+                    {
+                        "text": "Ship it out to "
+                    },
+                    {
+                        "text": "myebay selling",
+                        "styles": [
+                            "BOLD"
+                        ]
+                    },
+                    {
+                        "text": " by ",
+                        "styles": [
+                            "NEGATIVE"
+                        ]
+                    },
+                    {
+                        "text": "Fri, Jun 9",
+                        "styles": [
+                            "NEGATIVE"
+                        ]
+                    }
+                ]
+            },
+            "shipToLocation": {
+                "textSpans": [
+                    {
+                        "text": "San Jose"
+                    },
+                    {
+                        "text": ", "
+                    },
+                    {
+                        "text": "CA"
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,2201 @@
+{
+    "emptyData": {
+        "_type": "listingRequiredAspectsModule",
+        "title": {
+            "textSpans": [
+                {
+                    "text": "listing RequiredAspects Module your listing"
+                }
+            ]
+        }
+    },
+    "fullData":{
+        "listingRequiredAspectsModule": {
+            "_type": "ListingAspectsViewModel",
+            "title": {
+              "_type": "TextualDisplay",
+              "textSpans": [
+                {
+                  "_type": "TextSpan",
+                  "text": "Add required details"
+                }
+              ]
+            },
+            "seeAll": {
+              "_type": "TextualDisplay",
+              "textSpans": [
+                {
+                  "_type": "TextSpan",
+                  "text": "See all (14)"
+                }
+              ],
+              "action": {
+                "_type": "Action",
+                "type": "OPERATION",
+                "name": "MYEBAY_ACTIVE_GET",
+                "params": {
+                  "container_filter": "ACTIVE_ITEM_SPECIFICS_REQUIRED"
+                },
+                "trackingList": [
+                  {
+                    "actionKind": "NAV",
+                    "operationId": "2486981",
+                    "flushImmediately": false,
+                    "eventProperty": {
+                      "sid": "p2486981.m45406.l9191"
+                    }
+                  },
+                  {
+                    "eventFamily": "MYEBAY",
+                    "eventAction": "ACTN",
+                    "actionKind": "NAVSRC",
+                    "operationId": "2486981",
+                    "flushImmediately": false,
+                    "eventProperty": {
+                      "moduledtl": "mi:45406|li:9191"
+                    }
+                  }
+                ],
+                "URL": "https://www.qa.ebay.com/mys/active/rf/filter=ACTIVE_ITEM_SPECIFICS_REQUIRED"
+              }
+            },
+            "disclaimerText": {
+              "_type": "TextualDisplay",
+              "textSpans": [
+                {
+                  "_type": "TextSpan",
+                  "text": "Buyers need these details to find your items."
+                }
+              ]
+            },
+            "lineItems": [
+              {
+                "_type": "MyeBaySellingListingSummary",
+                "listingId": "140012965195",
+                "title": {
+                  "_type": "TextualDisplay",
+                  "textSpans": [
+                    {
+                      "_type": "TextSpan",
+                      "text": "apple tv"
+                    }
+                  ],
+                  "action": {
+                    "_type": "Action",
+                    "type": "NAV",
+                    "trackingList": [
+                      {
+                        "actionKind": "NAV",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "sid": "p2486981.m45406.l9182"
+                        }
+                      },
+                      {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "moduledtl": "mi:45406|li:9182"
+                        }
+                      }
+                    ],
+                    "URL": "https://www.qa.ebay.com/itm/apple-tv/140012965195?src=urllib"
+                  }
+                },
+                "image": {
+                  "_type": "Image",
+                  "imageId": "h9sAAOSwNeZddqZl",
+                  "originalSize": {
+                    "height": 791,
+                    "width": 1599
+                  },
+                  "action": {
+                    "_type": "Action",
+                    "type": "NAV",
+                    "trackingList": [
+                      {
+                        "actionKind": "NAV",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "sid": "p2486981.m45406.l9181"
+                        }
+                      },
+                      {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "moduledtl": "mi:45406|li:9181"
+                        }
+                      }
+                    ],
+                    "URL": "https://www.qa.ebay.com/itm/apple-tv/140012965195?src=urllib"
+                  },
+                  "URL": "http://i1.qa.ebayimg.com/images/g/h9sAAOSwNeZddqZl/s-l140.jpg"
+                },
+                "displayPrice": {
+                  "_type": "TextualDisplayValue",
+                  "textSpans": [
+                    {
+                      "_type": "TextSpan",
+                      "text": "$0.99",
+                      "styles": [
+                        "BOLD"
+                      ]
+                    },
+                    {
+                      "_type": "TextSpan",
+                      "text": "+ Shipping"
+                    }
+                  ],
+                  "accessibilityText": "$0.99 + Shipping",
+                  "value": {
+                    "value": 0.99,
+                    "currency": "USD"
+                  }
+                },
+                "displayTime": {
+                  "_type": "TextualDisplayValue",
+                  "textSpans": [
+                    {
+                      "_type": "TextSpan",
+                      "text": "Ends in 5d 22h"
+                    }
+                  ],
+                  "value": {
+                    "value": "2019-09-16T19:22:25.000Z"
+                  }
+                },
+                "__me": {
+                  "lineActions": {
+                    "options": [
+                      {
+                        "label": {
+                          "_type": "TextualDisplay",
+                          "textSpans": [
+                            {
+                              "_type": "TextSpan",
+                              "text": "Line Actions"
+                            }
+                          ]
+                        },
+                        "selections": [
+                          {
+                            "disabled": false,
+                            "selected": true,
+                            "label": {
+                              "_type": "TextualDisplayValue",
+                              "textSpans": [
+                                {
+                                  "_type": "TextSpan",
+                                  "text": "Add details",
+                                  "styles": [
+                                    "PROMOTED"
+                                  ]
+                                }
+                              ],
+                              "action": {
+                                "_type": "Action",
+                                "type": "NAV",
+                                "trackingList": [
+                                  {
+                                    "actionKind": "NAV",
+                                    "operationId": "2486981",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                      "sid": "p2486981.m45406.l46975"
+                                    }
+                                  },
+                                  {
+                                    "eventFamily": "MYEBAY",
+                                    "eventAction": "ACTN",
+                                    "actionKind": "NAVSRC",
+                                    "operationId": "2486981",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                      "moduledtl": "mi:45406|li:46975",
+                                      "item": "140012965195"
+                                    }
+                                  }
+                                ],
+                                "URL": "http://cgi5.qa.ebay.com/ws/eBayISAPI.dll?UserItemVerification&item=140012965195"
+                              },
+                              "value": "REQUIRED_ASPECTS"
+                            },
+                            "default": false
+                          }
+                        ],
+                        "multiSelect": false
+                      }
+                    ],
+                    "accessibilityText": "Other actions"
+                  },
+                  "listingFormat": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                      {
+                        "_type": "TextSpan",
+                        "text": "AUCTION"
+                      }
+                    ]
+                  },
+                  "applicationId": 108715,
+                  "itemStats": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                      {
+                        "_type": "TextSpan",
+                        "text": "0 views, 0 watchers"
+                      },
+                      {
+                        "_type": "TextSpan",
+                        "text": ", "
+                      },
+                      {
+                        "_type": "TextSpan",
+                        "text": "0 bids"
+                      }
+                    ]
+                  },
+                  "addMissingDetails": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                      {
+                        "_type": "TextSpan",
+                        "text": "Required details missing"
+                      },
+                      {
+                        "_type": "TextSpan",
+                        "text": "2 details"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "_type": "MyeBaySellingListingSummary",
+                "listingId": "140012965207",
+                "title": {
+                  "_type": "TextualDisplay",
+                  "textSpans": [
+                    {
+                      "_type": "TextSpan",
+                      "text": "apple tv item"
+                    }
+                  ],
+                  "action": {
+                    "_type": "Action",
+                    "type": "NAV",
+                    "trackingList": [
+                      {
+                        "actionKind": "NAV",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "sid": "p2486981.m45406.l9182"
+                        }
+                      },
+                      {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "moduledtl": "mi:45406|li:9182"
+                        }
+                      }
+                    ],
+                    "URL": "https://www.qa.ebay.com/itm/apple-tv-item/140012965207?src=urllib"
+                  }
+                },
+                "image": {
+                  "_type": "Image",
+                  "imageId": "h9sAAOSwNeZddqZl",
+                  "originalSize": {
+                    "height": 0,
+                    "width": 0
+                  },
+                  "action": {
+                    "_type": "Action",
+                    "type": "NAV",
+                    "trackingList": [
+                      {
+                        "actionKind": "NAV",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "sid": "p2486981.m45406.l9181"
+                        }
+                      },
+                      {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "moduledtl": "mi:45406|li:9181"
+                        }
+                      }
+                    ],
+                    "URL": "https://www.qa.ebay.com/itm/apple-tv-item/140012965207?src=urllib"
+                  },
+                  "URL": "http://i1.qa.ebayimg.com/images/g/h9sAAOSwNeZddqZl/s-l140.jpg"
+                },
+                "displayPrice": {
+                  "_type": "TextualDisplayValue",
+                  "textSpans": [
+                    {
+                      "_type": "TextSpan",
+                      "text": "$0.99",
+                      "styles": [
+                        "BOLD"
+                      ]
+                    },
+                    {
+                      "_type": "TextSpan",
+                      "text": "+ Shipping"
+                    }
+                  ],
+                  "accessibilityText": "$0.99 + Shipping",
+                  "value": {
+                    "value": 0.99,
+                    "currency": "USD"
+                  }
+                },
+                "displayTime": {
+                  "_type": "TextualDisplayValue",
+                  "textSpans": [
+                    {
+                      "_type": "TextSpan",
+                      "text": "Ends in 5d 22h"
+                    }
+                  ],
+                  "value": {
+                    "value": "2019-09-16T19:25:47.000Z"
+                  }
+                },
+                "__me": {
+                  "lineActions": {
+                    "options": [
+                      {
+                        "label": {
+                          "_type": "TextualDisplay",
+                          "textSpans": [
+                            {
+                              "_type": "TextSpan",
+                              "text": "Line Actions"
+                            }
+                          ]
+                        },
+                        "selections": [
+                          {
+                            "disabled": false,
+                            "selected": true,
+                            "label": {
+                              "_type": "TextualDisplayValue",
+                              "textSpans": [
+                                {
+                                  "_type": "TextSpan",
+                                  "text": "Add details",
+                                  "styles": [
+                                    "PROMOTED"
+                                  ]
+                                }
+                              ],
+                              "action": {
+                                "_type": "Action",
+                                "type": "NAV",
+                                "trackingList": [
+                                  {
+                                    "actionKind": "NAV",
+                                    "operationId": "2486981",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                      "sid": "p2486981.m45406.l46975"
+                                    }
+                                  },
+                                  {
+                                    "eventFamily": "MYEBAY",
+                                    "eventAction": "ACTN",
+                                    "actionKind": "NAVSRC",
+                                    "operationId": "2486981",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                      "moduledtl": "mi:45406|li:46975",
+                                      "item": "140012965207"
+                                    }
+                                  }
+                                ],
+                                "URL": "http://cgi5.qa.ebay.com/ws/eBayISAPI.dll?UserItemVerification&item=140012965207"
+                              },
+                              "value": "REQUIRED_ASPECTS"
+                            },
+                            "default": false
+                          }
+                        ],
+                        "multiSelect": false
+                      }
+                    ],
+                    "accessibilityText": "Other actions"
+                  },
+                  "listingFormat": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                      {
+                        "_type": "TextSpan",
+                        "text": "AUCTION"
+                      }
+                    ]
+                  },
+                  "applicationId": 108715,
+                  "itemStats": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                      {
+                        "_type": "TextSpan",
+                        "text": "0 views, 0 watchers"
+                      },
+                      {
+                        "_type": "TextSpan",
+                        "text": ", "
+                      },
+                      {
+                        "_type": "TextSpan",
+                        "text": "0 bids"
+                      }
+                    ]
+                  },
+                  "addMissingDetails": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                      {
+                        "_type": "TextSpan",
+                        "text": "Required details missing"
+                      },
+                      {
+                        "_type": "TextSpan",
+                        "text": "2 details"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "_type": "MyeBaySellingListingSummary",
+                "listingId": "140012966250",
+                "title": {
+                  "_type": "TextualDisplay",
+                  "textSpans": [
+                    {
+                      "_type": "TextSpan",
+                      "text": "AA garden hose"
+                    }
+                  ],
+                  "action": {
+                    "_type": "Action",
+                    "type": "NAV",
+                    "trackingList": [
+                      {
+                        "actionKind": "NAV",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "sid": "p2486981.m45406.l9182"
+                        }
+                      },
+                      {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "moduledtl": "mi:45406|li:9182"
+                        }
+                      }
+                    ],
+                    "URL": "https://www.qa.ebay.com/itm/AA-garden-hose/140012966250?src=urllib"
+                  }
+                },
+                "image": {
+                  "_type": "Image",
+                  "originalSize": {
+                    "height": 0,
+                    "width": 0
+                  },
+                  "action": {
+                    "_type": "Action",
+                    "type": "NAV",
+                    "trackingList": [
+                      {
+                        "actionKind": "NAV",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "sid": "p2486981.m45406.l9181"
+                        }
+                      },
+                      {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "moduledtl": "mi:45406|li:9181"
+                        }
+                      }
+                    ],
+                    "URL": "https://www.qa.ebay.com/itm/AA-garden-hose/140012966250?src=urllib"
+                  },
+                  "URL": "https://pics.ebaystatic.com/aw/pics/stockimage1.jpg"
+                },
+                "displayPrice": {
+                  "_type": "TextualDisplayValue",
+                  "textSpans": [
+                    {
+                      "_type": "TextSpan",
+                      "text": "$0.99",
+                      "styles": [
+                        "BOLD"
+                      ]
+                    },
+                    {
+                      "_type": "TextSpan",
+                      "text": "+ Shipping"
+                    }
+                  ],
+                  "accessibilityText": "$0.99 + Shipping",
+                  "value": {
+                    "value": 0.99,
+                    "currency": "USD"
+                  }
+                },
+                "displayTime": {
+                  "_type": "TextualDisplayValue",
+                  "textSpans": [
+                    {
+                      "_type": "TextSpan",
+                      "text": "Ends in 6d 3h"
+                    }
+                  ],
+                  "value": {
+                    "value": "2019-09-17T01:04:36.000Z"
+                  }
+                },
+                "__me": {
+                  "lineActions": {
+                    "options": [
+                      {
+                        "label": {
+                          "_type": "TextualDisplay",
+                          "textSpans": [
+                            {
+                              "_type": "TextSpan",
+                              "text": "Line Actions"
+                            }
+                          ]
+                        },
+                        "selections": [
+                          {
+                            "disabled": false,
+                            "selected": true,
+                            "label": {
+                              "_type": "TextualDisplayValue",
+                              "textSpans": [
+                                {
+                                  "_type": "TextSpan",
+                                  "text": "Add details",
+                                  "styles": [
+                                    "PROMOTED"
+                                  ]
+                                }
+                              ],
+                              "action": {
+                                "_type": "Action",
+                                "type": "NAV",
+                                "trackingList": [
+                                  {
+                                    "actionKind": "NAV",
+                                    "operationId": "2486981",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                      "sid": "p2486981.m45406.l46975"
+                                    }
+                                  },
+                                  {
+                                    "eventFamily": "MYEBAY",
+                                    "eventAction": "ACTN",
+                                    "actionKind": "NAVSRC",
+                                    "operationId": "2486981",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                      "moduledtl": "mi:45406|li:46975",
+                                      "item": "140012966250"
+                                    }
+                                  }
+                                ],
+                                "URL": "http://cgi5.qa.ebay.com/ws/eBayISAPI.dll?UserItemVerification&item=140012966250"
+                              },
+                              "value": "REQUIRED_ASPECTS"
+                            },
+                            "default": false
+                          }
+                        ],
+                        "multiSelect": false
+                      }
+                    ],
+                    "accessibilityText": "Other actions"
+                  },
+                  "listingFormat": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                      {
+                        "_type": "TextSpan",
+                        "text": "AUCTION"
+                      }
+                    ]
+                  },
+                  "applicationId": 108715,
+                  "itemStats": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                      {
+                        "_type": "TextSpan",
+                        "text": "0 views, 0 watchers"
+                      },
+                      {
+                        "_type": "TextSpan",
+                        "text": ", "
+                      },
+                      {
+                        "_type": "TextSpan",
+                        "text": "0 bids"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "_type": "MyeBaySellingListingSummary",
+                "listingId": "140012923731",
+                "title": {
+                  "_type": "TextualDisplay",
+                  "textSpans": [
+                    {
+                      "_type": "TextSpan",
+                      "text": "Automation bolt item with free shipping-1567016550019"
+                    }
+                  ],
+                  "action": {
+                    "_type": "Action",
+                    "type": "NAV",
+                    "trackingList": [
+                      {
+                        "actionKind": "NAV",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "sid": "p2486981.m45406.l9182"
+                        }
+                      },
+                      {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "moduledtl": "mi:45406|li:9182"
+                        }
+                      }
+                    ],
+                    "URL": "https://www.qa.ebay.com/itm/Automation-bolt-item-with-free-shipping-1567016550019/140012923731?src=urllib"
+                  }
+                },
+                "image": {
+                  "_type": "Image",
+                  "imageId": "0x8AAOSwwopZ5ONK",
+                  "originalSize": {
+                    "height": 0,
+                    "width": 0
+                  },
+                  "action": {
+                    "_type": "Action",
+                    "type": "NAV",
+                    "trackingList": [
+                      {
+                        "actionKind": "NAV",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "sid": "p2486981.m45406.l9181"
+                        }
+                      },
+                      {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "moduledtl": "mi:45406|li:9181"
+                        }
+                      }
+                    ],
+                    "URL": "https://www.qa.ebay.com/itm/Automation-bolt-item-with-free-shipping-1567016550019/140012923731?src=urllib"
+                  },
+                  "URL": "http://i1.qa.ebayimg.com/images/g/0x8AAOSwwopZ5ONK/s-l140.jpg"
+                },
+                "displayPrice": {
+                  "_type": "TextualDisplayValue",
+                  "textSpans": [
+                    {
+                      "_type": "TextSpan",
+                      "text": "$28.50",
+                      "styles": [
+                        "BOLD"
+                      ]
+                    },
+                    {
+                      "_type": "TextSpan",
+                      "text": "+ Shipping (you pay)"
+                    }
+                  ],
+                  "accessibilityText": "$28.50 + Shipping (you pay)",
+                  "value": {
+                    "value": 28.5,
+                    "currency": "USD"
+                  }
+                },
+                "displayTime": {
+                  "_type": "TextualDisplayValue",
+                  "textSpans": [
+                    {
+                      "_type": "TextSpan",
+                      "text": "Live until sold or canceled"
+                    }
+                  ]
+                },
+                "__me": {
+                  "lineActions": {
+                    "options": [
+                      {
+                        "label": {
+                          "_type": "TextualDisplay",
+                          "textSpans": [
+                            {
+                              "_type": "TextSpan",
+                              "text": "Line Actions"
+                            }
+                          ]
+                        },
+                        "selections": [
+                          {
+                            "disabled": false,
+                            "selected": true,
+                            "label": {
+                              "_type": "TextualDisplayValue",
+                              "textSpans": [
+                                {
+                                  "_type": "TextSpan",
+                                  "text": "Add details",
+                                  "styles": [
+                                    "PROMOTED"
+                                  ]
+                                }
+                              ],
+                              "action": {
+                                "_type": "Action",
+                                "type": "NAV",
+                                "trackingList": [
+                                  {
+                                    "actionKind": "NAV",
+                                    "operationId": "2486981",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                      "sid": "p2486981.m45406.l46975"
+                                    }
+                                  },
+                                  {
+                                    "eventFamily": "MYEBAY",
+                                    "eventAction": "ACTN",
+                                    "actionKind": "NAVSRC",
+                                    "operationId": "2486981",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                      "moduledtl": "mi:45406|li:46975",
+                                      "item": "140012923731"
+                                    }
+                                  }
+                                ],
+                                "URL": "http://cgi5.qa.ebay.com/ws/eBayISAPI.dll?UserItemVerification&item=140012923731"
+                              },
+                              "value": "REQUIRED_ASPECTS"
+                            },
+                            "default": false
+                          }
+                        ],
+                        "multiSelect": false
+                      }
+                    ],
+                    "accessibilityText": "Other actions"
+                  },
+                  "listingFormat": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                      {
+                        "_type": "TextSpan",
+                        "text": "FIXED_PRICE"
+                      }
+                    ]
+                  },
+                  "applicationId": 108715,
+                  "itemStats": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                      {
+                        "_type": "TextSpan",
+                        "text": "0 views, 0 watchers"
+                      }
+                    ]
+                  },
+                  "addMissingDetails": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                      {
+                        "_type": "TextSpan",
+                        "text": "Required detail missing"
+                      },
+                      {
+                        "_type": "TextSpan",
+                        "text": "Brand"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "_type": "MyeBaySellingListingSummary",
+                "listingId": "140012923734",
+                "title": {
+                  "_type": "TextualDisplay",
+                  "textSpans": [
+                    {
+                      "_type": "TextSpan",
+                      "text": "US-BIN-Fixed Shipping Item01 US-1567016612543"
+                    }
+                  ],
+                  "action": {
+                    "_type": "Action",
+                    "type": "NAV",
+                    "trackingList": [
+                      {
+                        "actionKind": "NAV",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "sid": "p2486981.m45406.l9182"
+                        }
+                      },
+                      {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "moduledtl": "mi:45406|li:9182"
+                        }
+                      }
+                    ],
+                    "URL": "https://www.qa.ebay.com/itm/US-BIN-Fixed-Shipping-Item01-US-1567016612543/140012923734?src=urllib"
+                  }
+                },
+                "image": {
+                  "_type": "Image",
+                  "originalSize": {
+                    "height": 0,
+                    "width": 0
+                  },
+                  "action": {
+                    "_type": "Action",
+                    "type": "NAV",
+                    "trackingList": [
+                      {
+                        "actionKind": "NAV",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "sid": "p2486981.m45406.l9181"
+                        }
+                      },
+                      {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "moduledtl": "mi:45406|li:9181"
+                        }
+                      }
+                    ],
+                    "URL": "https://www.qa.ebay.com/itm/US-BIN-Fixed-Shipping-Item01-US-1567016612543/140012923734?src=urllib"
+                  },
+                  "URL": "https://pics.ebaystatic.com/aw/pics/stockimage1.jpg"
+                },
+                "displayPrice": {
+                  "_type": "TextualDisplayValue",
+                  "textSpans": [
+                    {
+                      "_type": "TextSpan",
+                      "text": "$105.00",
+                      "styles": [
+                        "BOLD"
+                      ]
+                    },
+                    {
+                      "_type": "TextSpan",
+                      "text": "+ Shipping (you pay)"
+                    }
+                  ],
+                  "accessibilityText": "$105.00 + Shipping (you pay)",
+                  "value": {
+                    "value": 105,
+                    "currency": "USD"
+                  }
+                },
+                "displayTime": {
+                  "_type": "TextualDisplayValue",
+                  "textSpans": [
+                    {
+                      "_type": "TextSpan",
+                      "text": "Live until sold or canceled"
+                    }
+                  ]
+                },
+                "__me": {
+                  "lineActions": {
+                    "options": [
+                      {
+                        "label": {
+                          "_type": "TextualDisplay",
+                          "textSpans": [
+                            {
+                              "_type": "TextSpan",
+                              "text": "Line Actions"
+                            }
+                          ]
+                        },
+                        "selections": [
+                          {
+                            "disabled": false,
+                            "selected": true,
+                            "label": {
+                              "_type": "TextualDisplayValue",
+                              "textSpans": [
+                                {
+                                  "_type": "TextSpan",
+                                  "text": "Add details",
+                                  "styles": [
+                                    "PROMOTED"
+                                  ]
+                                }
+                              ],
+                              "action": {
+                                "_type": "Action",
+                                "type": "NAV",
+                                "trackingList": [
+                                  {
+                                    "actionKind": "NAV",
+                                    "operationId": "2486981",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                      "sid": "p2486981.m45406.l46975"
+                                    }
+                                  },
+                                  {
+                                    "eventFamily": "MYEBAY",
+                                    "eventAction": "ACTN",
+                                    "actionKind": "NAVSRC",
+                                    "operationId": "2486981",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                      "moduledtl": "mi:45406|li:46975",
+                                      "item": "140012923734"
+                                    }
+                                  }
+                                ],
+                                "URL": "http://cgi5.qa.ebay.com/ws/eBayISAPI.dll?UserItemVerification&item=140012923734"
+                              },
+                              "value": "REQUIRED_ASPECTS"
+                            },
+                            "default": false
+                          }
+                        ],
+                        "multiSelect": false
+                      }
+                    ],
+                    "accessibilityText": "Other actions"
+                  },
+                  "listingFormat": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                      {
+                        "_type": "TextSpan",
+                        "text": "FIXED_PRICE"
+                      }
+                    ]
+                  },
+                  "applicationId": 182,
+                  "itemStats": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                      {
+                        "_type": "TextSpan",
+                        "text": "0 views, 0 watchers"
+                      }
+                    ]
+                  },
+                  "addMissingDetails": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                      {
+                        "_type": "TextSpan",
+                        "text": "Required detail missing"
+                      },
+                      {
+                        "_type": "TextSpan",
+                        "text": "Brand"
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "moduleName": "REQUIRED_ASPECTS"
+        },
+        "listingRecommendedAspectsModule": {
+            "_type": "ListingAspectsViewModel",
+            "title": {
+              "_type": "TextualDisplay",
+              "textSpans": [
+                {
+                  "_type": "TextSpan",
+                  "text": "Add more details"
+                }
+              ]
+            },
+            "seeAll": {
+              "_type": "TextualDisplay",
+              "textSpans": [
+                {
+                  "_type": "TextSpan",
+                  "text": "See all (20)"
+                }
+              ],
+              "action": {
+                "_type": "Action",
+                "type": "OPERATION",
+                "name": "MYEBAY_ACTIVE_GET",
+                "params": {
+                  "container_filter": "ACTIVE_ITEM_SPECIFICS_RECOMMENDED"
+                },
+                "trackingList": [
+                  {
+                    "actionKind": "NAV",
+                    "operationId": "2486981",
+                    "flushImmediately": false,
+                    "eventProperty": {
+                      "sid": "p2486981.m45407.l9191"
+                    }
+                  },
+                  {
+                    "eventFamily": "MYEBAY",
+                    "eventAction": "ACTN",
+                    "actionKind": "NAVSRC",
+                    "operationId": "2486981",
+                    "flushImmediately": false,
+                    "eventProperty": {
+                      "moduledtl": "mi:45407|li:9191"
+                    }
+                  }
+                ],
+                "URL": "https://www.qa.ebay.com/mys/active/rf/filter=ACTIVE_ITEM_SPECIFICS_RECOMMENDED"
+              }
+            },
+            "disclaimerText": {
+              "_type": "TextualDisplay",
+              "textSpans": [
+                {
+                  "_type": "TextSpan",
+                  "text": "More details can improve the chances of buyers finding your item."
+                }
+              ]
+            },
+            "lineItems": [
+              {
+                "_type": "MyeBaySellingListingSummary",
+                "listingId": "140012956109",
+                "title": {
+                  "_type": "TextualDisplay",
+                  "textSpans": [
+                    {
+                      "_type": "TextSpan",
+                      "text": "GH testing in home and garden"
+                    }
+                  ],
+                  "action": {
+                    "_type": "Action",
+                    "type": "NAV",
+                    "trackingList": [
+                      {
+                        "actionKind": "NAV",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "sid": "p2486981.m45407.l9182"
+                        }
+                      },
+                      {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "moduledtl": "mi:45407|li:9182"
+                        }
+                      }
+                    ],
+                    "URL": "https://www.qa.ebay.com/itm/GH-testing-in-home-and-garden/140012956109?src=urllib"
+                  }
+                },
+                "image": {
+                  "_type": "Image",
+                  "imageId": "j-IAAOSwZOddcuAV",
+                  "originalSize": {
+                    "height": 768,
+                    "width": 1366
+                  },
+                  "action": {
+                    "_type": "Action",
+                    "type": "NAV",
+                    "trackingList": [
+                      {
+                        "actionKind": "NAV",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "sid": "p2486981.m45407.l9181"
+                        }
+                      },
+                      {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "moduledtl": "mi:45407|li:9181"
+                        }
+                      }
+                    ],
+                    "URL": "https://www.qa.ebay.com/itm/GH-testing-in-home-and-garden/140012956109?src=urllib"
+                  },
+                  "URL": "http://i1.qa.ebayimg.com/images/g/j-IAAOSwZOddcuAV/s-l140.jpg"
+                },
+                "displayPrice": {
+                  "_type": "TextualDisplayValue",
+                  "textSpans": [
+                    {
+                      "_type": "TextSpan",
+                      "text": "$0.99",
+                      "styles": [
+                        "BOLD"
+                      ]
+                    },
+                    {
+                      "_type": "TextSpan",
+                      "text": "+ Shipping"
+                    }
+                  ],
+                  "accessibilityText": "$0.99 + Shipping",
+                  "value": {
+                    "value": 0.99,
+                    "currency": "USD"
+                  }
+                },
+                "displayTime": {
+                  "_type": "TextualDisplayValue",
+                  "textSpans": [
+                    {
+                      "_type": "TextSpan",
+                      "text": "Ends in 3d 1h"
+                    }
+                  ],
+                  "value": {
+                    "value": "2019-09-13T22:39:53.000Z"
+                  }
+                },
+                "__me": {
+                  "lineActions": {
+                    "options": [
+                      {
+                        "label": {
+                          "_type": "TextualDisplay",
+                          "textSpans": [
+                            {
+                              "_type": "TextSpan",
+                              "text": "Line Actions"
+                            }
+                          ]
+                        },
+                        "selections": [
+                          {
+                            "disabled": false,
+                            "selected": true,
+                            "label": {
+                              "_type": "TextualDisplayValue",
+                              "textSpans": [
+                                {
+                                  "_type": "TextSpan",
+                                  "text": "Add details",
+                                  "styles": [
+                                    "PROMOTED"
+                                  ]
+                                }
+                              ],
+                              "action": {
+                                "_type": "Action",
+                                "type": "NAV",
+                                "trackingList": [
+                                  {
+                                    "actionKind": "NAV",
+                                    "operationId": "2486981",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                      "sid": "p2486981.m45407.l46983"
+                                    }
+                                  },
+                                  {
+                                    "eventFamily": "MYEBAY",
+                                    "eventAction": "ACTN",
+                                    "actionKind": "NAVSRC",
+                                    "operationId": "2486981",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                      "moduledtl": "mi:45407|li:46983",
+                                      "item": "140012956109"
+                                    }
+                                  }
+                                ],
+                                "URL": "http://cgi5.qa.ebay.com/ws/eBayISAPI.dll?UserItemVerification&item=140012956109"
+                              },
+                              "value": "RECOMMENDED_ASPECTS"
+                            },
+                            "default": false
+                          }
+                        ],
+                        "multiSelect": false
+                      }
+                    ],
+                    "accessibilityText": "Other actions"
+                  },
+                  "listingFormat": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                      {
+                        "_type": "TextSpan",
+                        "text": "AUCTION"
+                      }
+                    ]
+                  },
+                  "applicationId": 108715,
+                  "itemStats": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                      {
+                        "_type": "TextSpan",
+                        "text": "0 views, 0 watchers"
+                      },
+                      {
+                        "_type": "TextSpan",
+                        "text": ", "
+                      },
+                      {
+                        "_type": "TextSpan",
+                        "text": "0 bids"
+                      }
+                    ]
+                  },
+                  "addMissingDetails": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                      {
+                        "_type": "TextSpan",
+                        "text": "Recommended details missing"
+                      },
+                      {
+                        "_type": "TextSpan",
+                        "text": "7 details"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "_type": "MyeBaySellingListingSummary",
+                "listingId": "140012956132",
+                "title": {
+                  "_type": "TextualDisplay",
+                  "textSpans": [
+                    {
+                      "_type": "TextSpan",
+                      "text": "GH testing in home and garden"
+                    }
+                  ],
+                  "action": {
+                    "_type": "Action",
+                    "type": "NAV",
+                    "trackingList": [
+                      {
+                        "actionKind": "NAV",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "sid": "p2486981.m45407.l9182"
+                        }
+                      },
+                      {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "moduledtl": "mi:45407|li:9182"
+                        }
+                      }
+                    ],
+                    "URL": "https://www.qa.ebay.com/itm/GH-testing-in-home-and-garden/140012956132?src=urllib"
+                  }
+                },
+                "image": {
+                  "_type": "Image",
+                  "imageId": "QYcAAOSwZI5dcuIJ",
+                  "originalSize": {
+                    "height": 675,
+                    "width": 1225
+                  },
+                  "action": {
+                    "_type": "Action",
+                    "type": "NAV",
+                    "trackingList": [
+                      {
+                        "actionKind": "NAV",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "sid": "p2486981.m45407.l9181"
+                        }
+                      },
+                      {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "moduledtl": "mi:45407|li:9181"
+                        }
+                      }
+                    ],
+                    "URL": "https://www.qa.ebay.com/itm/GH-testing-in-home-and-garden/140012956132?src=urllib"
+                  },
+                  "URL": "http://i1.qa.ebayimg.com/images/g/QYcAAOSwZI5dcuIJ/s-l140.jpg"
+                },
+                "displayPrice": {
+                  "_type": "TextualDisplayValue",
+                  "textSpans": [
+                    {
+                      "_type": "TextSpan",
+                      "text": "$0.99",
+                      "styles": [
+                        "BOLD"
+                      ]
+                    },
+                    {
+                      "_type": "TextSpan",
+                      "text": "+ Shipping"
+                    }
+                  ],
+                  "accessibilityText": "$0.99 + Shipping",
+                  "value": {
+                    "value": 0.99,
+                    "currency": "USD"
+                  }
+                },
+                "displayTime": {
+                  "_type": "TextualDisplayValue",
+                  "textSpans": [
+                    {
+                      "_type": "TextSpan",
+                      "text": "Ends in 3d 1h"
+                    }
+                  ],
+                  "value": {
+                    "value": "2019-09-13T22:48:24.000Z"
+                  }
+                },
+                "__me": {
+                  "lineActions": {
+                    "options": [
+                      {
+                        "label": {
+                          "_type": "TextualDisplay",
+                          "textSpans": [
+                            {
+                              "_type": "TextSpan",
+                              "text": "Line Actions"
+                            }
+                          ]
+                        },
+                        "selections": [
+                          {
+                            "disabled": false,
+                            "selected": true,
+                            "label": {
+                              "_type": "TextualDisplayValue",
+                              "textSpans": [
+                                {
+                                  "_type": "TextSpan",
+                                  "text": "Add details",
+                                  "styles": [
+                                    "PROMOTED"
+                                  ]
+                                }
+                              ],
+                              "action": {
+                                "_type": "Action",
+                                "type": "NAV",
+                                "trackingList": [
+                                  {
+                                    "actionKind": "NAV",
+                                    "operationId": "2486981",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                      "sid": "p2486981.m45407.l46983"
+                                    }
+                                  },
+                                  {
+                                    "eventFamily": "MYEBAY",
+                                    "eventAction": "ACTN",
+                                    "actionKind": "NAVSRC",
+                                    "operationId": "2486981",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                      "moduledtl": "mi:45407|li:46983",
+                                      "item": "140012956132"
+                                    }
+                                  }
+                                ],
+                                "URL": "http://cgi5.qa.ebay.com/ws/eBayISAPI.dll?UserItemVerification&item=140012956132"
+                              },
+                              "value": "RECOMMENDED_ASPECTS"
+                            },
+                            "default": false
+                          }
+                        ],
+                        "multiSelect": false
+                      }
+                    ],
+                    "accessibilityText": "Other actions"
+                  },
+                  "listingFormat": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                      {
+                        "_type": "TextSpan",
+                        "text": "AUCTION"
+                      }
+                    ]
+                  },
+                  "applicationId": 108715,
+                  "itemStats": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                      {
+                        "_type": "TextSpan",
+                        "text": "0 views, 0 watchers"
+                      },
+                      {
+                        "_type": "TextSpan",
+                        "text": ", "
+                      },
+                      {
+                        "_type": "TextSpan",
+                        "text": "0 bids"
+                      }
+                    ]
+                  },
+                  "addMissingDetails": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                      {
+                        "_type": "TextSpan",
+                        "text": "Recommended details missing"
+                      },
+                      {
+                        "_type": "TextSpan",
+                        "text": "2 details"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "_type": "MyeBaySellingListingSummary",
+                "listingId": "140012965195",
+                "title": {
+                  "_type": "TextualDisplay",
+                  "textSpans": [
+                    {
+                      "_type": "TextSpan",
+                      "text": "apple tv"
+                    }
+                  ],
+                  "action": {
+                    "_type": "Action",
+                    "type": "NAV",
+                    "trackingList": [
+                      {
+                        "actionKind": "NAV",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "sid": "p2486981.m45407.l9182"
+                        }
+                      },
+                      {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "moduledtl": "mi:45407|li:9182"
+                        }
+                      }
+                    ],
+                    "URL": "https://www.qa.ebay.com/itm/apple-tv/140012965195?src=urllib"
+                  }
+                },
+                "image": {
+                  "_type": "Image",
+                  "imageId": "h9sAAOSwNeZddqZl",
+                  "originalSize": {
+                    "height": 791,
+                    "width": 1599
+                  },
+                  "action": {
+                    "_type": "Action",
+                    "type": "NAV",
+                    "trackingList": [
+                      {
+                        "actionKind": "NAV",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "sid": "p2486981.m45407.l9181"
+                        }
+                      },
+                      {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "moduledtl": "mi:45407|li:9181"
+                        }
+                      }
+                    ],
+                    "URL": "https://www.qa.ebay.com/itm/apple-tv/140012965195?src=urllib"
+                  },
+                  "URL": "http://i1.qa.ebayimg.com/images/g/h9sAAOSwNeZddqZl/s-l140.jpg"
+                },
+                "displayPrice": {
+                  "_type": "TextualDisplayValue",
+                  "textSpans": [
+                    {
+                      "_type": "TextSpan",
+                      "text": "$0.99",
+                      "styles": [
+                        "BOLD"
+                      ]
+                    },
+                    {
+                      "_type": "TextSpan",
+                      "text": "+ Shipping"
+                    }
+                  ],
+                  "accessibilityText": "$0.99 + Shipping",
+                  "value": {
+                    "value": 0.99,
+                    "currency": "USD"
+                  }
+                },
+                "displayTime": {
+                  "_type": "TextualDisplayValue",
+                  "textSpans": [
+                    {
+                      "_type": "TextSpan",
+                      "text": "Ends in 5d 22h"
+                    }
+                  ],
+                  "value": {
+                    "value": "2019-09-16T19:22:25.000Z"
+                  }
+                },
+                "__me": {
+                  "lineActions": {
+                    "options": [
+                      {
+                        "label": {
+                          "_type": "TextualDisplay",
+                          "textSpans": [
+                            {
+                              "_type": "TextSpan",
+                              "text": "Line Actions"
+                            }
+                          ]
+                        },
+                        "selections": [
+                          {
+                            "disabled": false,
+                            "selected": true,
+                            "label": {
+                              "_type": "TextualDisplayValue",
+                              "textSpans": [
+                                {
+                                  "_type": "TextSpan",
+                                  "text": "Add details",
+                                  "styles": [
+                                    "PROMOTED"
+                                  ]
+                                }
+                              ],
+                              "action": {
+                                "_type": "Action",
+                                "type": "NAV",
+                                "trackingList": [
+                                  {
+                                    "actionKind": "NAV",
+                                    "operationId": "2486981",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                      "sid": "p2486981.m45407.l46983"
+                                    }
+                                  },
+                                  {
+                                    "eventFamily": "MYEBAY",
+                                    "eventAction": "ACTN",
+                                    "actionKind": "NAVSRC",
+                                    "operationId": "2486981",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                      "moduledtl": "mi:45407|li:46983",
+                                      "item": "140012965195"
+                                    }
+                                  }
+                                ],
+                                "URL": "http://cgi5.qa.ebay.com/ws/eBayISAPI.dll?UserItemVerification&item=140012965195"
+                              },
+                              "value": "RECOMMENDED_ASPECTS"
+                            },
+                            "default": false
+                          }
+                        ],
+                        "multiSelect": false
+                      }
+                    ],
+                    "accessibilityText": "Other actions"
+                  },
+                  "listingFormat": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                      {
+                        "_type": "TextSpan",
+                        "text": "AUCTION"
+                      }
+                    ]
+                  },
+                  "applicationId": 108715,
+                  "itemStats": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                      {
+                        "_type": "TextSpan",
+                        "text": "0 views, 0 watchers"
+                      },
+                      {
+                        "_type": "TextSpan",
+                        "text": ", "
+                      },
+                      {
+                        "_type": "TextSpan",
+                        "text": "0 bids"
+                      }
+                    ]
+                  },
+                  "addMissingDetails": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                      {
+                        "_type": "TextSpan",
+                        "text": "Recommended details missing"
+                      },
+                      {
+                        "_type": "TextSpan",
+                        "text": "3 details"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "_type": "MyeBaySellingListingSummary",
+                "listingId": "140012965207",
+                "title": {
+                  "_type": "TextualDisplay",
+                  "textSpans": [
+                    {
+                      "_type": "TextSpan",
+                      "text": "apple tv item"
+                    }
+                  ],
+                  "action": {
+                    "_type": "Action",
+                    "type": "NAV",
+                    "trackingList": [
+                      {
+                        "actionKind": "NAV",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "sid": "p2486981.m45407.l9182"
+                        }
+                      },
+                      {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "moduledtl": "mi:45407|li:9182"
+                        }
+                      }
+                    ],
+                    "URL": "https://www.qa.ebay.com/itm/apple-tv-item/140012965207?src=urllib"
+                  }
+                },
+                "image": {
+                  "_type": "Image",
+                  "imageId": "h9sAAOSwNeZddqZl",
+                  "originalSize": {
+                    "height": 0,
+                    "width": 0
+                  },
+                  "action": {
+                    "_type": "Action",
+                    "type": "NAV",
+                    "trackingList": [
+                      {
+                        "actionKind": "NAV",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "sid": "p2486981.m45407.l9181"
+                        }
+                      },
+                      {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "moduledtl": "mi:45407|li:9181"
+                        }
+                      }
+                    ],
+                    "URL": "https://www.qa.ebay.com/itm/apple-tv-item/140012965207?src=urllib"
+                  },
+                  "URL": "http://i1.qa.ebayimg.com/images/g/h9sAAOSwNeZddqZl/s-l140.jpg"
+                },
+                "displayPrice": {
+                  "_type": "TextualDisplayValue",
+                  "textSpans": [
+                    {
+                      "_type": "TextSpan",
+                      "text": "$0.99",
+                      "styles": [
+                        "BOLD"
+                      ]
+                    },
+                    {
+                      "_type": "TextSpan",
+                      "text": "+ Shipping"
+                    }
+                  ],
+                  "accessibilityText": "$0.99 + Shipping",
+                  "value": {
+                    "value": 0.99,
+                    "currency": "USD"
+                  }
+                },
+                "displayTime": {
+                  "_type": "TextualDisplayValue",
+                  "textSpans": [
+                    {
+                      "_type": "TextSpan",
+                      "text": "Ends in 5d 22h"
+                    }
+                  ],
+                  "value": {
+                    "value": "2019-09-16T19:25:47.000Z"
+                  }
+                },
+                "__me": {
+                  "lineActions": {
+                    "options": [
+                      {
+                        "label": {
+                          "_type": "TextualDisplay",
+                          "textSpans": [
+                            {
+                              "_type": "TextSpan",
+                              "text": "Line Actions"
+                            }
+                          ]
+                        },
+                        "selections": [
+                          {
+                            "disabled": false,
+                            "selected": true,
+                            "label": {
+                              "_type": "TextualDisplayValue",
+                              "textSpans": [
+                                {
+                                  "_type": "TextSpan",
+                                  "text": "Add details",
+                                  "styles": [
+                                    "PROMOTED"
+                                  ]
+                                }
+                              ],
+                              "action": {
+                                "_type": "Action",
+                                "type": "NAV",
+                                "trackingList": [
+                                  {
+                                    "actionKind": "NAV",
+                                    "operationId": "2486981",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                      "sid": "p2486981.m45407.l46983"
+                                    }
+                                  },
+                                  {
+                                    "eventFamily": "MYEBAY",
+                                    "eventAction": "ACTN",
+                                    "actionKind": "NAVSRC",
+                                    "operationId": "2486981",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                      "moduledtl": "mi:45407|li:46983",
+                                      "item": "140012965207"
+                                    }
+                                  }
+                                ],
+                                "URL": "http://cgi5.qa.ebay.com/ws/eBayISAPI.dll?UserItemVerification&item=140012965207"
+                              },
+                              "value": "RECOMMENDED_ASPECTS"
+                            },
+                            "default": false
+                          }
+                        ],
+                        "multiSelect": false
+                      }
+                    ],
+                    "accessibilityText": "Other actions"
+                  },
+                  "listingFormat": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                      {
+                        "_type": "TextSpan",
+                        "text": "AUCTION"
+                      }
+                    ]
+                  },
+                  "applicationId": 108715,
+                  "itemStats": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                      {
+                        "_type": "TextSpan",
+                        "text": "0 views, 0 watchers"
+                      },
+                      {
+                        "_type": "TextSpan",
+                        "text": ", "
+                      },
+                      {
+                        "_type": "TextSpan",
+                        "text": "0 bids"
+                      }
+                    ]
+                  },
+                  "addMissingDetails": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                      {
+                        "_type": "TextSpan",
+                        "text": "Recommended details missing"
+                      },
+                      {
+                        "_type": "TextSpan",
+                        "text": "3 details"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "_type": "MyeBaySellingListingSummary",
+                "listingId": "140012965275",
+                "title": {
+                  "_type": "TextualDisplay",
+                  "textSpans": [
+                    {
+                      "_type": "TextSpan",
+                      "text": "Test GH"
+                    }
+                  ],
+                  "action": {
+                    "_type": "Action",
+                    "type": "NAV",
+                    "trackingList": [
+                      {
+                        "actionKind": "NAV",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "sid": "p2486981.m45407.l9182"
+                        }
+                      },
+                      {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "moduledtl": "mi:45407|li:9182"
+                        }
+                      }
+                    ],
+                    "URL": "https://www.qa.ebay.com/itm/Test-GH/140012965275?src=urllib"
+                  }
+                },
+                "image": {
+                  "_type": "Image",
+                  "imageId": "j-IAAOSwZOddcuAV",
+                  "originalSize": {
+                    "height": 0,
+                    "width": 0
+                  },
+                  "action": {
+                    "_type": "Action",
+                    "type": "NAV",
+                    "trackingList": [
+                      {
+                        "actionKind": "NAV",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "sid": "p2486981.m45407.l9181"
+                        }
+                      },
+                      {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                          "moduledtl": "mi:45407|li:9181"
+                        }
+                      }
+                    ],
+                    "URL": "https://www.qa.ebay.com/itm/Test-GH/140012965275?src=urllib"
+                  },
+                  "URL": "http://i1.qa.ebayimg.com/images/g/j-IAAOSwZOddcuAV/s-l140.jpg"
+                },
+                "displayPrice": {
+                  "_type": "TextualDisplayValue",
+                  "textSpans": [
+                    {
+                      "_type": "TextSpan",
+                      "text": "$0.99",
+                      "styles": [
+                        "BOLD"
+                      ]
+                    },
+                    {
+                      "_type": "TextSpan",
+                      "text": "+ Shipping"
+                    }
+                  ],
+                  "accessibilityText": "$0.99 + Shipping",
+                  "value": {
+                    "value": 0.99,
+                    "currency": "USD"
+                  }
+                },
+                "displayTime": {
+                  "_type": "TextualDisplayValue",
+                  "textSpans": [
+                    {
+                      "_type": "TextSpan",
+                      "text": "Ends in 5d 22h"
+                    }
+                  ],
+                  "value": {
+                    "value": "2019-09-16T19:45:24.000Z"
+                  }
+                },
+                "__me": {
+                  "lineActions": {
+                    "options": [
+                      {
+                        "label": {
+                          "_type": "TextualDisplay",
+                          "textSpans": [
+                            {
+                              "_type": "TextSpan",
+                              "text": "Line Actions"
+                            }
+                          ]
+                        },
+                        "selections": [
+                          {
+                            "disabled": false,
+                            "selected": true,
+                            "label": {
+                              "_type": "TextualDisplayValue",
+                              "textSpans": [
+                                {
+                                  "_type": "TextSpan",
+                                  "text": "Add details",
+                                  "styles": [
+                                    "PROMOTED"
+                                  ]
+                                }
+                              ],
+                              "action": {
+                                "_type": "Action",
+                                "type": "NAV",
+                                "trackingList": [
+                                  {
+                                    "actionKind": "NAV",
+                                    "operationId": "2486981",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                      "sid": "p2486981.m45407.l46983"
+                                    }
+                                  },
+                                  {
+                                    "eventFamily": "MYEBAY",
+                                    "eventAction": "ACTN",
+                                    "actionKind": "NAVSRC",
+                                    "operationId": "2486981",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                      "moduledtl": "mi:45407|li:46983",
+                                      "item": "140012965275"
+                                    }
+                                  }
+                                ],
+                                "URL": "http://cgi5.qa.ebay.com/ws/eBayISAPI.dll?UserItemVerification&item=140012965275"
+                              },
+                              "value": "RECOMMENDED_ASPECTS"
+                            },
+                            "default": false
+                          }
+                        ],
+                        "multiSelect": false
+                      }
+                    ],
+                    "accessibilityText": "Other actions"
+                  },
+                  "listingFormat": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                      {
+                        "_type": "TextSpan",
+                        "text": "AUCTION"
+                      }
+                    ]
+                  },
+                  "applicationId": 108715,
+                  "itemStats": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                      {
+                        "_type": "TextSpan",
+                        "text": "0 views, 1 watcher"
+                      },
+                      {
+                        "_type": "TextSpan",
+                        "text": ", "
+                      },
+                      {
+                        "_type": "TextSpan",
+                        "text": "0 bids"
+                      }
+                    ]
+                  },
+                  "addMissingDetails": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                      {
+                        "_type": "TextSpan",
+                        "text": "Recommended details missing"
+                      },
+                      {
+                        "_type": "TextSpan",
+                        "text": "3 details"
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "moduleName": "RECOMMENDED_ASPECTS"
+        }
+    }
+}

@@ -1,0 +1,17 @@
+import helper from './helper'
+
+$ const model = helper.getModelData(state);
+<if(model.moduleTitle)>
+    <me-summary class="scheduled-page__header" key="scheduled-refinement">
+        <@pageTitle>
+            <me-textual-display model=model.moduleTitle/>
+        </@pageTitle>
+        <@sorts>
+            <me-sort-menu
+                key="scheduled-sort"
+                model=model.sortOptions
+                content=model.content
+                on-handleSortRequest("handleSortFilterRequest")/>
+        </@sorts>
+    </me-summary>
+</if>

@@ -1,0 +1,69 @@
+{
+    "seeAllNav": {
+        "textSpans": [
+            {
+                "text": "See all (46)"
+            }
+        ],
+        "action": {
+            "type": "NAV",
+            "name": "MYEBAY_SOLD",
+            "params": {
+                "filter": "PAID_NO_FEEDBACK"
+            },
+            "trackingList": [
+                {
+                    "actionKind": "NAV",
+                    "operationId": "2486981",
+                    "flushImmediately": false,
+                    "eventProperty": {
+                        "sid": "p2486981.m4941.l9191"
+                    }
+                },
+                {
+                    "eventFamily": "MYEBAY",
+                    "eventAction": "ACTN",
+                    "actionKind": "NAVSRC",
+                    "operationId": "2486981",
+                    "flushImmediately": false,
+                    "eventProperty": {
+                        "moduledtl": "mi:4941|li:9191"
+                    }
+                }
+            ],
+            "URL": "http://my.qa.ebay.com/ws/eBayISAPI.dll?MyEbayBeta&View=SoldNext&NewFilter=WaitFeedback&SubmitAction.ChangeFilter=x&CurrentPage=MyeBayNextSold"
+        }
+    },
+    "seeAllOperation": {
+        "textSpans": [
+            {
+                "text": "See more"
+            }
+        ],
+        "action": {
+            "type": "OPERATION",
+            "name": "MYEBAY_DRAFTS",
+            "trackingList": [
+                {
+                    "actionKind": "NAV",
+                    "operationId": "2486981",
+                    "flushImmediately": false,
+                    "eventProperty": {
+                        "sid": "p2486981.m4942.l9191"
+                    }
+                },
+                {
+                    "eventFamily": "MYEBAY",
+                    "eventAction": "ACTN",
+                    "actionKind": "NAVSRC",
+                    "operationId": "2486981",
+                    "flushImmediately": false,
+                    "eventProperty": {
+                        "moduledtl": "mi:4942|li:9191"
+                    }
+                }
+            ],
+            "URL": "https://www.qa.ebay.com/mys/drafts"
+        }
+    }
+}

@@ -1,0 +1,272 @@
+{
+    "model": {
+        "_type": "MyeBayRefinementModule",
+        "moduleTitle": {
+            "_type": "TextualDisplay",
+            "textSpans": [
+                {
+                    "_type": "TextSpan",
+                    "text": "Unsold"
+                }
+            ]
+        },
+        "edit": {
+            "_type": "TextualDisplay",
+            "textSpans": [
+                {
+                    "_type": "TextSpan",
+                    "text": "Edit"
+                }
+            ],
+            "action": {
+                "_type": "Action",
+                "type": "OPERATION"
+            }
+        },
+        "sort": {
+            "label": {
+                "_type": "TextualDisplay",
+                "textSpans": [
+                    {
+                        "_type": "TextSpan",
+                        "text": "Sort:"
+                    }
+                ]
+            },
+            "options": [
+                {
+                    "_type": "TextualSelection",
+                    "selected": true,
+                    "paramKey": "sort",
+                    "paramValue": "TIME_ENDED_RECENT_FIRST",
+                    "label": {
+                        "_type": "TextualDisplay",
+                        "textSpans": [
+                            {
+                                "_type": "TextSpan",
+                                "text": "Time ended: recent first"
+                            }
+                        ]
+                    },
+                    "action": {
+                        "_type": "Action",
+                        "type": "OPERATION",
+                        "URL": "sort=TIME_ENDED_RECENT_FIRST&filter=NOT_YET_RELISTED&limit=25"
+                    }
+                },
+                {
+                    "_type": "TextualSelection",
+                    "selected": false,
+                    "paramKey": "sort",
+                    "paramValue": "TIME_ENDED_RECENT_LAST",
+                    "label": {
+                        "_type": "TextualDisplay",
+                        "textSpans": [
+                            {
+                                "_type": "TextSpan",
+                                "text": "Time ended: recent last"
+                            }
+                        ]
+                    },
+                    "action": {
+                        "_type": "Action",
+                        "type": "OPERATION",
+                        "URL": "sort=TIME_ENDED_RECENT_LAST&filter=NOT_YET_RELISTED&limit=25"
+                    }
+                }
+            ]
+        },
+        "filter": {
+            "label": {
+                "_type": "TextualDisplay",
+                "textSpans": [
+                    {
+                        "_type": "TextSpan",
+                        "text": "Filter"
+                    }
+                ],
+                "accessibilityText": "Unsold items"
+            },
+            "controls": {
+                "_type": "CarouselControls",
+                "previous": {
+                    "_type": "Action",
+                    "type": "OPERATION",
+                    "accessibilityText": "Previous",
+                    "URL": "javascript"
+                },
+                "next": {
+                    "_type": "Action",
+                    "type": "OPERATION",
+                    "accessibilityText": "Next",
+                    "URL": "javascript"
+                }
+            },
+            "options": [
+                {
+                    "_type": "TextualSelection",
+                    "selected": true,
+                    "paramKey": "filter",
+                    "paramValue": "ALL",
+                    "additionalParamKeyValues": {
+                        "filterCount": "2"
+                    },
+                    "label": {
+                        "_type": "TextualDisplay",
+                        "textSpans": [
+                            {
+                                "_type": "TextSpan",
+                                "text": "All (2)"
+                            }
+                        ]
+                    },
+                    "action": {
+                        "_type": "Action",
+                        "type": "OPERATION",
+                        "URL": "sort=TIME_ENDED_RECENT_FIRST&filter=ALL&limit=25"
+                    }
+                },
+                {
+                    "_type": "TextualSelection",
+                    "selected": false,
+                    "paramKey": "filter",
+                    "paramValue": "NOT_YET_RELISTED",
+                    "additionalParamKeyValues": {
+                        "filterCount": "32"
+                    },
+                    "label": {
+                        "_type": "TextualDisplay",
+                        "textSpans": [
+                            {
+                                "_type": "TextSpan",
+                                "text": "Not relisted yet (32)"
+                            }
+                        ]
+                    },
+                    "action": {
+                        "_type": "Action",
+                        "type": "OPERATION",
+                        "URL": "sort=TIME_ENDED_RECENT_FIRST&filter=NOT_YET_RELISTED&limit=25"
+                    }
+                },
+                {
+                    "_type": "TextualSelection",
+                    "selected": false,
+                    "paramKey": "filter",
+                    "paramValue": "RELISTED",
+                    "additionalParamKeyValues": {
+                        "filterCount": "0"
+                    },
+                    "label": {
+                        "_type": "TextualDisplay",
+                        "textSpans": [
+                            {
+                                "_type": "TextSpan",
+                                "text": "Relisted (0)"
+                            }
+                        ]
+                    },
+                    "action": {
+                        "_type": "Action",
+                        "type": "OPERATION",
+                        "URL": "sort=TIME_ENDED_RECENT_FIRST&filter=RELISTED&limit=25"
+                    }
+                }
+            ]
+        },
+        "bulkDeleteAction": {
+            "_type": "TextualDisplay",
+            "textSpans": [
+                {
+                    "_type": "TextSpan",
+                    "text": "Delete",
+                    "action": {
+                        "_type": "Action",
+                        "type": "OPERATION",
+                        "URL": "delete?refetch=true"
+                    }
+                }
+            ]
+        },
+        "bulkDeleteCancel": {
+            "_type": "TextualDisplay",
+            "textSpans": [
+                {
+                    "_type": "TextSpan",
+                    "text": "Cancel"
+                }
+            ]
+        },
+        "bulkDeleteSelectAll": {
+            "_type": "TextualDisplay",
+            "textSpans": [
+                {
+                    "_type": "TextSpan",
+                    "text": "Select all items"
+                }
+            ]
+        },
+        "bulkDeleteConfirmationContentMap": {
+            "label": "DeleteConfirmation",
+            "content": {
+                "deleteCancelButton": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                        {
+                            "_type": "TextSpan",
+                            "text": "Cancel"
+                        }
+                    ]
+                },
+                "deleteMultiMessage": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                        {
+                            "_type": "TextSpan",
+                            "text": "Are you sure you want to delete the selected unsold items?"
+                        }
+                    ]
+                },
+                "deleteConfirmButton": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                        {
+                            "_type": "TextSpan",
+                            "text": "Delete"
+                        }
+                    ]
+                },
+                "deleteMessage": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                        {
+                            "_type": "TextSpan",
+                            "text": "Are you sure you want to delete the selected unsold item?"
+                        }
+                    ]
+                },
+                "deleteTitle": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                        {
+                            "_type": "TextSpan",
+                            "text": "Delete unsold item"
+                        }
+                    ]
+                },
+                "deleteMultiTitle": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [
+                        {
+                            "_type": "TextSpan",
+                            "text": "Delete unsold items"
+                        }
+                    ]
+                }
+            }
+        },
+        "meta": {
+            "name": "unsoldRefinementModule"
+        }
+    }
+}

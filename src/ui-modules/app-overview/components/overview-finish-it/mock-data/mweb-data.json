@@ -1,0 +1,421 @@
+{
+    "finishItModule": {
+        "_type": "DraftsNativeViewModel",
+        "title": {
+            "textSpans": [
+                {
+                    "text": "Drafts"
+                }
+            ]
+        },
+        "seeAll": {
+            "textSpans": [
+                {
+                    "text": "See more"
+                }
+            ],
+            "action": {
+                "type": "NAV",
+                "trackingList": [
+                    {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                            "moduledtl": "mi:4942|li:9191"
+                        }
+                    }
+                ]
+            }
+        },
+        "lineItems": [
+            {
+                "_type": "MyeBaySellingListingDraft",
+                "title": {
+                    "textSpans": [
+                        {
+                            "text": "Women Casual Athletic Running Sneaker Shoes"
+                        }
+                    ],
+                    "action": {
+                        "type": "NAV",
+                        "trackingList": [
+                            {
+                                "eventFamily": "MYEBAY",
+                                "eventAction": "ACTN",
+                                "actionKind": "NAVSRC",
+                                "operationId": "2486981",
+                                "flushImmediately": false,
+                                "eventProperty": {
+                                    "moduledtl": "mi:4942|li:9905"
+                                }
+                            }
+                        ],
+                        "URL": "http://www.qa.ebay.com/sell/list.jsf?mode=AddItem&draftId=763616702&usecase=resume"
+                    }
+                },
+                "image": {
+                    "title": "Women Casual Athletic Running Sneaker Shoes",
+                    "action": {
+                        "type": "NAV",
+                        "trackingList": [
+                            {
+                                "eventFamily": "MYEBAY",
+                                "eventAction": "ACTN",
+                                "actionKind": "NAVSRC",
+                                "operationId": "2486981",
+                                "flushImmediately": false,
+                                "eventProperty": {
+                                    "moduledtl": "mi:4942|li:9905"
+                                }
+                            }
+                        ],
+                        "URL": "http://www.qa.ebay.com/sell/list.jsf?mode=SellLikeItem&draftId=777734602&usecase=resume"
+                    },
+                    "URL": "https://pics.ebaystatic.com/aw/pics/stockimage1.jpg"
+                },
+                "draftId": "777734602",
+                "listingMode": "SellLikeItem",
+                "lastModified": "2018-12-10T21:24:55.000Z",
+                "marketPlaceId": "EBAY-US",
+                "categoryHierarchyList": [
+                    "11450",
+                    "3034",
+                    "95672"
+                ],
+                "id": "NIL-NIL-NIL",
+                "presentityId": "NIL-NIL-NIL",
+                "status": {
+                    "textSpans": [
+                        {
+                            "text": "Dec 10"
+                        }
+                    ]
+                }
+            },
+            {
+                "_type": "MyeBaySellingListingDraft",
+                "title": {
+                    "textSpans": [
+                        {
+                            "text": "women's shoes"
+                        }
+                    ],
+                    "action": {
+                        "type": "NAV",
+                        "trackingList": [
+                            {
+                                "eventFamily": "MYEBAY",
+                                "eventAction": "ACTN",
+                                "actionKind": "NAVSRC",
+                                "operationId": "2486981",
+                                "flushImmediately": false,
+                                "eventProperty": {
+                                    "moduledtl": "mi:4942|li:9905"
+                                }
+                            }
+                        ],
+                        "URL": "http://www.qa.ebay.com/sell/list.jsf?mode=AddItem&draftId=763616702&usecase=resume"
+                    }
+                },
+                "image": {
+                    "title": "women's shoes",
+                    "action": {
+                        "type": "NAV",
+                        "trackingList": [
+                            {
+                                "eventFamily": "MYEBAY",
+                                "eventAction": "ACTN",
+                                "actionKind": "NAVSRC",
+                                "operationId": "2486981",
+                                "flushImmediately": false,
+                                "eventProperty": {
+                                    "moduledtl": "mi:4942|li:9905"
+                                }
+                            }
+                        ],
+                        "URL": "http://www.qa.ebay.com/sell/list.jsf?mode=AddItem&draftId=791023801&usecase=resume"
+                    },
+                    "URL": "https://pics.ebaystatic.com/aw/pics/stockimage1.jpg"
+                },
+                "draftId": "791023801",
+                "listingMode": "AddItem",
+                "lastModified": "2018-12-10T21:23:57.000Z",
+                "marketPlaceId": "EBAY-US",
+                "categoryHierarchyList": [
+                    "11450",
+                    "3034",
+                    "55793"
+                ],
+                "id": "NIL-NIL-NIL",
+                "presentityId": "NIL-NIL-NIL",
+                "status": {
+                    "textSpans": [
+                        {
+                            "text": "Dec 11"
+                        }
+                    ]
+                }
+            },
+            {
+                "_type": "MyeBaySellingListingDraft",
+                "title": {
+                    "textSpans": [
+                        {
+                            "text": "test cbt"
+                        }
+                    ],
+                    "action": {
+                        "type": "NAV",
+                        "trackingList": [
+                            {
+                                "eventFamily": "MYEBAY",
+                                "eventAction": "ACTN",
+                                "actionKind": "NAVSRC",
+                                "operationId": "2486981",
+                                "flushImmediately": false,
+                                "eventProperty": {
+                                    "moduledtl": "mi:4942|li:9905"
+                                }
+                            }
+                        ],
+                        "URL": "http://www.qa.ebay.com/sell/list.jsf?mode=AddItem&draftId=763616702&usecase=resume"
+                    }
+                },
+                "image": {
+                    "title": "test cbt",
+                    "action": {
+                        "type": "NAV",
+                        "trackingList": [
+                            {
+                                "eventFamily": "MYEBAY",
+                                "eventAction": "ACTN",
+                                "actionKind": "NAVSRC",
+                                "operationId": "2486981",
+                                "flushImmediately": false,
+                                "eventProperty": {
+                                    "moduledtl": "mi:4942|li:9905"
+                                }
+                            }
+                        ]
+                    },
+                    "URL": "https://pics.ebaystatic.com/aw/pics/stockimage1.jpg"
+                },
+                "draftId": "763616702",
+                "listingMode": "AddItem",
+                "lastModified": "2018-12-03T22:01:08.000Z",
+                "marketPlaceId": "EBAY-US",
+                "categoryHierarchyList": [
+                    "11450",
+                    "1059",
+                    "185100",
+                    "15687"
+                ],
+                "id": "NIL-NIL-NIL",
+                "presentityId": "NIL-NIL-NIL",
+                "status": {
+                    "textSpans": [
+                        {
+                            "text": "Dec 12"
+                        }
+                    ]
+                }
+            },
+            {
+                "_type": "MyeBaySellingListingDraft",
+                "title": {
+                    "textSpans": [
+                        {
+                            "text": "test cbt"
+                        }
+                    ],
+                    "action": {
+                        "type": "NAV",
+                        "trackingList": [
+                            {
+                                "eventFamily": "MYEBAY",
+                                "eventAction": "ACTN",
+                                "actionKind": "NAVSRC",
+                                "operationId": "2486981",
+                                "flushImmediately": false,
+                                "eventProperty": {
+                                    "moduledtl": "mi:4942|li:9905"
+                                }
+                            }
+                        ],
+                        "URL": "http://www.qa.ebay.com/sell/list.jsf?mode=AddItem&draftId=763616702&usecase=resume"
+                    }
+                },
+                "image": {
+                    "title": "test cbt",
+                    "action": {
+                        "type": "NAV",
+                        "trackingList": [
+                            {
+                                "eventFamily": "MYEBAY",
+                                "eventAction": "ACTN",
+                                "actionKind": "NAVSRC",
+                                "operationId": "2486981",
+                                "flushImmediately": false,
+                                "eventProperty": {
+                                    "moduledtl": "mi:4942|li:9905"
+                                }
+                            }
+                        ]
+                    },
+                    "URL": "https://pics.ebaystatic.com/aw/pics/stockimage1.jpg"
+                },
+                "draftId": "763616702",
+                "listingMode": "AddItem",
+                "lastModified": "2018-12-03T22:01:08.000Z",
+                "marketPlaceId": "EBAY-US",
+                "categoryHierarchyList": [
+                    "11450",
+                    "1059",
+                    "185100",
+                    "15687"
+                ],
+                "id": "NIL-NIL-NIL",
+                "presentityId": "NIL-NIL-NIL",
+                "status": {
+                    "textSpans": [
+                        {
+                            "text": "Dec 13"
+                        }
+                    ]
+                }
+            },
+            {
+                "_type": "MyeBaySellingListingDraft",
+                "title": {
+                    "textSpans": [
+                        {
+                            "text": "test cbt"
+                        }
+                    ],
+                    "action": {
+                        "type": "NAV",
+                        "trackingList": [
+                            {
+                                "eventFamily": "MYEBAY",
+                                "eventAction": "ACTN",
+                                "actionKind": "NAVSRC",
+                                "operationId": "2486981",
+                                "flushImmediately": false,
+                                "eventProperty": {
+                                    "moduledtl": "mi:4942|li:9905"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "image": {
+                    "title": "test cbt",
+                    "action": {
+                        "type": "NAV",
+                        "trackingList": [
+                            {
+                                "eventFamily": "MYEBAY",
+                                "eventAction": "ACTN",
+                                "actionKind": "NAVSRC",
+                                "operationId": "2486981",
+                                "flushImmediately": false,
+                                "eventProperty": {
+                                    "moduledtl": "mi:4942|li:9905"
+                                }
+                            }
+                        ]
+                    },
+                    "URL": "https://pics.ebaystatic.com/aw/pics/stockimage1.jpg"
+                },
+                "draftId": "763616702",
+                "listingMode": "AddItem",
+                "lastModified": "2018-12-03T22:01:08.000Z",
+                "marketPlaceId": "EBAY-US",
+                "categoryHierarchyList": [
+                    "11450",
+                    "1059",
+                    "185100",
+                    "15687"
+                ],
+                "id": "NIL-NIL-NIL",
+                "presentityId": "NIL-NIL-NIL",
+                "status": {
+                    "textSpans": [
+                        {
+                            "text": "Dec 14"
+                        }
+                    ]
+                }
+            },
+            {
+                "_type": "MyeBaySellingListingDraft",
+                "title": {
+                    "textSpans": [
+                        {
+                            "text": "test cbt"
+                        }
+                    ],
+                    "action": {
+                        "type": "NAV",
+                        "trackingList": [
+                            {
+                                "eventFamily": "MYEBAY",
+                                "eventAction": "ACTN",
+                                "actionKind": "NAVSRC",
+                                "operationId": "2486981",
+                                "flushImmediately": false,
+                                "eventProperty": {
+                                    "moduledtl": "mi:4942|li:9905"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "image": {
+                    "title": "test cbt",
+                    "action": {
+                        "type": "NAV",
+                        "trackingList": [
+                            {
+                                "eventFamily": "MYEBAY",
+                                "eventAction": "ACTN",
+                                "actionKind": "NAVSRC",
+                                "operationId": "2486981",
+                                "flushImmediately": false,
+                                "eventProperty": {
+                                    "moduledtl": "mi:4942|li:9905"
+                                }
+                            }
+                        ]
+                    },
+                    "URL": "https://pics.ebaystatic.com/aw/pics/stockimage1.jpg"
+                },
+                "draftId": "763616702",
+                "listingMode": "AddItem",
+                "lastModified": "2018-12-03T22:01:08.000Z",
+                "marketPlaceId": "EBAY-US",
+                "categoryHierarchyList": [
+                    "11450",
+                    "1059",
+                    "185100",
+                    "15687"
+                ],
+                "id": "NIL-NIL-NIL",
+                "presentityId": "NIL-NIL-NIL",
+                "status": {
+                    "textSpans": [
+                        {
+                            "text": "Dec 15"
+                        }
+                    ]
+                }
+            }
+        ],
+        "contentStatus": {
+            "status": "SUCCESS_SHOW_CONTENT"
+        }
+    }
+}

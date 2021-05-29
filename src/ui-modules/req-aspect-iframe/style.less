@@ -1,0 +1,42 @@
+.modal-iframe {
+    &__body {
+        // min-height: 590px;
+        max-height: 100%;
+        width: 780px;
+        overflow: hidden;
+        border: 0;
+        @media screen and (max-width: 576px) {
+            width: auto;
+        }
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            height: 672px !important;
+        }
+    }
+
+    &-wrapper.me-dialog {
+        .dialog__window:not(.dialog__window--full) {
+            min-width: 780px;
+            @media screen and (max-width: 576px) {
+                min-width: auto;
+            }
+        }
+        .me-dialog__header {
+            text-align: center;
+            padding: 10px 0;
+            @media screen and (max-width: 576px) {
+                padding-right: 25px;
+            }
+        }
+        .dialog__main,
+        .me-dialog__content {
+            margin: 0px;
+            min-height: 353px;
+        }
+        .spinner-wrapper {
+            height: 90%;
+        }
+        .error-notice {
+            padding: 20px;
+        }
+    }
+}

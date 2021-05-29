@@ -1,0 +1,13 @@
+{
+  "transformer": "./transformer.js",
+  "vars": [
+    {
+      "name-from-attribute": "_var"
+    }
+  ],
+  "renderer": "./index.marko",
+  "@items": "string",
+  "@class": "string",
+  "@showMore": "boolean",
+  "@model": "object"
+}

@@ -1,0 +1,47 @@
+import safeGet from 'just-safe-get'
+
+class {
+    onCreate(input) {
+        this.state = input;
+    }
+    onInput(input) {
+        this.state = input;
+    }
+
+    updateEmptyModule(emptyStateModule) {
+        this.setState("model", emptyStateModule);
+    }
+}
+
+style.less {
+    .me-empty {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 193px 10px;
+        text-align: center;
+
+        &__header {
+            .typography-large-1;
+            padding-bottom: 16px;
+        }
+    }
+}
+
+$ const emptyMessage = safeGet(state, "model.message");
+$ const alternateActionText = safeGet(
+    state,
+    "model.alternateAction.textSpans.0.text"
+);
+$ const alternateAction = safeGet(state, "model.alternateAction.action");
+<if(emptyMessage)>
+    <div.me-empty>
+        <static-text class="me-empty__header" model=emptyMessage/>
+        <if(alternateAction)>
+            <meui-navlink action=alternateAction class="me-empty__link">
+                ${alternateActionText}
+            </meui-navlink>
+        </if>
+    </div>
+</if>

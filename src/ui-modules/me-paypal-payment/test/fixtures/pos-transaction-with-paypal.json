@@ -1,0 +1,17 @@
+{
+    "model": {
+        "_type": "IconAndText",
+        "icon": {
+            "_type": "Icon",
+            "name": "PayPal",
+            "accessibilityText": "Paid on Fr, 1. Sep"
+        },
+        "text": {
+            "textSpans": [
+                {
+                    "text": "Paid on Fr, 1. Sep"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "confirmationHeader": [
+        {
+            "_type": "TextSpan",
+            "text": "Delete draft(s)"
+        }
+    ],
+    "confirmationContent": [
+        {
+            "_type": "TextSpan",
+            "text": "Are you sure you want to delete the selected draft(s)?"
+        }
+    ],
+    "confirmationAccessibility": "close dialogue",
+    "confirmationBtn": "Delete",
+    "confirmationCancel": "Cancel"
+}

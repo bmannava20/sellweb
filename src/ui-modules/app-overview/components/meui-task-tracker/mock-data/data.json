@@ -1,0 +1,48 @@
+{
+  "orderProgressStatus": [
+    {
+      "statusText": {
+        "textSpans": [
+          {
+            "text": "Paid"
+          }
+        ],
+        "accessibilityText": "selected"
+      },
+      "selected": true
+    },
+    {
+      "statusText": {
+        "textSpans": [
+          {
+            "text": "Shipped"
+          }
+        ],
+        "accessibilityText": "unselected"
+      },
+      "selected": false
+    },
+    {
+      "statusText": {
+        "textSpans": [
+          {
+            "text": "Delivered"
+          }
+        ],
+        "accessibilityText": "unselected"
+      },
+      "selected": false
+    },
+    {
+      "statusText": {
+        "textSpans": [
+          {
+            "text": "Feedback left"
+          }
+        ],
+        "accessibilityText": "unselected"
+      },
+      "selected": false
+    }
+  ]
+}

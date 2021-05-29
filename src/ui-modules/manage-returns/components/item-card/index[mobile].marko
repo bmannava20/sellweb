@@ -1,0 +1,35 @@
+import safeGet from 'just-safe-get'
+import helper from './helper'
+$ const model = helper.getModelData(input);
+
+<div class="insights-item" qa-id=`${input.sectionId}-item-${model.listingId}`>
+    <layout-item-card
+        class="insights-item__body">
+        <@col-1>
+            <meui-thumbnail image=model.image altText=model.title size="mobile"/>
+        </@col-1>
+        <@col-2>
+            <me-item-title model=model.title/>
+            <static-text model=model.quantity class="item__quantity"/>
+            <static-text model=model.displayPrice class="item__price"/>
+            <div class="item__stats">
+                <for|text| of=model.itemStats>
+                    <if(text.action && text.text)>
+                        <meui-navlink action=text.action>${text.text}</meui-navlink>
+                    </if>
+                    <else>
+                        <span class="item__buyer-text">${text.text}</span>
+                    </else>
+                </for>
+            </div>
+        </@col-2>
+        <@footer>
+            <static-text model=model.status class="item__manage-status"/>
+            <me-fake-button
+                size="small"
+                class="item__primary-action"
+                model=model.lineAction
+                action=model.lineActionContent/>
+        </@footer>
+    </layout-item-card>
+</div>

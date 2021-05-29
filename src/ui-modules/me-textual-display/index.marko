@@ -1,0 +1,53 @@
+import helper from './helper'
+
+$ const model = helper.getModelData(input);
+$ const textSpans = model.textSpans;
+$ const disableEscaping = model.disableEscaping;
+<macro|macroInput| name="insertText">
+    $ var text = macroInput.text;
+    $ var disableEscaping = macroInput.disableEscaping;
+    <if(disableEscaping)>
+        $!{text}
+    </if>
+    <else>
+        ${text}
+    </else>
+</macro>
+<macro|macroInput| name="renderTextSpan">
+    $ var textSpan = macroInput.textSpan;
+    $ var target = (textSpan.action ? textSpan.action.name : (textSpan.target ? textSpan.target : undefined ));
+    $ var classes = macroInput.classes;
+    <if(textSpan.action && textSpan.action.type === "NAV")>
+        <meui-navlink class=classes action=textSpan.action target=target>
+            <insertText text=textSpan.text disableEscaping=disableEscaping/>
+            <if(textSpan.accessibilityText)>
+                <span class="clipped">
+                    <insertText text=textSpan.accessibilityText disableEscaping=disableEscaping/>
+                </span>
+            </if>
+            <if(model.icon)>
+                <${model.icon}/> 
+            </if>
+        </meui-navlink>
+    </if>
+    <else>
+        <if(classes && classes.length > 0)>
+            <span class=classes>
+                <insertText text=textSpan.text disableEscaping=disableEscaping/>
+            </span>
+        </if>
+        <else>
+            <insertText text=textSpan.text disableEscaping=disableEscaping/>
+        </else>
+    </else>
+</macro>
+<for|textSpan| of=textSpans>
+    $ const classes = helper.generateClasses(
+        textSpan,
+        model.prefixClass,
+        model.defaultClass,
+        model.styleMap,
+        model.classAttr
+    );
+    <renderTextSpan textSpan=textSpan classes=classes/>
+</for>

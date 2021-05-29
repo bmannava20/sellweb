@@ -1,0 +1,15 @@
+{
+    "bidCount": {
+        "_type": "TextualDisplayValue",
+        "textSpans": [{
+                "_type": "TextSpan",
+                "text": "0"
+            },
+            {
+                "_type": "TextSpan",
+                "text": "Bid"
+            }
+        ],
+        "value": 0
+    }
+}

@@ -1,0 +1,261 @@
+{
+    "_type": "ReplyToItViewModel",
+    "title": {
+        "textSpans": [{
+            "text": "Messages from buyers"
+        }]
+    },
+    "lineItems": [{
+            "image": {
+                "title": "DE-FreeShipping Item1511917735109-1511917735109",
+                "imageId": "zjAAAOSw3QdaHixw",
+                "originalSize": {
+                    "height": 45,
+                    "width": 110
+                },
+                "action": {
+                    "type": "NAV",
+                    "trackingList": [{
+                            "actionKind": "NAV",
+                            "operationId": "2486981",
+                            "flushImmediately": false,
+                            "eventProperty": {
+                                "sid": "p2486981.m5287.l9181"
+                            }
+                        },
+                        {
+                            "eventFamily": "MYEBAY",
+                            "eventAction": "ACTN",
+                            "actionKind": "NAVSRC",
+                            "operationId": "2486981",
+                            "flushImmediately": false,
+                            "eventProperty": {
+                                "moduledtl": "mi:5287|li:9181"
+                            }
+                        }
+                    ],
+                    "URL": "https://www.qa.ebay.com/itm/DE-FreeShipping-Item1511917735109-1511917735109/170011698655?src=urllib"
+                },
+                "URL": "http://i1.qa.ebayimg.com/images/g/zjAAAOSw3QdaHixw/s-l140.jpg"
+            },
+            "listingId": "170011698655",
+            "title": {
+                "textSpans": [{
+                    "text": "DE-FreeShipping Item1511917735109-1511917735109"
+                }],
+                "action": {
+                    "type": "NAV",
+                    "trackingList": [{
+                            "actionKind": "NAV",
+                            "operationId": "2486981",
+                            "flushImmediately": false,
+                            "eventProperty": {
+                                "sid": "p2486981.m5287.l9182"
+                            }
+                        },
+                        {
+                            "eventFamily": "MYEBAY",
+                            "eventAction": "ACTN",
+                            "actionKind": "NAVSRC",
+                            "operationId": "2486981",
+                            "flushImmediately": false,
+                            "eventProperty": {
+                                "moduledtl": "mi:5287|li:9182"
+                            }
+                        }
+                    ],
+                    "URL": "https://www.qa.ebay.com/itm/DE-FreeShipping-Item1511917735109-1511917735109/170011698655?src=urllib"
+                }
+            },
+            "lineActions": {
+                "options": [{
+                    "label": null,
+                    "selections": [{
+                        "disabled": false,
+                        "selected": false,
+                        "label": {
+                            "textSpans": [{
+                                "text": "Reply"
+                            }],
+                            "action": {
+                                "type": "NAV",
+                                "trackingList": [{
+                                        "actionKind": "NAV",
+                                        "operationId": "2486981",
+                                        "flushImmediately": false,
+                                        "eventProperty": {
+                                            "sid": "p2486981.m5287.l9812"
+                                        }
+                                    },
+                                    {
+                                        "eventFamily": "MYEBAY",
+                                        "eventAction": "ACTN",
+                                        "actionKind": "NAVSRC",
+                                        "operationId": "2486981",
+                                        "flushImmediately": false,
+                                        "eventProperty": {
+                                            "moduledtl": "mi:5287|li:9812"
+                                        }
+                                    }
+                                ],
+                                "URL": "http://contact.qa.ebay.com/ws/eBayISAPI.dll?RespondToQuestion&iid=170011698655"
+                            }
+                        },
+                        "default": false
+                    }],
+                    "multiSelect": false,
+                    "delimiter": null,
+                    "paramName": null,
+                    "baseUrl": null
+                }]
+            },
+            "memberMessage": {
+                "textSpans": [{
+                    "text": "i have question"
+                }]
+            },
+            "messageDetails": {
+                "textSpans": [{
+                        "text": "Sent by "
+                    },
+                    {
+                        "text": "me_seller108",
+                        "styles": [
+                            "BOLD"
+                        ]
+                    },
+                    {
+                        "text": " Jan 23 at 1:09AM PST"
+                    }
+                ]
+            },
+            "messageId": "5291190010"
+        },
+        {
+            "image": {
+                "title": "ASICS Kid's GEL- Craze TR 3 GS Training Shoes C611Y",
+                "imageId": "pvAAAOSwkUZYYuEH",
+                "originalSize": {
+                    "height": 500,
+                    "width": 500
+                },
+                "action": {
+                    "type": "NAV",
+                    "trackingList": [{
+                            "actionKind": "NAV",
+                            "operationId": "2486981",
+                            "flushImmediately": false,
+                            "eventProperty": {
+                                "sid": "p2486981.m5287.l9181"
+                            }
+                        },
+                        {
+                            "eventFamily": "MYEBAY",
+                            "eventAction": "ACTN",
+                            "actionKind": "NAVSRC",
+                            "operationId": "2486981",
+                            "flushImmediately": false,
+                            "eventProperty": {
+                                "moduledtl": "mi:5287|li:9181"
+                            }
+                        }
+                    ],
+                    "URL": "https://www.qa.ebay.com/itm/ASICS-Kids-GEL-Craze-TR-3-GS-Training-Shoes-C611Y/170010451376?src=urllib"
+                },
+                "URL": "http://i1.qa.ebayimg.com/images/g/pvAAAOSwkUZYYuEH/s-l140.jpg"
+            },
+            "listingId": "170010451376",
+            "title": {
+                "textSpans": [{
+                    "text": "ASICS Kid's GEL- Craze TR 3 GS Training Shoes C611Y"
+                }],
+                "action": {
+                    "type": "NAV",
+                    "trackingList": [{
+                            "actionKind": "NAV",
+                            "operationId": "2486981",
+                            "flushImmediately": false,
+                            "eventProperty": {
+                                "sid": "p2486981.m5287.l9182"
+                            }
+                        },
+                        {
+                            "eventFamily": "MYEBAY",
+                            "eventAction": "ACTN",
+                            "actionKind": "NAVSRC",
+                            "operationId": "2486981",
+                            "flushImmediately": false,
+                            "eventProperty": {
+                                "moduledtl": "mi:5287|li:9182"
+                            }
+                        }
+                    ],
+                    "URL": "https://www.qa.ebay.com/itm/ASICS-Kids-GEL-Craze-TR-3-GS-Training-Shoes-C611Y/170010451376?src=urllib"
+                }
+            },
+            "lineActions": {
+                "options": [{
+                    "label": null,
+                    "selections": [{
+                        "disabled": false,
+                        "selected": false,
+                        "label": {
+                            "textSpans": [{
+                                "text": "Reply"
+                            }],
+                            "action": {
+                                "type": "NAV",
+                                "trackingList": [{
+                                        "actionKind": "NAV",
+                                        "operationId": "2486981",
+                                        "flushImmediately": false,
+                                        "eventProperty": {
+                                            "sid": "p2486981.m5287.l9812"
+                                        }
+                                    },
+                                    {
+                                        "eventFamily": "MYEBAY",
+                                        "eventAction": "ACTN",
+                                        "actionKind": "NAVSRC",
+                                        "operationId": "2486981",
+                                        "flushImmediately": false,
+                                        "eventProperty": {
+                                            "moduledtl": "mi:5287|li:9812"
+                                        }
+                                    }
+                                ],
+                                "URL": "http://contact.qa.ebay.com/ws/eBayISAPI.dll?RespondToQuestion&iid=170010451376"
+                            }
+                        },
+                        "default": false
+                    }],
+                    "multiSelect": false,
+                    "delimiter": null,
+                    "paramName": null,
+                    "baseUrl": null
+                }]
+            },
+            "memberMessage": {
+                "textSpans": [{
+                    "text": "Is this new item ? Will it be replaceable?"
+                }]
+            },
+            "messageDetails": {
+                "textSpans": [{
+                        "text": "Sent by "
+                    },
+                    {
+                        "text": "myebay_so_seller_us_1516298062225",
+                        "styles": [
+                            "BOLD"
+                        ]
+                    },
+                    {
+                        "text": " Jan 22 at 1:07PM PST"
+                    }
+                ]
+            },
+            "messageId": "5256081019"
+        }
+    ]
+}

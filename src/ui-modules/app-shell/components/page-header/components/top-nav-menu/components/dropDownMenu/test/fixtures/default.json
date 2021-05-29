@@ -1,0 +1,53 @@
+{
+    "menu": {
+        "name": {
+            "text": "Activity",
+            "action": {
+                "type": "OPERATION"
+            }
+        },
+        "subMenus": [{
+                "name": {
+                    "text": "Summary",
+                    "action": {
+                        "type": "NAV",
+                        "URL": "http://www.ebay.com/myb/Summary"
+                    }
+                },
+                "subMenus": [],
+                "expanded": false,
+                "selected": false,
+                "preferenceKey": null
+            },
+            {
+                "name": {
+                    "text": "Watch",
+                    "action": {
+                        "type": "NAV",
+                        "URL": "http://www.ebay.com/myb/WatchList"
+                    }
+                },
+                "subMenus": [],
+                "expanded": false,
+                "selected": false,
+                "preferenceKey": null
+            },
+            {
+                "name": {
+                    "text": "Sell",
+                    "action": {
+                        "type": "NAV",
+                        "URL": "http://my.ebay.com/ws/eBayISAPI.dll?MyEbayBeta&CurrentPage=MyeBayNextAllSelling"
+                    }
+                },
+                "subMenus": [],
+                "expanded": false,
+                "selected": false,
+                "preferenceKey": null
+            }
+        ],
+        "expanded": false,
+        "selected": true,
+        "preferenceKey": null
+    }
+}

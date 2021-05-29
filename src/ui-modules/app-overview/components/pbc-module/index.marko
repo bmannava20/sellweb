@@ -1,0 +1,24 @@
+import helper from './helper'
+
+$ const model = helper.getModelData(input);
+<if(model.title)>
+    <section class="pbc-module" qa-id="pbc-module">
+        <meui-moduleTitle model=model.title/>
+        <div class="pbc-cntr">
+            <div class="pbc-texts">
+                <ebay-notice status="priority" type="inline">
+                    <p class="me-notice-text" key="content">
+                        ${model.headerTitle.textSpans[0].text}
+                    </p>
+                </ebay-notice>
+                <static-text model=model.disclaimerText class="disclaimer-text"/>
+            </div>
+            <div class="pbc-links">
+                <me-fake-button
+                    size="small"
+                    model=model.primaryButton
+                    action=model.primaryAction/>
+            </div>
+        </div>
+    </section>
+</if>

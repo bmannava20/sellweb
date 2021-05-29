@@ -1,0 +1,186 @@
+{
+    "_type": "TopNavModule",
+    "menus": [
+        {
+            "name": {
+                "text": "Activity",
+                "action": {
+                    "type": "OPERATION"
+                }
+            },
+            "subMenus": [
+                {
+                    "name": {
+                        "text": "Summary",
+                        "action": {
+                            "type": "NAV",
+                            "URL": "http://www.ebay.com/myb/Summary"
+                        }
+                    },
+                    "subMenus": [],
+                    "expanded": false,
+                    "selected": false,
+                    "preferenceKey": null
+                },
+                {
+                    "name": {
+                        "text": "Watch",
+                        "action": {
+                            "type": "NAV",
+                            "URL": "http://www.ebay.com/myb/WatchList"
+                        }
+                    },
+                    "subMenus": [],
+                    "expanded": false,
+                    "selected": false,
+                    "preferenceKey": null
+                },
+                {
+                    "name": {
+                        "text": "Sell",
+                        "action": {
+                            "type": "NAV",
+                            "URL": "http://my.ebay.com/ws/eBayISAPI.dll?MyEbayBeta&CurrentPage=MyeBayNextAllSelling"
+                        }
+                    },
+                    "subMenus": [],
+                    "expanded": false,
+                    "selected": false,
+                    "preferenceKey": null
+                }
+            ],
+            "expanded": false,
+            "selected": true,
+            "preferenceKey": null
+        },
+        {
+            "name": {
+                "text": "Messages",
+                "action": {
+                    "type": "OPERATION",
+                    "URL": "http://mesg.ebay.com/mesgweb/ViewMessages/0"
+                }
+            },
+            "subMenus": [
+                {
+                    "name": {
+                        "text": "Inbox",
+                        "action": {
+                            "type": "NAV",
+                            "URL": "http://mesg.ebay.com/mesgweb/ViewMessages/0"
+                        }
+                    },
+                    "subMenus": [],
+                    "expanded": false,
+                    "selected": false,
+                    "preferenceKey": null
+                },
+                {
+                    "name": {
+                        "text": "Sent",
+                        "action": {
+                            "type": "NAV",
+                            "URL": "http://mesg.ebay.com/mesgweb/ViewMessages/1"
+                        }
+                    },
+                    "subMenus": [],
+                    "expanded": false,
+                    "selected": false,
+                    "preferenceKey": null
+                },
+                {
+                    "name": {
+                        "text": "Unread",
+                        "action": {
+                            "type": "NAV",
+                            "URL": "http://mesg.ebay.com/mesgweb/ViewMessages/0/All?filter=1"
+                        }
+                    },
+                    "subMenus": [],
+                    "expanded": false,
+                    "selected": false,
+                    "preferenceKey": null
+                },
+                {
+                    "name": {
+                        "text": "Flagged",
+                        "action": {
+                            "type": "NAV",
+                            "URL": "http://mesg.ebay.com/mesgweb/ViewMessages/0/All?filter=2"
+                        }
+                    },
+                    "subMenus": [],
+                    "expanded": false,
+                    "selected": false,
+                    "preferenceKey": null
+                }
+            ],
+            "expanded": false,
+            "selected": false,
+            "preferenceKey": null
+        },
+        {
+            "name": {
+                "text": "Account",
+                "action": {
+                    "type": "NAV",
+                    "URL": "http://my.ebay.com/ws/eBayISAPI.dll?MyEbayBeta&CurrentPage=MyeBayMyAccounts"
+                }
+            },
+            "subMenus": [],
+            "expanded": false,
+            "selected": false,
+            "preferenceKey": null
+        }
+    ],
+    "title": {
+        "text": "My eBay"
+    },
+    "memberBadge": {
+        "user": {
+            "text": "suvira24",
+            "action": {
+                "URL": "http://www.ebay.com/usr/suvira24"
+            },
+            "accessibilityText": "Visit suvira24's profile"
+        },
+        "userFeedback": {
+            "text": "352",
+            "action": {
+                "URL": "http://feedback.ebay.com/ws/eBayISAPI.dll?ViewFeedback2&userid=suvira24"
+            },
+            "accessibilityText": "suvira24's feedback score is 352"
+        },
+        "feedbackBadge": "TURQUOISE_STAR",
+        "feedbackBadgeAlt": "Teal star icon for feedback score in between 100 to 499",
+        "hasStore": false,
+        "storeUrl": null,
+        "idVerified": false,
+        "siteVerified": false,
+        "topRatedSeller": false,
+        "powerSeller": false,
+        "motorsSeller": false,
+        "newlyRegistered": false
+    },
+    "landingPage": {
+        "text": "Selling Overview is your My eBay homepage"
+    },
+    "changeLandingPage": {
+        "text": "Make Selling Overview your My eBay homepage",
+        "action": {
+            "URL": "update_preferences"
+        }
+    },
+    "legacyPrefUpdateUrl": "http://my.ebay.com/ws/eBayISAPI.dll?MyEbayBeta&SubmitAction.GeneralSettingsUpdateAction=x&cid=356&MyeBayDefaultPageDD=132&CurrentPage=MyeBayNextAllSelling",
+    "preferenceId": "MeSellLandingPageIdPreference",
+    "preferencekey": "landingPageId",
+    "preferenceValue": 132,
+    "inflowHelp": {
+        "showInflowHelp": true,
+        "url": "https://ocsrest.ebay.com",
+        "surveyTitle": {
+            "text": "Give us feedback"
+        },
+        "pageId": "2486981"
+    }
+}

@@ -1,0 +1,65 @@
+import safeGet from 'just-safe-get'
+import helper from './helper'
+
+$ const scheduledModule = state.model.data;
+$ const configModule = safeGet(scheduledModule, "modules.configModule");
+$ const i18nModule = safeGet(state, "model.data.modules.i18nModule");
+$ const errorMessage = safeGet(i18nModule, "commonServerError");
+$ const busyLabel = safeGet(i18nModule, "busyLabel");
+$ {
+    const timeout =
+        (safeGet(input, "model.data.modules.warmup") && 60000) ||
+        safeGet(input, "modules.configModule.awaitTimeout");
+}
+<app-shell model=scheduledModule i18n=i18nModule>
+    <div.scheduled-page__wrapper id="meb-items-cnt" key="scheduledContainer">
+        <me-spinner label=busyLabel key="spinner"/>
+        <!-- start welcome screen -->
+        <await-ebay(model from scheduledModule.modules.welcomeScreenModule) timeout=timeout>
+            <await-timeout-ebay/>
+            <await-error-ebay/>
+            $ scheduledModule.modules.welcomeScreenModule = model;
+            <me-welcome-screen model=model/>
+        </await-ebay>
+        <!-- end welcome screen -->
+        <!-- start title, sort, filter -->
+        <await-ebay(model from scheduledModule.modules.scheduledRefinementModule) timeout=timeout>
+            <await-timeout-ebay/>
+            <await-error-ebay/>
+            $ scheduledModule.modules.scheduledRefinementModule = model;
+            <scheduled-refinement
+                model=model
+                on-scheduledPageUpdate("updateScheduledContainer")
+                key="scheduled-refinement"/>
+        </await-ebay>
+        <!-- end title, sort, filter -->
+        <!-- start empty screen -->
+        <await-ebay(model from scheduledModule.modules.emptyStateModule) timeout=timeout>
+            <await-timeout-ebay/>
+            <await-error-ebay/>
+            $ scheduledModule.modules.emptyStateModule = model;
+            <me-empty model=model key="scheduled-empty"/>
+        </await-ebay>
+        <!-- end empty screnn -->
+        <!-- start error screen -->
+        <await-ebay(model from scheduledModule.modules.errorStateModule) timeout=timeout>
+            <await-timeout-ebay/>
+            <await-error-ebay/>
+            $ scheduledModule.modules.errorStateModule = model;
+            <me-error model=model key="scheduled-error"/>
+        </await-ebay>
+        <!-- end error screnn -->
+        <!-- start items list -->
+        <await-ebay(model from scheduledModule.modules.scheduledListingsModule) timeout=timeout>
+            <await-timeout-ebay/>
+            <await-error-ebay/>
+            $ scheduledModule.modules.scheduledListingsModule = model;
+            <scheduled-listing
+                model=model
+                configModule=configModule
+                on-scheduledPageUpdate("updateScheduledContainer")
+                key="scheduled-listing"/>
+        </await-ebay>
+        <!-- end items list-->
+    </div>
+</app-shell>

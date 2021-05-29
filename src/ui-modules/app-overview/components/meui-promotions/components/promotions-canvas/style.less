@@ -1,0 +1,103 @@
+.promotion-item {
+    background-color: #f7f7f7; // Overridden not in current ebay SKIN
+    display: flex;
+    height: 242px;
+    line-height: 1.5;
+    margin: 0 0 16px 0;
+    width: 49%;
+
+    .link a {
+        // Overridden not in current ebay SKIN version 6.1.0 needed
+        color: #3665f3;
+    }
+    button.icon-btn {
+        width: 18px;
+        height: 18px;
+    }
+    .infotip {
+        padding-left: 6px;
+    }
+    .left-half {
+        flex: 0 0 41%;
+        position: relative;
+    }
+
+    .right-half {
+        flex: 1;
+        text-align: left;
+        padding: 40px 32px 0 0;
+    }
+
+    .addl-margin {
+        padding-left: 32px;
+    }
+
+    .fake-btn {
+        width: auto;
+        min-width: 148px;
+    }
+
+    .used-offers-link {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 30px;
+        font-size: @font-size-12;
+    }
+
+    .base-text {
+        font-size: @font-size-16;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .description-small {
+        font-size: @font-size-12;
+        margin: 10px 0 24px 0;
+        height: auto;
+        a {
+            // Overridden not in current ebay SKIN version 6.1.0 needed
+            color: #3665f3;
+        }
+    }
+
+    .promotion-item-header {
+        height: auto;
+    }
+
+    .promotion-duration {
+        float: left;
+        font-size: @font-size-12;
+
+        .end-time .bold {
+            margin-left: 18px;
+        }
+    }
+
+    .circle-content {
+        .numbers {
+            font-size: @font-size-30;
+            font-weight: @font-weight-bold;
+        }
+
+        .text {
+            font-size: @font-size-12;
+        }
+
+        .unltdText {
+            font-size: @font-size-20;
+        }
+    }
+
+    .site {
+        margin-top: 8px;
+    }
+}
+
+@media all and (-ms-high-contrast:none) {
+    .promotion-item {
+        button.icon-btn {
+            overflow: visible;
+        }
+    }
+}

@@ -1,0 +1,106 @@
+.base-active-item() {
+    position: relative;
+    padding: 32px 16px 32px 0;
+    min-width: 176px;
+    border-bottom: 1px solid @color-grey2;
+
+    .meui-item-tile {
+        padding: 0;
+        border-bottom: 0px;
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+
+    .columns {
+        .col-2 {
+            width: 56.7%;
+            height: 100%;
+        }
+        .col-3 {
+            width: 296px;
+        }
+    }
+
+    .normal {
+        margin-right: 3px;
+    }
+
+    .charity-icon {
+        background-image: url("https://ir.ebaystatic.com/cr/v/c1/e4C-logo-2015-RGB-ribbon-trans-16x16.png");
+        display: inline-block;
+        height: 15px;
+        left: 4px;
+        position: relative;
+        top: 3px;
+        width: 15px;
+    }
+
+    .item {
+        &__action {
+            margin-bottom: 16px;
+        }
+
+        &__price-additional,
+        &__price-attrs,
+        &__shipping-price,
+        &__time-left,
+        &__status_promoted {
+            .typography-small();
+            color: @color-text-secondary;
+        }
+        &__status_promoted {
+            margin-top: 8px;
+        }
+
+        &__status {
+            .typography-medium-secondary();
+        }
+
+        &__itemid,
+        &__quantity {
+            display: inline-block;
+        }
+
+        &__itemid_quantity {
+            .typography-small();
+            color: @color-text-secondary;
+            margin-bottom: 2px;
+        }
+
+        &__secondary-btn {
+            width: 252px;
+        }
+
+        &__price :not(.bold) {
+            .typography-small();
+            color: @color-text-secondary;
+        }
+
+        &__cta-wrapper {
+            display: flex;
+            justify-content: flex-end;
+        }
+        &__success-notice {
+            background-color: fade(@color-background-default, 91%);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            display: block;
+            z-index: 100;
+            text-align: center;
+            div.inline-notice {
+                display: block;
+                position: relative;
+                top: 40%;
+                bottom: 50%;
+            }
+            .inline-notice__status, .inline-notice__content {
+                top: 18%;
+                position: relative;
+                display: block;
+            }
+        }
+    }
+}

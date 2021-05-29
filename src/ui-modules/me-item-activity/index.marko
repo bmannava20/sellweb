@@ -1,0 +1,39 @@
+import safeGet from 'just-safe-get'
+
+$ {
+    const viewCount = safeGet(input, "model.viewCount.textSpans.0.text");
+    const viewText = safeGet(input, "model.viewCount.textSpans.1.text");
+    const watcherCount = safeGet(input, "model.watchCount.textSpans.0.text");
+    const watcherText = safeGet(input, "model.watchCount.textSpans.1.text");
+    const bidCount = safeGet(input, "model.bidCount.textSpans.0.text");
+    const bidText = safeGet(input, "model.bidCount.textSpans.1.text");
+    const bidCountAction = safeGet(input, "model.bidCount.action");
+}
+<div class="me-item-activity">
+    <if(viewCount)>
+        <div class="me-item-activity__column">
+            <span class="me-item-activity__column-count">${viewCount}</span>
+            <span class="me-item-activity__column-label">${viewText}</span>
+        </div>
+    </if>
+    <if(watcherCount)>
+        <div class="me-item-activity__column">
+            <span class="me-item-activity__column-count">${watcherCount}</span>
+            <span class="me-item-activity__column-label">${watcherText}</span>
+        </div>
+    </if>
+    <if(bidCount)>
+        <div class="me-item-activity__column">
+            <if(bidCountAction)>
+                <meui-navlink class="bid-link" action=bidCountAction>
+                    <span class="me-item-activity__column-count">${bidCount}</span>
+                    <span class="me-item-activity__column-label">${bidText}</span>
+                </meui-navlink>
+            </if>
+            <else>
+                <span class="me-item-activity__column-count">${bidCount}</span>
+                <span class="me-item-activity__column-label">${bidText}</span>
+            </else>
+        </div>
+    </if>
+</div>

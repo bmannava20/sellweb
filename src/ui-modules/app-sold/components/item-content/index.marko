@@ -1,0 +1,75 @@
+import safeGet from 'just-safe-get'
+import helper from './helper'
+
+<if(input.model)>
+    $ const model = helper.getModelData(input);
+    <layout-item-card class=model.rootClass qa-id=model.id>
+        <@col-1>
+            <span hidden>${model.itemLevelStatus}</span>
+            <me-checkbox
+                hidden=input.model.isMultiOrder
+                checked=input.isChecked
+                value=model.orderId
+                id=`checkbox-${model.orderId}`
+                is-edit-mode=input.isEditMode
+                on-checkbox-change("emit", "checkbox-change")>
+                <me-textual-display model=model.title.textSpans/>
+            </me-checkbox>
+            <meui-thumbnail image=model.image size=model.imageSize altText=model.imageAltTag/>
+        </@col-1>
+        <@col-2>
+            <order-status
+                content=model.orderStatus
+                aria-text=model.showIconAriaText
+                show-icon=model.showIcon/>
+            <me-item-title model=model.title/>
+            <itemid-quantity-subline model=model />
+            <item-statuses model=model.allStatuses />
+            <div class="item__price_shipping">
+                <me-textual-display model=model.displayPrice class="item__price"/>
+                <me-textual-display model=model.logisticsCost class="item__shipping-price"/>
+            </div>
+            <me-textual-display model=model.refundStatus class="item__refund-status"/>
+            <item-buyername-solddate buyerName=model.buyerName soldDate=model.soldDate/>
+            <if(model.paidDate)>
+                <static-text model=model.paidDate class="item__paid-Date"/>
+            </if>
+            <me-textual-display class="item__sellermarkaspaid" model=model.sellerMarkAsPaid/>
+            <me-paypal-payment
+                model=model.payPalPaymentInitiatedDate
+                class="item__paypal-payment"/>
+            <if(model.uniqueOrderId)>
+                <div class="item__order-number">
+                    <me-textual-display model=model.uniqueOrderId/>
+                </div>
+            </if>
+            <notices-usernotes-desktop
+                model=model
+                on-edit-note("onEditAddNote") />
+        </@col-2>
+        <@col-3>
+            <if(model.showLineAction)>
+                <item-line-actions
+                    model=model.inlineActions
+                    title=model.title
+                    on-soldPageUpdate("emitSoldPageUpdate")
+                    on-show-loader("emitShowLoader")
+                    on-editAddNote("onEditAddNote")/>
+            </if>
+            <item-line-actions-links
+                line-actions=model.shipTrackingActions
+                on-emitTrackingDetails("emitTrackingDetails")
+                on-editAddNote("onEditAddNote")/>
+            <if(!model.showLineAction)>
+                <item-line-actions-links
+                    line-actions=model.inlineActions
+                    on-editAddNote("onEditAddNote")/>
+            </if>
+        </@col-3>
+        <@footer>
+            <notices-usernotes-mobile
+                model=model
+                on-edit-note("onEditAddNote")/>
+        </@footer>
+    </layout-item-card>
+</if>

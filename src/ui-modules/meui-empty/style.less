@@ -1,0 +1,50 @@
+.empty {
+    align-items: center;
+    color: @color-text-secondary;
+    display: flex;
+    flex-direction: column;
+    font-size: @font-size-18;
+    line-height: 1.41;
+    margin: 57px 0 40px;
+    justify-content: center;
+    text-align: center;
+
+    &__icons {
+        padding-top: 50px;
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    &__title {
+        color: @color-text-default;
+        font-size: @font-size-28;
+        margin: 0 0 22px;
+    }
+
+    &__content {
+        margin: 0 auto;
+        width: 50%;
+        line-height: 1.47;
+    }
+}
+
+.empty-page-icn {
+    height: 80px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+    padding-bottom: 37px;
+
+    &__list {
+        width: 78px;
+        background-image: url('svgIcons/list.svg');
+    }
+
+    &__empty-list {
+        width: 78px;
+        background-image: url('svgIcons/list_ftl.svg');
+    }
+}

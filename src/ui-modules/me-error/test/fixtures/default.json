@@ -1,0 +1,13 @@
+{
+    "model": {
+        "message": {
+            "_type": "TextualDisplay",
+            "textSpans": [
+                {
+                    "_type": "TextSpan",
+                    "text": "Something went wrong"
+                }
+            ]
+        }
+    }
+}

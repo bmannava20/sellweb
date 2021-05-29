@@ -1,0 +1,112 @@
+{
+    "model": {
+        "_type": "UpdateAPMViewModel",
+        "title": {
+            "textSpans": [{
+                "text": "Update automatic payment method"
+            }]
+        },
+        "attentionAPMText": {
+            "textSpans": [{
+                "text": "It looks like it needs attention."
+            }]
+        },
+        "updateAPMInfoText": {
+            "textSpans": [{
+                "text": "Make sure you have a valid payment method on file to automatically cover selling fees, refunds, and shipping labels."
+            }]
+        },
+        "updatePaymentDisclaimer": {
+            "textSpans": [{
+                "text": "updatePaymentDisclaimer or something."
+            }]
+        },
+        "lineActions": {
+            "options": [
+                {
+                "label": {
+                    "textSpans": [{
+                        "text": "Line Actions"
+                    }]
+                },
+                "selections": [
+                    {
+                        "disabled": false,
+                        "selected": true,
+                        "label": {
+                            "textSpans": [{
+                                "text": "Update payment method",
+                                "styles": [
+                                    "PROMOTED"
+                                ]
+                            }],
+                            "action": {
+                                "type": "OPERATION",
+                                "trackingList": [{
+                                        "actionKind": "NAV",
+                                        "operationId": "2486981",
+                                        "flushImmediately": false,
+                                        "eventProperty": {
+                                            "sid": "p2486981.m5212.l9625"
+                                        }
+                                    },
+                                    {
+                                        "eventFamily": "MYEBAY",
+                                        "eventAction": "ACTN",
+                                        "actionKind": "NAVSRC",
+                                        "operationId": "2486981",
+                                        "flushImmediately": false,
+                                        "eventProperty": {
+                                            "moduledtl": "mi:5212|li:9625"
+                                        }
+                                    }
+                                ],
+                                "URL": "http://fundinginstrument.qa.ebay.com/piapp/psp/v2?flowid=365DE751000000012A2BA402&opid=D28B4EB7000000012A2F365C"
+                            },
+                            "value": "UPDATE_PAYMENT_METHOD"
+                        },
+                        "default": false
+                    },
+                    {
+                        "disabled": false,
+                        "selected": false,
+                        "label": {
+                            "textSpans": [{
+                                "text": "Make a one-time payment"
+                            }],
+                            "action": {
+                                "type": "OPERATION",
+                                "trackingList": [{
+                                        "actionKind": "NAV",
+                                        "operationId": "2486981",
+                                        "flushImmediately": false,
+                                        "eventProperty": {
+                                            "sid": "p2486981.m5212.l9626"
+                                        }
+                                    },
+                                    {
+                                        "eventFamily": "MYEBAY",
+                                        "eventAction": "ACTN",
+                                        "actionKind": "NAVSRC",
+                                        "operationId": "2486981",
+                                        "flushImmediately": false,
+                                        "eventProperty": {
+                                            "moduledtl": "mi:5212|li:9626"
+                                        }
+                                    }
+                                ]
+                            },
+                            "value": "ONE_TIME_PAYMENT"
+                        },
+                        "default": false
+                    }
+                ],
+                "multiSelect": false,
+                "delimiter": null,
+                "paramName": null,
+                "baseUrl": null
+            }]
+        }
+    }
+
+}

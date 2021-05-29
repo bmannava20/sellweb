@@ -1,0 +1,79 @@
+.pb-w2 {
+    &__item {
+        border-bottom: 1px solid @color-grey2;
+        &:last-child {
+            border-bottom: 0;
+        }
+        .col-1 {
+            width: 9.5%;
+            min-width: 100px;
+        }
+        .col-2 {
+            height: auto;
+            width: 59%
+        }
+        .col-3 {
+            padding-top: 24px;
+        }
+
+        @media only screen and (max-width: 1100px) {
+            .col-3 {
+                margin-left: 64px;
+            }
+        }
+
+        .me-notice-text {
+            .typography-small;
+            color: @color-text-secondary;
+            font-weight: normal;
+
+            .inline-notice {
+                padding-right: 16px;
+            }
+            // TODO: This shouldn't be here. Remove when the new design is ready.
+            .inline-notice__status span {
+                width: 16px;
+                height: 16px;
+                margin-top: 5px;
+            }
+            .inline-notice p:first-of-type {
+                font-weight: normal;
+            }
+        }
+        .loading {
+            min-height: 144px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+            .spinner {
+                position: relative;
+            }
+        }
+        .success {
+            min-height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: @font-size-medium;
+        }
+        .error {
+            .inline-notice {
+                margin: 0 0 16px;
+            }
+            // TODO should be removed once design changes are final
+            .inline-notice__content {
+                font-size: @font-size-medium;
+            }
+        }
+        .btn-link {
+            border: none;
+            color: @color-link-default;
+            font-size: @font-size-small;
+            line-height: 15px;
+            padding-left: 24px;
+        }
+    }
+}

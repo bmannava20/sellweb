@@ -1,0 +1,15 @@
+import helper from './helper'
+
+$ const modelData = helper.getData(state);
+<if(modelData)>
+    <a
+        ...modelData.htmlAttributes
+        class=modelData.class
+        href=modelData.url
+        role=(modelData.url ? null : "button")
+        aria-label=modelData.ariaLabel
+        key="meuiNavLink"
+        on-click("eventDelegate")>
+        <${modelData.renderBody}/>
+    </a>
+</if>

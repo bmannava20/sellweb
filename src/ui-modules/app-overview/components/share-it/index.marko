@@ -1,0 +1,51 @@
+import safeGet from 'just-safe-get'
+import helper from './helper'
+
+$ const model = safeGet(input, "model");
+<if(model && model.lineItems && model.lineItems.length > 0)>
+    <section class="share-it-module" qa-id="share-it-module">
+        $ const items = safeGet(model, "lineItems");
+        <if(model.title)>
+            <meui-moduleTitle model=model.title/>
+        </if>
+        <div class="item-list">
+            <if(model.disclaimerText)>
+                <static-text class="module-sub-title" model=model.disclaimerText/>
+            </if>
+            <for|item| of=items>
+                $ const details = helper.getItemData(item);
+                <meui-item-tile qaId=`share-it-item-${details.listingId}`>
+                    <@column class="col-1">
+                        <if(details.image)>
+                            <meui-thumbnail image=details.image altText=details.title size="large"/>
+                        </if>
+                    </@column>
+                    <@column class="col-2">
+                        <if(details.title)>
+                            <me-item-title model=details.title/>
+                        </if>
+                        <if(details.itemStats)>
+                            <static-text model=details.itemStats class="stats"/>
+                        </if>
+                        <if(details.displayTime)>
+                            <static-text model=details.displayTime class="stats"/>
+                        </if>
+                        <if(details.displayPrice)>
+                            <static-text model=details.displayPrice class="item-price"/>
+                        </if>
+                    </@column>
+                    <@column class="col-3">
+                        <ebay-button
+                            size="small"
+                            priority="primary"
+                            on-button-click("onButtonClick", details.listingId)
+                            class="share-it">
+                            ${details.primaryButtonLabel}
+                        </ebay-button>
+                    </@column>
+                </meui-item-tile>
+            </for>
+        </div>
+    </section>
+</if>
+<me-social-share key="overview-share"/>

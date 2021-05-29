@@ -1,0 +1,51 @@
+import get from 'just-safe-get'
+
+$ const model = get(input, "model.sellerOnboards.0");
+
+<if (model && state.open)>
+    $ const isDismissable = model.dismissFlag || !!model.dismiss;
+
+    <section class=["onboarding", { animate: state.animate }]>
+        <div style="display: none">
+            <!-- ICON NEED TO BE STATICALLY LIKED =/ -->
+            <ebay-icon name="selling"/>
+            <ebay-icon name="fast-n-free"/>
+            <ebay-icon name="purchases"/>
+        </div>
+        <if (isDismissable)>
+            <button aria-label=get(model, 'dismiss.label') class="onboaring-close" on-click("onDismiss")>
+                <ebay-icon name="close"/>
+            </button>
+        </if>
+        <div class="onboarding-title">
+            <me-textual-display model=get(model, 'title.textSpans')/>
+        </div>
+        <div class="onboarding-description">
+             <me-textual-display model=get(model, 'description.textSpans')/> <span class='onboarding-description-learnmore'><me-textual-display model=get(model, 'helpText.textSpans')/></span>
+        </div>
+        <div class="onboarding-card-wrapper">
+            <for|card| of=(model.cards || [])>
+                <div class="onboarding-card">
+                    <div class="onboarding-card-header">
+                        <ebay-icon name=card.icon && card.icon.name/>
+                        <me-textual-display model=get(card, 'header.textSpans')/>
+                    </div>
+                    <div class="onboarding-card-description">
+                        <me-textual-display model=get(card, 'description.textSpans')/>
+                    </div>
+                    <div class="onboarding-card-actions">
+                        $ const actions = card.actionsLinks || card.helpText && [card.helpText] || []; 
+                        <for|action| of=actions>
+                            <span class="onboarding-action">
+                                <me-textual-display model=action.textSpans/>
+                            </span>
+                        </for>
+                    </div>
+                </div>
+            </for>
+        </div>
+    </section>
+</if>
+<else>
+  <div style="display:none">Onboarding dismissed</div>
+</else>

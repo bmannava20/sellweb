@@ -1,0 +1,21 @@
+import safeGet from 'just-safe-get'
+import helper from './helper'
+
+$ const model = helper.getModelData(state.model);
+<span class=["banner-item", input.class]>
+    <static-text class="banner-item__title" model=model.title/>
+    <static-text class="banner-item__content" model=model.content/>
+    <div class="banner-item__footer">
+        <for|footer, loopIndex, loopAll| of=model.footers>
+            $ const footerModel = safeGet(footer, "textSpans");
+            <me-textual-display
+                model=footerModel
+                class={
+                    "banner-item__link": true,
+                    multiple: loopAll.length > 1
+                }>
+                <@icon><ebay-icon name="arrow-right-small"/></@icon>
+              </me-textual-display>
+        </for>
+    </div>
+</span>

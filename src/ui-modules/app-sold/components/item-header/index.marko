@@ -1,0 +1,46 @@
+import safeGet from 'just-safe-get'
+import helper from './helper'
+
+<if(input.model)>
+    $ const model = helper.getModelData(input);
+    <if(
+        model.itemActionParamName &&
+        model.itemActionParamName.indexOf("Cancel") > -1)>
+        <me-cancel-upi
+            key="upi-sold"
+            on-soldPageUpdate("emit", "soldPageUpdate", { action: "reloadMainContainer" })
+            content-map=model.cancelUPIContentMap/>
+    </if>
+    <layout-item-card key="item-card" class=model.rootClass qa-id=model.id>
+        <@col-1>
+            <span hidden>${model.orderLevelStatus}</span>
+            <me-item-card-top-bar
+                key="item-card-top-bar"
+                model=model.itemAction
+                mWebShowPrimaryBtn=model.mWebShowPrimaryBtn
+                on-button-click("processButtonClickOperation")/>
+            <item-notices model=model.allNotices class="item__item-notices"/>
+            <me-expander
+                expand-label=model.buyerNote.expandLabel
+                collapse-label=model.buyerNote.collapseLabel
+                show-trailing-dots=model.showTrailingDots>
+                <if(model.minimumNote)>
+                    <@min-content>
+                        <me-textual-display class="item__buyer-note" model=model.buyerNote.label/>
+                        ${model.minimumNote}
+                    </@min-content>
+                </if>
+                <if(model.additionalNote)>
+                    <@addl-content>${model.additionalNote}</@addl-content>
+                </if>
+            </me-expander>
+        </@col-1>
+    </layout-item-card>
+    <multi-item-order-details
+        model=input.model
+        isChecked=input.isChecked
+        on-soldPageUpdate("emit", "soldPageUpdate")
+        on-show-loader("emit", "show-loader")
+        on-checkbox-change("emit", "checkbox-change")
+        is-edit-mode=input.isEditMode/>
+</if>

@@ -1,0 +1,28 @@
+import safeGet from 'just-safe-get'
+import helper from './helper'
+
+<if(input.model && input.model.lineItems && input.model.lineItems.length > 0)>
+$ const model = helper.getModel(input);
+    <layout-item-listing
+        class="pre-order"
+        qaId=`${model.moduleType}-module`
+        title=model.title
+        subTitle=model.subTitle>
+        <@items>
+            <meui-item-list(item in model.lineItems)>
+                <item-card
+                    key=`itemRow-${item.listingId}`
+                    item=item
+                    moduleType=model.moduleType
+                    on-sio-txn-wrapper("processSIOtxnWrapper")/>
+            </meui-item-list>
+            <if(model.sioModalContentMap)>
+                <me-sio-txn-modal
+                    key="txn-wrapper"
+                    model=model.sioModalContentMap
+                    on-update-module("updatePreOrderPaymentModule")/>
+            </if>
+        </@items>
+    </layout-item-listing>
+</if>
+

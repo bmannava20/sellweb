@@ -1,0 +1,17 @@
+{
+    "model": [
+        {
+            "text": "COVID-19 Shipping Info",
+            "styles": [
+                "BOLD"
+            ],
+            "action": {
+                "_type": "Action",
+                "name": "newTab",
+                "type": "NAV",
+                "URL": "https://pages.ebay.com/seller-center/covid-19/advising-you-about-shipments.html"
+            }
+          }
+        
+    ]
+}

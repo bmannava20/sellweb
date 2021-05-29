@@ -1,0 +1,42 @@
+import safeGet from 'just-safe-get'
+import constants from '../../utils/helpers/constants'
+
+$ const priorityLabel = safeGet(out, "global.i18nModule.priorityLabel");
+class {
+    onCreate(input) {
+        this.state = input;
+    }
+    onInput(input) {
+        this.state = input;
+    }
+
+    updateErrorModule(errorStateModule) {
+        this.setState("model", errorStateModule);
+    }
+}
+
+style.less {
+    .me-error {
+        padding-top: 32px;
+        &__custom {
+            p {
+                .typography-medium;
+            }
+        }
+    }
+}
+
+$ const errorMessage = safeGet(state, "model.message.textSpans");
+$ const styleMap = constants.STYLE_MAPS.NO_DEFAULT;
+<if(errorMessage)>
+    <div class="me-error">
+        <ebay-notice
+            class="me-error__custom"
+            heading-level="3"
+            a11y-heading-text=priorityLabel>
+            <p>
+                <me-textual-display model=errorMessage options=styleMap/>
+            </p>
+        </ebay-notice>
+    </div>
+</if>

@@ -1,0 +1,55 @@
+.selling-limits {
+    .notice {
+        padding-bottom: 8px;
+        font-weight: @font-weight-bold;
+        line-height: 1.5;
+        & a {
+            font-weight: @font-weight-regular;
+            text-decoration: underline;
+            // Overridden not in current ebay SKIN version 6.1.0 needed
+            color: #3665f3;
+        }
+    }
+    .module-title {
+        .typography-giant-1;
+        margin: 5px 0 0;
+    }
+    .description {
+        padding-top: 12px;
+        padding-bottom: 24px;
+        a {
+            // Overridden not in current ebay SKIN version 6.1.0 needed
+            color: #3665f3;
+            text-decoration: underline;
+        }
+    }
+    .limits-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 24px 32px 32px;
+        // Overridden not in current ebay SKIN
+        background-color: #f7f7f7;
+    }
+    .line-separater {
+        flex: 1 1 20px;
+        width: 20px;
+        text-align: center;
+        align-self: center;
+        padding-top: 26px;
+    }
+    .wrapper {
+        flex: 0 0 410px;
+    }
+    .remaining-text {
+        padding-bottom: 16px;
+        font-size: 12px;
+        .emphasis {
+            color: @color-text-default;
+            font-size: 30px;
+        }
+    }
+    .used-text {
+        font-size: 12px;
+    }
+}

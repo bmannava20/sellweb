@@ -1,0 +1,6 @@
+{
+    "dependencies": [
+        "@ebay/skin/less",
+        "@ebay/skin/global"
+    ]
+}

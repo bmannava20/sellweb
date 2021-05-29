@@ -1,0 +1,22 @@
+<div.page-header key="page-header">
+    <div.page-header-row1>
+        <div.page-header__title>
+            <meui-page-title model=input.browserTitleModule/>
+        </div>
+        <div.page-header__survey-n-classic-links>
+            <survey-n-classic-links
+                model=input.topNavModule
+                on-openClassicPrefDialog("openClassicPrefDialog")
+                on-openSwitchToAllSellingDialog("openSwitchToAllSellingDialog")/>
+        </div>
+    </div>
+    <div.page-header-row2>
+        <span.page-header__menu>
+            <top-nav-menu model=input.topNavModule/>
+        </span>
+        <span.page-header__user-profile-bookmark>
+            <user-profile model=input.topNavModule/>
+            <bookmark model=input.topNavModule/>
+        </span>
+    </div>
+</div>

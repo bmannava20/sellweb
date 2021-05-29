@@ -1,0 +1,23 @@
+import helper from './helper'
+
+$ const model = helper.getModelData(state);
+<if(model.moduleTitle)>
+    <me-summary class="active-page__header" key="active-refinement">
+        <@pageTitle>
+            <me-textual-display model=model.moduleTitle/>
+        </@pageTitle>
+        <@sorts>
+            <me-sort-menu
+                key="active-sort"
+                content=model.content
+                model=model.sortOptions
+                on-handleSortRequest("handleSortFilterRequest")/>
+        </@sorts>
+        <@filters>
+            <me-carousel
+                key="active-carousel"
+                model=model.filters
+                on-handleFilterRequest("handleSortFilterRequest")/>
+        </@filters>
+    </me-summary>
+</if>

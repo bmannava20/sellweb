@@ -1,0 +1,70 @@
+@import "../../../../utils/helpers/common-insights.less";
+
+.insights-item {
+    .base-insights-item();
+    padding: 32px 0;
+
+    .item {
+        &-title {
+            .typography-regular();
+            font-weight: normal;
+        }
+
+        &__price .bold {
+            .typography-small();
+        }
+
+        &__buyer-text {
+            color: @color-text-secondary;
+        }
+
+        &__manage-status {
+            border-radius: 2px;
+            border: 1px solid @color-grey2;
+            background-color: @color-grey2;
+            text-align: center;
+            min-height: 76px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 8px;
+
+            .bold {
+                display: block;
+            }
+        }
+
+        &__stats a {
+            display: inline-block;
+            vertical-align: bottom;
+            width: 70%;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        &__primary-action {
+            width: 100%;
+        }
+    }
+}
+
+.insights-item__body {
+    &.meui-item-tile .columns {
+        .col-1 {
+            min-width: 120px;
+        }
+        .col-2 {
+            width: 70%;
+            margin-bottom: 16px;
+            height: auto;
+        }
+    }
+}
+
+.insights-item__footer {
+    .columns {
+        .col-1 {
+            width: 100%;
+        }
+    }
+}

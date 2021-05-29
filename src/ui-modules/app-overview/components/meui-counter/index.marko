@@ -1,0 +1,86 @@
+import canvasUtil from '../../../../utils/helpers/create-high-dpi-canvas'
+import domUtils from '../../../../utils/helpers/elementVisibleInViewport'
+import { debounce } from '../../../../utils/helpers/debounce'
+import { currencyFormat } from '../../../../utils/helpers/locale/index'
+
+class Counter {
+    onMount() {
+        this.animationDone = false;
+        this.animationDuration = 1500;
+        this.totalListingsEl = this.getEl("number");
+        this.beginTime = 0.0;
+        this.debounceOnScroll = debounce(() => this._doDebounce(), 200, false);
+        document.addEventListener("scroll", this.debounceOnScroll);
+
+        if (domUtils.isElementVisible(this.totalListingsEl)) {
+            this._animateNumber(0);
+        }
+    }
+
+    onDestroy() {
+        document.removeEventListener("scroll", this.debounceOnScroll);
+    }
+
+    _doDebounce() {
+        if (this.animationDone) {
+            return;
+        }
+        if (domUtils.isElementVisible(this.totalListingsEl)) {
+            this._animateNumber(0);
+        }
+    }
+
+    _animateNumber(timeStamp) {
+        if (this.animationDone) {
+            return;
+        }
+
+        if (this.beginTime === 0.0) {
+            this.beginTime = timeStamp;
+        }
+
+        const deltaTime = timeStamp - this.beginTime;
+        const progress = deltaTime / this.animationDuration;
+        const amountToShow = this.input.value * progress;
+        if (progress < 1.0) {
+            requestAnimationFrame(cb => {
+                this.totalListingsEl.innerText = currencyFormat(
+                    amountToShow,
+                    this.input.currencyCode,
+                    this.input.locale
+                );
+                this._animateNumber(cb);
+            });
+        } else {
+            this.animationDone = true;
+            requestAnimationFrame(() => {
+                this.totalListingsEl.innerText = currencyFormat(
+                    this.input.value,
+                    this.input.currencyCode,
+                    this.input.locale
+                );
+            });
+        }
+    }
+}
+
+<div class="counter">
+    <div
+        key="number"
+        class="counter__number">
+        0
+    </div>
+    <div class="counter__byline">
+        ${data.byline}
+    </div>
+</div>
+style.less {
+    .counter {
+        display: flex;
+        flex-direction: column;
+
+        .counter__number {
+            margin-bottom: 10px;
+        }
+    }
+}

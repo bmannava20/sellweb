@@ -1,0 +1,13 @@
+{
+    "model": [{
+            "_type": "TextSpan",
+            "text": "Payment sent on Oct 16 via "
+        },
+        {
+            "_type": "TextSpan",
+            "accessibilityText": "Payment sent on Oct 16 via PayPal",
+            "icon": "PayPal"
+        }
+    ],
+    "class": "test"
+}

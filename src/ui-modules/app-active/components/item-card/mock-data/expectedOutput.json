@@ -1,0 +1,549 @@
+{
+    "itemId": "170013067323",
+    "displayItemId": {
+        "_type": "TextualDisplay",
+        "textSpans": [{
+            "_type": "TextSpan",
+            "text": "Item ID: 170013067323"
+        }]
+    },
+    "quantity": {
+        "_type": "TextualDisplayValue",
+        "textSpans": [{
+            "_type": "TextSpan",
+            "text": "· Qty: 18"
+        }],
+        "value": 18
+    },
+    "image": {
+        "imageIdType": "ZOOM_GUID",
+        "originalSize": {
+            "height": 0,
+            "width": 0
+        },
+        "action": {
+            "type": "NAV",
+            "trackingList": [{
+                    "actionKind": "NAV",
+                    "operationId": "2524149",
+                    "flushImmediately": false,
+                    "eventProperty": {
+                        "trkp": "itm%3A170013067323",
+                        "sid": "p2524149.m5429.l6907"
+                    }
+                },
+                {
+                    "eventFamily": "MYEBAY",
+                    "eventAction": "ACTN",
+                    "actionKind": "NAVSRC",
+                    "operationId": "2524149",
+                    "flushImmediately": false,
+                    "eventProperty": {
+                        "moduledtl": "mi:5429|li:6907"
+                    }
+                }
+            ],
+            "URL": "https://www.qa.ebay.com/itm/170013067323"
+        },
+        "URL": "https://pics.ebaystatic.com/aw/pics/stockimage1.jpg"
+    },
+    "title": {
+        "_type": "TextualDisplay",
+        "textSpans": [{
+            "_type": "TextSpan",
+            "text": "0-0-Simple automation Fixed Price Item US-1511219525790-1511219527948- Ended bal"
+        }],
+        "action": {
+            "type": "NAV",
+            "trackingList": [{
+                    "actionKind": "NAV",
+                    "operationId": "2524149",
+                    "flushImmediately": false,
+                    "eventProperty": {
+                        "trkp": "itm%3A170013067323",
+                        "sid": "p2524149.m5429.l6907"
+                    }
+                },
+                {
+                    "eventFamily": "MYEBAY",
+                    "eventAction": "ACTN",
+                    "actionKind": "NAVSRC",
+                    "operationId": "2524149",
+                    "flushImmediately": false,
+                    "eventProperty": {
+                        "moduledtl": "mi:5429|li:6907"
+                    }
+                }
+            ],
+            "URL": "https://www.qa.ebay.com/itm/170013067323"
+        }
+    },
+    "displayPrice": {
+        "_type": "TextualDisplayValue",
+        "textSpans": [{
+                "text": "$10.00",
+                "styles": [
+                    "BOLD"
+                ]
+            },
+            {
+                "text": " Buy It Now"
+            }
+        ],
+        "value": {
+            "currency": "USD",
+            "value": "10.0"
+        }
+    },
+    "displayPriceMessage": {
+        "_type": "TextualDisplay",
+        "textSpans": [{
+            "_type": "TextSpan",
+            "text": "Or best offer"
+        }]
+    },
+    "shippingPrice": {
+        "_type": "TextualDisplayValue",
+        "textSpans": [{
+            "text": "+ $1.25 shipping"
+        }],
+        "accessibilityText": "+ $1.25 shipping",
+        "value": {
+            "currency": "USD",
+            "value": "1.25"
+        }
+    },
+    "timeLeft": {
+        "_type": "TextualDisplayValue",
+        "textSpans": [{
+            "text": "Live until sold or canceled"
+        }]
+    },
+    "itemAction": {
+        "message": {
+            "_type": "TextualDisplayValue",
+            "textSpans": [{
+                "_type": "TextSpan",
+                "text": "Unanswered message",
+                "styles": [
+                    "EMPHASIS"
+                ]
+            }]
+        },
+        "callToAction": {
+            "text": "Respond to message",
+            "type": "DEFAULT",
+            "action": {
+                "type": "NAV",
+                "trackingList": [{
+                        "actionKind": "NAV",
+                        "operationId": "2524149",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                            "sid": "p2524149.m5429.l9812"
+                        }
+                    },
+                    {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2524149",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                            "moduledtl": "mi:5429|li:9812"
+                        }
+                    }
+                ],
+                "URL": "https://contact.qa.ebay.com/ws/eBayISAPI.dll?RespondToQuestion&iid=170013067323"
+            },
+            "actionId": "RESPOND_TO_UNANSWERED_MESSAGE"
+        }
+    },
+    "secondaryBtnLabel": [{
+        "_type": "TextSpan",
+        "text": "Revise"
+    }],
+    "secondaryBtnAction": {
+        "type": "NAV",
+        "trackingList": [{
+                "actionKind": "NAV",
+                "operationId": "2524149",
+                "flushImmediately": false,
+                "eventProperty": {
+                    "sid": "p2524149.m5429.l9423"
+                }
+            },
+            {
+                "eventFamily": "MYEBAY",
+                "eventAction": "ACTN",
+                "actionKind": "NAVSRC",
+                "operationId": "2524149",
+                "flushImmediately": false,
+                "eventProperty": {
+                    "moduledtl": "mi:5429|li:9423"
+                }
+            }
+        ],
+        "URL": "https://cgi5.qa.ebay.com/ws/eBayISAPI.dll?UserItemVerification&item=170013067323"
+    },
+    "secondaryBtnURL": "https://cgi5.qa.ebay.com/ws/eBayISAPI.dll?UserItemVerification&item=170013067323",
+    "secondaryBtnTracking": [{
+            "actionKind": "NAV",
+            "operationId": "2524149",
+            "flushImmediately": false,
+            "eventProperty": {
+                "sid": "p2524149.m5429.l9423"
+            }
+        },
+        {
+            "eventFamily": "MYEBAY",
+            "eventAction": "ACTN",
+            "actionKind": "NAVSRC",
+            "operationId": "2524149",
+            "flushImmediately": false,
+            "eventProperty": {
+                "moduledtl": "mi:5429|li:9423"
+            }
+        }
+    ],
+    "secondaryBtnSid": "p2524149.m5429.l9423",
+    "inlineActions": [{
+            "_type": "TextualSelection",
+            "paramValue": "REVISE",
+            "label": {
+                "_type": "TextualDisplay",
+                "textSpans": [{
+                    "_type": "TextSpan",
+                    "text": "Revise"
+                }]
+            },
+            "action": {
+                "type": "NAV",
+                "trackingList": [{
+                        "actionKind": "NAV",
+                        "operationId": "2524149",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                            "sid": "p2524149.m5429.l9423"
+                        }
+                    },
+                    {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2524149",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                            "moduledtl": "mi:5429|li:9423"
+                        }
+                    }
+                ],
+                "URL": "https://cgi5.qa.ebay.com/ws/eBayISAPI.dll?UserItemVerification&item=170013067323"
+            }
+        },
+        {
+            "_type": "TextualSelection",
+            "paramValue": "ShareListing",
+            "label": {
+                "_type": "TextualDisplay",
+                "textSpans": [{
+                    "_type": "TextSpan",
+                    "text": "Share listing"
+                }]
+            },
+            "action": {
+                "type": "OPERATION",
+                "trackingList": [{
+                        "actionKind": "NAV",
+                        "operationId": "2524149",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                            "sid": "p2524149.m5429.l5770"
+                        }
+                    },
+                    {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2524149",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                            "moduledtl": "mi:5429|li:5770"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "_type": "TextualSelection",
+            "paramValue": "SELLSIMILAR",
+            "label": {
+                "_type": "TextualDisplay",
+                "textSpans": [{
+                    "_type": "TextSpan",
+                    "text": "Sell similar"
+                }]
+            },
+            "action": {
+                "type": "NAV",
+                "trackingList": [{
+                        "actionKind": "NAV",
+                        "operationId": "2524149",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                            "sid": "p2524149.m5429.l9190"
+                        }
+                    },
+                    {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2524149",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                            "moduledtl": "mi:5429|li:9190"
+                        }
+                    }
+                ],
+                "URL": "https://cgi5.qa.ebay.com/ws2/eBayISAPI.dll?SellSimilarItem&itemid=170013067323"
+            }
+        },
+        {
+            "_type": "TextualSelection",
+            "paramValue": "REVIEWALLOFFERS",
+            "label": {
+                "_type": "TextualDisplay",
+                "textSpans": [{
+                    "_type": "TextSpan",
+                    "text": "Review all offers"
+                }]
+            },
+            "action": {
+                "type": "NAV",
+                "trackingList": [{
+                        "actionKind": "NAV",
+                        "operationId": "2524149",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                            "sid": "p2524149.m5429.l9201"
+                        }
+                    },
+                    {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2524149",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                            "moduledtl": "mi:5429|li:9201"
+                        }
+                    }
+                ],
+                "URL": "https://offer.qa.ebay.com/ws/eBayISAPI.dll?ManageBestOffers&itemid=170013067323"
+            }
+        },
+        {
+            "_type": "TextualSelection",
+            "paramValue": "ENDITEM",
+            "label": {
+                "_type": "TextualDisplay",
+                "textSpans": [{
+                    "_type": "TextSpan",
+                    "text": "End listing"
+                }]
+            },
+            "action": {
+                "type": "NAV",
+                "trackingList": [{
+                        "actionKind": "NAV",
+                        "operationId": "2524149",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                            "sid": "p2524149.m5429.l9200"
+                        }
+                    },
+                    {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2524149",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                            "moduledtl": "mi:5429|li:9200"
+                        }
+                    }
+                ],
+                "URL": "https://offer.qa.ebay.com/ws/eBayISAPI.dll?VerifyStop&item=170013067323"
+            }
+        }
+    ],
+    "inlineActionsCount": 5,
+    "ebayNote": "",
+    "ebayNoteNoticeType": "information",
+    "menuType": "fake",
+    "isMenuReverse": true,
+    "itemActivityModel": {
+        "watchCount": {
+            "_type": "TextualDisplayValue",
+            "textSpans": [{
+                    "_type": "TextSpan",
+                    "text": "0"
+                },
+                {
+                    "_type": "TextSpan",
+                    "text": "Watchers"
+                }
+            ],
+            "value": 0
+        },
+        "viewCount": {
+            "_type": "TextualDisplayValue",
+            "textSpans": [{
+                    "_type": "TextSpan",
+                    "text": "3"
+                },
+                {
+                    "_type": "TextSpan",
+                    "text": "Views"
+                }
+            ],
+            "value": 3
+        }
+    },
+    "slicedInlineActions": [{
+            "_type": "TextualSelection",
+            "paramValue": "ShareListing",
+            "label": {
+                "_type": "TextualDisplay",
+                "textSpans": [{
+                    "_type": "TextSpan",
+                    "text": "Share listing"
+                }]
+            },
+            "action": {
+                "type": "OPERATION",
+                "trackingList": [{
+                        "actionKind": "NAV",
+                        "operationId": "2524149",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                            "sid": "p2524149.m5429.l5770"
+                        }
+                    },
+                    {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2524149",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                            "moduledtl": "mi:5429|li:5770"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "_type": "TextualSelection",
+            "paramValue": "SELLSIMILAR",
+            "label": {
+                "_type": "TextualDisplay",
+                "textSpans": [{
+                    "_type": "TextSpan",
+                    "text": "Sell similar"
+                }]
+            },
+            "action": {
+                "type": "NAV",
+                "trackingList": [{
+                        "actionKind": "NAV",
+                        "operationId": "2524149",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                            "sid": "p2524149.m5429.l9190"
+                        }
+                    },
+                    {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2524149",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                            "moduledtl": "mi:5429|li:9190"
+                        }
+                    }
+                ],
+                "URL": "https://cgi5.qa.ebay.com/ws2/eBayISAPI.dll?SellSimilarItem&itemid=170013067323"
+            }
+        },
+        {
+            "_type": "TextualSelection",
+            "paramValue": "REVIEWALLOFFERS",
+            "label": {
+                "_type": "TextualDisplay",
+                "textSpans": [{
+                    "_type": "TextSpan",
+                    "text": "Review all offers"
+                }]
+            },
+            "action": {
+                "type": "NAV",
+                "trackingList": [{
+                        "actionKind": "NAV",
+                        "operationId": "2524149",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                            "sid": "p2524149.m5429.l9201"
+                        }
+                    },
+                    {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2524149",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                            "moduledtl": "mi:5429|li:9201"
+                        }
+                    }
+                ],
+                "URL": "https://offer.qa.ebay.com/ws/eBayISAPI.dll?ManageBestOffers&itemid=170013067323"
+            }
+        },
+        {
+            "_type": "TextualSelection",
+            "paramValue": "ENDITEM",
+            "label": {
+                "_type": "TextualDisplay",
+                "textSpans": [{
+                    "_type": "TextSpan",
+                    "text": "End listing"
+                }]
+            },
+            "action": {
+                "type": "NAV",
+                "trackingList": [{
+                        "actionKind": "NAV",
+                        "operationId": "2524149",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                            "sid": "p2524149.m5429.l9200"
+                        }
+                    },
+                    {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2524149",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                            "moduledtl": "mi:5429|li:9200"
+                        }
+                    }
+                ],
+                "URL": "https://offer.qa.ebay.com/ws/eBayISAPI.dll?VerifyStop&item=170013067323"
+            }
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+.sold-page__list {
+    .item {
+        &__cta-wrapper {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 16px;
+        }
+        &__secondary-btn {
+            min-width: 252px;
+        }
+    }
+}
+
+@media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (orientation: portrait)
+    and (-webkit-min-device-pixel-ratio: 1) {
+    .sold-page__list {
+        .item__secondary-btn {
+            min-width: 167px;
+        }
+    }
+}

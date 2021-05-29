@@ -1,0 +1,72 @@
+import safeGet from 'just-safe-get'
+import helper from './helper'
+import meNotice from "./me-notice.marko";
+
+$ const model = helper.getModelData(input);
+<div.active-item qa-id=`active-item-${model.itemId}`>
+    <if(model.itemAction)>
+        <div.item__action>
+            <me-item-card-top-bar
+                model=model.itemAction
+                on-button-click("processButtonClickOperation")/>
+        </div>
+    </if>
+
+    <${meNotice} noticeModel=safeGet(state, 'noticeModel') />
+    <if(model.ebayNote)>
+        <div.item__ebaynote>
+            <ebay-notice
+                status=model.ebayNoteNoticeType
+                type="inline"
+                a11y-heading-text=model.ebayNoteAccessibilityText>
+                <p>
+                    <me-textual-display model=model.ebayNote/>
+                </p>
+            </ebay-notice>
+        </div>
+    </if>
+    <layout-item-card>
+        <@col-1>
+            <meui-thumbnail image=model.image altText=model.title size="large"/>
+        </@col-1>
+        <@col-2>
+            <static-text class="item__status" model=model.attributedBannerStatus/>
+            <me-item-title model=model.title/>
+            <div class="item__itemid_quantity small-secondary">
+                <static-text model=model.displayItemId setDefault=true class="item__itemid"/>
+                <static-text model=model.quantity class="item__quantity"/>
+                <if(model.charityAccessibilityText)>
+                    <span class="charity-icon">
+                        <span.clipped>${model.charityAccessibilityText}</span>
+                    </span>
+                </if>
+            </div>
+            <item-statuses model=[model.promoted] />
+            <static-text model=model.displayPrice setDefault=true class="item__price"/>
+            <static-text
+                model=model.additionalPrice
+                setDefault=true
+                class="item__price-additional"/>
+            <static-text model=model.displayPriceMessage class="item__price-attrs"/>
+            <static-text model=model.shippingPrice class="item__shipping-price"/>
+            <static-text model=model.timeLeft class="item__time-left"/>
+        </@col-2>
+        <@col-3>
+            <div class="item__cta-wrapper">
+                <ebay-button
+                    size="small"
+                    on-button-click("onSecondaryBtnClick", model.secondaryBtnTracking)
+                    href=model.secondaryBtnURL
+                    class="item__secondary-btn"
+                    _sp=model.secondaryBtnSid>
+                    <me-textual-display model=model.secondaryBtnLabel/>
+                </ebay-button>
+                <me-line-actions
+                    options=model.slicedInlineActions
+                    accessibilityText=model.inlineActionsAccessibilityText
+                    on-lineActionSelect("processButtonClickOperation")/>
+            </div>
+            <me-item-activity model=model.itemActivityModel/>
+        </@col-3>
+    </layout-item-card>
+</div>

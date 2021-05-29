@@ -1,0 +1,14 @@
+<div class=["item__checkbox-wrapper", input.isEditMode && "slide-right"]
+    hidden=input.hidden>
+    <ebay-checkbox
+        class="item__checkbox"
+        on-checkbox-change("emit", "checkbox-change")
+        checked=input.checked
+        value=input.value
+        id=input.value />
+    <label
+        for=input.id
+        class="clipped">
+        <${input.renderBody}/>
+    </label>
+</div>

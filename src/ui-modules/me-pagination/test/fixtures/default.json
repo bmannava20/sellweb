@@ -1,0 +1,68 @@
+{
+    "model": {
+        "previous": {
+            "_type": "TextSpan",
+            "text": "<",
+            "accessibilityText": "Previous page"
+        },
+        "next": {
+            "_type": "TextSpan",
+            "text": ">",
+            "accessibilityText": "Next page"
+        },
+        "pages": [{
+            "_type": "OptionTextSpan",
+            "text": "1",
+            "action": {
+                "type": "OPERATION",
+                "name": "pagination",
+                "URL": "container_sort=PRICE_HIGHEST&container_filter=ALL&container_limit=25"
+            },
+            "accessibilityText": "Page 1 of 1",
+            "selected": true
+        }],
+        "itemsPerPage": {
+            "label": {
+                "_type": "TextualDisplay",
+                "textSpans": [{
+                    "_type": "TextSpan",
+                    "text": "Items per page"
+                }]
+            },
+            "currentOption": null,
+            "options": [{
+                    "_type": "OptionTextSpan",
+                    "text": "25",
+                    "action": {
+                        "type": "OPERATION",
+                        "name": "pagination",
+                        "URL": "container_sort=PRICE_HIGHEST&container_filter=ALL&container_limit=25"
+                    },
+                    "selected": true
+                },
+                {
+                    "_type": "OptionTextSpan",
+                    "text": "100",
+                    "action": {
+                        "type": "OPERATION",
+                        "name": "pagination",
+                        "URL": "container_sort=PRICE_HIGHEST&container_filter=ALL&container_limit=100"
+                    },
+                    "selected": false
+                },
+                {
+                    "_type": "OptionTextSpan",
+                    "text": "200",
+                    "action": {
+                        "type": "OPERATION",
+                        "name": "pagination",
+                        "URL": "container_sort=PRICE_HIGHEST&container_filter=ALL&container_limit=200"
+                    },
+                    "selected": false
+                }
+            ]
+        }
+    },
+    "class": "active-page__pagination",
+    "eventDelegate": "activePageUpdate"
+}

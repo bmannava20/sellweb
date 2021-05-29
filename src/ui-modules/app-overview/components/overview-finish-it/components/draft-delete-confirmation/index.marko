@@ -1,0 +1,41 @@
+import safeGet from 'just-safe-get'
+
+$ {
+    const deleteContent = safeGet(
+            input,
+            "model.content.deleteMessage.textSpans.0.text"
+        ),
+        deleteBtn = safeGet(input, "model.content.deleteButton.textSpans.0.text"),
+        deleteCancel = safeGet(input, "model.content.cancel.textSpans.0.text"),
+        deleteFailed = safeGet(
+            input,
+            "model.content.deleteFailed.textSpans.0.text"
+        ),
+        tryAgain = safeGet(input, "model.content.tryAgain.textSpans.0.text"),
+        isShowDeletePanel = safeGet(input, "isShowDeletePanel"),
+        isShowRetryPanel = safeGet(input, "isShowRetryPanel"),
+        draftId = safeGet(input, "draftId"),
+        content = isShowDeletePanel ? deleteContent : deleteFailed,
+        cancelBtn = safeGet(data, "deleteCancel"),
+        btn = isShowDeletePanel ? deleteBtn : tryAgain,
+        redText = isShowDeletePanel ? "normal" : "redText",
+        blueText = isShowDeletePanel ? "normal" : "blueText";
+}
+<div id=`${draftId}` tabindex="-1" class="draft-delete-confirmation">
+    <label class="content" id:scoped=`${draftId}-ddc` role="document">
+        ${content}
+    </label>
+    <div class="btn-cnt">
+        <button class="me-btn cancel" on-click("cancelDeleteDraft") type="button">
+            ${deleteCancel}
+        </button>
+        <div class="bar"/>
+        <button
+            class=`me-btn delete ${blueText}`
+            on-click("deleteDraft")
+            aria-describedby:scoped=`${draftId}-ddc`
+            type="button">
+            ${btn}
+        </button>
+    </div>
+</div>

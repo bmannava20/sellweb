@@ -1,0 +1,32 @@
+import get from 'just-safe-get'
+import helper from './helper'
+
+<if(state.model && state.model.lineItems && state.model.lineItems.length > 0)>
+    $ const model = helper.getModel(state);
+    <me-spinner label=get(state, "myebayPageContent.busyLabel") key="pl-spinner"/>
+    <layout-item-listing
+        class="pl-module"
+        qaId="pl-module"
+        title=model.title
+        subTitle=model.subTitle key="pl-module">
+        <@items>
+            <meui-item-list(item in model.lineItems)>
+                <item-card
+                    key=`itemRow-${item.listingId}`
+                    item=item
+                    on-process-pl("processPromoteListing")
+                    on-module-update("updateContainer")/>
+            </meui-item-list>
+            <see-all model=model.seeAll on-appUpdate("emit", "appUpdate")/>
+        </@items>
+    </layout-item-listing>
+    <if(model.plContentMap)>
+        <pl-basic-wrapper
+            no-update
+            options=model.plContentMap
+            key="overview_promote_listing"
+            on-update-pl-status('processPromoteListingsSuccessError')/>
+    </if>
+</if>
+
+

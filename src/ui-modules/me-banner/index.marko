@@ -1,0 +1,27 @@
+import safeGet from 'just-safe-get'
+
+class MeBanner {
+    onCreate(input) {
+        this.state = input;
+    }
+}
+
+style.less {
+    .me-banner-wrapper {
+        display: flex;
+        margin-top: 32px;
+    }
+}
+
+$ const banners = safeGet(input, "model.sellerMessages");
+<if(banners && banners.length > 0)>
+    <div class="me-banner-wrapper">
+        <for|item, loopIndex, loopAll| of=banners>
+            <me-banner-item
+                model=item
+                class={
+                    multiple: loopAll.length > 1
+                }/>
+        </for>
+    </div>
+</if>

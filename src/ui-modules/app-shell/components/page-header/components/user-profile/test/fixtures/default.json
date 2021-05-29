@@ -1,0 +1,38 @@
+{
+    "model": {
+        "_type": "TopNavModule",
+        "memberBadge": {
+            "user": {
+                "text": "mesell4",
+                "action": {
+                    "URL": "http://www.qa.ebay.com/usr/mesell4"
+                },
+                "accessibilityText": "Visit mesell4 profile"
+            },
+            "userFeedback": {
+                "text": "999",
+                "action": {
+                    "URL": "http://feedback.qa.ebay.com/ws/eBayISAPI.dll?ViewFeedback2&userid=mesell4"
+                },
+                "accessibilityText": "mesell4 feedback score is 999"
+            },
+            "feedbackBadge": "PURPLE_STAR",
+            "feedbackBadgeAlt": "Purple star icon for feedback score in between 500 to 999",
+            "hasStore": false,
+            "storeUrl": null,
+            "idVerified": false,
+            "siteVerified": false,
+            "topRatedSeller": false,
+            "powerSeller": false,
+            "motorsSeller": false,
+            "newlyRegistered": false
+        },
+        "feedBackLink": {
+            "text": "Tell us what you think",
+            "action": {
+                "URL": "https://survey.qa.ebay.com/srv/survey/a/myebay.selling.allselling"
+            },
+            "accessibilityText": "opens in a new window or tab"
+        }
+    }
+}

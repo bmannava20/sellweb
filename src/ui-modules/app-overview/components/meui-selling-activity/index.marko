@@ -1,0 +1,28 @@
+import helper from './helper'
+
+$ const modelData = helper.getModelData(input);
+<if(modelData)>
+    <section class="selling-activity">
+        <div class="selling-activity-container">
+            <listings-by-containers model=modelData on-appUpdate("emit", "appUpdate")/>
+            <listing-total model=modelData/>
+            <span class="selling-activity-columns list-item">
+                <!-- TODO: Change it to me-fake-button -->
+                <if(input.usecase === "HARD_REQUIRED")>
+                    <me-fake-button-disabled
+                    size="small"
+                    priority="primary"
+                    model=modelData.listItemBtn.listItemBtnText
+                    action=modelData.listItemBtn.listItemBtnAction/>
+                </if>
+                <else>
+                    <me-fake-button
+                    size="small"
+                    priority="primary"
+                    model=modelData.listItemBtn.listItemBtnText
+                    action=modelData.listItemBtn.listItemBtnAction/>
+                </else> 
+            </span>
+        </div>
+    </section>
+</if>

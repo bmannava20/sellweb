@@ -1,0 +1,41 @@
+{
+    "model": {
+        "_type": "TopNavModule",
+        "feedBackLink": {
+            "text": "Tell us what you think",
+            "action": {
+                "URL": "https://survey.qa.ebay.com/srv/survey/a/myebay.selling.drafts"
+            },
+            "accessibilityText": "opens in a new window or tab"
+        },
+        "switchToClassicLink": {
+            "textSpans": [{
+                "text": "Switch to classic view"
+            }],
+            "action": {
+                "type": "OPERATION",
+                "name": "switchToClassic",
+                "trackingList": [{
+                        "actionKind": "NAV",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                            "sid": "p2486981.m4998.l9272"
+                        }
+                    },
+                    {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                            "moduledtl": "mi:4998|li:9272"
+                        }
+                    }
+                ],
+                "URL": "open_dialog"
+            }
+        }
+    }
+}

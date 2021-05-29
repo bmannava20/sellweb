@@ -1,0 +1,7 @@
+import safeGet from 'just-safe-get'
+$ let btnLabel = safeGet(input, "item.lineActions.options.0.label");
+$ const btnAction = safeGet(input, "item.lineActions.options.0.action");
+$ btnLabel.action = btnAction;
+<div class="item__btn-wrapper">
+    <me-fake-button size="small" model=btnLabel/>
+</div>

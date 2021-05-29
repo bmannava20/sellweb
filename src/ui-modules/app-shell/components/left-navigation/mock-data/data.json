@@ -1,0 +1,272 @@
+{
+    "modules": {
+        "leftNavModule": {
+            "_type": "LeftNavModule",
+            "menus": [
+                {
+                    "name": {
+                        "text": "Summary",
+                        "action": {
+                            "type": "NAV",
+                            "URL": "http://www.qa.ebay.com/myb/Summary"
+                        }
+                    },
+                    "subMenus": [],
+                    "expanded": false,
+                    "selected": false,
+                    "preferenceKey": null
+                },
+                {
+                    "name": {
+                        "text": "Recently viewed",
+                        "action": {
+                            "type": "NAV",
+                            "URL": "https://www.qa.ebay.com/myb/container?key=recentlyviewed&src=urllib"
+                        }
+                    },
+                    "subMenus": [],
+                    "expanded": false,
+                    "selected": false,
+                    "preferenceKey": null
+                },
+                {
+                    "name": {
+                        "text": "Buying",
+                        "action": {
+                            "type": "OPERATION",
+                            "URL": "update_preferences"
+                        }
+                    },
+                    "subMenus": [
+                        {
+                            "name": {
+                                "text": "Bids/Offers",
+                                "action": {
+                                    "type": "NAV",
+                                    "URL": "http://www.qa.ebay.com/myb/BidsOffers"
+                                }
+                            },
+                            "subMenus": [],
+                            "expanded": false,
+                            "selected": false,
+                            "preferenceKey": null
+                        },
+                        {
+                            "name": {
+                                "text": "eBay Bucks",
+                                "action": {
+                                    "type": "NAV",
+                                    "URL": "http://my.qa.ebay.com/ws/eBayISAPI.dll?MyEbayBeta&CurrentPage=Rewards"
+                                }
+                            },
+                            "subMenus": [],
+                            "expanded": false,
+                            "selected": false,
+                            "preferenceKey": null
+                        },
+                        {
+                            "name": {
+                                "text": "Purchase History",
+                                "action": {
+                                    "type": "NAV",
+                                    "URL": "http://www.qa.ebay.com/myb/PurchaseHistory"
+                                }
+                            },
+                            "subMenus": [],
+                            "expanded": false,
+                            "selected": false,
+                            "preferenceKey": null
+                        }
+                    ],
+                    "expanded": false,
+                    "selected": false,
+                    "preferenceKey": "buy"
+                },
+                {
+                    "name": {
+                        "text": "Watch list",
+                        "action": {
+                            "type": "NAV",
+                            "URL": "http://www.qa.ebay.com/myb/WatchList"
+                        }
+                    },
+                    "subMenus": [],
+                    "expanded": false,
+                    "selected": false,
+                    "preferenceKey": null
+                },
+                {
+                    "name": {
+                        "text": "Saved",
+                        "action": {
+                            "type": "OPERATION",
+                            "URL": "update_preferences"
+                        }
+                    },
+                    "subMenus": [
+                        {
+                            "name": {
+                                "text": "Saved searches",
+                                "action": {
+                                    "type": "NAV",
+                                    "URL": "http://www.qa.ebay.com/myb/SavedSearches"
+                                }
+                            },
+                            "subMenus": [],
+                            "expanded": false,
+                            "selected": false,
+                            "preferenceKey": null
+                        },
+                        {
+                            "name": {
+                                "text": "Saved sellers",
+                                "action": {
+                                    "type": "NAV",
+                                    "URL": "http://www.qa.ebay.com/myb/SavedSellers"
+                                }
+                            },
+                            "subMenus": [],
+                            "expanded": false,
+                            "selected": false,
+                            "preferenceKey": null
+                        }
+                    ],
+                    "expanded": false,
+                    "selected": false,
+                    "preferenceKey": "follow"
+                },
+                {
+                    "name": {
+                        "text": "Selling",
+                        "action": {
+                            "type": "OPERATION",
+                            "URL": "update_preferences"
+                        }
+                    },
+                    "subMenus": [
+                        {
+                            "name": {
+                                "text": "Overview",
+                                "action": {
+                                    "type": "OPERATION",
+                                    "name": "MYEBAY_SELLING_OVERVIEW_GET",
+                                    "URL": "https://www.qa.ebay.com/mys/overview"
+                                }
+                            },
+                            "subMenus": [],
+                            "expanded": false,
+                            "selected": false,
+                            "preferenceKey": null
+                        },
+                        {
+                            "name": {
+                                "text": "Sell an item",
+                                "action": {
+                                    "type": "NAV",
+                                    "name": "MYEBAY_SELLING_SELL_ITEM",
+                                    "trackingList": [
+                                        {
+                                            "actionKind": "NAV",
+                                            "flushImmediately": false,
+                                            "eventProperty": {
+                                                "sid": "p2332703.m4998.l9182"
+                                            }
+                                        },
+                                        {
+                                            "eventFamily": "MYEBAY",
+                                            "eventAction": "ACTN",
+                                            "actionKind": "NAVSRC",
+                                            "flushImmediately": false,
+                                            "eventProperty": {
+                                                "moduledtl": "mi:4998|li:9182"
+                                            }
+                                        }
+                                    ],
+                                    "URL": "http://cgi5.qa.ebay.com/ws/eBayISAPI.dll?SellHub3"
+                                }
+                            },
+                            "subMenus": [],
+                            "expanded": false,
+                            "selected": false,
+                            "preferenceKey": null
+                        },
+                        {
+                            "name": {
+                                "text": "Drafts",
+                                "action": {
+                                    "type": "OPERATION",
+                                    "name": "MYEBAY_DRAFTS",
+                                    "URL": "https://www.qa.ebay.com/mys/drafts"
+                                }
+                            },
+                            "subMenus": [],
+                            "expanded": false,
+                            "selected": false,
+                            "preferenceKey": null
+                        },
+                        {
+                            "name": {
+                                "text": "Scheduled",
+                                "action": {
+                                    "type": "NAV",
+                                    "name": "MYEBAY_SCHEDULED",
+                                    "URL": "https://my.qa.ebay.com/ws/eBayISAPI.dll?MyEbayBeta&CurrentPage=MyeBayNextScheduled"
+                                }
+                            },
+                            "subMenus": [],
+                            "expanded": false,
+                            "selected": false,
+                            "preferenceKey": null
+                        },
+                        {
+                            "name": {
+                                "text": "Active",
+                                "action": {
+                                    "type": "OPERATION",
+                                    "name": "MYEBAY_ACTIVE_GET",
+                                    "URL": "https://www.qa.ebay.com/mys/active"
+                                }
+                            },
+                            "subMenus": [],
+                            "expanded": false,
+                            "selected": false,
+                            "preferenceKey": null
+                        },
+                        {
+                            "name": {
+                                "text": "Sold",
+                                "action": {
+                                    "type": "NAV",
+                                    "name": "MYEBAY_SOLD",
+                                    "URL": "https://my.qa.ebay.com/ws/eBayISAPI.dll?MyEbayBeta&CurrentPage=MyeBayNextSold"
+                                }
+                            },
+                            "subMenus": [],
+                            "expanded": false,
+                            "selected": true,
+                            "preferenceKey": null
+                        },
+                        {
+                            "name": {
+                                "text": "Unsold",
+                                "action": {
+                                    "type": "OPERATION",
+                                    "name": "MYEBAY_UNSOLD_GET",
+                                    "URL": "https://www.qa.ebay.com/mys/unsold"
+                                }
+                            },
+                            "subMenus": [],
+                            "expanded": false,
+                            "selected": false,
+                            "preferenceKey": null
+                        }
+                    ],
+                    "expanded": true,
+                    "selected": false,
+                    "preferenceKey": "sell"
+                }
+            ],
+            "preferenceId": "MeSellLeftNavPreference"
+        }
+    }
+}

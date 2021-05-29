@@ -1,0 +1,342 @@
+{
+    "addNoteContentMap": {
+        "deleteButton": {
+            "_type": "TextualDisplay",
+            "textSpans": [{
+                "_type": "TextSpan",
+                "text": "Delete"
+            }]
+        },
+        "subTitle": {
+            "_type": "TextualDisplay",
+            "textSpans": [{
+                "_type": "TextSpan",
+                "text": "Write a note that only you can view."
+            }]
+        },
+        "title": {
+            "_type": "TextualDisplay",
+            "textSpans": [{
+                "_type": "TextSpan",
+                "text": "Note to self"
+            }]
+        },
+        "saveButton": {
+            "_type": "TextualDisplay",
+            "textSpans": [{
+                "_type": "TextSpan",
+                "text": "Save"
+            }]
+        },
+        "close": {
+            "_type": "TextualDisplay",
+            "textSpans": [{
+                "_type": "TextSpan",
+                "text": "Close"
+            }]
+        }
+    },
+    "model": {
+        "__me": {
+            "lineActions": {
+                "options": [{
+                        "_type": "TextualSelection",
+                        "paramValue": "ADD_TRACKING_NUMBER",
+                        "label": {
+                            "_type": "TextualDisplay",
+                            "textSpans": [{
+                                "_type": "TextSpan",
+                                "text": "Add tracking number"
+                            }]
+                        },
+                        "action": {
+                            "_type": "Action",
+                            "type": "NAV",
+                            "trackingList": [{
+                                    "actionKind": "NAV",
+                                    "operationId": "2544535",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                        "sid": "p2544535.m43837.l9184"
+                                    }
+                                },
+                                {
+                                    "eventFamily": "MYEBAY",
+                                    "eventAction": "ACTN",
+                                    "actionKind": "NAVSRC",
+                                    "operationId": "2544535",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                        "moduledtl": "mi:43837|li:9184"
+                                    }
+                                }
+                            ],
+                            "URL": "https://payments.qa.ebay.com/ws/eBayISAPI.dll?AddTrackingNumber&LineID=Transactions.280017824037_0&from=1"
+                        }
+                    },
+                    {
+                        "_type": "TextualSelection",
+                        "paramValue": "LEAVE_FEEDBACK_FOR_BUYER",
+                        "label": {
+                            "_type": "TextualDisplay",
+                            "textSpans": [{
+                                "_type": "TextSpan",
+                                "text": "Leave feedback"
+                            }]
+                        },
+                        "action": {
+                            "_type": "Action",
+                            "type": "NAV",
+                            "trackingList": [{
+                                    "actionKind": "NAV",
+                                    "operationId": "2544535",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                        "sid": "p2544535.m43837.l9204"
+                                    }
+                                },
+                                {
+                                    "eventFamily": "MYEBAY",
+                                    "eventAction": "ACTN",
+                                    "actionKind": "NAVSRC",
+                                    "operationId": "2544535",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                        "moduledtl": "mi:43837|li:9204"
+                                    }
+                                }
+                            ],
+                            "URL": "https://feedback.qa.ebay.com/ws/eBayISAPI.dll?LeaveFeedbackShow&useridto=myebay_so_buyer_us_1552072870573&transactID=0&item=280017824037"
+                        }
+                    },
+                    {
+                        "_type": "TextualSelection",
+                        "paramValue": "SELL_SIMILAR",
+                        "label": {
+                            "_type": "TextualDisplay",
+                            "textSpans": [{
+                                "_type": "TextSpan",
+                                "text": "Sell similar"
+                            }]
+                        },
+                        "action": {
+                            "_type": "Action",
+                            "type": "NAV",
+                            "trackingList": [{
+                                    "actionKind": "NAV",
+                                    "operationId": "2544535",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                        "sid": "p2544535.m43837.l9190"
+                                    }
+                                },
+                                {
+                                    "eventFamily": "MYEBAY",
+                                    "eventAction": "ACTN",
+                                    "actionKind": "NAVSRC",
+                                    "operationId": "2544535",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                        "moduledtl": "mi:43837|li:9190"
+                                    }
+                                }
+                            ],
+                            "URL": "https://cgi5.qa.ebay.com/ws2/eBayISAPI.dll?SellSimilarItem&itemid=280017824037"
+                        }
+                    }
+                ],
+                "flattenDisplay": true
+            },
+            "orderStatus": {
+                "_type": "TextualDisplayValue",
+                "textSpans": [{
+                    "_type": "TextSpan",
+                    "text": "Shipped",
+                    "styles": [
+                        "BOLD"
+                    ]
+                }]
+            },
+            "itemId": {
+                "_type": "TextualDisplay",
+                "textSpans": [{
+                    "_type": "TextSpan",
+                    "text": "Item ID: 280017824037"
+                }]
+            },
+            "itemLevelStatus": "SHIPPED",
+            "shipTrackingActions": {
+                "options": [{
+                        "_type": "TextualSelection",
+                        "paramValue": "VIEW_TRACKING",
+                        "label": {
+                            "_type": "TextualDisplay",
+                            "textSpans": [{
+                                "_type": "TextSpan",
+                                "text": "View tracking"
+                            }]
+                        },
+                        "action": {
+                            "_type": "Action",
+                            "type": "OPERATION",
+                            "trackingList": [{
+                                    "actionKind": "NAV",
+                                    "operationId": "2544535",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                        "sid": "p2544535.m43837.l9093"
+                                    }
+                                },
+                                {
+                                    "eventFamily": "MYEBAY",
+                                    "eventAction": "ACTN",
+                                    "actionKind": "NAVSRC",
+                                    "operationId": "2544535",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                        "moduledtl": "mi:43837|li:9093"
+                                    }
+                                }
+                            ],
+                            "URL": "https://www.qa.ebay.com/ship/tr/Events?itemid=280017824037&transid=0"
+                        }
+                    },
+                    {
+                        "_type": "TextualSelection",
+                        "paramValue": "EDIT_TRACKING",
+                        "label": {
+                            "_type": "TextualDisplay",
+                            "textSpans": [{
+                                "_type": "TextSpan",
+                                "text": "Edit tracking"
+                            }]
+                        },
+                        "action": {
+                            "_type": "Action",
+                            "type": "NAV",
+                            "trackingList": [{
+                                    "actionKind": "NAV",
+                                    "operationId": "2544535",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                        "sid": "p2544535.m43837.l45248"
+                                    }
+                                },
+                                {
+                                    "eventFamily": "MYEBAY",
+                                    "eventAction": "ACTN",
+                                    "actionKind": "NAVSRC",
+                                    "operationId": "2544535",
+                                    "flushImmediately": false,
+                                    "eventProperty": {
+                                        "moduledtl": "mi:43837|li:45248"
+                                    }
+                                }
+                            ],
+                            "URL": "https://www.qa.ebay.com/ship/tr/Update?transactions=280017824037-0&returnUrl=https%253A%252F%252Fwww.qa.ebay.com%252Fmys%252Fsold%252Frf%252Fsort%253DPRICE_HIGHEST%2526filter%253DALL%2526limit%253D25%2526period%253DLAST_60_DAYS&source=1&flow=2"
+                        }
+                    }
+                ],
+                "flattenDisplay": false
+            },
+            "noteToSelf": {
+                "label": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [{
+                        "_type": "TextSpan",
+                        "text": "Note to self:",
+                        "styles": [
+                            "BOLD"
+                        ]
+                    }]
+                },
+                "note": {
+                    "_type": "TextualDisplayValue",
+                    "textSpans": [{
+                        "_type": "TextSpan",
+                        "text": "hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello"
+                    }],
+                    "value": "hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello"
+                },
+                "edit": {
+                    "_type": "TextualDisplay",
+                    "textSpans": [{
+                        "_type": "TextSpan",
+                        "text": "Edit"
+                    }]
+                }
+            }
+        },
+        "transactionId": "0",
+        "itemCard": {
+            "_type": "MyeBayBaseItemCard",
+            "listingId": "280017824037",
+            "title": {
+                "_type": "TextualDisplay",
+                "textSpans": [{
+                    "_type": "TextSpan",
+                    "text": "Automation bolt item with local pickup-1552072884199"
+                }],
+                "action": {
+                    "_type": "Action",
+                    "type": "NAV",
+                    "trackingList": [{
+                            "actionKind": "NAV",
+                            "operationId": "2544535",
+                            "flushImmediately": false,
+                            "eventProperty": {
+                                "trkp": "itm%3A280017824037",
+                                "sid": "p2544535.m43837.l6907"
+                            }
+                        },
+                        {
+                            "eventFamily": "MYEBAY",
+                            "eventAction": "ACTN",
+                            "actionKind": "NAVSRC",
+                            "operationId": "2544535",
+                            "flushImmediately": false,
+                            "eventProperty": {
+                                "moduledtl": "mi:43837|li:6907"
+                            }
+                        }
+                    ],
+                    "URL": "https://www.qa.ebay.com/itm/280017824037"
+                }
+            },
+            "image": {
+                "_type": "Image",
+                "action": {
+                    "_type": "Action",
+                    "type": "NAV",
+                    "trackingList": [{
+                            "actionKind": "NAV",
+                            "operationId": "2544535",
+                            "flushImmediately": false,
+                            "eventProperty": {
+                                "trkp": "itm%3A280017824037",
+                                "sid": "p2544535.m43837.l6907"
+                            }
+                        },
+                        {
+                            "eventFamily": "MYEBAY",
+                            "eventAction": "ACTN",
+                            "actionKind": "NAVSRC",
+                            "operationId": "2544535",
+                            "flushImmediately": false,
+                            "eventProperty": {
+                                "moduledtl": "mi:43837|li:6907"
+                            }
+                        }
+                    ],
+                    "URL": "https://www.qa.ebay.com/itm/280017824037"
+                },
+                "URL": "https://i.qa.ebayimg.com/images/i/280017824037-0-0/s-l140/p.jpg"
+            }
+        },
+        "hideLineAction": true,
+        "isMultiOrderItemHeader": true,
+        "id": "280017824037",
+        "isLastChild": false,
+        "orderId": "6556413018"
+    }
+}

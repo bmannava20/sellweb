@@ -1,0 +1,12 @@
+import helper from './helper'
+
+<if(input.model)>
+    $ const model = helper.getModelData(input);
+    <ebay-notice
+        key="shipToFundNotice"
+        status="information"
+        type="inline"
+        class="ship-to-fund-status">
+        <me-textual-display model=model.textSpans/>
+    </ebay-notice>
+</if>

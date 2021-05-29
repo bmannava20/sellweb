@@ -1,0 +1,13 @@
+import get from "just-safe-get"
+
+$ {
+    const itemTitle = get(input, "model.textSpans.0.text"),
+        itemTitleAction = get(input, "model.action");
+}
+<if(itemTitleAction && itemTitle)>
+    <h3 class=`item-title ${input.class}`>
+        <meui-navlink action=itemTitleAction>
+            <span>${itemTitle}</span>
+        </meui-navlink>
+    </h3>
+</if>

@@ -1,0 +1,46 @@
+<macro|macroInput| name="listingContent">
+    $ var model = macroInput.model;
+    $ var activityError = macroInput.activityError;
+    <div class="listings">
+        <if(model.btnAction)>
+            <meui-navlink
+                key=`navLink${model.btnAction.name}`
+                action=model.btnAction
+                class="text link"
+                on-navLinkClickAPI("onNavLinkClickAPI")>
+                <div class="numbers">
+                    <if(model.number)>
+                        ${model.number}
+                    </if>
+                    <else>
+                        <div class="meui-tooltip" aria-expanded="false" on-click("showActivityError")>
+                            <button
+                                type="button"
+                                class="minus-icon"
+                                aria-label=`${activityError.accessibilityText}`>
+                                &#8722;&#8722;
+                            </button>
+                            <div class="tooltip-alert" aria-live="polite" role="status">
+                                <span>${activityError.message}</span>
+                            </div>
+                        </div>
+                    </else>
+                </div>
+                <p class="numbers-label">${model.btnText}</p>
+            </meui-navlink>
+        </if>
+    </div>
+</macro>
+<span class="listings-wrapper-container">
+    <article class="listings-wrapper">
+        <listingContent
+            model=input.model.listings.activeListings
+            activityError=input.model.activityError/>
+        <listingContent
+            model=input.model.listings.soldListings
+            activityError=input.model.activityError/>
+        <listingContent
+            model=input.model.listings.unsoldListings
+            activityError=input.model.activityError/>
+    </article>
+</span>

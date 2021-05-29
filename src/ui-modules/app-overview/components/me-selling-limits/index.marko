@@ -1,0 +1,66 @@
+import safeGet from 'just-safe-get';
+import helper from './helper';
+
+$ const model = helper.getData(input);
+<if(model.title)>
+    <section class="selling-limits">
+        <meui-moduleTitle model=model.title/>
+        <if(model.sellingLimitError)>
+            <ebay-notice class="notice" type="inline" status="priority">
+                <p>
+                    <me-textual-display model=model.sellingLimitError/>
+                </p>
+            </ebay-notice>
+        </if>
+        <if(!model.sellingLimitError)>
+            <div class="content">
+                <div class="description">
+                    <me-textual-display model=model.limitDescription/>
+                </div>
+                <div class="limits-container">
+                    <if(model.limitMessage)>
+                        <ebay-notice
+                            class="limits-container__notice notice"
+                            type="inline"
+                            status=model.limitMessageType>
+                            <p>
+                                <me-textual-display model=model.limitMessage/>
+                            </p>
+                        </ebay-notice>
+                    </if>
+                    <div class="wrapper">
+                        <div class="remaining-text">
+                            <me-textual-display model=model.quantityText/>
+                        </div>
+                        <if(model.showQuantity)>
+                            <straight-line
+                                height="16"
+                                width="400"
+                                color=model.colorIndicator
+                                startValue=model.quantityAvailable
+                                endValue=model.quantityTotal
+                                border-width=6/>
+                        </if>
+                        <gmv-used gmvUsed=model.quantityUsed/>
+                    </div>
+                    <line-separator text=model.lineSeparator/>
+                    <div class="wrapper">
+                        <div class="remaining-text">
+                            <me-textual-display model=model.gmvText/>
+                        </div>
+                        <if(model.showGMV)>
+                            <straight-line
+                                height="16"
+                                width="400"
+                                color=model.colorIndicator
+                                startValue=model.gmvAvailable
+                                endValue=model.gmvTotal
+                                border-width=6/>
+                        </if>
+                       <gmv-used gmvUsed=model.gmvUsed/>
+                    </div>
+                </div>
+            </div>
+        </if>
+    </section>
+</if>

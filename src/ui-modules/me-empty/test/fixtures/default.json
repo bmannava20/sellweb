@@ -1,0 +1,47 @@
+{
+    "model": {
+        "message": {
+            "_type": "TextualDisplay",
+            "textSpans": [
+                {
+                    "_type": "TextSpan",
+                    "text": "You don't have any items."
+                }
+            ]
+        },
+        "alternateAction": {
+            "_type": "TextualDisplay",
+            "textSpans": [
+                {
+                    "_type": "TextSpan",
+                    "text": "Start a listing"
+                }
+            ],
+            "action": {
+                "_type": "Action",
+                "type": "NAV",
+                "trackingList": [
+                    {
+                        "actionKind": "NAV",
+                        "operationId": "2544535",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                            "sid": "p2544535.m43837.l4973"
+                        }
+                    },
+                    {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2544535",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                            "moduledtl": "mi:43837|li:4973"
+                        }
+                    }
+                ],
+                "URL": "https://www.qa.ebay.com/sl/sell"
+            }
+        }
+    }
+}

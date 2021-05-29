@@ -1,0 +1,24 @@
+<if(input.model)>
+    <div class="top-nav-links" key="top-nav-links">
+        <me-survey-link model=input.model timeout=input.timeout/>
+        <if((input.model.switchToClassicLink || input.model.switchToAllSellingLink) && input.model.feedBackLink)>
+            <span class="links-divider">&#124;</span>
+        </if>
+        <if(input.model.switchToClassicLink)>
+            <ebay-button
+                class="switch-classic-link fake-link"
+                priority="secondary"
+                on-button-click("openClassicPrefDialog")>
+                <me-textual-display model=input.model.switchToClassicLink.textSpans/>
+            </ebay-button>
+        </if>
+        <if(input.model.switchToAllSellingLink)>
+            <ebay-button
+                class="switch-classic-link fake-link"
+                priority="secondary"
+                on-button-click("openSwitchToAllSellingDialog")>
+                <me-textual-display model=input.model.switchToAllSellingLink.textSpans/>
+            </ebay-button>
+        </if>
+    </div>
+</if>

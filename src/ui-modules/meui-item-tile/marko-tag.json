@@ -1,0 +1,10 @@
+{
+	  "@columns <column>[]": {
+		  "@class": "string"
+	  },
+	  "@class": "string",
+	  "@qaId": "string",
+    "@buyerNote": "string",
+    "@footer": "string",
+    "@styleMap": "string"
+}

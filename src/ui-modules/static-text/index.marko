@@ -1,0 +1,8 @@
+import helper from './helper'
+
+$ const model = helper.getData(input);
+<if(model.text)>
+    <div class=`${model.class}`>
+        <me-textual-display model=model.text options=model.styleMap/>
+    </div>
+</if>

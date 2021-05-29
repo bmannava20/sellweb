@@ -1,0 +1,25 @@
+import safeGet from 'just-safe-get'
+
+$ const todos = safeGet(input, "model.todos");
+<if(todos)>
+    <div class="todo-list">
+        <for|todo| of=todos>
+            $ {
+                const count = safeGet(todo, "count.textSpans");
+                const label = safeGet(todo, "label.textSpans");
+                const action = safeGet(todo, "label.action");
+                const status = safeGet(todo, "contentStatus.status");
+            }
+            <if(status == "SUCCESS_SHOW_CONTENT")>
+                <div class="todo-list-item">
+                    <meui-navlink action=action on-navLinkClickAPI("onNavLinkClickAPI")>
+                        <me-textual-display model=count class="todo-list-item-count"/>
+                    </meui-navlink>
+                    <meui-navlink action=action on-navLinkClickAPI("onNavLinkClickAPI")>
+                        <me-textual-display model=label class="todo-list-item-label"/>
+                    </meui-navlink>
+                </div>
+            </if>
+        </for>
+    </div>
+</if>

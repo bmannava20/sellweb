@@ -1,0 +1,121 @@
+{
+    "services": {
+        "MesellwebExpSvcRelist": {
+            "hostname": "www.mesellexp.lnp.stratus.qa.ebay.com"
+        },
+        "LASServiceUserNote": {
+            "hostname": "laservice.lnp.stratus.qa.ebay.com",
+            "socketTimeout": 10000,
+            "retry": 3,
+            "markup-timeout": 1000
+        },
+        "MesellwebExpSvcSortFilter": {
+            "hostname": "www.mesellexp.lnp.stratus.qa.ebay.com",
+            "socketTimeout": 5000,
+            "retry": 3,
+            "markup-timeout": 1000
+        },
+        "MesellwebExpSvcPagination": {
+            "hostname": "www.mesellexp.lnp.stratus.qa.ebay.com",
+            "socketTimeout": 5000,
+            "retry": 3,
+            "markup-timeout": 1000
+        },
+        "MesellwebExpSvcUpdateFinisIt": {
+            "hostname": "www.mesellexp.lnp.stratus.qa.ebay.com",
+            "socketTimeout": 5000,
+            "retry": 3,
+            "markup-timeout": 1000
+        },
+        "MesellwebExpSvcDelete": {
+            "hostname": "www.mesellexp.lnp.stratus.qa.ebay.com",
+            "socketTimeout": 15000,
+            "retry": 3,
+            "markup-timeout": 1000
+        },
+        "DraftExpSvcDelete": {
+            "hostname": "lnp.draftsvc.vip.qa.ebay.com",
+            "socketTimeout": 15000,
+            "retry": 3,
+            "markup-timeout": 1000
+        },
+        "MesellwebExpSvc": {
+            "hostname": "www.mesellexp.lnp.stratus.qa.ebay.com",
+            "retry": 3,
+            "socketTimeout": 5000,
+            "markup-timeout": 1000
+        },
+        "MesellwebExpSvcSSE": {
+            "hostname": "www.mesellexp.lnp.stratus.qa.ebay.com",
+            "retry": 3,
+            "socketTimeout": 5000,
+            "markup-timeout": 1000
+        },
+        "MesellwebExpSvcMarkAsPaid": {
+            "hostname": "www.mesellexp.lnp.stratus.qa.ebay.com",
+            "retry": 3,
+            "socketTimeout": 5000,
+            "markup-timeout": 1000
+        },
+        "MesellwebExpSvcUpdatePreferences": {
+            "hostname": "www.mesellexp.lnp.stratus.qa.ebay.com",
+            "socketTimeout": 5000,
+            "retry": 3,
+            "markup-timeout": 1000
+        },
+        "MesellwebExpSvcUpdateLagacyPreferences": {
+            "hostname": "my.qa.ebay.com"
+        },
+        "MesellwebSPA": {
+            "hostname": "www.mesellexp.lnp.stratus.qa.ebay.com",
+            "retry": 3,
+            "socketTimeout": 5000,
+            "markup-timeout": 1000
+        },
+        "MesellActiveExpSvcSSE": {
+            "hostname": "lnp.activesvc.vip.qa.ebay.com",
+            "retry": 3,
+            "socketTimeout": 5000,
+            "markup-timeout": 1000
+        },
+        "MesellScheduledExpSvcSSE": {
+            "hostname": "lnp.scheduledsvc.vip.qa.ebay.com",
+            "retry": 3,
+            "socketTimeout": 5000,
+            "markup-timeout": 1000
+        },
+        "MesellDraftExpSvcSSE": {
+            "hostname": "lnp.draftsvc.vip.qa.ebay.com",
+            "retry": 3,
+            "socketTimeout": 5000,
+            "markup-timeout": 1000
+        },
+        "MesellUnSoldExpSvcSSE": {
+            "hostname": "lnp.unsoldsvc.vip.qa.ebay.com",
+            "retry": 3,
+            "socketTimeout": 5000,
+            "markup-timeout": 1000
+        },
+        "MesellUnSoldDeleteExpSvc": {
+            "hostname": "lnp.unsoldsvc.vip.qa.ebay.com",
+            "retry": 3,
+            "socketTimeout": 5000,
+            "markup-timeout": 1000
+        },
+        "MesellSoldExpSvcSSE": {
+            "hostname": "lnp.soldsvc.vip.qa.ebay.com",
+            "retry": 3,
+            "socketTimeout": 5000,
+            "markup-timeout": 1000
+        },
+        "MesellSoldDeleteExpSvc": {
+            "hostname": "lnp.soldsvc.vip.qa.ebay.com",
+            "retry": 3,
+            "socketTimeout": 5000,
+            "markup-timeout": 1000
+        },
+        "MesellwebExpSvcRevisePBC": {
+            "hostname": "www.mesellexp.lnp.stratus.qa.ebay.com"
+        }
+    }
+}

@@ -1,0 +1,89 @@
+import safeGet from 'just-safe-get'
+import helper from './helper'
+
+$ const activeModule = state.model.data;
+$ {
+    const timeout =
+        (safeGet(input, "model.data.modules.warmup") && 60000) ||
+        safeGet(input, "modules.configModule.awaitTimeout");
+}
+$ const configModule = safeGet(activeModule, "modules.configModule");
+$ const i18nModule = safeGet(state, "model.data.modules.i18nModule");
+$ const errorMessage = safeGet(i18nModule, "commonServerError");
+$ const systemErrorMessage = safeGet(i18nModule, "systemErrorMessage");
+$ const busyLabel = safeGet(i18nModule, "busyLabel");
+$ const errorModel = helper.createErrorModel(errorMessage);
+<app-shell model=activeModule i18n=i18nModule>
+    <div.active-page__wrapper id="meb-items-cnt" key="activeContainer">
+        <me-spinner label=busyLabel key="spinner"/>
+        <!-- start welcome screen -->
+        <await-ebay(model from activeModule.modules.welcomeScreenModule) timeout=timeout>
+            <await-timeout-ebay/>
+            <await-error-ebay/>
+            $ activeModule.modules.welcomeScreenModule = model;
+            <me-welcome-screen model=model/>
+        </await-ebay>
+        <!-- end welcome screen -->
+        <await-ebay(model from activeModule.modules.MadronaAdsModule) timeout=timeout>
+            <await-timeout-ebay/>
+            <await-error-ebay/>
+            $ activeModule.modules.MadronaAdsModule = model;
+            <me-madrona-notice model=model class="madrona-active-banner"/>
+        </await-ebay>
+        <await-ebay(model from activeModule.modules.sellerMessageModule) timeout=timeout>
+            <await-timeout-ebay/>
+            <await-error-ebay/>
+            $ activeModule.modules.sellerMessageModule = model;
+            <me-banner model=model key="active-banner"/>
+        </await-ebay>
+        <!-- start title, sort, filter -->
+        <await-ebay(model from activeModule.modules.activeSummaryModule) timeout=timeout>
+            <await-timeout-ebay/>
+            <await-error-ebay/>
+            $ activeModule.modules.activeSummaryModule = model;
+            <active-summary
+                model=model
+                on-activePageUpdate("updateActiveContainer")
+                key="active-summary"/>
+        </await-ebay>
+        <!-- end title, sort, filter -->
+        <!-- start empty screen -->
+        <await-ebay(model from activeModule.modules.emptyStateModule) timeout=timeout>
+            <await-timeout-ebay/>
+            <await-error-ebay/>
+            $ activeModule.modules.emptyStateModule = model;
+            <me-empty model=model key="active-empty"/>
+        </await-ebay>
+        <!-- end empty screnn -->
+        <!-- start error screen -->
+        <await-ebay(model from activeModule.modules.errorStateModule) timeout=timeout>
+            <await-timeout-ebay/>
+            <await-error-ebay/>
+            $ activeModule.modules.errorStateModule = model;
+            <me-error model=model key="active-error"/>
+        </await-ebay>
+        <!-- end error screnn -->
+        <!-- start items list -->
+        <await-ebay(model from activeModule.modules.activeListingsModule) timeout=timeout>
+            <await-timeout-ebay/>
+            <await-error-ebay/>
+            $ activeModule.modules.activeListingsModule = model;
+            <active-listing
+                model=model
+                configModule=configModule
+                busyLabel=busyLabel
+                errorLabel=systemErrorMessage
+                on-activePageUpdate("updateActiveContainer")
+                key="active-listing"/>
+        </await-ebay>
+        <!-- end items list-->
+        <await-ebay(allErrored from activeModule.modules.allPromisesRejected)>
+            <await-timeout-ebay/>
+            <await-error-ebay/>
+            $ activeModule.modules.allPromisesRejected = allErrored;
+            <if(allErrored && allErrored.showNodeError)>
+                <me-error model=errorModel/>
+            </if>
+        </await-ebay>
+    </div>
+</app-shell>

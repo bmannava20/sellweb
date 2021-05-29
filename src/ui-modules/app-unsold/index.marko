@@ -1,0 +1,86 @@
+import safeGet from 'just-safe-get'
+import helper from './helper'
+
+$ const myebayPageContent = safeGet(data, "model.data.modules.i18nModule");
+$ const errorText = safeGet(myebayPageContent, "page.error");
+$ const reloadText = safeGet(myebayPageContent, "page.reload");
+$ const busyLabel = safeGet(myebayPageContent, "busyLabel");
+$ const unsoldModel = input.model.data;
+$ const configModule = safeGet(input, "model.data.modules.configModule");
+$ const i18nModule = safeGet(state, "model.data.modules.i18nModule");
+$ {
+    const timeout =
+        (safeGet(input, "model.data.modules.warmup") && 60000) ||
+        safeGet(input, "modules.configModule.awaitTimeout");
+}
+$ const errorMessage = safeGet(i18nModule, "commonServerError");
+$ const errorModel = helper.createErrorModel(errorMessage);
+<app-shell model=unsoldModel>
+    <div class="unsold-page__wrapper" id="meb-items-cnt" key="unsold-container">
+        <me-spinner label=busyLabel key="spinner"/>
+        <await-ebay(welcomeScreenModule from unsoldModel.modules.welcomeScreenModule) timeout=timeout>
+            <await-timeout-ebay/>
+            <await-error-ebay/>
+            <me-welcome-screen model=welcomeScreenModule/>
+            $ unsoldModel.modules.welcomeScreenModule = welcomeScreenModule;
+        </await-ebay>
+        <await-ebay(model from unsoldModel.modules.unsoldRefinementModule) timeout=timeout>
+            <await-timeout-ebay/>
+            <await-error-ebay/>
+            $ unsoldModel.modules.unsoldRefinementModule = model;
+            <unsold-refinement
+                model=model
+                multi-item-selected=(state.selectedIdList && state.selectedIdList.length > 1)
+                enableMultiSelect=state.enableMultiSelect
+                enableDeleteButton=state.enableDeleteButton
+                on-handleMultiSelectClick("handleMultiSelectClick")
+                on-unsoldPageUpdate("updateUnsoldContainer")
+                on-delete-items("deleteItems")
+                is-edit-mode=state.isEditMode
+                on-toggleEditMode("toggleEditMode")
+                key="unsold-refinement"/>
+        </await-ebay>
+        <await-ebay(model from unsoldModel.modules.emptyStateModule) timeout=timeout>
+            <await-timeout-ebay/>
+            <await-error-ebay/>
+            $ unsoldModel.modules.emptyStateModule = model;
+            <me-empty model=model key="unsold-empty"/>
+        </await-ebay>
+        <await-ebay(model from unsoldModel.modules.errorStateModule) timeout=timeout>
+            <await-timeout-ebay/>
+            <await-error-ebay/>
+            $ unsoldModel.modules.errorStateModule = model;
+            <me-error model=model key="unsold-error"/>
+        </await-ebay>
+        <await-ebay(model from unsoldModel.modules.unsoldListingsModule) timeout=timeout>
+            <await-timeout-ebay/>
+            <await-error-ebay/>
+            $ unsoldModel.modules.unsoldListingsModule = model;
+            $ component.listingIdCollection = (
+                safeGet(model, "lineItems") || []
+            ).map(li => li.listingId);
+            <unsold-listing
+                model=model
+                i18nModule=i18nModule
+                configModule=configModule
+                key="unsold-listing"
+                selectedIdList=state.selectedIdList
+                is-edit-mode=state.isEditMode
+                on-show-loader("showSpinner")
+                on-checkbox-change("handleSingleCheckboxClick")
+                on-unsoldUpdate("updateUnsoldContainer")/>
+        </await-ebay>
+        <!-- A promise that resolves as 'true' when all the other promise error out (a.k.a) backend service is down.
+        Not using the module error as I would have to create the same module to send it and can't assign the content,
+        as we are using state so it will render error module twice -->
+        <!-- TODO can be reduced by asking backend to send one key value pair instead of a textspan so we can use error module -->
+        <await-ebay(allErrored from unsoldModel.modules.allPromisesRejected)>
+            <await-timeout-ebay/>
+            <await-error-ebay/>
+            $ unsoldModel.modules.allPromisesRejected = allErrored;
+            <if(allErrored && allErrored.showNodeError)>
+                <me-error model=errorModel key="unsold-error"/>
+            </if>
+        </await-ebay>
+    </div>
+</app-shell>

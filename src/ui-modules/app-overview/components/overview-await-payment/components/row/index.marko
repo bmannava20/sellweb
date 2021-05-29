@@ -1,0 +1,100 @@
+import safeGet from 'just-safe-get'
+import helper from './helper'
+
+$ {
+    const model = helper.getModelData(input),
+        buttonStyle =
+            model.callToActionBtn.btnStyle === "PROMOTED" ? "primary" : "",
+        multiOrder = model.lineItemCountLabel ? "multi-order" : "",
+        multiOrderItem =
+            model.lineActions.length === 0
+                ? "multi-order-item"
+                : "single-order-item",
+        menuOptions = {
+            selections: model.lineActions
+        };
+}
+<if(
+    model.callToActionBtn.btnActionValue &&
+    model.callToActionBtn.btnActionValue.indexOf("CANCEL") > -1
+)>
+    $ {
+        const upiContentMap = multiOrder
+                ? input.upiContentMap.multiItem
+                : input.upiContentMap.singleItem;
+    }
+    <me-cancel-upi
+        key="upi-overview"
+        on-updateAwaitingPaymentModule("emit", "updateAwaitingPaymentModule")
+        content-map=upiContentMap/>
+</if>
+<layout-item-card
+    class=`await-payment-item ${multiOrder} ${multiOrderItem}`
+    qaId=`AwaitingPayment-item-${model.itemId}`>
+    <@col-1>
+        <static-text model=model.lineItemCountLabel class="header-label"/>
+        <static-text model=model.lineItemCount class="header-content"/>
+        <meui-thumbnail image=model.image altText=model.imageTitle size="large"/>
+    </@col-1>
+    <@col-2>
+        <static-text model=model.orderTotalLabel class="header-label"/>
+        <static-text model=model.displayTotalPrice class="header-content"/>
+        <me-item-title model=model.imageTitle/>
+        <div class="item-byline">
+            <me-sku-variations class="item__buyer-sku" model=model.skuVariations/>
+            <me-textual-display class="item__buyer-quantity" model=model.itemQuantity/>
+            <me-textual-display model=model.soldDateNew class="item__buyer-name"/>
+            <me-textual-display model=model.buyerName class="item__buyer-name"/>
+        </div>
+        <me-paypal-payment model=model.paymentsMethod class="item__payment-methods"/>
+        <meui-task-tracker model=model.taskTracker/>
+        <static-text model=model.dsplyPrce class="item-price"/>
+    </@col-2>
+    <@col-3>
+        <if(state.isLoading)>
+            <loadingStatus isLoading=state.isLoading/>
+        </if>
+        <else>
+            <div class="shipto-details">
+                <if(model.ctaBannerTitle)>
+                    <static-text model=model.ctaBannerTitle class="cta-banner-title"/>
+                </if>
+                <if(model.ctaBannerContent)>
+                    <static-text model=model.ctaBannerContent class="cta-banner-content"/>
+                </if>
+            </div>
+            <div class="multi-item-actions" key="await-payment-btn">
+                <if(model.callToActionBtn.btnActionType === "OPERATION")>
+                    <ebay-button
+                        priority=buttonStyle
+                        class="await-payment-button awp-btn"
+                        key="await-payment-button"
+                        data-value=model.callToActionBtn.btnActionValue
+                        data-contract-id=model.callToActionBtn.listingId
+                        _sp=model.callToActionBtn.sid
+                        on-button-click(
+                            "onButtonClickHandler",
+                            model.callToActionBtn.trackingList
+                        )>
+                        ${model.callToActionBtn.btnText}
+                    </ebay-button>
+                </if>
+                <else>
+                    <if(model.callToActionBtn.btnText)>
+                        <me-fake-button
+                            size="small"
+                            class="awp-btn"
+                            model=model.callToActionBtn.btnTextLabel
+                            action=model.callToActionBtn.btnAction/>
+                    </if>
+                </else>
+                <me-line-actions
+                    key='actions'
+                    options=menuOptions.selections
+                    accessibility-text=model.accessibilityText
+                    on-lineActionSelect("onLineActionSelect")
+                    priority=model.callToActionBtn.btnStyle/>
+            </div>
+        </else>
+    </@col-3>
+</layout-item-card>

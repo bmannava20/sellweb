@@ -1,0 +1,100 @@
+import safeGet from 'just-safe-get'
+import constants from '../../../../../../utils/helpers/constants'
+
+$ {
+    const promoTitle = safeGet(input, "model.promoTitle"),
+        unlimitedPromo = safeGet(input, "model.unlimitedCounter"),
+        promoDescription = safeGet(input, "model.promoDescription"),
+        availableSiteLabel = safeGet(input, "model.availableSiteLabel"),
+        getOfferLabel = safeGet(input, "model.ctaLabel"),
+        getOfferAction = safeGet(input, "model.ctaLabel.action"),
+        infoTextCount = safeGet(input, "model.promoListings.infoText.count"),
+        infoTextLabel = safeGet(input, "model.promoListings.infoText.label"),
+        startTimeTextSpan = safeGet(input, "model.startTimeLabel.textSpans"),
+        endTimeTextSpan = safeGet(input, "model.endTimeLabel.textSpans"),
+        startTimeLongTextSpan = safeGet(input, "model.startTimeLongLabel"),
+        endTimeLongTextSpan = safeGet(input, "model.endTimeLongLabel"),
+        usedCountValueAction = safeGet(
+            input,
+            "model.usedCountLabel.textSpans.1.action"
+        ),
+        controlLabel = safeGet(input, "model.promoIcon.accessibilityText"),
+        accCloseText = safeGet(input, "model.promoClose.accessibilityText"),
+        styleMap = constants.STYLE_MAPS.NO_DEFAULT,
+        usedOffers = {
+            text: safeGet(input, "model.usedCountText.textSpans.0.text"),
+            action: safeGet(input, "model.usedCountText.textSpans.0.action"),
+            target: safeGet(input, "model.usedCountText.textSpans.0.action.name"),
+            accessibilityText: safeGet(input, "model.usedCountText.accessibilityText")
+        };
+}
+<section class="promotion-item">
+    <if(!getOfferLabel && !getOfferAction)>
+        <div class="left-half">
+            <meui-circle
+                height="136"
+                width="136"
+                color="#71c63e"
+                border-width=6
+                start-value=(
+                    unlimitedPromo
+                        ? 1
+                        : input.model.promoListings.availableValue
+                )
+                end-value=(unlimitedPromo ? 1 : input.model.promoListings.totalValue)>
+                <if(!unlimitedPromo)>
+                    <static-text model=infoTextCount class="numbers"/>
+                </if>
+                <static-text model=infoTextLabel class=(unlimitedPromo ? "unltdText" : "text")/>
+            </meui-circle>
+            <div class="used-offers-link">
+                <if(usedOffers.text)>
+                    <meui-navlink
+                        class="link"
+                        ariaLabel=usedOffers.accessibilityText
+                        action=usedOffers.action
+                        target=usedOffers.target>
+                        ${usedOffers.text}
+                    </meui-navlink>
+                </if>
+            </div>
+        </div>
+    </if>
+    <div class={
+        "right-half": true,
+        "addl-margin": getOfferLabel && getOfferAction
+    }>
+        <header class="promotion-item-header">
+            <h3 class="base-text">$!{promoTitle}</h3>
+        </header>
+        <p class="description-small">$!{promoDescription}</p>
+        <if(getOfferLabel && getOfferAction)>
+            <me-fake-button
+                model=getOfferLabel
+                action=getOfferAction
+                clipped-text=promoTitle/>
+        </if>
+        <else>
+            <div class="promotion-duration">
+                <me-textual-display model=startTimeTextSpan options=styleMap/>
+                <span class="end-time">
+                    <me-textual-display model=endTimeTextSpan options=styleMap/>
+                </span>
+                <ebay-infotip
+                    pointer="top-right"
+                    style-top="calc(100% + 16px)"
+                    style-left="auto"
+                    style-bottom="auto"
+                    style-right="-11px"
+                    a11y-close-text=`${accCloseText}`
+                    aria-label=`${controlLabel} - ${promoTitle}`>
+                   <ebay-infotip-content>
+                        <static-text model=startTimeLongTextSpan/>
+                        <static-text model=endTimeLongTextSpan/>
+                        <static-text class="site" model=availableSiteLabel/>
+                    </ebay-infotip-content>
+                </ebay-infotip>
+            </div>
+        </else>
+    </div>
+</section>

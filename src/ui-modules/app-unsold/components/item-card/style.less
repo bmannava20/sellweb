@@ -1,0 +1,52 @@
+@import './common.less';
+
+.unsold-item {
+    .base-unsold-item();
+    padding: 32px 0px;
+
+    .meui-item-tile .columns {
+        .col-1 {
+            display: flex;
+            min-width: auto;
+            width: auto;
+            position: relative;
+        }
+
+        .col-2 {
+            padding-left: 16px;
+            width: 52.6%;
+            height: 100%;
+        }
+    }
+
+    .item {
+        &__itemid {
+            margin-bottom: 16px;
+        }
+
+        &__cta-wrapper {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+    .me-fake-button {
+        width: 252px;
+    }
+}
+
+@media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (orientation: portrait)
+    and (-webkit-min-device-pixel-ratio: 1) {
+    .unsold-item {
+        .meui-item-tile {
+            .columns {
+                .col-2 {
+                    width: 37%;
+                }
+            }
+        }
+    }
+}

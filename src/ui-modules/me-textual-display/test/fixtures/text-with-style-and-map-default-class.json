@@ -1,0 +1,20 @@
+{
+    "model": [
+        {
+            "text": "Waiting for payment",
+            "styles": [
+                "RANDOM"
+            ]
+        }
+    ],
+    "options": {
+        "defaultClass": "normal",
+        "styleMap": {
+            "BOLD": "bold",
+            "NEGATIVE": "negative",
+            "DEFAULT": "default",
+            "EMPHASIS": "emphasis",
+            "POSITIVE": "positive"
+        }
+    }
+}

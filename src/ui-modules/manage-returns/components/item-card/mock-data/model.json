@@ -1,0 +1,163 @@
+{
+    "model": {
+        "_type": "MyeBaySellingListingSummary",
+        "listingId": "300008575193",
+        "title": {
+            "textSpans": [{
+                "text": "MSKU duvet for returns"
+            }],
+            "action": {
+                "type": "NAV",
+                "trackingList": [{
+                        "actionKind": "NAV",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                            "sid": "p2486981.m40807.l9182"
+                        }
+                    },
+                    {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                            "moduledtl": "mi:40807|li:9182"
+                        }
+                    }
+                ],
+                "URL": "http://www.corp.ebay.com/itm/300008575193"
+            }
+        },
+        "image": {
+            "originalSize": {
+                "height": 200,
+                "width": 600
+            },
+            "action": {
+                "type": "NAV",
+                "trackingList": [{
+                        "actionKind": "NAV",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                            "sid": "p2486981.m40807.l9181"
+                        }
+                    },
+                    {
+                        "eventFamily": "MYEBAY",
+                        "eventAction": "ACTN",
+                        "actionKind": "NAVSRC",
+                        "operationId": "2486981",
+                        "flushImmediately": false,
+                        "eventProperty": {
+                            "moduledtl": "mi:40807|li:9181"
+                        }
+                    }
+                ],
+                "URL": "http://www.corp.ebay.com/itm/300008575193"
+            },
+            "URL": "https://i.qa.ebayimg.com/00/s/MjAwWDYwMA==/z/fsEAAOSw0OZZ6kcE/$_57.JPG?set_id=8800005007"
+        },
+        "displayPrice": {
+            "textSpans": [{
+                    "text": "Refund"
+                },
+                {
+                    "text": "$10.00",
+                    "styles": [
+                        "BOLD"
+                    ]
+                }
+            ]
+        },
+        "status": {
+            "textSpans": [{
+                    "text": "Buyer has requested a return",
+                    "styles": [
+                        "BOLD"
+                    ]
+                },
+                {
+                    "text": "Respond by Oct 26",
+                    "styles": [
+                        "NEGATIVE"
+                    ]
+                }
+            ]
+        },
+        "__me": {
+            "lineActions": {
+                "options": [{
+                    "label": {
+                        "textSpans": [{
+                            "text": "Line Actions"
+                        }]
+                    },
+                    "selections": [{
+                        "disabled": false,
+                        "selected": true,
+                        "label": {
+                            "textSpans": [{
+                                "text": "Respond",
+                                "styles": [
+                                    "PROMOTED"
+                                ]
+                            }],
+                            "action": {
+                                "type": "NAV",
+                                "trackingList": [{
+                                        "actionKind": "NAV",
+                                        "operationId": "2486981",
+                                        "flushImmediately": false,
+                                        "eventProperty": {
+                                            "sid": "p2486981.m40807.l41682"
+                                        }
+                                    },
+                                    {
+                                        "eventFamily": "MYEBAY",
+                                        "eventAction": "ACTN",
+                                        "actionKind": "NAVSRC",
+                                        "operationId": "2486981",
+                                        "flushImmediately": false,
+                                        "eventProperty": {
+                                            "moduledtl": "mi:40807|li:41682"
+                                        }
+                                    }
+                                ],
+                                "URL": "http://postorder.qa.ebay.com/Return/ReturnsDetail?returnId=5000283988"
+                            },
+                            "value": "RETURN_REQUESTED"
+                        },
+                        "default": false
+                    }],
+                    "multiSelect": false,
+                    "delimiter": null,
+                    "paramName": null,
+                    "baseUrl": null
+                }]
+            },
+            "quantity": {
+                "textSpans": [{
+                    "text": "Qty: 1"
+                }]
+            },
+            "itemStats": {
+                "textSpans": [{
+                        "text": "Buyer: "
+                    },
+                    {
+                        "text": "cancel_us_seller2",
+                        "action": {
+                            "type": "NAV",
+                            "name": "cancel_us_seller2",
+                            "accessibilityText": "Visit cancel_us_seller2's profile",
+                            "URL": "http://www.LM-SJC-11008493/usr/cancel_us_seller2"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

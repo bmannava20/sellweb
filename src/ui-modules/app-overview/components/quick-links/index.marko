@@ -1,0 +1,33 @@
+import safeGet from 'just-safe-get'
+
+$ {
+    const title = safeGet(input, "model.title"),
+        quickLinksData = safeGet(input, "model.quickLinks");
+}
+<if(title)>
+    <section class="qlinks-module" qa-id="quicklinks-module">
+        <if(title)>
+            <meui-moduleTitle model=title/>
+        </if>
+        <div class="qlinks-cntr">
+            <for|links| of=quickLinksData>
+                $ {
+                    let headerText = safeGet(links, "name.textSpans.0.text"),
+                                        link = safeGet(links, "links");
+                }
+                <div class="qlinks-list">
+                    <h3 class="qlinks-header">${headerText}</h3>
+                    <for|qlink| of=link>
+                        $ {
+                            let linksText = safeGet(qlink, "textSpans.0.text"),
+                                                        qcklinks = safeGet(qlink, "action");
+                        }
+                        <if(qcklinks)>
+                            <meui-navlink action=qcklinks>${linksText}<span class="clipped">${headerText}</span></meui-navlink>
+                        </if>
+                    </for>
+                </div>
+            </for>
+        </div>
+    </section>
+</if>
