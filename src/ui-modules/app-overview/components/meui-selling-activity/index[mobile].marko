@@ -1,9 +1,0 @@
-import helper from './helper'
-
-$ const modelData = helper.getModelData(input);
-<if(modelData)>
-    <section class="selling-activity">
-        <listing-total model=modelData/>
-        <listings-by-containers on-appUpdate("emit", "appUpdate") model=modelData/>
-    </section>
-</if>

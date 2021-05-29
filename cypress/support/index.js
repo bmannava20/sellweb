@@ -14,7 +14,16 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
+
+
+// import 'cypress-xpath'
+
+// TODO: This will swollow errors! IT SEEMS A VERY BAD IDEA! Check https://github.com/cypress-io/cypress/issues/987
+Cypress.on('uncaught:exception', (err, runnable) => {
+    Cypress.log(runnable, err)
+return false
+})
+
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

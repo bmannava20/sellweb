@@ -1,6 +1,0 @@
-{
-    "dependencies" :[
-        "src/layouts/default",
-        "../"
-    ]
-}

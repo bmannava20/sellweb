@@ -1,7 +1,0 @@
-export ESAMS_IDENTITY_FILE="$(node -p "require.resolve('esams-consumer-ebay/resources/default-dev-esams-identity.xml')")"
-export NODE_ENV=staging
-export DEPLOY_ENV=staging
-export INSTRUMENT_APP_FOR_COVERAGE="false"
-touch /var/tmp/INSTRUMENT_APP_FOR_COVERAGE
-npm run clean
-node ./index.js

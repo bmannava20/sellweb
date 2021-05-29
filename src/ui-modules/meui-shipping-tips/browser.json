@@ -1,6 +1,0 @@
-{
-  "dependencies": [
-    "@ebay/skin/icon",
-    "./style.less"
-  ]
-}

@@ -1,7 +1,0 @@
-{
-  "dependencies": [
-    "@ebay/skin/core",
-    "@ebay/skin/less",  
-    "@ebay/skin/icon"
-  ]
-}

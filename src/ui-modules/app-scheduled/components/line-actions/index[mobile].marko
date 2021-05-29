@@ -1,8 +1,0 @@
-import safeGet from 'just-safe-get'
-
-<div class="item__cta-wrapper">
-    <me-line-actions
-        options=input.options
-        accessibilityText=safeGet(input, 'model.inlineActionsAccessibilityText')
-        on-lineActionSelect("emit", "lineActionSelect")/>
-</div>
